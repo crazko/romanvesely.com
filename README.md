@@ -3,7 +3,7 @@
 ``` bash
 $ gulp
 $ composer generate
-$ gulp build
+$ composer build
 ```
 
 ## See
