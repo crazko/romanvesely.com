@@ -1,0 +1,28 @@
+---
+layout: default
+title: Interested in web and stuff
+dontIncludeTitle: true
+---
+
+{block content}
+<p>My first websites were transmitted awkwardly on floppy disks. <a href="http://joecartoon.com/">Flash</a> and <a href="http://ps2.praystation.com/pound/v3/">ActionScript</a> proved me that web may be really fun. I have been devoted to the frontend development for many years and currently use tools like <a href="https://laravel.com/">Laravel</a>, <a href="https://nette.org/">Nette</a> or&nbsp;<a href="https://wordpress.org/">WordPress</a> to solve things. I'm also experienced in <a href="https://en.wikipedia.org/wiki/ABAP">ABAP</a> development in <a href="http://go.sap.com/">SAP</a> systems.</p>
+
+<p>I love science fiction, either as a film or a book. My body is tormented during run or in a gym regularly. Walks in the nature, more-day hiking as well as camping are something I cannot live without. I like to learn new things to become better than yesterday and often deal with the smallest details to make something great. I come from Kosice, Slovakia.</p>
+
+<h2>Notes</h2>
+{var $i = 0}
+<ul n:inner-foreach="$posts as $post">
+	{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
+	{var $i = $i + 1}
+
+	{var $url = '/' . $post['relativeUrl'] . '/'}
+	{ifset $post['external']}
+		{var $url = $post['external']}
+	{/ifset}
+
+	<li><a href="{$url}">{$post['title']}</a> <small>{$post->getDateInFormat('d. F Y')}</small></li>
+
+	{breakIf $i === $site['homeNotesCount']}
+</ul>
+<p><a href="/notes">See more notes</a></p>
+{/block}

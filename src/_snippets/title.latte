@@ -1,0 +1,9 @@
+{var $appendix = $site['title'] . ' | ' . $site['subtitle']}
+
+{if isset($dontIncludeTitle)}
+	{$appendix}
+{elseif isset($title)}
+	{$title} | {$appendix}
+{else}
+	{$appendix}
+{/if}

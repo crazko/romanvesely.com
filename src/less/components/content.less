@@ -1,0 +1,16 @@
+.content {
+	max-width: @content-width;
+	padding: @padding--basic;
+
+	@media @screen--wide {
+		padding: @padding--wide;
+	}
+
+	a {
+		border-bottom: 2px solid @font-color--link-content;
+	}
+
+	& p:last-of-type {
+		margin-bottom: 0;
+	}
+}

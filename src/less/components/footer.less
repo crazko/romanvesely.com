@@ -1,0 +1,17 @@
+.footer {
+	padding: @padding--basic;
+	font-size: .75rem;
+	position: absolute;
+	bottom: 0;
+	line-height: 1rem;
+
+	&__extended {
+		.hidden-wide();
+	}
+
+	@media @screen--wide {
+		text-align: right;
+		padding: @padding--wide;
+		right: 0;
+	}
+}

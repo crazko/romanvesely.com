@@ -1,0 +1,22 @@
+---
+layout: default
+title: Notes
+---
+
+{block content}
+
+{foreach $posts as $post}
+{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
+
+	{var $url = '/' . $post['relativeUrl'] . '/'}
+	{ifset $post['external']}
+		{var $url = $post['external']}
+	{/ifset}
+
+	<article>
+		<h2><a href="{$url}">{$post['title']}</a></h2>
+		<small>{$post->getDateInFormat('d. F Y')}</small>
+		<p>{$post['description']}</p>
+	</article>
+{/foreach}
+{/block}

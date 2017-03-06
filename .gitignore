@@ -1,0 +1,7 @@
+/dist
+/node_modules
+/src/css
+/vendor
+
+*.log
+*.cache

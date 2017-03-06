@@ -1,0 +1,16 @@
+---
+layout: default
+title: Projects
+---
+
+{block content}
+{foreach $projects as $project}
+	{ifset $project['image']}
+		{include "image", src => $project['image'], url => $project['url']}
+	{/ifset}
+
+	<h2><a href="{$project['url']}">{$project['name']}</a></h2>
+	<p>{$project['description']}</p>
+	{ifset $project['repository']}<p><small><a href="{$project['repository']}">Check the code</a></small><p>{/ifset}
+{/foreach}
+{/block}

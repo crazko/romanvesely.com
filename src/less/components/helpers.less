@@ -1,0 +1,27 @@
+.image {
+	display: block;
+	margin: @padding--basic -@padding--basic;
+	background-color: @color-supplementary;
+
+	@media @screen--wide {
+		margin: @padding--basic -@padding--wide;
+	}
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.hidden-wide {
+	@media @screen--wide {
+		display: none;
+	}
+}
+
+.transition(@property: all) {
+	transition: @property ease-in .25s;
+}

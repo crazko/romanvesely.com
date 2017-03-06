@@ -1,0 +1,47 @@
+{block |strip}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{include "title"}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="_L_KtvxI0HssJtpNjtz1o85SACSUiFOYn-rZXKZWSV4">
+
+	{*<link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes RSS" href="/rss.xml">*}
+
+	<link rel="stylesheet" href="/css/styles.css">
+	{block styles}{/block}
+</head>
+<body>
+	<div class="wrapper wrapper--side">
+		<nav role="navigation">
+			<ul class="nav">
+				<li class="nav__item nav__item--logo">
+					<a href="/"><div class="logo"><img src="/img/logo.jpg" alt="" class="logo__image"></div>Roman Veselý</a> web developer
+				</li>
+				<li class="nav__item"><a href="/notes">notes</a></li>
+				<li class="nav__item"><a href="/projects">projects</a></li>
+				<li class="nav__divider"></li>
+				<li class="nav__item nav__item--external"><a href="https://twitter.com/rmnvsl">twitter</a></li>
+				<li class="nav__item nav__item--external"><a href="https://github.com/crazko">github</a></li>
+				<li class="nav__item nav__item--external"><a href="https://www.linkedin.com/in/veselyroman">linkedin</a></li>
+			</ul>
+		</nav>
+
+		<div role="contentinfo" class="footer">
+			&copy; 2017 <a href="mailto:info@romanvesely.com">Roman Veselý</a><span class="footer__extended">, follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a></span>
+		</div>
+	</div>
+
+	<div class="wrapper wrapper--content">
+		<main role="main" class="content">
+			{ifset $title}<h1>{$title}</h1>{/ifset}
+			{block content}{/block}
+		</main>
+	</div>
+
+	{block scripts}{/block}
+	{include "googleAnalytics"}
+</body>
+</html>
+{/block}

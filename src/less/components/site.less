@@ -1,0 +1,82 @@
+html {
+	font: @font-size--small/1.75em system;
+	color: @font-color--main;
+	background-color: @bg-color--main;
+	overflow-y: scroll;
+	position: relative;
+	padding-bottom: @padding--wide;
+
+	@media @screen--wide {
+		font-size: @font-size--wide;
+		padding-bottom: 0;
+	}
+}
+
+a {
+	color: @font-color--link;
+	text-decoration: none;
+	.transition(~"color");
+
+	&:hover {
+		color: @font-color--link-content;
+		border-bottom-color: @bg-color--main;
+
+		img {
+			opacity: .8;
+		}
+	}
+
+	// &[href^="http"]:after {
+	// 	content: " 🔗"
+	// }
+}
+
+h1,
+h2,
+h3 {
+	font-family: serif;
+}
+
+pre,
+code {
+	font-size: .75rem;
+	line-height: 1rem;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	.transition(~"opacity");
+
+
+	// Remove glitch
+    // @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+    -webkit-transform: translateZ(0);
+    width: calc(100% + .49px);
+}
+
+.wrapper--side {
+	background: @bg-color--side;
+	border-bottom: @content-line-width solid @content-line-color;
+}
+
+@media @screen--wide {
+	.wrapper {
+		height: 100vh;
+		box-sizing: border-box;
+
+		&--side {
+			float: left;
+			width: @wrapper-width--side;
+			position: fixed;
+			border-right: @content-line-width solid @content-line-color;
+			border-bottom: none;
+		}
+
+		&--content {
+			float: right;
+			width: @wrapper-width--content;
+		}
+	}
+}
