@@ -16,3 +16,9 @@ before_script:
 
 script:
     - composer generate
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    on:
+        branch: master
