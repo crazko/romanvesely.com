@@ -101,7 +101,7 @@ gulp.task('default-sequence', plugins.sequence(
 gulp.task('default', ['default-sequence'], function () {
   gulp.watch(paths.styles.src + '/**/*.less', ['styles']);
   gulp.watch(scripts, ['scripts']);
-  gulp.watch(['src/**/*.latte', 'src/**/*.neon', 'src/**/*.md'], function (event) {
+  gulp.watch(['./src/**/*', '!./src/less/**/*', '!./src/scripts/**/*'], function (event) {
     plugins.sequence('generate', browserSync.reload)(function (error) {
       if (error) console.log(error)
     })
