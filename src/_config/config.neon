@@ -1,6 +1,9 @@
 site:
+	url: http://romanvesely.com
 	title: Roman Vesely
 	subtitle: Interested in web and stuff
+	author: Roman Vesely
+	email: info@romanvesely.com
 	homeNotesCount: 3
 
 configuration:
