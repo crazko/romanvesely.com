@@ -11,6 +11,6 @@ title: Projects
 
 	<h2><a href="{$project['url']}">{$project['name']}</a></h2>
 	<p>{$project['description']}</p>
-	{ifset $project['repository']}<p><small><a href="{$project['repository']}">Check the code</a></small><p>{/ifset}
+	{ifset $project['repository']}<p><a href="{$project['repository']}" class="link--more">Look inside</a><p>{/ifset}
 {/foreach}
 {/block}
