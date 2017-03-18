@@ -5,28 +5,26 @@ var gulpLoadPlugins = require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
 
 var paths = {
-  dist: './dist',
+  dist: 'dist',
   styles: {
-    src: './src/less',
-    compile: './src/css',
-    dist: './dist/css',
+    src: 'src/less',
+    compile: 'src/css',
+    dist: 'dist/css',
   },
   scripts: {
-    src: './src/js',
-    compile: './src/js',
-    dist: './dist/js',
+    src: [
+      'src/js/*/*.js',
+      'src/js/main.js',
+    ],
+    compile: 'src/js',
+    dist: 'dist/js',
   },
 };
-
-var scripts = [
-  paths.scripts.src + '/*/*.js',
-  paths.scripts.src + '/main.js',
-];
 
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: 'dist'
     }
   });
 });
@@ -51,7 +49,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(scripts)
+  gulp.src(paths.scripts.src)
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.concat('scripts.js'))
     .pipe(plugins.sourcemaps.write())
@@ -71,7 +69,7 @@ gulp.task('build:styles', function() {
 });
 
 gulp.task('build:scripts', function() {
-  gulp.src(scripts)
+  gulp.src(paths.scripts.src)
     .pipe(plugins.concat('scripts.js'))
     .pipe(plugins.uglify())
     .pipe(gulp.dest(paths.scripts.compile))
@@ -99,8 +97,8 @@ gulp.task('default-sequence', plugins.sequence(
 
 gulp.task('watch', ['default-sequence'], function () {
   gulp.watch(paths.styles.src + '/**/*.less', ['styles']);
-  gulp.watch(scripts, ['scripts']);
-  gulp.watch(['./src/**/*', '!./src/less/**/*', '!./src/scripts/**/*'], function (event) {
+  gulp.watch(paths.scripts.src, ['scripts']);
+  gulp.watch(['src/**/*', '!src/less/**/*', '!src/js/**/*'], function (event) {
     plugins.sequence('generate', browserSync.reload)(function (error) {
       if (error) console.log(error)
     })
