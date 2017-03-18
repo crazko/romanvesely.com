@@ -22,7 +22,7 @@
       <guid isPermaLink="false">{$url}</guid>
       <pubDate>{$post->getDateInFormat('r')}</pubDate>
       <description>{$post['description']|striptags}</description>
-      <author>{$site['email']} ({$site['author']})</author>
+      <author>{$site['author']}</author>
     </item>
 	{/foreach}
   </channel>
