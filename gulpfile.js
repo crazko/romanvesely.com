@@ -77,10 +77,6 @@ gulp.task('build:scripts', function() {
     .pipe(gulp.dest(paths.scripts.compile))
 });
 
-gulp.task('generate', function (){
-  return plugins.run('composer generate').exec();
-});
-
 gulp.task('build', plugins.sequence(
   'clean',
   [
@@ -89,16 +85,19 @@ gulp.task('build', plugins.sequence(
   ]
 ));
 
+gulp.task('generate', function (){
+  return plugins.run('composer generate').exec();
+});
+
+gulp.task('default', ['styles', 'scripts']);
+
 gulp.task('default-sequence', plugins.sequence(
-  [
-    'styles',
-    'scripts',
-  ],
+  'default',
   'generate',
   'browser-sync'
 ));
 
-gulp.task('default', ['default-sequence'], function () {
+gulp.task('watch', ['default-sequence'], function () {
   gulp.watch(paths.styles.src + '/**/*.less', ['styles']);
   gulp.watch(scripts, ['scripts']);
   gulp.watch(['./src/**/*', '!./src/less/**/*', '!./src/scripts/**/*'], function (event) {
