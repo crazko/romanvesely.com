@@ -1,5 +1,10 @@
 {extends "default"}
 
 {block content}
+<small>{$post->getDateInFormat('d. F Y')}, {$post->getReadingTimeInMinutes()}min to read</small>
+<p class="post__description">{$post['description']|noescape}</p>
+
+{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{else}<hr>{/ifset}
+
 {$post['content']|noescape}
 {/block}
