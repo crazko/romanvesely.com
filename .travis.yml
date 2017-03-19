@@ -15,7 +15,7 @@ before_script:
     - npm install
 
 script:
-    - composer build
+    - gulp build
     - |
       if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
           vendor/bin/statie push-to-github crazko/romanvesely.com --token=${GH_TOKEN} --output=dist
