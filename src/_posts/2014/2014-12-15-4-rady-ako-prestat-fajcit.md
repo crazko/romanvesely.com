@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: error
 title: 4 rady ako prestať fajčiť
 promoImage: /assets/posts/4-rady-ako-prestat-fajcit/promo.jpg
 description: '''

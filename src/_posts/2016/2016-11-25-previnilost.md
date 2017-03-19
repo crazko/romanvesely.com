@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: error
 title: Previnilosť
 promoImage: /assets/posts/previnilost/promo.jpg
 description: '''
