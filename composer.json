@@ -9,9 +9,5 @@
     ],
     "require": {
         "symplify/statie": "^1.3"
-    },
-    "scripts": {
-      "generate": "vendor/bin/statie generate --source=src --output=dist",
-      "build": "gulp build && composer generate"
     }
 }

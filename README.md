@@ -1,22 +1,9 @@
 # Roman Vesely personal site
 
-Generate site files from source:
-
-``` bash
-$ composer generate
-```
-
-or generate with all assets ready for production:
-
-``` bash
-$ composer build
-```
-
-Develop with live reload via BrowserSync:
-
-``` bash
-$ gulp watch
-```
+- `$ gulp` - generates site from source files
+- `$ gulp watch` - starts local server and acts upon changes
+- `$ gulp build` - generates version ready for production
+- `$ gulp clean` - removes output folder
 
 ## See
 - [Symplify/Statie](https://github.com/Symplify/Statie)
