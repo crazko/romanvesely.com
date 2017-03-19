@@ -20,3 +20,6 @@ script:
       if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
           vendor/bin/statie push-to-github crazko/romanvesely.com --token=${GH_TOKEN} --output=dist
       fi
+
+notifications:
+    email: false
