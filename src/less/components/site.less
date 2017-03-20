@@ -41,8 +41,28 @@ h3 {
 
 pre,
 code {
-	font-size: .75rem;
-	line-height: 1rem;
+	font-size: .75rem
+}
+
+pre[class*="language-"] {
+	border-radius: 0;
+	margin-left: -@padding--basic;
+	margin-right: -@padding--basic;
+	padding-left: @padding--basic;
+	padding-right: @padding--basic;
+
+	@media @screen--wide {
+		margin-left: -@padding--wide;
+		margin-right: -@padding--wide;
+		padding-left: @padding--wide;
+		padding-right: @padding--wide;
+	}
+}
+
+code {
+	padding: 3px;
+	border-radius: 3px;
+	background: @bg-color--side;
 }
 
 img {

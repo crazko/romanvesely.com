@@ -12,16 +12,16 @@ var paths = {
   },
   scripts: {
     src: [
+      'node_modules/prismjs/prism.js',
       'src/js/*/*.js',
-      'src/js/main.js',
     ],
     dist: 'dist/js',
   },
 };
 
-gulp.task('default', gulp.series(clean, gulp.parallel(styles, generate)));
-gulp.task('build', gulp.series(clean, gulp.parallel(buildStyles, generate)));
-gulp.task('watch', gulp.series(clean, gulp.parallel(styles, generate, watch)));
+gulp.task('default', gulp.series(clean, gulp.parallel(styles, scripts, generate)));
+gulp.task('build', gulp.series(clean, gulp.parallel(buildStyles, buildScripts, generate)));
+gulp.task('watch', gulp.series(clean, gulp.parallel(styles, scripts, generate, watch)));
 gulp.task(clean);
 
 function clean() {
