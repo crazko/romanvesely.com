@@ -9,6 +9,7 @@
 		display: block;
 		float: right;
 		clear: right;
+		.transition();
 
 		@media @screen--wide {
 			margin-bottom: @padding--basic / 2;
@@ -16,6 +17,10 @@
 
 		@media @screen--ultra {
 			float: left;
+		}
+
+		&:hover {
+			transform: rotate(10deg);
 		}
 	}
 }
