@@ -1,5 +1,8 @@
 html {
-	font: @font-size--small/1.75em system;
+	font-family: @font-families;
+	font-size: @font-size--small;
+	line-height: 1.75em;
+	font-weight: 300;
 	color: @font-color--main;
 	background-color: @bg-color--main;
 	overflow-y: scroll;
@@ -31,12 +34,6 @@ a {
 	// 	content: " 🔗"
 		content: " " url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="@{font-color--link}" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.38%"><path d="M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18" /></svg>');
 	}
-}
-
-h1,
-h2,
-h3 {
-	font-family: serif;
 }
 
 pre,
