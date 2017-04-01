@@ -41,7 +41,10 @@ h3 {
 
 pre,
 code {
-	font-size: .75rem
+	font-size: .75rem;
+	font-family: monospace !important;
+	color: @font-color--code;
+	background: @bg-color--code;
 }
 
 pre[class*="language-"] {
@@ -62,7 +65,10 @@ pre[class*="language-"] {
 code {
 	padding: 3px;
 	border-radius: 3px;
-	background: @bg-color--side;
+
+	pre & {
+		padding: 0;
+	}
 }
 
 img {
