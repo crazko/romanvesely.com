@@ -12,7 +12,8 @@ env:
 
 before_script:
     - composer install
-    - nvm use 6
+    - nvm ls
+    - nvm use 6.1
     - npm install
 
 script:
