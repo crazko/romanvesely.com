@@ -1,4 +1,4 @@
-# Roman Vesely personal site
+# Roman Vesely - personal site [![Build Status](https://img.shields.io/travis/crazko/romanvesely.com.svg)](https://travis-ci.org/crazko/romanvesely.com)
 
 - `$ gulp` - generates site from source files
 - `$ gulp watch` - starts local server and acts upon changes
