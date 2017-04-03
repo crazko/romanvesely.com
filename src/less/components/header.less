@@ -3,13 +3,13 @@
 		.clearfix();
 	}
 
-	&__image {
-		width: @logo-width;
-		border-radius: 50%;
-		display: block;
+	&__background {
+		.logoRadius();
+		background: url("../img/doomface.gif") center center no-repeat, linear-gradient(135deg, @color-supplementary, darken(@color-supplementary, 25%));
+		background-size: 80%, 100%;
 		float: right;
+		display: block;
 		clear: right;
-		.transition();
 
 		@media @screen--wide {
 			margin-bottom: @padding--basic / 2;
@@ -19,9 +19,15 @@
 			float: left;
 		}
 
-		&:hover {
-			transform: rotate(10deg);
+		&:hover img {
+			opacity: 1;
+			transform: translateX(@logo-push) rotate(@logo-rotate);
 		}
+	}
+
+	&__image {
+		.logoRadius();
+		.transition();
 	}
 }
 
