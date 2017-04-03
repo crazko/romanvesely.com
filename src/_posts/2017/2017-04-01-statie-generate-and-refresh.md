@@ -44,7 +44,7 @@ var run = require('gulp-run');
 var browserSync = require('browser-sync').create();
 
 function generate() {
-  return plugins.run('vendor/bin/statie generate').exec();
+  return run('vendor/bin/statie generate').exec();
 };
 
 function reload(done) {
@@ -91,9 +91,9 @@ $ npm install --save-dev gulp-less
 var less = require('gulp-less');
 
 function styles() {
-  return gulp.src('source/less/main.less')
+  return gulp.src('source/less/styles.less')
     .pipe(less())
-    .pipe(gulp.dest('output/css/styles.css'))
+    .pipe(gulp.dest('output/css/'))
     .pipe(browserSync.stream());
 };
 ```
@@ -109,14 +109,14 @@ var browserSync = require('browser-sync').create();
 gulp.task('default', gulp.parallel(styles, generate, watch));
 
 function styles() {
-  return gulp.src('source/less/main.less')
+  return gulp.src('source/less/styles.less')
     .pipe(less())
-    .pipe(gulp.dest('output/css/styles.css'))
+    .pipe(gulp.dest('output/css/'))
     .pipe(browserSync.stream());
 };
 
 function generate() {
-  return plugins.run('vendor/bin/statie generate').exec();
+  return run('vendor/bin/statie generate').exec();
 };
 
 function reload(done) {
