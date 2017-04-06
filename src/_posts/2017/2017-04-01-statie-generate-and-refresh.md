@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Statie: generate & refresh'
+title: 'How to re-generate and refresh static website in Statie?'
 description: '''
 Make development with <a href="https://github.com/Symplify/Statie">Statie</a> a bit more convenient with a little use of <a href="http://gulpjs.com/">gulp</a> and <a href="https://browsersync.io/">Browsersync</a>. Take a look at how to implement <a href="http://lesscss.org/">Less</a> preprocessor in the building workflow.
 '''
@@ -24,9 +24,11 @@ gulp.task('default', function () {
 });
 ```
 
-The problem is it doesn't give you a message when the job is done, so you cannot tell when to refresh a browser to see new content. To get over this problem [gulp-run](https://github.com/MrBoolean/gulp-run) package may be used.
+The problem is **it doesn't give you a message when the job is done**, so you cannot tell when to refresh a browser to see new content. To get over this problem [gulp-run](https://github.com/MrBoolean/gulp-run) package may be used.
 
-In short - previously I was able to make [desired output](https://github.com/crazko/romanvesely.com/blob/1b9a194de34461da23545ce966c3242477466976/gulpfile.js) with [gulp-sequence](https://www.npmjs.com/package/gulp-sequence) plugin. Fortunately, I recently found there is a new version of gulp coming with some handy features, namely: **gulp.series** and **gulp.parallel** which combine multiple functions together so tasks don't have to have dependencies anymore. And we can use those features now! Please, read a [guide how to set up gulp 4][4] before you proceed.
+Also, I recently found there is a new version of gulp coming with some handy features, namely: **gulp.series** and **gulp.parallel** which combine multiple functions together so tasks don't have to have dependencies anymore. And we can use those features now!
+
+Please, read a [guide how to set up gulp 4][4] before you proceed.
 
 ## Watching over changes
 
@@ -139,7 +141,7 @@ With gulp 4 new features **gulp.series** and **gulp.parallel** is really easy to
 
 You can also add a different task to build production ready code - as I did. Have a look at the [gulpfile.js of this site](https://github.com/crazko/romanvesely.com/blob/master/gulpfile.js).
 
-Do you know about anything that can improve aforementioned approach or do you use something completely different? Let me know.
+Do you know about anything that can improve my approach or do you use something completely different? Let me know.
 
 ## Sources
 - [StaticGen - Top Open-Source Static Site Generators][1]
