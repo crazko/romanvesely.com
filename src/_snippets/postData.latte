@@ -1,0 +1,7 @@
+{default $showReadingTime = true}
+{var $readingTime = $post['readingTime'] ?? $post->getReadingTimeInMinutes()}
+
+<small>
+	{$post->getDateInFormat('d. F Y')}
+	{if $showReadingTime} &bull; {$readingTime}min to read{/if}
+</small>

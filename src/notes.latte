@@ -6,7 +6,7 @@ title: Notes
 {block content}
 
 {foreach $posts as $post}
-{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
+	{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
 
 	{var $url = '/' . $post['relativeUrl'] . '/'}
 	{ifset $post['external']}
@@ -16,7 +16,8 @@ title: Notes
 	<article>
 		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{/ifset}
 		<h2><a href="{$url}">{$post['title']}</a></h2>
-		<small>{$post->getDateInFormat('d. F Y')}</small>
+		{include "postData", post => $post}
+
 		<p>{$post['description']|noescape}</p>
 		<p><a href="{$url}" class="link--more">Read more</a></p>
 	</article>
