@@ -35,3 +35,20 @@
 	height: @logo-width;
 	border-radius: 50%;
 }
+
+.anchor {
+    padding-right: .45rem;
+    margin-left: -1.5rem;
+    border: 0 !important;
+	visibility: hidden;
+    float: left;
+
+	h2:hover &,
+	h3:hover & {
+ 	   visibility: inherit;
+	}
+
+	&-icon {
+    	display: inline-block;
+	}
+}

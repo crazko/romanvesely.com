@@ -7,4 +7,5 @@ site:
 	homeNotesCount: 3
 
 configuration:
-    postRoute: :title
+	postRoute: :title
+	markdownHeadlineAnchors: true
