@@ -1,13 +1,5 @@
 {
-  "name": "romanvesely.com",
-  "version": "1.0.0",
-  "description": "personal site",
-  "author": "Roman Vesely",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git@github.com/crazko/romanvesely.com.git"
-  },
   "devDependencies": {
     "browser-sync": "^2.7.5",
     "del": "^2.2.2",
