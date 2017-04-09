@@ -72,7 +72,7 @@ function watch() {
 }
 ```
 
-With a use of `gulp.series(generate, reload)` we define that we want to reload the browser when new content generation finished, not before. Last step is to create a gulp task that will use previously defined functions:
+With a use of `gulp.series(generate, reload)` we define that we want to reload the browser when new content generation finished, not before. The last step is to create a gulp task that will use previously defined functions:
 
 ``` javascript
 gulp.task('default', gulp.parallel(generate, watch));

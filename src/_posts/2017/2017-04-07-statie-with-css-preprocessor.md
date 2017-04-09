@@ -2,7 +2,7 @@
 layout: post
 title: 'Implement a CSS preprocessor into Statie project'
 description: '''
-The most important part of a web page is its content. And I think that every web page content deserves to have some look. Take a look at how to implement <a href="http://lesscss.org/">Less</a> preprocessor into Statie project builded with gulp-based workflow.
+The most important part of a web page is its content. And I think that every web page content deserves to have some look. Take a look at how to implement <a href="http://lesscss.org/">Less</a> preprocessor into Statie project built with gulp-based workflow.
 '''
 ---
 
@@ -39,7 +39,7 @@ Do you see that `browserSync.stream()` in the last pipe? [It tells Browsersync][
 
 ## Put pieces together
 
-Now we need to add this function to the default gulp task, and also edit the `watch()` function - we don't want to generate new content when less files were changed, but instead create new styles.
+Now we need to add this function to the default gulp task, and also edit the `watch()` function - we don't want to generate new content when _*.less_ files were changed, but instead create new styles.
 
 Here is the final version of `gulpfile.js` - original code from the previous post with new changes. You can check what is new or updated:
 
@@ -83,8 +83,8 @@ Automation rules the development, right? Statie, gulp and Less, what a pleasure 
 
 Some additional thoughts on improvement:
 
-- You can **deal with javascipt** in the same way as with Less styles, just create a new function for that and edit the watch function and gulp task.
-- You can also add a different task to **build production ready code** (minification, media queries grouping, etc.) - as I did. Have a look at the [gulpfile.js of this site](https://github.com/crazko/romanvesely.com/blob/master/gulpfile.js).
+- You can **deal with javascript** in the same way as with Less styles, just create a new function for that and edit the watch function and gulp task.
+- You can also add a different task to **build production-ready code** (minification, media queries grouping, etc.) - as I did. Have a look at the [gulpfile.js of this site](https://github.com/crazko/romanvesely.com/blob/master/gulpfile.js).
 
 ## Sources
 - [How to re-generate and refresh static website in Statie?][1]
