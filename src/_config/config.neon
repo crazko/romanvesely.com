@@ -1,10 +1,13 @@
 site:
 	url: http://romanvesely.com
-	title: Roman Vesely
+	title: Roman Veselý
 	subtitle: Interested in web and stuff
 	author: Roman Veselý
 	email: info@romanvesely.com
 	homeNotesCount: 3
+
+codes:
+	disqus: roman-vesely-notes
 
 configuration:
 	postRoute: :title
