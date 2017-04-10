@@ -9,21 +9,25 @@
 	<description>Notes not only about web development.</description>
 	<atom:link href="{$site['url']}/rss.xml" rel="self" type="application/rss+xml" />
 	<pubDate>{date('r')}</pubDate>
+
 	{foreach $posts as $post}
-	{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
-	{first}<lastBuildDate>{$post->getDateInFormat('r')}</lastBuildDate>{/first}
-	{var $url = $site['url'] . '/' . $post->getRelativeUrl() . '/'}
-	{ifset $post['external']}
-		{var $url = $post['external']}
-	{/ifset}
-    <item>
-      <title>{$post['title']}</title>
-      <link>{$url}</link>
-      <guid isPermaLink="false">{$url}</guid>
-      <pubDate>{$post->getDateInFormat('r')}</pubDate>
-      <description>{$post['description']|striptags}</description>
-      <author>{$site['author']}</author>
-    </item>
+		{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
+
+		{first}<lastBuildDate>{$post->getDateInFormat('r')}</lastBuildDate>{/first}
+		{var $url = $site['url'] . '/' . $post->getRelativeUrl() . '/'}
+
+		{ifset $post['external']}
+			{var $url = $post['external']}
+		{/ifset}
+
+		<item>
+			<title>{$post['title']}</title>
+			<link>{$url}</link>
+			<guid isPermaLink="false">{$url}</guid>
+			<pubDate>{$post->getDateInFormat('r')}</pubDate>
+			<description>{$post['description']|striptags}</description>
+			<dc:creator>{$site['author']}</dc:creator>
+		</item>
 	{/foreach}
   </channel>
 </rss>
