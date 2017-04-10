@@ -14,3 +14,19 @@
 		margin-bottom: 0;
 	}
 }
+
+.post {
+	&__description {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		color: @color-supplementary;
+	}
+
+	&__signature {
+		text-align: right;
+
+		&::before {
+			content: '\2014\00A0';
+		}
+	}
+}

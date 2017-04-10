@@ -4,9 +4,11 @@
 	{include "postData", post => $post}
 	<p class="post__description">{$post['description']|noescape}</p>
 
-	{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{else}<hr>{/ifset}
+	{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{/ifset}
 
 	{$post['content']|noescape}
+
+	<p class="post__signature">Roman</p>
 
 	{include "postComments"}
 {/block}
