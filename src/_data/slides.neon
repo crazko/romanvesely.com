@@ -3,3 +3,4 @@ slides:
 		name: WordPress modern development
 		description: As a part of Geeky Friday sessions I showed how to leverage tools like git and composer to develop more maintainable WordPress applications.
 		url: https://speakerdeck.com/crazko/wordpress-modern-development
+		image: /assets/thumbs/wp-modern-development.jpg
