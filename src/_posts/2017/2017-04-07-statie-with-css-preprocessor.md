@@ -77,8 +77,9 @@ function watch() {
   gulp.watch(['source/**/*', '!source/less/**/*'], gulp.series(generate, reload)); // updated
 }
 ```
-
-> Check the [example project](https://github.com/crazko/statie-gulp-example) that uses Statie and gulp-driven workflow.
+<div class="tip" markdown="1">
+Check the [example project](https://github.com/crazko/statie-gulp-example) that uses Statie and gulp-driven workflow.
+</div>
 
 ## Conclusion
 Automation rules the development, right? Statie, gulp and Less, what a pleasure to create something great.

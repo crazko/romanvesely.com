@@ -28,7 +28,9 @@ The problem is **it doesn't give you a message when the job is done**, so you ca
 
 Also, I recently found there is a new version of gulp coming with some handy features, namely: **gulp.series** and **gulp.parallel** which combine multiple functions together so tasks don't have to have dependencies anymore. And we can use those features now!
 
-> Please, read a [guide how to set up gulp 4][4] before you proceed.
+<div class="tip" markdown="1">
+Please, read a [guide how to set up gulp 4](https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/) before you proceed.
+</div>
 
 ## Watching over changes
 
@@ -109,7 +111,9 @@ function watch() {
 }
 ```
 
-> If you are interested also in the frontend development, take a look at [how to implement a CSS preprocessor](/statie-with-css-preprocessor) into this workflow.
+<div class="tip" markdown="1">
+If you are interested also in the frontend development, take a look at [how to implement a CSS preprocessor](/statie-with-css-preprocessor) into this workflow.
+</div>
 
 ## Conclusion
 With gulp 4 new features **gulp.series** and **gulp.parallel** is really easy to create a building workflow when one function depends on another.
