@@ -7,6 +7,4 @@
 - `$ gulp build` - generates version ready for production
 - `$ gulp clean` - removes output folder
 
-## See
-- [Symplify/Statie](https://github.com/Symplify/Statie)
-- [TomasVotruba/tomasvotruba.cz](https://github.com/TomasVotruba/tomasvotruba.cz)
+Based on [Symplify/Statie](https://github.com/Symplify/Statie).

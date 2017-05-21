@@ -4,8 +4,10 @@ projects:
 		description: Browser extension that shows events' descriptions in Google Calendar.
 		url: https://chrome.google.com/webstore/detail/calex-for-google-calendar/ccoehijdbponhcemihobmdpaeenmgchg
 		repository: https://github.com/crazko/calex
+		image: /assets/thumbs/calex.png
 	-
 		name: Fomin
 		description: Fomin strength routine weight calculator.
 		url: https://crazko.github.io/fomin/
 		repository: https://github.com/crazko/fomin
+		image: /assets/thumbs/fomin.png
