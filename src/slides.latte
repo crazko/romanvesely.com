@@ -1,0 +1,16 @@
+---
+layout: default
+title: Slides
+---
+
+{block content}
+{foreach $slides as $slide}
+	{ifset $slide['image']}
+		{include "image", src => $slide['image'], url => $slide['url']}
+	{/ifset}
+
+	<h2><a href="{$slide['url']}">{$slide['name']}</a></h2>
+	<p>{$slide['description']}</p>
+	<p><a href="{$slide['url']}" class="link--more">Take a look</a><p>
+{/foreach}
+{/block}

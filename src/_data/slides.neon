@@ -1,0 +1,5 @@
+slides:
+	-
+		name: WordPress modern development
+		description: As a part of Geeky Friday sessions I showed how to leverage tools like git and composer to develop more maintainable WordPress applications.
+		url: https://www.slideshare.net/RomanVesel1/wordpress-modern-development
