@@ -1,13 +1,15 @@
 projects:
 	-
 		name: Calex
-		description: Browser extension that shows events' descriptions in Google Calendar.
+		title: Browser extension that shows events' descriptions in Google Calendar.
+		description: 'I like to take notes and keep a daily journal so I have tried many apps for that purpose, but none of them fulfilled my expectations. Since I use Google Calendar quite a lot and in many different aspects of my life, I decided to keep notes inside, in the descriptions of the events. This browser extension makes it easier to read them. Give it a try.'
 		url: https://chrome.google.com/webstore/detail/calex-for-google-calendar/ccoehijdbponhcemihobmdpaeenmgchg
 		repository: https://github.com/crazko/calex
 		image: /assets/thumbs/calex.png
 	-
 		name: Fomin
-		description: Fomin strength routine weight calculator.
+		title: Powerlifting routine weight calculator.
+		description: 'Whether you are interested in a strength or in a muscle gaining, powerlifting may be a good bet for you. Fomin is one of the prescribed programs out there. This small app helps you to calculate your weights needed to complete this routine.'
 		url: https://crazko.github.io/fomin/
 		repository: https://github.com/crazko/fomin
 		image: /assets/thumbs/fomin.png
