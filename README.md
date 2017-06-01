@@ -14,6 +14,7 @@ My personal web site [http://romanvesely.com](http://romanvesely.com).
 
 - `$ composer install && npm install`
 
+Commands:
 - `$ gulp` - generates site from source files
 - `$ gulp watch` - starts local server and acts upon changes
 - `$ gulp build` - generates version ready for production
