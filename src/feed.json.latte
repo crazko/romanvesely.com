@@ -1,0 +1,29 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Roman Veselý Notes",
+  "home_page_url": "{$site['url']}/notes/",
+  "feed_url": "{$site['url']}/feed.json",
+  "description": "Notes not only about web development",
+  "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format.",
+  "favicon": "{$site['url']}/favicon.ico",
+  "author": {
+    "name": "Roman Veselý"
+  },
+  "items": [
+  {foreach $posts as $post}
+    {continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
+    {var $url = $site['url'] . '/' . $post->getRelativeUrl() . '/'}
+    {ifset $post['external']}
+      {var $url = $post['external']}
+    {/ifset}
+    {
+      "id": "{$url}",
+      "url": "{$url}",
+      "title": "{$post['title']}",
+      "content_text": "{$post['description']|striptags}",
+      {ifset $post['promoImage']}"image": "{$site['url']}{$post['promoImage']}",{/ifset}
+      "date_published": "{$post->getDateInFormat('c')}"
+    }{sep},{/sep}
+  {/foreach}
+  ]
+}
