@@ -8,7 +8,14 @@
 
 	{$post['content']|noescape}
 
-	<p class="post__signature">Roman</p>
+	<div class="post__signature">Roman</div>
+
+	<section class="post__sources" n:ifset="$sources">
+		<h3>Sources</h3>
+		<ul class="post__sources-list" n:inner-foreach="$sources AS [$link, $title]">
+			<li><a href="{$link}">{$title}</a></li>
+		</ul>
+	</section>
 
 	{include "postComments"}
 {/block}

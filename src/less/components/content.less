@@ -23,8 +23,21 @@
 	}
 
 	&__signature {
+		margin: 3rem 0;
+		font-size: 1.1rem;
+
 		&::before {
 			content: '\2014\00A0';
+		}
+	}
+
+	&__sources {
+		padding: @padding--basic;
+		background-color: @bg-color--side;
+
+		&-list {
+			padding: 0;
+			list-style: none;
 		}
 	}
 }

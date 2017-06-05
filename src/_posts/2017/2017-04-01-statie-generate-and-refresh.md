@@ -1,14 +1,28 @@
 ---
 layout: post
 title: 'How to re-generate and refresh static website in Statie?'
-description: '''
-Make development with <a href="https://github.com/Symplify/Statie">Statie</a> a bit more convenient with a little use of <a href="http://gulpjs.com/">gulp</a> and <a href="https://browsersync.io/">Browsersync</a>.
-'''
+description: "Make development with <a href=\"https://github.com/Symplify/Statie\">Statie</a> a bit more convenient with a little use of <a href=\"http://gulpjs.com/\">gulp</a> and <a href=\"https://browsersync.io/\">Browsersync</a>."
+sources:
+	-
+		- "http://www.staticgen.com/"
+		- StaticGen - Top Open-Source Static Site Generators
+	-
+		- "https://github.com/Symplify/Statie"
+		- Statie - PHP Static Site Generator
+	-
+		- "https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/"
+		- "Statie: How to run it Locally"
+	-
+		- "https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/"
+		- The Complete-Ish Guide to Upgrading to Gulp 4
+	-
+		- "https://www.browsersync.io/docs/gulp#gulp-reload"
+		- Browsersync - Browser Reloading
 ---
 
-With a rising popularity of static site generators, we can find that there are [many of them][1] already in use. This blog runs on [Statie][2], another such a tool written by [Tomas Votruba](https://www.tomasvotruba.cz/), which differs from the others with [Nette](https://nette.org/) and its templating engine [Latte](https://latte.nette.org/) used in the background.
+With a rising popularity of static site generators, we can find that there are [many of them](http://www.staticgen.com/) already in use. This blog runs on [Statie](https://github.com/Symplify/Statie), another such a tool written by [Tomas Votruba](https://www.tomasvotruba.cz/), which differs from the others with [Nette](https://nette.org/) and its templating engine [Latte](https://latte.nette.org/) used in the background.
 
-If you are not aware what is this tool all about let's take a look at a post series about it on [Tomas' blog][3] firstly. It will lead you from the very beginning on how to run your own site upon Statie, so I won't deal with this here.
+If you are not aware what is this tool all about let's take a look at a post series about it on [Tomas' blog](https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/) firstly. It will lead you from the very beginning on how to run your own site upon Statie, so I won't deal with this here.
 
 In the end of the mentioned blog post, we can find a [simple gulp task](https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/#minitip-use-gulp-work-for-you) that runs generate command on every change in the source files. This is surely handy, but you still need to refresh your browser to be able to see your changes. With **Browsersync** we can make this step unnecessary.
 
@@ -119,15 +133,3 @@ If you are interested also in the frontend development, take a look at [how to i
 With gulp 4 new features **gulp.series** and **gulp.parallel** is really easy to create a building workflow when one function depends on another.
 
 Do you know about anything that can improve my approach or do you use something completely different? Let me know.
-
-## Sources
-- [StaticGen - Top Open-Source Static Site Generators][1]
-- [Statie - PHP Static Site Generator][2]
-- [Statie: How to run it Locally][3]
-- [The Complete-Ish Guide to Upgrading to Gulp 4][4]
-- [Browsersync - Browser Reloading](https://www.browsersync.io/docs/gulp#gulp-reload)
-
-[1]: http://www.staticgen.com/
-[2]: https://github.com/Symplify/Statie
-[3]: https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/
-[4]: https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/

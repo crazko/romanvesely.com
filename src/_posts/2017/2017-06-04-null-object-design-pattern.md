@@ -1,12 +1,23 @@
 ---
 layout: post
 title: 'Null Object design pattern'
-description: '''
-An object with no value or defined behavior can be helpful when no other "real" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable.
-'''
+description: "An object with no value or defined behavior can be helpful when no other \"real\" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable."
+sources:
+	-
+		- "https://www.youtube.com/watch?v=5DVDewOReoY"
+		- Chasing "Perfect" presentation
+	-
+		- "https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/"
+		- Pushing Polymorphism to the Database screencast
+	-
+		- "https://sourcemaking.com/design_patterns/null_object"
+		- Null Object Design Pattern on sourcemaking.com
+	-
+		- "https://en.wikipedia.org/wiki/Null_Object_pattern"
+		- Null Object Design Pattern on wikipedia.com
 ---
 
-Recently I saw a presentation called [Chasing "Perfect"][1] given by [Adam Wathan](https://twitter.com/adamwathan) at Laracon EU in 2015. In case you don't know him I strongly recommend you to follow him on Twitter, at least. I definitely did so.
+Recently I saw a presentation called [Chasing "Perfect"]({$sources[0][0]}) given by [Adam Wathan](https://twitter.com/adamwathan) at Laracon EU in 2015. In case you don't know him I strongly recommend you to follow him on Twitter, at least. I definitely did so.
 
 Consider this article as my notes or thoughts on presented topic so I won't forget this whole thing in the future.
 
@@ -165,16 +176,4 @@ Another useful application of a Null Object could be to create it as a stub in y
 
 Below the video, one of the commenters pointed out a question: _"How can we instantiate a coupon based on the user input with the same approach?"_
 
-Adam responded with [another screencast][2] and came with **Database Polymorphism** implemented with Laravel Eloquent. A remarkably elegant solution, I would say. For those of you, who work with Laravel, it might be truly educational.
-
-## Sources
-- [Chasing "Perfect" presentation][1]
-- [Pushing Polymorphism to the Database screencast][2]
-- [Null Object Design Pattern on sourcemaking.com][3]
-- [Null Object Design Pattern on wikipedia.com][4]
-
-[1]: https://www.youtube.com/watch?v=5DVDewOReoY
-[2]: https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/
-[3]: https://sourcemaking.com/design_patterns/null_object
-[4]: https://en.wikipedia.org/wiki/Null_Object_pattern
-
+Adam responded with [another screencast]({$sources[1][0]}) and came with **Database Polymorphism** implemented with Laravel Eloquent. A remarkably elegant solution, I would say. For those of you, who work with Laravel, it might be truly educational.
