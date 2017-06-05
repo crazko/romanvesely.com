@@ -16,6 +16,7 @@ var paths = {
   scripts: {
     src: [
       'node_modules/prismjs/prism.js',
+      'node_modules/prismjs/components/prism-php.js',
       'src/js/*/*.js',
     ],
     dist: 'dist/js',
@@ -83,10 +84,14 @@ function reload(done) {
 
 function manifest(callback) {
   var css = fs.readFileSync(paths.styles.dist + '/styles.css', 'utf8');
-  var hash = crypto.createHash('md5').update(css).digest('hex').slice(0, 10);
+  var js = fs.readFileSync(paths.scripts.dist + '/scripts.js', 'utf8');
+
+  var hashCSS = crypto.createHash('md5').update(css).digest('hex').slice(0, 10);
+  var hashJS = crypto.createHash('md5').update(js).digest('hex').slice(0, 10);
 
   return fs.writeFile('src/_config/manifest.neon', `manifest:
-	css: ${hash}`, callback);
+	css: ${hashCSS}
+	js: ${hashJS}`, callback);
 }
 
 function watch() {
