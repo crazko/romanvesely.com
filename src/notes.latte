@@ -16,7 +16,7 @@ title: Notes
 	<article>
 		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{/ifset}
 		<h2><a href="{$url}">{$post['title']}</a></h2>
-		{include "postData", post => $post}
+		{include "postMeta", post => $post}
 
 		<p>{$post['description']|noescape}</p>
 		<p><a href="{$url}" class="link--more">Read more</a></p>

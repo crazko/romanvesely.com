@@ -1,7 +1,7 @@
 {extends "default"}
 
 {block content}
-	{include "postData", post => $post}
+	{include "postMeta", post => $post}
 	<p class="post__description">{$post['description']|noescape}</p>
 
 	{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{/ifset}

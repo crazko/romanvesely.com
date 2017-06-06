@@ -20,7 +20,7 @@ dontIncludeTitle: true
 		{var $url = $post['external']}
 	{/ifset}
 
-	<li><a href="{$url}">{$post['title']}</a> {include "postData", post => $post, showReadingTime => false}</li>
+	<li><a href="{$url}">{$post['title']}</a> {include "postMeta", post => $post, showReadingTime => false}</li>
 
 	{breakIf $i === $site['homeNotesCount']}
 </ul>
