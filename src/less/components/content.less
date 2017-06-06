@@ -26,6 +26,10 @@
 		font-size: .7rem;
 		text-transform: uppercase;
 		color: @font-color--light;
+
+		&-delimiter {
+			color: @color-supplementary;
+		}
 	}
 
 	&__signature {
@@ -41,6 +45,11 @@
 	&__sources {
 		padding: @padding--basic;
 		background-color: @bg-color--side;
+		margin: auto -@padding--basic;
+
+		@media @screen--wide {
+			margin: auto;
+		}
 
 		&-list {
 			padding: 0;
@@ -48,3 +57,4 @@
 		}
 	}
 }
+

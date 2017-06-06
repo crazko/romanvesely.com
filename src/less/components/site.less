@@ -93,7 +93,7 @@ img {
 
 .wrapper--side {
 	background: @bg-color--side;
-	border-bottom: @content-line-width solid @content-line-color;
+	border-top: @content-line-width solid @content-line-color;
 }
 
 @media @screen--wide {
@@ -105,8 +105,8 @@ img {
 			float: left;
 			width: @wrapper-width--side;
 			position: fixed;
-			border-right: @content-line-width solid @content-line-color;
-			border-bottom: none;
+			border-left: @content-line-width solid @content-line-color;
+			border-top: none;
 		}
 
 		&--content {
