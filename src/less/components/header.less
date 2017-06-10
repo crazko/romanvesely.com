@@ -43,7 +43,14 @@
 	}
 
 	&__item {
+		display: inline-block;
+		margin-right: @padding--basic / 2;
+
 		&--logo {
+			display: inherit;
+			margin-right: inherit;
+			margin-bottom: @padding--basic / 2;
+
 			a {
 				font-size: 1.2rem;
 		    	font-weight: 200;
@@ -53,14 +60,8 @@
 		}
 
 		&--external {
-			display: inline-block;
 			font-weight: 200;
-			margin-right: @padding--basic / 2;
 		}
-	}
-
-	&__divider {
-		height: @padding--basic / 2;
 	}
 
 	@media @screen--wide {
@@ -72,11 +73,8 @@
 
 		&__item {
 			text-align: right;
-
-			&--external {
-				display: list-item;
-				margin: 0;
-			}
+			display: list-item;
+			margin: 0;
 
 			a {
 				display: block;
