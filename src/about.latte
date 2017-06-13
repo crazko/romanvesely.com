@@ -1,10 +1,26 @@
+---
+layout: default
+title: About
+---
+
 {php $opml = file_get_contents(getcwd() . '/src/_data/feedly.opml');}
 {php $opml = new SimpleXMLElement($opml);}
 
-<ul n:inner-foreach="$opml->body->outline as $category">
-	<li>{$category['title']}
-		<ol n:inner-foreach="$category->outline as $source">
-			<li>{$source['htmlUrl']}</li>
-		</ol>
-	</li>
-</ul>
+{block content}
+<p>My first websites were transmitted awkwardly on floppy disks. <a href="http://joecartoon.com/">Flash</a> and <a href="http://ps2.praystation.com/pound/v3/">ActionScript</a> proved me that web may be really fun. I have been devoted to the frontend development for many years and currently use tools like <a href="https://laravel.com/">Laravel</a>, <a href="https://nette.org/">Nette</a> or&nbsp;<a href="https://wordpress.org/">WordPress</a> to solve things. I'm also experienced in <a href="https://en.wikipedia.org/wiki/ABAP">ABAP</a> development in <a href="http://go.sap.com/">SAP</a> systems.</p>
+
+<p>I love science fiction, either as a film or a book. My body is tormented during run or in a gym regularly. Walks in the nature, more-day hiking as well as camping are something I cannot live without. I like to learn new things to become better than yesterday and often deal with the smallest details to make something great. I come from Kosice, Slovakia.</p>
+
+<blockquote>
+<p>Tell me what do you read and I will tell you what kind of a person you are.</p>
+</blockquote>
+
+<div class="feeds">
+	<div class="feeds__category" n:foreach="$opml->body->outline as $category">
+		<h3 class="feeds__category-title">{$category['title']}</h3>
+		<ul class="feeds__list" n:inner-foreach="$category->outline as $source">
+			<li><small><a href="{$source['xmlUrl']}" class="feeds__rss">rss</a></small> <a href="{$source['htmlUrl']}">{$source['title']}</a></li>
+		</ul>
+	</div>
+</div>
+{/block}
