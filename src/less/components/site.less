@@ -92,6 +92,26 @@ img {
     width: calc(100% + .49px);
 }
 
+blockquote {
+	font-family: serif;
+	font-style: italic;
+	quotes: "\201C""\201D""\2018""\2019";
+	margin: @padding--wide 0 @padding--basic @padding--wide;
+
+	&:before {
+		color: @color-supplementary;
+		content: open-quote;
+		font-size: 4em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+		line-height: 0;
+	}
+
+	p {
+		display: inline;
+	}
+}
+
 .wrapper--side {
 	background: @bg-color--side;
 	border-top: @content-line-width solid @content-line-color;
