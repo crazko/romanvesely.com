@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Roman subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Development" title="Development">
+            <outline type="rss" text="Filip Procházka" title="Filip Procházka" xmlUrl="http://filip-prochazka.com/blog.rss" htmlUrl="https://filip-prochazka.com/blog"/>
+            <outline type="rss" text="Nikola Poša - Blog" title="Nikola Poša - Blog" xmlUrl="http://blog.nikolaposa.in.rs/atom.xml" htmlUrl="http://blog.nikolaposa.in.rs/"/>
+            <outline type="rss" text="Blog Michala Maňáka" title="Blog Michala Maňáka" xmlUrl="http://www.manakmichal.cz/rss/" htmlUrl="http://www.manakmichal.cz/"/>
+            <outline type="rss" text="Yegor Bugayenko" title="Yegor Bugayenko" xmlUrl="http://www.yegor256.com/rss" htmlUrl="http://www.yegor256.com/"/>
+            <outline type="rss" text="dotdev" title="dotdev" xmlUrl="http://feed.dotdev.co/" htmlUrl="https://dotdev.co"/>
+            <outline type="rss" text="Martin Zlámal [BLOG]" title="Martin Zlámal [BLOG]" xmlUrl="http://zlml.cz/rss" htmlUrl="http://zlml.cz/"/>
+            <outline type="rss" text="BrandonSavage.net" title="BrandonSavage.net" xmlUrl="http://www.brandonsavage.net/feed/" htmlUrl="http://www.brandonsavage.net"/>
+            <outline type="rss" text="Kvasnička Jan - Blog" title="Kvasnička Jan - Blog" xmlUrl="http://blog.kvasnickajan.cz/feed/" htmlUrl="http://blog.kvasnickajan.cz"/>
+            <outline type="rss" text="Tomas Votruba writes about PHP and education" title="Tomas Votruba writes about PHP and education" xmlUrl="https://www.tomasvotruba.cz/rss.xml" htmlUrl="https://www.tomasvotruba.cz/blog/"/>
+            <outline type="rss" text="phpFashion" title="phpFashion" xmlUrl="http://phpfashion.com/feed/rss2" htmlUrl="https://phpfashion.com/"/>
+            <outline type="rss" text="Ondřej Mirtes" title="Ondřej Mirtes" xmlUrl="http://ondrej.mirtes.cz/rss" htmlUrl="https://ondrej.mirtes.cz/"/>
+            <outline type="rss" text="Almost Profound: The Audio Blog of Una Kravets" title="Almost Profound: The Audio Blog of Una Kravets" xmlUrl="https://una.im/feed.xml" htmlUrl="http://una.github.io"/>
+            <outline type="rss" text="Adam Wathan's Blog" title="Adam Wathan's Blog" xmlUrl="http://adamwathan.me/rss" htmlUrl="https://adamwathan.me/"/>
+            <outline type="rss" text="Banter bloguje" title="Banter bloguje" xmlUrl="http://blog.zvestov.cz/xml-rss2.php" htmlUrl="https://blog.zvestov.cz/"/>
+            <outline type="rss" text="Monica Dinculescu" title="Monica Dinculescu" xmlUrl="http://meowni.ca/atom.xml" htmlUrl="https://meowni.ca/"/>
+            <outline type="rss" text="CSS Wizardry" title="CSS Wizardry" xmlUrl="http://csswizardry.com/feed.xml" htmlUrl="https://csswizardry.com/"/>
+            <outline type="rss" text="Matthew Turland" title="Matthew Turland" xmlUrl="http://matthewturland.com/feed/" htmlUrl="https://matthewturland.com"/>
+            <outline type="rss" text="Robert Basic, software engineer, PHP consultant" title="Robert Basic, software engineer, PHP consultant" xmlUrl="https://robertbasic.com/index.xml" htmlUrl="https://robertbasic.com/index.xml"/>
+            <outline type="rss" text="Qafoo Team Blog" title="Qafoo Team Blog" xmlUrl="http://qafoo.com/blog.rss" htmlUrl="https://qafoo.com/blog.html"/>
+            <outline type="rss" text="The Practical Dev" title="The Practical Dev" xmlUrl="http://thepracticaldev.com/feed" htmlUrl="https://dev.to"/>
+            <outline type="rss" text="Private Feed for crazko" title="Private Feed for crazko" xmlUrl="https://github.com/crazko.private.atom?token=ABMqNaAPeEbn4SbwdCb6JMWPCpSzAJeOks62_EZIwA==" htmlUrl="https://github.com/crazko"/>
+            <outline type="rss" text="Vzhůru dolů" title="Vzhůru dolů" xmlUrl="http://feeds.feedburner.com/vzhurudolu" htmlUrl="http://www.vzhurudolu.cz"/>
+            <outline type="rss" text="Souki.cz" title="Souki.cz" xmlUrl="http://www.souki.cz/feed" htmlUrl="https://www.souki.cz"/>
+        </outline>
+        <outline text="Marketing" title="Marketing">
+            <outline type="rss" text="Petr Jurča" title="Petr Jurča" xmlUrl="http://petrjurca.cz/feed/" htmlUrl="https://petrjurca.cz"/>
+            <outline type="rss" text="Ottocopy blog" title="Ottocopy blog" xmlUrl="http://ottocopy.cz/rss" htmlUrl="http://ottocopy.cz/blog"/>
+            <outline type="rss" text="Miloslav Ježo Blog" title="Miloslav Ježo Blog" xmlUrl="http://www.miloslavjezo.sk/feed/" htmlUrl="http://www.miloslavjezo.sk"/>
+            <outline type="rss" text="Chodelka.sk" title="Chodelka.sk" xmlUrl="http://chodelka.sk/feed/" htmlUrl="https://www.chodelka.sk"/>
+        </outline>
+        <outline text="Blogs" title="Blogs">
+            <outline type="rss" text="miroslav pikus" title="miroslav pikus" xmlUrl="http://blog.hysteria.sk/feed/" htmlUrl="http://blog.hysteria.sk"/>
+            <outline type="rss" text="Ze zivota recruiterky" title="Ze zivota recruiterky" xmlUrl="http://zezivotarecruiterky.com/feed/" htmlUrl="https://zezivotarecruiterky.com"/>
+            <outline type="rss" text="Wait But Why" title="Wait But Why" xmlUrl="http://waitbutwhy.com/feed" htmlUrl="http://waitbutwhy.com"/>
+            <outline type="rss" text="Institut Eugena von Böhm-Bawerka" title="Institut Eugena von Böhm-Bawerka" xmlUrl="http://www.bawerk.eu/rss/articles/data.xml" htmlUrl="http://www.bawerk.eu/"/>
+            <outline type="rss" text="Blog Miša Duchoňa" title="Blog Miša Duchoňa" xmlUrl="http://www.misoduchon.com/feed/" htmlUrl="http://www.misoduchon.com"/>
+            <outline type="rss" text="peniaze.digital" title="peniaze.digital" xmlUrl="http://peniaze.digital/feed/" htmlUrl="http://peniaze.digital"/>
+            <outline type="rss" text="Juraj Karpis" title="Juraj Karpis" xmlUrl="http://www.jurajkarpis.com/feed/" htmlUrl="http://www.jurajkarpis.com"/>
+            <outline type="rss" text="truban.sk" title="truban.sk" xmlUrl="http://blog.truban.sk/rss" htmlUrl="http://www.truban.sk"/>
+            <outline type="rss" text="Mr. Money Mustache" title="Mr. Money Mustache" xmlUrl="http://feeds.feedburner.com/MrMoneyMustache" htmlUrl="http://www.mrmoneymustache.com"/>
+            <outline type="rss" text="Sám Sebe Pán™" title="Sám Sebe Pán™" xmlUrl="http://samsebepan.sk/feed/" htmlUrl="https://samsebepan.sk"/>
+            <outline type="rss" text="Rastislav Turek" title="Rastislav Turek" xmlUrl="http://feeds.feedburner.com/synopsi" htmlUrl="http://turek.co/"/>
+            <outline type="rss" text="Roman Veselý Notes" title="Roman Veselý Notes" xmlUrl="http://romanvesely.com/rss.xml" htmlUrl="http://romanvesely.com/notes/"/>
+            <outline type="rss" text="La Trine" title="La Trine" xmlUrl="http://www.latrine.cz/feed/rss2/" htmlUrl="https://www.latrine.cz/"/>
+            <outline type="rss" text="Misantropův zápisník" title="Misantropův zápisník" xmlUrl="http://feeds.feedburner.com/misantrop" htmlUrl="https://www.misantrop.info"/>
+            <outline type="rss" text="Ramblings of Juraj" title="Ramblings of Juraj" xmlUrl="http://juraj.bednar.sk/atom.xml" htmlUrl="https://juraj.bednar.sk/"/>
+        </outline>
+        <outline text="Health" title="Health">
+            <outline type="rss" text="No Will No Skill" title="No Will No Skill" xmlUrl="http://nowillnoskill.sk/feed/" htmlUrl="http://nowillnoskill.sk"/>
+            <outline type="rss" text="Vlado Zlatoš" title="Vlado Zlatoš" xmlUrl="http://www.vladozlatos.com/project/scripts/modules/project/export/rss.php" htmlUrl="http://www.vladozlatos.com"/>
+            <outline type="rss" text="Blog" title="Blog" xmlUrl="http://ladislavnagy1.blog.sme.sk/rss" htmlUrl="http://ladislavnagy1.blog.sme.sk/rss"/>
+            <outline type="rss" text="Viktor Kozubek" title="Viktor Kozubek" xmlUrl="http://viktorkozubek.com/feed/" htmlUrl="http://viktorkozubek.com"/>
+            <outline type="rss" text="Moderný Pračlovek" title="Moderný Pračlovek" xmlUrl="http://modernypraclovek.sk/feed/" htmlUrl="https://modernypraclovek.sk"/>
+            <outline type="rss" text="Martin Švihla RSS Feed" title="Martin Švihla RSS Feed" xmlUrl="http://www.martinsvihla.cz/feed/" htmlUrl="http://www.martinsvihla.cz"/>
+        </outline>
+        <outline text="Outdoor" title="Outdoor">
+            <outline type="rss" text="Tramper.sk" title="Tramper.sk" xmlUrl="http://tramper.sk/feed/" htmlUrl="http://tramper.sk"/>
+        </outline>
+    </body>
+</opml>
