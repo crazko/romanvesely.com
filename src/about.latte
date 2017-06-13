@@ -1,0 +1,10 @@
+{php $opml = file_get_contents(getcwd() . '/src/_data/feedly.opml');}
+{php $opml = new SimpleXMLElement($opml);}
+
+<ul n:inner-foreach="$opml->body->outline as $category">
+	<li>{$category['title']}
+		<ol n:inner-foreach="$category->outline as $source">
+			<li>{$source['htmlUrl']}</li>
+		</ol>
+	</li>
+</ul>
