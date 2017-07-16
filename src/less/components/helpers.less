@@ -6,6 +6,15 @@
 	@media @screen--wide {
 		margin: @padding--basic -@padding--wide;
 	}
+
+	img {
+		.transition(~"opacity");
+
+		// Remove glitch
+		// @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+		-webkit-transform: translateZ(0);
+		width: calc(100% + .49px);
+	}
 }
 
 .clearfix {
