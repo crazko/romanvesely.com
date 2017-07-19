@@ -61,7 +61,7 @@ function buildStyles() {
       .on('error', plugins.util.log))
     .pipe(plugins.groupCssMediaQueries())
     .pipe(plugins.autoprefixer({ browsers: 'last 3 versions'}))
-    .pipe(plugins.minifyCss())
+    .pipe(plugins.cleanCss())
     .pipe(plugins.rename('styles.css'))
     .pipe(gulp.dest(paths.styles.dist))
 };
