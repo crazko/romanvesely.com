@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Projects
+title: Playground
 ---
 
 {block content}
-{foreach $projects['serious'] as $project}
+{foreach $projects['trivial'] as $project}
 	{ifset $project['image']}
 		{include "image", src => $project['image'], url => $project['url']}
 	{/ifset}
