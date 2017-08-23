@@ -74,7 +74,7 @@ function buildScripts() {
 };
 
 function generate() {
-  return plugins.run('vendor/bin/statie generate --source=src --output=dist').exec();
+  return plugins.run('vendor/bin/statie generate src --output=dist').exec();
 };
 
 function reload(done) {

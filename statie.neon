@@ -1,0 +1,17 @@
+includes:
+    - src/_data/projects.neon
+    - src/_data/slides.neon
+
+parameters:
+	post_route: :title
+	markdown_headline_anchors: true
+
+	# other constants
+	author: Roman Veselý
+	email: info@romanvesely.com
+	site:
+		url: http://romanvesely.com
+		title: Roman Veselý
+		subtitle: Interested in web and stuff
+	codes:
+		disqus: roman-vesely-notes
