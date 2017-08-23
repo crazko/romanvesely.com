@@ -3,6 +3,7 @@ includes:
     - src/_data/slides.neon
 
 parameters:
+	amp: false
 	post_route: :title
 	markdown_headline_anchors: true
 
