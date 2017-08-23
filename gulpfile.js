@@ -31,7 +31,7 @@ gulp.task(clean);
 function clean() {
   return del([
     paths.dist,
-    'src/_config/manifest.neon'
+    'manifest.neon'
   ]);
 };
 
@@ -89,9 +89,10 @@ function manifest(callback) {
   var hashCSS = crypto.createHash('md5').update(css).digest('hex').slice(0, 10);
   var hashJS = crypto.createHash('md5').update(js).digest('hex').slice(0, 10);
 
-  return fs.writeFile('src/_config/manifest.neon', `manifest:
-	css: ${hashCSS}
-	js: ${hashJS}`, callback);
+  return fs.writeFile('manifest.neon', `parameters:
+    manifest:
+        css: ${hashCSS}
+        js: ${hashJS}`, callback);
 }
 
 function watch() {

@@ -1,4 +1,5 @@
 includes:
+    - manifest.neon
     - src/_data/projects.neon
     - src/_data/slides.neon
 

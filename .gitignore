@@ -4,4 +4,4 @@
 
 *.cache
 *.log
-/src/_config/manifest.neon
+manifest.neon
