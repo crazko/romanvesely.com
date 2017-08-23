@@ -20,7 +20,7 @@
       "id": "{$url}",
       "url": "{$url}",
       "title": "{$post['title']}",
-      "content_text": "{$post['description']|striptags}",
+      "content_text": "{$post['description']|striptags|replace:'"','\"'}",
       {ifset $post['promoImage']}"image": "{$site['url']}{$post['promoImage']}",{/ifset}
       "date_published": "{$post->getDateInFormat('c')}"
     }{sep},{/sep}
