@@ -101,5 +101,5 @@ function watch() {
 
   gulp.watch(paths.styles.src + '/**/*.less', styles);
   gulp.watch(paths.scripts.src, scripts);
-  gulp.watch(['src/**/*', '!src/less/**/*', '!src/js/**/*'], gulp.series(generate, reload));
+  gulp.watch(['*.neon', 'src/**/*', '!src/less/**/*', '!src/js/**/*'], gulp.series(generate, reload));
 }
