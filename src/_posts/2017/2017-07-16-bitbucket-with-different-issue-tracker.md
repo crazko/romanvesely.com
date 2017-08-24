@@ -15,6 +15,9 @@ sources:
 	-
 		- "https://regex101.com/"
 		- Online regex tester
+	-
+		- "https://blog.trello.com/trello-power-ups-for-jira-bitbucket-confluence-hipchat"
+		- New Trello Power Ups blog
 ---
 
 Oftentimes I like to wander around a program's or an app's settings and try every possible feature to see what can be adjusted. In the [company](http://www.nesskdc.sk/) I work for, we use Bitbucket intensively for projects developed for [non-profit organizations in our region](http://www.nesskdc.sk/en/community-support/ness-kdc-to-kosice/) as well as a place we store our own company-life-supporting applications.
@@ -69,3 +72,8 @@ Everything's good but it's not elegant enough. I'm a bit disappointed that Trell
 Eventually, we opted for another solution. Every pull request carries whole card's URL in the description, which makes it easy for us to get information about an issue, though, just not in every commit.
 
 Are you in a similar situation? Do you use a different approach? If so, I'd like to hear what's your solution or how do you utilize the custom link option.
+
+## Update 2017-08-23
+Recently I noticed interesting addon inside Bitbucket integrations - a power up for Trello that allows you join repositories to boards.
+
+Once you add one (or more) repo, you are able to create links from Trello's cards to commits, branches or pull requests. Even status of PR is visible; you can see directly who gave an approval, for example. We have adopted this feature very quickly. Read more about new possibilities [in their blog]({$sources[4][0]}).
