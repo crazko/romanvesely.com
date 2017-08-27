@@ -26,9 +26,16 @@
 		font-size: .7rem;
 		text-transform: uppercase;
 		color: @font-color--light;
+		padding: 0;
+		list-style: none;
 
-		&-delimiter {
-			color: @color-supplementary;
+		&-item {
+			display: inline-block;
+
+			&:not(:first-child):before {
+				color: @color-supplementary;
+				content: "● "; // &#9679;
+			}
 		}
 	}
 

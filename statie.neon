@@ -6,6 +6,7 @@ includes:
 parameters:
 	amp: false
 	post_route: :title
+	github_repository_slug: crazko/romanvesely.com
 	markdown_headline_anchors: true
 
 	# other constants

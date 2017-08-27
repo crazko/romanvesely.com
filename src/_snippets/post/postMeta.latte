@@ -1,7 +1,10 @@
 {default $showReadingTime = true}
+{default $showSuggestEdit = false}
+
 {var $readingTime = $post['readingTime'] ?? $post->getReadingTimeInMinutes()}
 
-<small class="post__meta">
-	{$post->getDateInFormat('d. F Y')}
-	{if $showReadingTime} <span class="post__meta-delimiter">&#9679;</span> {$readingTime}min to read{/if}
-</small>
+<ul class="post__meta">
+	<li class="post__meta-item">{$post->getDateInFormat('d. F Y')}</li>
+	{if $showReadingTime}<li class="post__meta-item">{$readingTime}min to read</li>{/if}
+	{if $showSuggestEdit}<li class="post__meta-item"><a href="{$post|githubEditPostUrl|replace:'master/source','master/src'}">suggest an edit</a></li>{/if}
+</ul>

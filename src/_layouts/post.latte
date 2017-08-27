@@ -1,7 +1,7 @@
 {extends "default"}
 
 {block content}
-	{include "postMeta", post => $post}
+	{include "postMeta", post => $post, showSuggestEdit => true}
 	<p class="post__description">{$post['description']|noescape}</p>
 
 	{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $site['url']}{/ifset}
