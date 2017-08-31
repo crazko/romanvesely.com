@@ -6,5 +6,5 @@
 <ul class="post__meta">
 	<li class="post__meta-item">{$post->getDateInFormat('d. F Y')}</li>
 	{if $showReadingTime}<li class="post__meta-item">{$readingTime}min to read</li>{/if}
-	{if $showSuggestEdit}<li class="post__meta-item"><a href="{$post|githubEditPostUrl|replace:'master/source','master/src'}">suggest an edit</a></li>{/if}
+	{if $showSuggestEdit}<li class="post__meta-item"><a href="{$post|githubEditPostUrl}">suggest an edit</a></li>{/if}
 </ul>
