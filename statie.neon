@@ -18,3 +18,6 @@ parameters:
 		subtitle: Interested in web and stuff
 	codes:
 		disqus: roman-vesely-notes
+	gravatar:
+		email: crazko@gmail.com
+		url: https://www.gravatar.com/avatar/

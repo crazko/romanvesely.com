@@ -1,0 +1,5 @@
+<img
+	src="{$gravatar['url']}{md5($gravatar['email'])|lower}{ifset $size}?size={$size}{/ifset}}"
+	alt=""
+	{ifset $class}class="{$class}"{/ifset}
+>
