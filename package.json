@@ -19,5 +19,8 @@
   "dependencies": {
     "normalize.css": "^3.0.3",
     "prismjs": "^1.6.0"
+  },
+  "scripts": {
+    "build": "gulp build"
   }
 }

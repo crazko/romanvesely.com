@@ -6,22 +6,20 @@ branches:
     only:
         - master
 
-env:
-    global:
-        - secure: KphWaD4Xh2OU8T6tIiX4YIggGbFHy9TArLOx5LqQXQJv1A6pJBORM7H5OQCtelDCemc89cKJ95i2HfKcniGyvXfcqaspv7L3m2CBvkZ2rCHcnK2jDVteyZ338qLcuoan/aa7vQ1Dej6GRibdrLJEfZEfnJXlyQQJszpaRCTJSRnqo8DSHsFRpPy8ASm79X2hBHfCtf3EugNPyE88CL8v5ajgaDQYJi9XU1Y67vdfZ0JMrQpSQZNfehZD3/U0CNZzLSdXWSicrRtRDl957wAy6MR6a2dvyHSn6f/8gLCHrtM9d3C9njxXGCZPjl56qg4Ok2G0EktzUVAJox5ukxK5UaPMRUxOD+x6RwpIbCMUduLPhwrb8Z5oxYG5r6NDhsh7f+VeTxGQ/eSFGZz/U60u0hXa6f+0NpgBi6e4rzQ83S66OQ07OCAJgjQXzuhlqRmQ5AMbmneYk+ljQhIXyOr28EV3mAwAMtjD1HevK2VnaP/jKduX1b2zBmfzoO7b6taIn6O+Av/5Hclgq5f4yWCZ4zBDuYVM9tamoe4LJH6Ep6J6vO0ARw2F3C3cT1NUoLUJ6Rj5Xwi3tM3f2jlnG3kYOcuzCXyxTWVN5V/Qp5D34Gv1R/2mGHKx/7gWjecTmMPxpSQWVGtKNDKfdbVGSs4WD1eWvlzcNNhF3dNuxZRFHf0=
-
-before_script:
+install:
     - composer install
-    - nvm install 6
-    - nvm use 6
     - npm install
 
 script:
-    - gulp build
-    - |
-      if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
-          vendor/bin/statie push-to-github crazko/romanvesely.com --token=${GH_TOKEN} --output=dist
-      fi
+    - npm run build
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GH_TOKEN
+    local_dir: dist
+    on:
+        branch: master
 
 notifications:
     email: false

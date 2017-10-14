@@ -1,4 +1,4 @@
-{block |strip}
+{spaceless}
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +23,12 @@
 		<nav role="navigation">
 			<ul class="nav">
 				<li class="nav__item nav__item--logo">
-					<a href="/"><div class="logo"><div class="logo__background"><img src="/img/logo.jpg" alt="" class="logo__image"></div></div>Roman Veselý</a> web developer
+					<a href="/">
+						<div class="logo">
+							<div class="logo__background">{include "gravatar", size => 200, class => 'logo__image'}</div>
+						</div>
+						Roman Veselý
+					</a> <strong class="title">software developer</strong>
 				</li>
 				<li class="nav__item"><a href="/about">about</a></li>
 				<li class="nav__item"><a href="/">notes</a></li>
@@ -53,4 +58,4 @@
 	{include "googleAnalytics"}
 </body>
 </html>
-{/block}
+{/spaceless}
