@@ -22,40 +22,40 @@ $titles = array_map(function($title) {
 	'4 rady ako prestať fajčiť',
 ]);
 
-// exit(0);
+$colorBackground = Image::rgb(254, 255, 241);
+$colorTitle = Image::rgb(27, 116, 171);
+$colorSite = Image::rgb(140, 140, 140);
 
-$colorBackground = Image::rgb(125, 0, 0);
-$colorForeground = Image::rgb(0, 0, 0);
 $font = './ubuntu.ttf';
-$fontSize = 50;
+$textSizeTitle = 50;
+$textSizeSite = 25;
 $angle = 0;
-$text = $titles[0];
-
-// $imageWidth = 500;
-// $imageHeight = 300;
 $padding = 100;
+$finalImageWidth = 800;
+// $finalImageHeight = 300;
 
-$box = imagettfbbox($fontSize, $angle, $font, $text);
-// Get your Text Width and Height
-$minX = min(array($box[0],$box[2],$box[4],$box[6]));
-$maxX = max(array($box[0],$box[2],$box[4],$box[6]));
-$minY = min(array($box[1],$box[3],$box[5],$box[7]));
-$maxY = max(array($box[1],$box[3],$box[5],$box[7]));
+$textTitle = $titles[1];
+$textSite = 'romanvesely.com';
+
+$box = imagettfbbox($textSizeTitle, $angle, $font, $textTitle);
+$minX = min($box[0], $box[2], $box[4], $box[6]);
+$maxX = max($box[0], $box[2], $box[4], $box[6]);
+$minY = min($box[1], $box[3], $box[5], $box[7]);
+$maxY = max($box[1], $box[3], $box[5], $box[7]);
 
 $textWidth = $maxX - $minX;
 $textHeight = $maxY - $minY;
 
-$imageWidth = $textWidth + $padding;
+$imageWidth = max($finalImageWidth, ($textWidth + $padding));
 $imageHeight = floor($imageWidth / 16 * 9);
 
-
 // Calculate coordinates of the text
-$x = ($imageWidth/2) - ($textWidth/2);
-$y = ($imageHeight/2) - ($textHeight/2) + $fontSize;
+$x = ($imageWidth / 2) - ($textWidth / 2);
+$y = ($imageHeight / 2) - ($textHeight / 2) + $textSizeTitle;
 
 $image = Image::fromBlank($imageWidth, $imageHeight, $colorBackground);
+$image->ttfText($textSizeTitle, $angle, $x, $y, $colorTitle, $font, $textTitle);
+$image->ttfText($textSizeSite, $angle, $imageWidth - 320, $imageHeight - 50, $colorSite, $font, $textSite);
+$image->resize($finalImageWidth, null);
 
-$image->ttfText($fontSize, $angle, $x, $y, $colorForeground, $font, $text);
-
-// $image->resize(500, 500);
 $image->send(Image::PNG, 7);
