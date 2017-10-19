@@ -1,7 +1,7 @@
-<?php
+#!/usr/bin/env php
+<?php declare(strict_types=1);
 
-include_once(__DIR__ . '/vendor/nette/utils/src/Utils/SmartObject.php');
-include_once(__DIR__ . '/vendor/nette/utils/src/Utils/Image.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Nette\Utils\Image;
 
@@ -34,7 +34,7 @@ $padding = 100;
 $finalImageWidth = 800;
 // $finalImageHeight = 300;
 
-$textTitle = $titles[1];
+$textTitle = $titles[4];
 $textSite = 'romanvesely.com';
 
 $box = imagettfbbox($textSizeTitle, $angle, $font, $textTitle);
