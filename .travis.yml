@@ -7,7 +7,7 @@ install:
     - npm install
 
 before_script:
-    - vendor/bin/phpstan analyse -l 7 libs
+    - composer check
 
 script:
     - npm run build

@@ -20,3 +20,4 @@ Commands:
 - `$ gulp watch` - starts local server and acts upon changes
 - `$ gulp build` - generates version ready for production
 - `$ gulp clean` - removes output folder
+- `$ composer check` - runs code standard and static analysis
