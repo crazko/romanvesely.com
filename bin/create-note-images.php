@@ -1,18 +1,12 @@
+<?php
 #!/usr/bin/env php
-<?php declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Nette\Utils\Image;
+use Crazko\Site\TextToImage\Image;
 
-// try {
-// } catch (\Nette\NotSupportedException $e) {
 
-// }
-
-$titles = array_map(function($title) {
-	return wordwrap($title, 30);
-}, [
+$titles = [
 	'Strange codes, multiple identities and team habits',
 	'Connect Bitbucket commit messages with different issue tracker',
 	'Null Object design pattern',
@@ -20,6 +14,7 @@ $titles = array_map(function($title) {
 	'How to re-generate and refresh static website in Statie?',
 	'Previnilosť',
 	'4 rady ako prestať fajčiť',
-]);
+];
 
-
+$image = (new Image($titles[1]))->get();
+$image->send();

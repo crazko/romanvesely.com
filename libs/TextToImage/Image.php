@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace crazko\TextToImage;
+namespace Crazko\Site\TextToImage;
 
+use Crazko\Site\TextToImage\Text;
 use Nette\Utils\Image as Img;
-use TextDimensions;
 
 class Image
 {
 	const ANGLE = 0;
-	const FONT = __DIR__ . '/../src/assets/ubuntu.ttf';
+	const FONT = __DIR__ . '/ubuntu.ttf';
 	const PADDING = 100;
 	const SIGNATURE = 'romanvesely.com';
 	const SIGNATURE_SIZE = 25;
@@ -19,7 +19,7 @@ class Image
 	private $font;
 
 	/**
-	 * @var string
+	 * @var Text
 	 */
 	private $text;
 
@@ -35,48 +35,28 @@ class Image
 
 	public function __construct(string $text, int $size = 50, int $width = 800)
 	{
-		$this->text = $text;
 		$this->size = $size;
+		$this->text = new Text($this->size, self::ANGLE, self::FONT, $text);
 		$this->width = $width;
+		$this->get();
 	}
 
 	public function get(): Img
 	{
-		$colorBackground = Img::rgb(254, 255, 241);
-		$colorTitle = Img::rgb(27, 116, 171);
-		$colorSite = Img::rgb(140, 140, 140);
-
-		$dimensions = new TextDimensions($this->size, self::ANGLE, self::FONT, $this->text);
-
-		$imageWidth = max($this->width, ($dimensions->width + $padding));
-		$imageHeight = floor($imageWidth / 16 * 9);
+		$width = max($this->width, ($this->text->width + self::PADDING));
+		$height = floor($width / 16 * 9);
 
 		// Calculate coordinates of the text
-		$x = ($imageWidth / 2) - ($dimensions->width / 2);
-		$y = ($imageHeight / 2) - ($dimensions->height / 2) + $this->size;
+		$x = ($width / 2) - ($this->text->width / 2);
+		$y = ($height / 2) - ($this->text->height / 2) + $this->size;
 
-		$image = Img::fromBlank($imageWidth, $imageHeight, $colorBackground);
-		$image->ttfText($this->size, self::ANGLE, $x, $y, $colorTitle, self::FONT, $this->text);
-		$image->ttfText(self::SIGNATURE_SIZE, self::ANGLE, $imageWidth - 320, $imageHeight - 50, $colorSite, self::FONT, self::SIGNATURE);
+		$image = Img::fromBlank($width, $height, Img::rgb(254, 255, 241));
+		$image->ttfText($this->size, self::ANGLE, $x, $y, Img::rgb(27, 116, 171), self::FONT, $this->text);
+		$image->ttfText(self::SIGNATURE_SIZE, self::ANGLE, $width - 320, $height - 50, Img::rgb(140, 140, 140), self::FONT, self::SIGNATURE);
 
 		$image->resize($this->width, null);
 
 		return $image;
-	}
-
-	private function textDimensions(): array
-	{
-		$box = imagettfbbox($this->size, self::ANGLE, self::FONT, $this->text);
-
-		$minX = min($box[0], $box[2], $box[4], $box[6]);
-		$maxX = max($box[0], $box[2], $box[4], $box[6]);
-		$minY = min($box[1], $box[3], $box[5], $box[7]);
-		$maxY = max($box[1], $box[3], $box[5], $box[7]);
-
-		return [
-			'width' => $maxX - $minX,
-			'height' => $maxY - $minY
-		];
 	}
 }
 
