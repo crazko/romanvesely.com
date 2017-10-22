@@ -27,6 +27,7 @@
         "@phpstan"
       ],
       "ecs": "vendor/bin/ecs check libs",
+      "fix": "vendor/bin/ecs check --fix libs",
       "phpstan": "vendor/bin/phpstan analyse -l 7 libs --ansi"
     }
 }

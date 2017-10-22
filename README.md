@@ -21,3 +21,4 @@ Commands:
 - `$ gulp build` - generates version ready for production
 - `$ gulp clean` - removes output folder
 - `$ composer check` - runs code standard and static analysis
+- `$ composer fix` - fixes code standard errors
