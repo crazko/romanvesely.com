@@ -2,13 +2,12 @@ language: php
 
 php: 7.1
 
-branches:
-    only:
-        - master
-
 install:
     - composer install
     - npm install
+
+before_script:
+    - vendor/bin/phpstan analyse -l 7 libs
 
 script:
     - npm run build
