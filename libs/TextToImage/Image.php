@@ -52,9 +52,10 @@ class Image
 
 		$image = Img::fromBlank($width, $height, Img::rgb(254, 255, 241));
 		$image->ttfText($this->size, self::ANGLE, $x, $y, Img::rgb(27, 116, 171), self::FONT, $this->text);
-		$image->ttfText(self::SIGNATURE_SIZE, self::ANGLE, $width - 320, $height - 50, Img::rgb(140, 140, 140), self::FONT, self::SIGNATURE);
-
 		$image->resize($this->width, null);
+
+		// Add signature
+		$image->ttfText(self::SIGNATURE_SIZE, self::ANGLE, $image->width - 320, $image->height - 50, Img::rgb(140, 140, 140), self::FONT, self::SIGNATURE);
 
 		return $image;
 	}
