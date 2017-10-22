@@ -33,7 +33,6 @@ class Image
         $this->size = $size;
         $this->text = new Text($this->size, self::ANGLE, self::FONT, $text);
         $this->width = $width;
-        $this->get();
     }
 
     public function get(): Img
