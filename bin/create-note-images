@@ -5,6 +5,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Crazko\Site\TextToImage\Image;
 use Nette\Utils\Finder;
+use Nette\Utils\Strings;
 
 function getTitle($content) {
 	preg_match_all("/title: (.*)/", (string) $content, $titles);
@@ -26,7 +27,7 @@ foreach(Finder::findFiles('*.md')->from(__DIR__ . '/../src/_posts') as $path => 
 
 	$title = getTitle($content);
 	$image = (new Image($title))->get();
-	$imageName = substr($file->getFilename(), 11, -3);
+	$imageName = Strings::webalize(substr($file->getFilename(), 11, -3));
 
 	$image->save(sprintf('%s/../src/assets/posts/%s.png', __DIR__, $imageName), 7);
 }

@@ -29,7 +29,7 @@ class Image
      */
     private $width;
 
-    public function __construct(string $text, int $size = 50, int $width = 800)
+    public function __construct(string $text, int $size = 50, int $width = 1200)
     {
         $this->size = $size;
         $this->text = new Text($this->size, self::ANGLE, self::FONT, $text);
@@ -39,7 +39,8 @@ class Image
     public function get(): Img
     {
         $width = max($this->width, ($this->text->width + self::PADDING));
-        $height = floor($width / 16 * 9);
+        // $height = floor($width / 16 * 9);
+        $height = floor($width / 2);
 
         // Calculate coordinates of the text
         $x = ($width / 2) - ($this->text->width / 2);

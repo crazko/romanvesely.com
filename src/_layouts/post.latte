@@ -1,5 +1,21 @@
 {extends "default"}
 
+{block meta}
+	{var $url = sprintf("%s/%s", $site['url'], $post['relativeUrl'])}
+	{var $image = sprintf("%s/assets/posts/%s.png", $site['url'], $post['relativeUrl'])}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@rmnvsl">
+	<meta name="twitter:title" content="{$post['title']|truncate:70}">
+	<meta name="twitter:description" content="{$post['description']|truncate:200}" />
+	<meta name="twitter:image" content="{$image}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:article:author" content="{$facebook}" />
+	<meta property="og:title" content="{$post['title']}" />
+	<meta property="og:description" content="{$post['description']}" />
+	<meta property="og:url" content="{$url}" />
+	<meta property="og:image" content="{$image}" />
+{/block}
+
 {block content}
 	{include "postMeta", post => $post, showSuggestEdit => true}
 	<p class="post__description">{$post['description']|noescape}</p>
