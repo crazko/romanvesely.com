@@ -117,11 +117,12 @@ blockquote {
 		box-sizing: border-box;
 
 		&--side {
-			float: left;
-			width: @wrapper-width--side;
-			position: fixed;
 			border-left: @content-line-width solid @content-line-color;
 			border-top: none;
+			float: left;
+			position: fixed;
+			width: @wrapper-width--side;
+			z-index: 10;
 		}
 
 		&--content {
