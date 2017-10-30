@@ -6,7 +6,7 @@ title: Slides
 {block content}
 {foreach $slides as $slide}
 	{ifset $slide['image']}
-		{include "image", src => $slide['image'], url => $slide['url']}
+		{include "image", src => $slide['image'], url => $slide['url'], alt => $slide['name']}
 	{/ifset}
 
 	<h2><a href="{$slide['url']}">{$slide['name']}</a></h2>

@@ -14,7 +14,7 @@ title: Notes
 	{/ifset}
 
 	<article>
-		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url}{/ifset}
+		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url, alt => $post['title']}{/ifset}
 		<h2><a href="{$url}">{$post['title']}</a></h2>
 		{include "postMeta", post => $post}
 

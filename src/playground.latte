@@ -6,7 +6,7 @@ title: Playground
 {block content}
 {foreach $projects['trivial'] as $project}
 	{ifset $project['image']}
-		{include "image", src => $project['image'], url => $project['url']}
+		{include "image", src => $project['image'], url => $project['url'], alt => $project['name']}
 	{/ifset}
 
 	<h2><a href="{$project['url']}">{$project['name']}</a></h2>
