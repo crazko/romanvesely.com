@@ -3,13 +3,13 @@
 [![Validate RSS](https://img.shields.io/badge/validate-rss-orange.svg)](https://validator.w3.org/feed/check.cgi?url=http%3A//romanvesely.com/rss.xml)
 [![Validate JSON Feed](https://img.shields.io/badge/validate-json_feed-green.svg)](http://validator.jsonfeed.org/?url=http%3A%2F%2Fromanvesely.com%2Ffeed.json)
 
-My personal web site [http://romanvesely.com](http://romanvesely.com).
+My personal web site [https://romanvesely.com](http://romanvesely.com).
 
 ## What's inside?
 - PHP static site generator [Statie](https://github.com/Symplify/Statie) that is built upon [Nette](https://nette.org/) framework.
 - CSS comes from [Less](http://lesscss.org/) pre-processor.
 - Assets and build are handled by task runner [gulp](http://gulpjs.com/) via [Travis](https://travis-ci.org).
-- Hosted directly from this repository thanks to [GitHub Pages](https://pages.github.com).
+- Hosted on [Netlify](https://www.netlify.com).
 
 ## Use it
 
