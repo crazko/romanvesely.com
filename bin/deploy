@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd dist
+zip -r ../site.zip ./*
+cd ..
+
+curl -H "Content-Type: application/zip" \
+     -H "Authorization: Bearer $NETLIFY_TOKEN" \
+     --data-binary "@site.zip" \
+     https://api.netlify.com/api/v1/sites/$NETLIFY_SITE/deploys

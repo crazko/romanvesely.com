@@ -13,10 +13,8 @@ script:
     - npm run build
 
 deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GH_TOKEN
-    local_dir: dist
+    provider: script
+    script: bin/deploy
     on:
         branch: master
 
