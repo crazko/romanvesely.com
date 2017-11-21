@@ -56,9 +56,11 @@
 		padding: @padding--basic;
 		background-color: @bg-color--side;
 		margin: auto -@padding--basic;
+		margin-top: 2em;
 
 		@media @screen--wide {
 			margin: auto;
+			margin-top: 2em;
 		}
 
 		&-list {
@@ -69,7 +71,21 @@
 
 	&__social {
 		#buttons {
+			background-color: @bg-color--side;
 			display: flex;
+			font-size: .7em;
+		}
+
+		&-button {
+			background: none;
+			border: 1px solid @font-color--link-content-line;
+			color: @color-supplementary;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			&:hover {
+				color: inherit;
+			}
 		}
 	}
 }
