@@ -43,7 +43,7 @@
 	}
 
 	&__signature {
-		margin: 2rem 0 1em;
+		margin: 1rem 0 2em;
 		font-size: 1.1rem;
 		text-align: right;
 
@@ -71,9 +71,11 @@
 
 	&__social {
 		#buttons {
+			align-items: center;
 			background-color: @bg-color--side;
 			display: flex;
 			font-size: .7em;
+			justify-content: center;
 		}
 
 		&-button {
@@ -82,9 +84,24 @@
 			color: @color-supplementary;
 			text-transform: uppercase;
 			font-weight: bold;
+			flex: 1 0 0;
+
+			@media @screen--small {
+				flex: 150px 0 0;
+			}
 
 			&:hover {
 				color: inherit;
+			}
+		}
+
+		&-share-text {
+			flex: 1 0 0;
+			text-indent: .5em;
+			display: none;
+
+			@media @screen--small {
+				display: inherit;
 			}
 		}
 	}
