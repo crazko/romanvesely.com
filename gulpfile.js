@@ -21,11 +21,15 @@ var paths = {
     ],
     dist: 'dist/js',
   },
+  font: {
+    src: 'src/font',
+    dist: 'dist/font',
+  },
 };
 
-gulp.task('default', gulp.series(clean, gulp.parallel(scripts, styles), manifest, generate));
-gulp.task('build', gulp.series(clean, gulp.parallel(buildScripts, buildStyles), manifest,  generate));
-gulp.task('watch', gulp.series(clean, generate, gulp.parallel(styles, scripts, watch)));
+gulp.task('default', gulp.series(clean, gulp.parallel(scripts, styles, font), manifest, generate));
+gulp.task('build', gulp.series(clean, gulp.parallel(buildScripts, buildStyles, font), manifest,  generate));
+gulp.task('watch', gulp.series(clean, generate, gulp.parallel(styles, scripts, font, watch)));
 gulp.task(clean);
 
 function clean() {
@@ -73,6 +77,11 @@ function buildScripts() {
     .pipe(gulp.dest(paths.scripts.dist))
 };
 
+function font() {
+  return gulp.src(paths.font.src)
+    .pipe(gulp.dest(paths.font.dist))
+};
+
 function generate() {
   return plugins.run('vendor/bin/statie generate src --output=dist').exec();
 };
@@ -102,5 +111,5 @@ function watch() {
 
   gulp.watch(paths.styles.src + '/**/*.less', styles);
   gulp.watch(paths.scripts.src, scripts);
-  gulp.watch(['*.neon', 'src/**/*', '!src/less/**/*', '!src/js/**/*'], gulp.series(generate, reload));
+  gulp.watch(['*.neon', 'src/**/*', '!src/less/**/*', '!src/js/**/*'], gulp.series(generate, reload, font));
 }
