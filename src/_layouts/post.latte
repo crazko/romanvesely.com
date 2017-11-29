@@ -25,7 +25,7 @@
 
 	<div class="post__signature">Roman</div>
 
-	{include "postSocial"}
+	<div id="social" class="post__social"></div>
 
 	<section class="post__sources" n:ifset="$sources">
 		<h3>Sources</h3>
@@ -33,5 +33,10 @@
 			<li><a href="{$link}">{$title}</a></li>
 		</ul>
 	</section>
+{/block}
 
+{block scripts}
+<script>
+	const disqusCode = {$codes['disqus']};
+</script>
 {/block}

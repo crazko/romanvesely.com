@@ -17,12 +17,12 @@ var paths = {
     src: [
       'node_modules/prismjs/prism.js',
       'node_modules/prismjs/components/prism-php.js',
-      'src/js/*/*.js',
+      'src/js/**/*.js',
     ],
     dist: 'dist/js',
   },
   font: {
-    src: 'src/font',
+    src: 'src/font/*',
     dist: 'dist/font',
   },
 };
@@ -73,7 +73,7 @@ function buildStyles() {
 function buildScripts() {
   return gulp.src(paths.scripts.src)
     .pipe(plugins.concat('scripts.js'))
-    .pipe(plugins.uglify())
+    .pipe(plugins.uglifyes())
     .pipe(gulp.dest(paths.scripts.dist))
 };
 

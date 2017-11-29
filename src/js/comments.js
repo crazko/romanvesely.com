@@ -1,6 +1,3 @@
-<div id="social" class="post__social"></div>
-
-<script>
 (() => {
 	const createButtons = () => {
 		const buttons = document.createElement('div');
@@ -53,23 +50,26 @@
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
-        script.src = '//' + {$codes['disqus']} + '.disqus.com/embed.js';
+        script.src = `//${disqusCode}.disqus.com/embed.js`;
 		script.setAttribute('data-timestamp', +new Date());
 
 		(document.head || document.body).appendChild(script);
 
         buttons.removeChild(button);
+  }
+
+  try {
+    const social = document.getElementById('social');
+    createButtons();
+    createShare();
+
+    const discussionButton = createDiscussionButton();
+
+    // Open when linked directly
+    if (window.location.hash.substr(0, 9) === '#comment-') {
+      loadDiscussion(discussionButton);
     }
-
-	const social = document.getElementById('social');
-	createButtons();
-	createShare();
-
-	const discussionButton = createDiscussionButton();
-
-	// Open when linked directly
-	if (window.location.hash.substr(0, 9) === '#comment-') {
-		loadDiscussion(discussionButton);
-	}
+  } catch (error) {
+    console.log(error);
+  }
 })();
-</script>
