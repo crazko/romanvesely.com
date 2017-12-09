@@ -10,26 +10,22 @@ var plugins = gulpLoadPlugins();
 var paths = {
   dist: 'dist',
   styles: {
-    src: 'src/less',
-    dist: 'dist/css',
+    src: 'src/assets/less',
+    dist: 'dist/assets/css',
   },
   scripts: {
     src: [
       'node_modules/prismjs/prism.js',
       'node_modules/prismjs/components/prism-php.js',
-      'src/js/**/*.js',
+      'src/assets/js/**/*.js',
     ],
-    dist: 'dist/js',
-  },
-  font: {
-    src: 'src/font/*',
-    dist: 'dist/font',
+    dist: 'dist/assets/js',
   },
 };
 
-gulp.task('default', gulp.series(clean, gulp.parallel(scripts, styles, font), manifest, generate));
-gulp.task('build', gulp.series(clean, gulp.parallel(buildScripts, buildStyles, font), manifest,  generate));
-gulp.task('watch', gulp.series(clean, generate, gulp.parallel(styles, scripts, font, watch)));
+gulp.task('default', gulp.series(clean, gulp.parallel(scripts, styles), manifest, generate));
+gulp.task('build', gulp.series(clean, gulp.parallel(buildScripts, buildStyles), manifest,  generate));
+gulp.task('watch', gulp.series(clean, generate, gulp.parallel(styles, scripts, watch)));
 gulp.task(clean);
 
 function clean() {
@@ -77,13 +73,13 @@ function buildScripts() {
     .pipe(gulp.dest(paths.scripts.dist))
 };
 
-function font() {
-  return gulp.src(paths.font.src)
-    .pipe(gulp.dest(paths.font.dist))
-};
+// function font() {
+//   return gulp.src(paths.font.src)
+//     .pipe(gulp.dest(paths.font.dist))
+// };
 
 function generate() {
-  return plugins.run('vendor/bin/statie generate src --output=dist').exec();
+  return plugins.run('vendor/bin/statie generate site --output=dist').exec();
 };
 
 function reload(done) {
@@ -111,5 +107,5 @@ function watch() {
 
   gulp.watch(paths.styles.src + '/**/*.less', styles);
   gulp.watch(paths.scripts.src, scripts);
-  gulp.watch(['*.neon', 'src/**/*', '!src/less/**/*', '!src/js/**/*'], gulp.series(generate, reload, font));
+  gulp.watch(['*.neon', 'site'], gulp.series(generate, reload));
 }

@@ -18,7 +18,7 @@ function getTitle($content) {
 	return $title;
 }
 
-foreach(Finder::findFiles('*.md')->from(__DIR__ . '/../src/_posts') as $path => $file) {
+foreach(Finder::findFiles('*.md')->from(__DIR__ . '/../site/_posts') as $path => $file) {
 	$content = file_get_contents($path);
 
 	if (preg_match("/promoImage/", $content)) {
@@ -29,5 +29,5 @@ foreach(Finder::findFiles('*.md')->from(__DIR__ . '/../src/_posts') as $path => 
 	$image = (new Image($title))->get();
 	$imageName = Strings::webalize(substr($file->getFilename(), 11, -3));
 
-	$image->save(sprintf('%s/../src/assets/posts/%s.png', __DIR__, $imageName), 7);
+	$image->save(sprintf('%s/../site/assets/posts/%s.png', __DIR__, $imageName), 7);
 }

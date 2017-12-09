@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-{php $opml = file_get_contents(getcwd() . '/src/_data/feedly.opml');}
+{php $opml = file_get_contents(getcwd() . '/site/_data/feedly.opml');}
 {php $opml = new SimpleXMLElement($opml);}
 
 {block content}

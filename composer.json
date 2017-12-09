@@ -9,7 +9,7 @@
     ],
     "autoload": {
       "psr-4": {
-        "Crazko\\Site\\": "libs"
+        "Crazko\\Site\\": "src"
       }
     },
     "require": {
@@ -26,8 +26,8 @@
         "@ecs",
         "@phpstan"
       ],
-      "ecs": "vendor/bin/ecs check libs",
-      "fix": "vendor/bin/ecs check --fix libs",
-      "phpstan": "vendor/bin/phpstan analyse -l 7 libs --ansi"
+      "ecs": "vendor/bin/ecs check src",
+      "fix": "vendor/bin/ecs check --fix src",
+      "phpstan": "vendor/bin/phpstan analyse -l 7 src --ansi"
     }
 }
