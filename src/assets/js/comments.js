@@ -1,4 +1,4 @@
-(() => {
+((window, document) => {
   const createButtons = () => {
     const buttons = document.createElement('div');
     buttons.id = 'buttons';
@@ -73,22 +73,24 @@
     }
 
     // Loads comments immediately when it's needed
-    const discussionButtonObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            loadDiscussion(discussionButton);
-            observer.disconnect();
-          }
-        });
-      },
-      {
-        threshold: 0.5
-      }
-    );
+    if (window.IntersectionObserver) {
+      const discussionButtonObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              loadDiscussion(discussionButton);
+              observer.disconnect();
+            }
+          });
+        },
+        {
+          threshold: 0.5
+        }
+      );
 
-    discussionButtonObserver.observe(discussionButton);
+      discussionButtonObserver.observe(discussionButton);
+    }
   } catch (error) {
     // console.log(error);
   }
-})();
+})(window, document);
