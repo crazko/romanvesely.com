@@ -7,4 +7,5 @@ Stojím na zastávke a čakám aj keď nemusím, predsa len domov to mám pár m
 '''
 external: https://dennikn.sk/blog/previnilost/
 readingTime: 2
+showCommentsCount: false
 ---

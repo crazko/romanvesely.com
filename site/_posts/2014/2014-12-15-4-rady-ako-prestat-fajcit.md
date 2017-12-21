@@ -7,4 +7,5 @@ description: '''
 '''
 external: https://dennikn.sk/blog/4-rady-ako-prestat-fajcit/
 readingTime: 4
+showCommentsCount: false
 ---
