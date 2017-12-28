@@ -31,7 +31,7 @@ gulp.task(clean);
 function clean() {
   return del([
     paths.dist,
-    'manifest.neon'
+    'manifest.yml'
   ]);
 };
 
@@ -89,7 +89,7 @@ function manifest(callback) {
   var hashCSS = crypto.createHash('md5').update(css).digest('hex').slice(0, 10);
   var hashJS = crypto.createHash('md5').update(js).digest('hex').slice(0, 10);
 
-  return fs.writeFile('manifest.neon', `parameters:
+  return fs.writeFile('manifest.yml', `parameters:
     manifest:
         css: ${hashCSS}
         js: ${hashJS}`, callback);
