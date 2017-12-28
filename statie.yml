@@ -20,3 +20,12 @@ parameters:
     gravatar:
         email: crazko@gmail.com
         url: https://www.gravatar.com/avatar/
+
+    generators:
+        posts:
+          variable: 'post'
+          variable_global: 'posts'
+          path: '_posts'
+          layout: 'post'
+          route_prefix: ''
+          object: Symplify\Statie\Renderable\File\PostFile
