@@ -73,11 +73,6 @@ function buildScripts() {
     .pipe(gulp.dest(paths.scripts.dist))
 };
 
-// function font() {
-//   return gulp.src(paths.font.src)
-//     .pipe(gulp.dest(paths.font.dist))
-// };
-
 function generate() {
   return plugins.run('vendor/bin/statie generate site --output=dist').exec();
 };
