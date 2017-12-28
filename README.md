@@ -6,7 +6,7 @@
 My personal web site [https://romanvesely.com](http://romanvesely.com).
 
 ## What's inside?
-- PHP static site generator [Statie](https://github.com/Symplify/Statie) that is built upon [Nette](https://nette.org/) framework.
+- PHP static site generator [Statie](https://github.com/Symplify/Statie) - see documentation at [www.statie.org](https://www.statie.org)
 - CSS comes from [Less](http://lesscss.org/) pre-processor.
 - Assets and build are handled by task runner [gulp](http://gulpjs.com/) via [Travis](https://travis-ci.org).
 - Hosted on [Netlify](https://www.netlify.com).
