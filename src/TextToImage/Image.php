@@ -2,16 +2,18 @@
 
 namespace Crazko\Site\TextToImage;
 
-use Crazko\Site\TextToImage\Color;
-use Crazko\Site\TextToImage\Text;
 use Nette\Utils\Image as Img;
 
 class Image
 {
     const ANGLE = 0;
+
     const FONT = __DIR__ . '/ubuntu.ttf';
+
     const PADDING = 100;
+
     const SIGNATURE = 'romanvesely.com';
+
     const SIGNATURE_SIZE = 25;
 
     /**

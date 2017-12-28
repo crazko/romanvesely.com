@@ -28,9 +28,9 @@ class Text
         $minY = min($box[1], $box[3], $box[5], $box[7]);
         $maxY = max($box[1], $box[3], $box[5], $box[7]);
 
-        $this->dimensions =  [
+        $this->dimensions = [
             'width' => $maxX - $minX,
-            'height' => $maxY - $minY
+            'height' => $maxY - $minY,
         ];
     }
 
