@@ -4,5 +4,5 @@
 
 *.cache
 *.log
-manifest.neon
+manifest.yml
 site.zip
