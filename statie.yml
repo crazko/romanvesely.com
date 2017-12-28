@@ -4,8 +4,7 @@ imports:
     - { resource: 'site/_data/slides.yml' }
 
 parameters:
-    post_route: :title
-    github_repository_slug: https://github.com/crazko/romanvesely.com/tree/master/site
+    github_repository_source_directory: https://github.com/crazko/romanvesely.com/tree/master/site
     markdown_headline_anchors: true
 
     # other constants
