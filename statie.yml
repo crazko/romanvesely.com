@@ -1,0 +1,30 @@
+imports:
+    - { resource: 'manifest.yml', ignore_errors: true }
+    - { resource: 'site/_data/projects.yml' }
+    - { resource: 'site/_data/slides.yml' }
+
+parameters:
+    github_repository_source_directory: https://github.com/crazko/romanvesely.com/tree/master/site
+    markdown_headline_anchors: true
+
+    # other constants
+    author: Roman Veselý
+    email: info@romanvesely.com
+    site:
+        url: https://romanvesely.com
+        title: Roman Veselý
+        subtitle: Interested in web and stuff
+    codes:
+        disqus: roman-vesely-notes
+    gravatar:
+        email: crazko@gmail.com
+        url: https://www.gravatar.com/avatar/
+
+    generators:
+        posts:
+          variable: 'post'
+          variable_global: 'posts'
+          path: '_posts'
+          layout: 'post'
+          route_prefix: ''
+          object: Symplify\Statie\Renderable\File\PostFile
