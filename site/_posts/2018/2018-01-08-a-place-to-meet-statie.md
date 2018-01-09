@@ -55,4 +55,6 @@ What's left? [Source code](https://github.com/crazko/statie-web) lives on GitHub
 
 And that's it. I hope the site will grow together with Statie and that some of you will pitch in as well.
 
+<div class="tip" markdown="1">
 Do you use Statie? Contribute now and [add your site](https://github.com/crazko/statie-web/edit/master/source/_data/projects.yml) to the list of projects!
+</div>
