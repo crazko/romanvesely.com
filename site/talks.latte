@@ -1,0 +1,16 @@
+---
+layout: default
+title: Talks
+---
+
+{block content}
+{foreach $talks as $talk}
+	{ifset $talk['image']}
+		{include "image", src => $talk['image'], url => $talk['url'], alt => $talk['name']}
+	{/ifset}
+
+	<h2><a href="{$talk['url']}">{$talk['name']}</a></h2>
+	<p>{$talk['description']}</p>
+	<p><a href="{$talk['url']}" class="link--more">Take a look</a><p>
+{/foreach}
+{/block}
