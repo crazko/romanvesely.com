@@ -10,6 +10,9 @@ title: Talks
 	{/ifset}
 
 	<h2><a href="{$talk['url']}">{$talk['name']}</a></h2>
+	<ul class="post__meta">
+		<li class="post__meta-item">{$talk['date']}</li>
+	</ul>
 	<p>{$talk['description']|noescape}</p>
 	<p><a href="{$talk['url']}" class="link--more">Take a look</a><p>
 {/foreach}
