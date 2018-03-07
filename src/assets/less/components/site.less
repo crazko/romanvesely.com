@@ -19,19 +19,22 @@ html {
 a {
 	color: @font-color--link;
 	text-decoration: none;
-	.transition(~"color");
+	.transition(~'color');
 
 	&:hover {
 		color: @font-color--link-content;
 
 		img {
-			opacity: .8;
+			opacity: 0.8;
 		}
 	}
 }
 
 h1 {
+	background: @bg-color--side;
 	margin-top: 0;
+	padding: @padding--basic;
+	line-height: 1.25em;
 }
 
 h2 {
@@ -40,14 +43,14 @@ h2 {
 
 pre,
 code {
-	font-size: .7rem;
+	font-size: 0.7rem;
 	font-family: monospace !important;
 	line-height: 1.35 !important;
 	color: @font-color--code;
 	background: @bg-color--code;
 }
 
-pre[class*="language-"] {
+pre[class*='language-'] {
 	border-radius: 0;
 	margin-left: -@padding--basic;
 	margin-right: -@padding--basic;
@@ -63,7 +66,7 @@ pre[class*="language-"] {
 }
 
 code {
-	font-size: .8rem;
+	font-size: 0.8rem;
 	padding: 3px 5px;
 
 	pre & {
@@ -82,7 +85,7 @@ img {
 blockquote {
 	font-family: serif;
 	font-style: italic;
-	quotes: "\201C""\201D""\2018""\2019";
+	quotes: '\201C' '\201D' '\2018' '\2019';
 	margin: @padding--wide 0 @padding--basic @padding--wide;
 
 	&:before {
@@ -97,12 +100,6 @@ blockquote {
 	p {
 		display: inline;
 	}
-}
-
-.wrapper--side {
-	background: @bg-color--side;
-	border-top: @content-line-width solid @content-line-color;
-	box-shadow: 0 0 15px rgba(27, 116, 171, .25);
 }
 
 @media @screen--wide {

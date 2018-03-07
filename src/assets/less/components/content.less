@@ -1,9 +1,12 @@
 .content {
+	margin: 0 auto;
 	max-width: @content-width;
 	padding: @padding--basic;
+	padding-top: 0;
 
 	@media @screen--wide {
 		padding: @padding--wide;
+		padding-top: 0;
 	}
 
 	a {
@@ -26,7 +29,7 @@
 	}
 
 	&__meta {
-		font-size: .7rem;
+		font-size: 0.7rem;
 		text-transform: uppercase;
 		color: @font-color--light;
 		padding: 0;
@@ -37,7 +40,7 @@
 
 			&:not(:first-child):before {
 				color: @color-supplementary;
-				content: "● "; // &#9679;
+				content: '● '; // &#9679;
 			}
 		}
 	}
@@ -74,7 +77,7 @@
 			align-items: center;
 			background-color: @bg-color--side;
 			display: flex;
-			font-size: .7em;
+			font-size: 0.7em;
 			justify-content: center;
 		}
 
@@ -97,7 +100,7 @@
 
 		&-share-text {
 			flex: 1 0 0;
-			text-indent: .5em;
+			text-indent: 0.5em;
 			display: none;
 
 			@media @screen--small {

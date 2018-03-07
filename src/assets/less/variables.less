@@ -3,9 +3,9 @@
 @bp--wide: 900px;
 @bp--ultra: 1250px;
 
-@screen--small: ~"screen and (min-width: @{bp--small})";
-@screen--wide: ~"screen and (min-width: @{bp--wide})";
-@screen--ultra: ~"screen and (min-width: @{bp--ultra})";
+@screen--small: ~'screen and (min-width: @{bp--small})';
+@screen--wide: ~'screen and (min-width: @{bp--wide})';
+@screen--ultra: ~'screen and (min-width: @{bp--ultra})';
 
 // colors
 @color-supplementary: #1b74ab;
@@ -27,19 +27,8 @@
 @content-line-color: @color-supplementary;
 
 // fonts
-@font-families: -apple-system,
-		system-ui,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Oxygen-Sans,
-		Ubuntu,
-		Cantarell,
-		"Helvetica Neue",
-		sans-serif,
-		"Apple Color Emoji",
-		"Segoe UI Emoji",
-		"Segoe UI Symbol";
+@font-families: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+	'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 @font-size--small: 18px;
 @font-size--wide: 20px;
@@ -54,5 +43,5 @@
 @logo-width: 100px;
 @logo-rotate: 55deg;
 @logo-push: calc((pi() * (@logo-width / 2)) / 180 * @logo-rotate);
-@content-width: 700px;
+@content-width: 800px;
 @content-line-width: 10px;
