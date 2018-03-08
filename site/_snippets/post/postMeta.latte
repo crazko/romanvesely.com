@@ -1,11 +1,13 @@
 {default $showReadingTime = true}
 {default $showCommentsCount = $post['showCommentsCount'] ?? true}
 {default $showSuggestEdit = false}
+{default $isDetail = false}
 
 {var $readingTime = $post['readingTime'] ?? $post->getReadingTimeInMinutes()}
 {var $url = sprintf("%s/%s", $site['url'], $post['relativeUrl'])}
+{var $classes = $isDetail ? "post__meta post__meta--detail" : "post__meta"}
 
-<ul class="post__meta">
+<ul class="{$classes}">
 	<li class="post__meta-item">{$post->getDateInFormat('d. F Y')}</li>
 	{if $showCommentsCount}<li class="post__meta-item"><span class="disqus-comment-count" data-disqus-url="{$url}"></span></li>{/if}
 	{if $showReadingTime}<li class="post__meta-item">{$readingTime}min to read</li>{/if}
