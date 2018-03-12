@@ -8,26 +8,26 @@
 	}
 
 	img {
-		.transition(~"opacity");
+		.transition(~'opacity');
 
 		// Remove glitch
 		// @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
 		-webkit-transform: translateZ(0);
-		width: calc(100% + .49px);
+		width: calc(100% + 0.49px);
 	}
 }
 
 .clearfix {
-  &::after {
-	display: block;
-	content: "";
-	clear: both;
-  }
+	&::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
 }
 
 .tip {
 	border: 10px solid @content-line-color;
-	margin: 1rem 0;
+	margin: 1rem calc(~'-1rem - 10px');
 	padding: 1rem;
 
 	p:first-child {
@@ -42,11 +42,11 @@
 }
 
 .transition(@property: all) {
-	transition: @property ease .25s;
+	transition: @property ease 0.25s;
 }
 
 .link--more {
-	font-size: .8em;
+	font-size: 0.8em;
 }
 
 .logoRadius {
@@ -56,7 +56,7 @@
 }
 
 .anchor {
-	padding-right: .45rem;
+	padding-right: 0.45rem;
 	margin-left: -1.5rem;
 	border: 0 !important;
 	visibility: hidden;
@@ -64,7 +64,7 @@
 
 	h2:hover &,
 	h3:hover & {
- 	   visibility: inherit;
+		visibility: inherit;
 	}
 
 	&-icon {
@@ -82,4 +82,4 @@
 	white-space: nowrap;
 	clip-path: inset(50%);
 	border: 0;
-  }
+}
