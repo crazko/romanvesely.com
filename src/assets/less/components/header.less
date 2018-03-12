@@ -4,23 +4,41 @@
 
 	&__container {
 		display: flex;
+		flex-direction: column;
 		margin: 0 auto;
 		max-width: @content-width;
 		padding: @padding--basic;
+
+		@media @screen--wide {
+			flex-direction: row;
+		}
 	}
 }
 
 .about {
 	display: flex;
-	flex-direction: column;
-	margin-left: 1em;
+	flex: 1;
+
+	@media @screen--wide {
+		flex-direction: column;
+		margin-left: 1em;
+	}
+
+	&__name {
+		flex: 1;
+	}
 
 	&__title {
 		color: lighten(@font-color--main, 50);
+		display: none;
 		font-size: 0.6em;
 		font-weight: normal;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+
+		@media @screen--wide {
+			display: inherit;
+		}
 	}
 }
 
@@ -30,7 +48,12 @@
 }
 
 .nav {
+	margin-bottom: 0;
 	padding: 0;
+
+	@media @screen--wide {
+		margin-bottom: inherit;
+	}
 
 	&__item {
 		display: inline-block;
