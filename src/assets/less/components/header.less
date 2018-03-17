@@ -58,9 +58,21 @@
 	&__item {
 		display: inline-block;
 		list-style: none;
+		position: relative;
 
 		&:not(:last-child) {
 			margin-right: @padding--basic / 2;
+		}
+
+		&--active:after {
+			background: @font-color--link-content-line;
+			content: '';
+			display: block;
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 1em;
 		}
 
 		&--funky {
