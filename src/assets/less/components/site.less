@@ -1,13 +1,12 @@
 html {
+	background-color: @bg-color--main;
+	color: @font-color--main;
 	font-family: @font-families;
 	font-size: @font-size--small;
-	line-height: 1.75em;
 	font-weight: 300;
-	color: @font-color--main;
-	background-color: @bg-color--main;
+	line-height: 1.75em;
 	overflow-y: scroll;
 	overflow-x: hidden; // logo hover fix
-	position: relative;
 
 	@media @screen--wide {
 		font-size: @font-size--wide;
@@ -29,11 +28,15 @@ a {
 }
 
 h1 {
-	border-top: 1px solid shade(@bg-color--side, 10);
-	margin: 0;
-	padding: @padding--basic;
+	border-top: 1px solid @color-base2;
 	line-height: 1.25em;
+	margin: 0;
+	padding: 1rem;
 	text-align: center;
+
+	@media @screen--wide {
+		padding: 2rem;
+	}
 }
 
 h2 {
@@ -42,10 +45,10 @@ h2 {
 
 pre,
 code {
-	font-size: 0.7rem;
-	font-family: monospace !important;
-	line-height: 1.35 !important;
 	color: @font-color--code;
+	font-family: monospace !important;
+	font-size: 0.7rem;
+	line-height: 1.35 !important;
 }
 
 code:not([class]) {
@@ -88,7 +91,7 @@ blockquote {
 	font-family: serif;
 	font-style: italic;
 	quotes: '\201C' '\201D' '\2018' '\2019';
-	margin: @padding--wide 0 @padding--basic @padding--wide;
+	margin: @padding--wide @padding--basic;
 
 	&:before {
 		color: @color-supplementary;
@@ -101,26 +104,5 @@ blockquote {
 
 	p {
 		display: inline;
-	}
-}
-
-@media @screen--wide {
-	.wrapper {
-		height: 100vh;
-		box-sizing: border-box;
-
-		&--side {
-			border-left: @content-line-width solid @content-line-color;
-			border-top: none;
-			float: left;
-			position: fixed;
-			width: @wrapper-width--side;
-			z-index: 10;
-		}
-
-		&--content {
-			float: right;
-			width: @wrapper-width--content;
-		}
 	}
 }

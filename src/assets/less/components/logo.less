@@ -18,13 +18,19 @@
 	}
 }
 
+.logo-radius {
+	width: @logo-width;
+	height: @logo-width;
+	border-radius: 50%;
+}
+
 .logo__image {
-	.logoRadius();
+	.logo-radius();
 	.transition();
 }
 
 .logo__background {
-	.logoRadius();
+	.logo-radius();
 
 	background: url('../img/doomface.gif') center center no-repeat,
 		linear-gradient(135deg, @bg-color--side, shade(@bg-color--side));

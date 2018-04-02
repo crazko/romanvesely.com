@@ -59,8 +59,17 @@
 		{block content}{/block}
 	</main>
 
+	<section class="post__sources" n:ifset="$sources">
+		<div class="content">
+		<h3>Sources</h3>
+		<ul class="post__sources-list" n:inner-foreach="$sources AS [$link, $title]">
+			<li><a href="{$link}">{$title}</a></li>
+		</ul>
+		</div>
+	</section>
+
 	<footer role="contentinfo" class="footer">
-		&copy; {date('Y')} <a href="mailto:info@romanvesely.com">Roman Veselý</a><span class="footer__extended">, follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a></span> &middot; powered by <a href="https://www.statie.org">Statie</a>
+		&copy; {date('Y')} <a href="mailto:info@romanvesely.com">Roman Veselý</a><span class="footer__extended"> &middot; follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a></span> &middot; powered by <a href="https://www.statie.org">Statie</a>
 	</footer>
 
 	{block scripts}{/block}

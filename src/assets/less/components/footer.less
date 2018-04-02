@@ -1,11 +1,13 @@
 .footer {
-	padding: @padding--basic;
+	background: @bg-color--side;
 	font-size: 0.75rem;
 	line-height: 1rem;
-	background: @bg-color--side;
+	padding: @padding--basic;
 	text-align: center;
 
 	&__extended {
-		.hidden-wide();
+		@media @screen--wide {
+			display: none;
+		}
 	}
 }

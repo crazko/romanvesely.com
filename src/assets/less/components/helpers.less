@@ -29,25 +29,17 @@
 	border: @content-line-width solid @content-line-color;
 	border-left: none;
 	border-right: none;
-	margin-left: -@padding--basic;
-	margin-right: -@padding--basic;
+	margin: @padding--basic -@padding--basic;
 	padding: @padding--basic;
 
 	@media @screen--wide {
 		border: @content-line-width solid @content-line-color;
-		margin-left: -@padding--wide;
-		margin-right: -@padding--wide;
+		margin: @padding--basic -@padding--wide;
 		padding: @padding--basic calc(@padding--wide ~'-' @content-line-width);
 	}
 
 	p:first-child {
 		margin-top: 0;
-	}
-}
-
-.hidden-wide {
-	@media @screen--wide {
-		display: none;
 	}
 }
 
@@ -57,12 +49,6 @@
 
 .link--more {
 	font-size: 0.8em;
-}
-
-.logoRadius {
-	width: @logo-width;
-	height: @logo-width;
-	border-radius: 50%;
 }
 
 .anchor {
