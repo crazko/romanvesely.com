@@ -16,9 +16,9 @@ My personal web site [https://romanvesely.com](http://romanvesely.com).
 - `$ composer install && npm install`
 
 Commands:
-- `$ gulp` - generates site from source files
-- `$ gulp watch` - starts local server and acts upon changes
-- `$ gulp build` - generates version ready for production
-- `$ gulp clean` - removes output folder
+- `$ npm start` - starts local server and acts upon changes
+- `$ npm run dev` - generates site from source files
+- `$ npm run build` - generates version ready for production
+- `$ npm run clean` - removes output folder
 - `$ composer check` - runs code standard and static analysis
 - `$ composer fix` - fixes code standard errors

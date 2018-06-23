@@ -21,6 +21,9 @@
     "prismjs": "^1.6.0"
   },
   "scripts": {
-    "build": "gulp build"
+    "start": "gulp watch",
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean"
   }
 }
