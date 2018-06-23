@@ -1,6 +1,12 @@
 parameters:
     site_directory: '%kernel.project_dir%/../../../site'
+    text_size: 100
+    angle: 0
+    font: '/ubuntu.ttf'
+    padding: 100
+    signature: 'romanvesely.com'
     signature_size: 25
+    width: 1200
     colors:
         background: [254, 255, 241] # light yellow
         foreground: [27, 116, 171] # blue
@@ -11,11 +17,17 @@ services:
         autowire: true
         bind:
             '$siteDirectory': '%site_directory%'
+            '$size': '%text_size%'
+            '$angle': '%angle%'
+            '$width': '%width%'
+            '$font': '%font%'
 
     Crazko\Site\SocialImages\:
         resource: '../*'
         public: true
 
-    # Crazko\Site\SocialImages\PostsProvider:
-    #     arguments:
-    #         - '%site_directory%'
+    Crazko\Site\SocialImages\Image:
+        autowire: false
+
+    Crazko\Site\SocialImages\Text:
+        autowire: false

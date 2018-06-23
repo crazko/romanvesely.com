@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Crazko\Site\TextToImage;
+namespace Crazko\Site\SocialImages;
 
 use Nette\Utils\Image as Img;
 

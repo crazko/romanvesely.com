@@ -11,7 +11,7 @@ try {
 	$containerFactory = new ContainerFactory;
     $container = $containerFactory->createWithConfig(getcwd() . '/statie.yml');
 
-    $imageCreator = $container->get(ImageCreator::class);
+	$imageCreator = $container->get(ImageCreator::class);
     $imageCreator->create();
 } catch (Throwable $throwable) {
     (new ThrowableRenderer())->render($throwable);
