@@ -5,7 +5,7 @@ parameters:
     angle: 0
     font: '/ubuntu.ttf'
     padding: 100
-    signature: 'romanvesely.com'
+    signaturettt: 'romanvesely.com'
     signature_size: 25
     width: 1200
 
@@ -19,17 +19,13 @@ services:
         autowire: true
         bind:
             '$siteDirectory': '%site_directory%'
-            '$size': '%text_size%'
-            '$angle': '%angle%'
-            '$width': '%width%'
-            '$font': '%font%'
+            '$background': '%background%'
+            '$foreground': '%foreground%'
+            '$signature': '%signature%'
 
     Crazko\Site\SocialImages\:
         resource: '../*'
         public: true
-
-    Crazko\Site\SocialImages\Image:
-        autowire: false
 
     Crazko\Site\SocialImages\Text:
         autowire: false

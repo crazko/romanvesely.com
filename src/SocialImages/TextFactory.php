@@ -16,6 +16,11 @@ class TextFactory
 
     public function create(string $text): Text
     {
-        return new Text($text, $this->imageConfiguration->size, $this->imageConfiguration->angle, $this->imageConfiguration->font);
+        return new Text(
+            $text,
+            $this->imageConfiguration->getSize(),
+            $this->imageConfiguration->getAngle(),
+            $this->imageConfiguration->getFont()
+        );
     }
 }

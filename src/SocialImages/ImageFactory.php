@@ -6,16 +6,6 @@ use Nette\Utils\Image;
 
 class ImageFactory
 {
-    const ANGLE = 0;
-
-    const FONT = __DIR__ . '/ubuntu.ttf';
-
-    const PADDING = 100;
-
-    const SIGNATURE = 'romanvesely.com';
-
-    const SIGNATURE_SIZE = 25;
-
     /**
      * @var ColorConfiguration
      */
@@ -29,24 +19,46 @@ class ImageFactory
     public function __construct(ColorConfiguration $colorConfiguration, ImageConfiguration $imageConfiguration)
     {
         $this->colorConfiguration = $colorConfiguration;
-        $this->iamgeConfiguration = $imageConfiguration;
+        $this->imageConfiguration = $imageConfiguration;
     }
 
     public function create(Text $text): Image
     {
-        $width = max($this->imageConfiguration->width, ($text->width + self::PADDING));
+        $width = max($this->imageConfiguration->getWidth(), ($text->width + $this->imageConfiguration->getPadding()));
         $height = floor($width / 16 * 9);
 
         // Calculate coordinates of the text
         $x = ($width / 2) - ($text->width / 2);
-        $y = ($height / 2) - ($text->height / 2) + $this->imageConfiguration->size;
+        $y = ($height / 2) - ($text->height / 2) + $this->imageConfiguration->getSize();
 
-        $image = Image::fromBlank($width, $height, Image::rgb(...$this->colorConfiguration->getBackground()));
-        $image->ttfText($this->imageConfiguration->size, self::ANGLE, $x, $y, Image::rgb(...$this->colorConfiguration->getForeground()), self::FONT, $text);
-        $image->resize($this->imageConfiguration->width, null);
+        $image = Image::fromBlank(
+            $width,
+            $height,
+            Image::rgb(...$this->colorConfiguration->getBackground())
+        )
+        ;
+        $image->ttfText(
+            $this->imageConfiguration->getSize(),
+            $this->imageConfiguration->getAngle(),
+            $x,
+            $y,
+            Image::rgb(...$this->colorConfiguration->getForeground()),
+            $this->imageConfiguration->getFont(),
+            $text
+        );
+
+        $image->resize($this->imageConfiguration->getWidth(), null);
 
         // Add signature
-        $image->ttfText(self::SIGNATURE_SIZE, self::ANGLE, $image->width - 320, $image->height - 50, Image::rgb(...$this->colorConfiguration->getSignature()), self::FONT, self::SIGNATURE);
+        $image->ttfText(
+            $this->imageConfiguration->getSignatureSize(),
+            $this->imageConfiguration->getAngle(),
+            $image->width - 320,
+            $image->height - 50,
+            Image::rgb(...$this->colorConfiguration->getSignature()),
+            $this->imageConfiguration->getFont(),
+            $this->imageConfiguration->getSignature()
+        );
 
         return $image;
     }
