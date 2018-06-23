@@ -1,5 +1,6 @@
 parameters:
     site_directory: '%kernel.project_dir%/../../../site'
+
     text_size: 100
     angle: 0
     font: '/ubuntu.ttf'
@@ -7,10 +8,11 @@ parameters:
     signature: 'romanvesely.com'
     signature_size: 25
     width: 1200
-    colors:
-        background: [254, 255, 241] # light yellow
-        foreground: [27, 116, 171] # blue
-        signature: [140, 140, 140] # grey
+
+    # colors
+    background: [254, 255, 241] # light yellow
+    foreground: [27, 116, 171] # blue
+    signature: [140, 140, 140] # grey
 
 services:
     _defaults:

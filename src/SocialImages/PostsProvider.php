@@ -26,7 +26,7 @@ final class PostsProvider
     public function __construct(
         string $siteDirectory,
         StatieApplication $statieApplication,
-		Configuration $configuration
+        Configuration $configuration
     ) {
         $this->statieApplication = $statieApplication;
         $this->configuration = $configuration;

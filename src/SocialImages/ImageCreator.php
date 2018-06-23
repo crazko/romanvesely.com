@@ -2,9 +2,6 @@
 
 namespace Crazko\Site\SocialImages;
 
-use Crazko\Site\SocialImages\PostsProvider;
-use Crazko\Site\SocialImages\Image;
-
 class ImageCreator
 {
     /**
@@ -17,19 +14,33 @@ class ImageCreator
      */
     private $postsProvider;
 
-    public function __construct($siteDirectory, PostsProvider $postsProvider)
+    /**
+     * @var TextFactory
+     */
+    private $textFactory;
+
+    /**
+     * @var ImageFactory
+     */
+    private $imageFactory;
+
+    public function __construct(string $siteDirectory, PostsProvider $postsProvider, TextFactory $textFactory, ImageFactory $imageFactory)
     {
         $this->siteDirectory = $siteDirectory;
         $this->postsProvider = $postsProvider;
+        $this->textFactory = $textFactory;
+        $this->imageFactory = $imageFactory;
     }
 
     public function create(): void
     {
-        foreach($this->postsProvider->provide() as $post) {
+        foreach ($this->postsProvider->provide() as $post) {
             $title = $post->getOption('title');
             $filename = $post->getFilenameWithoutDate();
 
-            $image = (new Image($title))->get();
+            $text = $this->textFactory->create($title);
+            $image = $this->imageFactory->create($text);
+
             $image->save(sprintf('%s/assets/posts/%s.png', $this->siteDirectory, $filename), 7);
         }
     }
