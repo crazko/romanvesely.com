@@ -1,32 +1,33 @@
 ---
+id: 8
 layout: post
 title: A place to meet Statie
 description: "I'm happy to announce that Statie, a newcomer to the field of static site generators written in PHP, received a place where it could promote itself better. <a href=\"https://www.statie.org/\">It's own website</a>. Though a really simple one; but it's healthy to start with small things, they say."
 sources:
-	-
-		- "https://www.statie.org/"
-		- Statie documentation
-	-
-		- "https://nette.org/"
-		- Nette Framework
-	-
-		- "https://latte.nette.org/"
-		- Latte - amazing template engine for PHP
-	-
-		- "https://www.staticgen.com/"
-		- Top Open-Source Static Site Generators
-	-
-		- "https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
-		- CSS Utility Classes and "Separation of Concerns"
-	-
-		- "https://tailwindcss.com/"
-		- Tailwind CSS - A Utility-First CSS Framework
-	-
-		- "https://community.algolia.com/docsearch/"
-		- The easiest way to add search to your documentation
-	-
-		- "https://github.algolia.com/"
-		- A browser extension enhancing GitHub's search bar with autocomplete
+    -
+        - "https://www.statie.org/"
+        - Statie documentation
+    -
+        - "https://nette.org/"
+        - Nette Framework
+    -
+        - "https://latte.nette.org/"
+        - Latte - amazing template engine for PHP
+    -
+        - "https://www.staticgen.com/"
+        - Top Open-Source Static Site Generators
+    -
+        - "https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
+        - CSS Utility Classes and "Separation of Concerns"
+    -
+        - "https://tailwindcss.com/"
+        - Tailwind CSS - A Utility-First CSS Framework
+    -
+        - "https://community.algolia.com/docsearch/"
+        - The easiest way to add search to your documentation
+    -
+        - "https://github.algolia.com/"
+        - A browser extension enhancing GitHub's search bar with autocomplete
 ---
 
 My own blog is being built with [Statie](https://github.com/Symplify/Statie). But why did I choose something with almost no history and with just a few users, when plenty of other possibilities are out there?

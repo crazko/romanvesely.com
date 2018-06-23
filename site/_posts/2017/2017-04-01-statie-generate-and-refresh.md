@@ -1,23 +1,24 @@
 ---
+id: 3
 layout: post
 title: 'How to re-generate and refresh static website in Statie?'
 description: "Make development with <a href=\"https://github.com/Symplify/Statie\">Statie</a> a bit more convenient with a little use of <a href=\"http://gulpjs.com/\">gulp</a> and <a href=\"https://browsersync.io/\">Browsersync</a>."
 sources:
-	-
-		- "http://www.staticgen.com/"
-		- StaticGen - Top Open-Source Static Site Generators
-	-
-		- "https://github.com/Symplify/Statie"
-		- Statie - PHP Static Site Generator
-	-
-		- "https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/"
-		- "Statie: How to run it Locally"
-	-
-		- "https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/"
-		- The Complete-Ish Guide to Upgrading to Gulp 4
-	-
-		- "https://www.browsersync.io/docs/gulp#gulp-reload"
-		- Browsersync - Browser Reloading
+    -
+        - "http://www.staticgen.com/"
+        - StaticGen - Top Open-Source Static Site Generators
+    -
+        - "https://github.com/Symplify/Statie"
+        - Statie - PHP Static Site Generator
+    -
+        - "https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/"
+        - "Statie: How to run it Locally"
+    -
+        - "https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/"
+        - The Complete-Ish Guide to Upgrading to Gulp 4
+    -
+        - "https://www.browsersync.io/docs/gulp#gulp-reload"
+        - Browsersync - Browser Reloading
 ---
 
 With a rising popularity of static site generators, we can find that there are [many of them](http://www.staticgen.com/) already in use. This blog runs on [Statie](https://github.com/Symplify/Statie), another such a tool written by [Tomas Votruba](https://www.tomasvotruba.cz/), which differs from the others with [Nette](https://nette.org/) and its templating engine [Latte](https://latte.nette.org/) used in the background.
@@ -34,7 +35,7 @@ var gulp = require('gulp');
 var exec = require('child_process').exec
 
 gulp.task('default', function () {
-	exec('vendor/bin/statie generate');
+    exec('vendor/bin/statie generate');
 });
 ```
 

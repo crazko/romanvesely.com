@@ -1,20 +1,21 @@
 ---
+id: 5
 layout: post
 title: 'Null Object design pattern'
 description: "An object with no value or defined behavior can be helpful when no other \"real\" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable."
 sources:
-	-
-		- "https://www.youtube.com/watch?v=5DVDewOReoY"
-		- Chasing "Perfect" presentation
-	-
-		- "https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/"
-		- Pushing Polymorphism to the Database screencast
-	-
-		- "https://sourcemaking.com/design_patterns/null_object"
-		- Null Object Design Pattern on sourcemaking.com
-	-
-		- "https://en.wikipedia.org/wiki/Null_Object_pattern"
-		- Null Object Design Pattern on wikipedia.com
+    -
+        - "https://www.youtube.com/watch?v=5DVDewOReoY"
+        - Chasing "Perfect" presentation
+    -
+        - "https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/"
+        - Pushing Polymorphism to the Database screencast
+    -
+        - "https://sourcemaking.com/design_patterns/null_object"
+        - Null Object Design Pattern on sourcemaking.com
+    -
+        - "https://en.wikipedia.org/wiki/Null_Object_pattern"
+        - Null Object Design Pattern on wikipedia.com
 ---
 
 Recently I saw a presentation called [Chasing "Perfect"]({$sources[0][0]}) given by [Adam Wathan](https://twitter.com/adamwathan) at Laracon EU in 2015. In case you don't know him I strongly recommend you to follow him on Twitter, at least. I definitely did so.
@@ -30,30 +31,30 @@ I will use exact same code to present the initial conditions (quite simplified, 
 ```php
 class Order
 {
-	private $books;
+    private $books;
 
-	private $coupon;
+    private $coupon;
 
-	public __construct($books)
-	{
-		$this->books = $books;
-	}
+    public __construct($books)
+    {
+        $this->books = $books;
+    }
 
-	public function applyCoupon($coupon)
-	{
-		$this->coupon = $coupon;
-	}
+    public function applyCoupon($coupon)
+    {
+        $this->coupon = $coupon;
+    }
 
-	public function total()
-	{
-		$discount = 0;
+    public function total()
+    {
+        $discount = 0;
 
-		if (isset($this->coupon)) {
-			$discount = $this->coupon->value;
-		}
+        if (isset($this->coupon)) {
+            $discount = $this->coupon->value;
+        }
 
-		return $this->books->sum('price') - $discount;
-	}
+        return $this->books->sum('price') - $discount;
+    }
 }
 ```
 
@@ -64,17 +65,17 @@ Now, let's imagine a new requirement from your boss: _"we need to implement a ne
 ```php
 public function total()
 {
-	$discount = 0;
+    $discount = 0;
 
-	if (isset($this->coupon)) {
-		if ($this->coupon->isPercentage()) {
-			$discount = $this->books->sum('price') * ($this->coupon->value / 100);
-		} else {
-			$discount = $this->coupon->value;
-		}
-	}
+    if (isset($this->coupon)) {
+        if ($this->coupon->isPercentage()) {
+            $discount = $this->books->sum('price') * ($this->coupon->value / 100);
+        } else {
+            $discount = $this->coupon->value;
+        }
+    }
 
-	return $this->books->sum('price') - $discount;
+    return $this->books->sum('price') - $discount;
 }
 ```
 
@@ -85,18 +86,18 @@ The best we can do is to **extract discount logic somewhere else** and in that w
 ```php
 class ValueCoupon
 {
-	public function discount($order)
-	{
-		return $this->value;
-	}
+    public function discount($order)
+    {
+        return $this->value;
+    }
 }
 
 class PercentageCoupon
 {
-	public function discount($order)
-	{
-		return $order->grossTotal() * ($this->value / 100);
-	}
+    public function discount($order)
+    {
+        return $order->grossTotal() * ($this->value / 100);
+    }
 }
 ```
 
@@ -105,26 +106,26 @@ class PercentageCoupon
 ```php
 class Order
 {
-	// ...
+    // ...
 
-	public function grossTotal($order)
-	{
-		return $this->books->sum('price');
-	}
+    public function grossTotal($order)
+    {
+        return $this->books->sum('price');
+    }
 
-	public function total()
-	{
-		return $this->grossTotal() - $this->discount();
-	}
+    public function total()
+    {
+        return $this->grossTotal() - $this->discount();
+    }
 
-	private function discount()
-	{
-		if (isset($this->coupon)) {
-			return $this->coupon->discount($this);
-		}
+    private function discount()
+    {
+        if (isset($this->coupon)) {
+            return $this->coupon->discount($this);
+        }
 
-		return 0;
-	}
+        return 0;
+    }
 }
 ```
 
@@ -145,26 +146,26 @@ I would be personally quite happy with this code and leave it as it is. But here
 ``` php
 class NullCoupon
 {
-	public function discount($order)
-	{
-		return 0;
-	}
+    public function discount($order)
+    {
+        return 0;
+    }
 }
 
 class Order
 {
-	public function __construct()
-	{
-		$this->books = $books;
-		$this->coupon = new NullCoupon();
-	}
+    public function __construct()
+    {
+        $this->books = $books;
+        $this->coupon = new NullCoupon();
+    }
 
-	// ...
+    // ...
 
-	private function discount()
-	{
-		return $this->coupon->discount($this);
-	}
+    private function discount()
+    {
+        return $this->coupon->discount($this);
+    }
 }
 ```
 
