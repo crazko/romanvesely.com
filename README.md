@@ -22,3 +22,8 @@ Commands:
 - `$ npm run clean` - removes output folder
 - `$ composer check` - runs code standard and static analysis
 - `$ composer fix` - fixes code standard errors
+
+`./bin/` files:
+
+- `create-note-images` - creates images suitable for social networks in "dev.to" style
+- `deploy` - creates and sends zip with all data to Netlify in the end of Travis build. Now, as the PHP7.2 is available in Netlify, whole build process could be moved there and drop this step.
