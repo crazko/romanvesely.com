@@ -2,67 +2,33 @@
 
 namespace Crazko\Site\SocialImages;
 
+/**
+ * @property-read int $width
+ * @property-read int $size
+ * @property-read int $angle
+ * @property-read string $font
+ * @property-read int $padding
+ * @property-read string $signature
+ * @property-read int $signatureSize
+ */
 final class ImageConfiguration
 {
-    // /**
-    //  * @var int[]
-    //  */
-    // private $background;
+    /**
+     * @var array
+     */
+    private $image;
 
-    // /**
-    //  * @var int[]
-    //  */
-    // private $foreground;
-
-    // /**
-    //  * @var int[]
-    //  */
-    // private $signature;
-
-    // /**
-    //  * @param int[] $background
-    //  * @param int[] $foreground
-    //  * @param int[] $signature
-    //  */
-    // public function __construct(array $background, array $foreground, array $signature)
-    // {
-    //     $this->background = $background;
-    //     $this->foreground = $foreground;
-    //     $this->signature = $signature;
-    // }
-
-    public function getWidth(): int
+    public function __construct(array $image)
     {
-        return 1200;
+        $this->image = $image;
     }
 
-    public function getSize(): int
+    public function __get(string $param)
     {
-        return 100;
-    }
+        if ($param === 'font') {
+            return sprintf('%s/%s', __DIR__, $this->image[$param]);
+        }
 
-    public function getAngle(): int
-    {
-        return 0;
-    }
-
-    public function getFont(): string
-    {
-        return __DIR__ . '/ubuntu.ttf';
-    }
-
-    public function getPadding(): int
-    {
-        return 100;
-    }
-
-    public function getSignature(): string
-    {
-        return 'romanvesely.com';
-    }
-
-    public function getSignatureSize(): int
-    {
-        return 25;
+        return $this->image[$param];
     }
 }

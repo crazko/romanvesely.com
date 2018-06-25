@@ -24,12 +24,12 @@ class ImageFactory
 
     public function create(Text $text): Image
     {
-        $width = max($this->imageConfiguration->getWidth(), ($text->width + $this->imageConfiguration->getPadding()));
+        $width = max($this->imageConfiguration->width, ($text->width + $this->imageConfiguration->padding));
         $height = floor($width / 16 * 9);
 
         // Calculate coordinates of the text
         $x = ($width / 2) - ($text->width / 2);
-        $y = ($height / 2) - ($text->height / 2) + $this->imageConfiguration->getSize();
+        $y = ($height / 2) - ($text->height / 2) + $this->imageConfiguration->size;
 
         $image = Image::fromBlank(
             $width,
@@ -38,26 +38,26 @@ class ImageFactory
         )
         ;
         $image->ttfText(
-            $this->imageConfiguration->getSize(),
-            $this->imageConfiguration->getAngle(),
+            $this->imageConfiguration->size,
+            $this->imageConfiguration->angle,
             $x,
             $y,
             Image::rgb(...$this->colorConfiguration->getForeground()),
-            $this->imageConfiguration->getFont(),
+            $this->imageConfiguration->font,
             $text
         );
 
-        $image->resize($this->imageConfiguration->getWidth(), null);
+        $image->resize($this->imageConfiguration->width, null);
 
         // Add signature
         $image->ttfText(
-            $this->imageConfiguration->getSignatureSize(),
-            $this->imageConfiguration->getAngle(),
+            $this->imageConfiguration->signatureSize,
+            $this->imageConfiguration->angle,
             $image->width - 320,
             $image->height - 50,
             Image::rgb(...$this->colorConfiguration->getSignature()),
-            $this->imageConfiguration->getFont(),
-            $this->imageConfiguration->getSignature()
+            $this->imageConfiguration->font,
+            $this->imageConfiguration->signature
         );
 
         return $image;

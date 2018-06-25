@@ -20,15 +20,13 @@ final class ColorConfiguration
     private $signature;
 
     /**
-     * @param int[] $background
-     * @param int[] $foreground
-     * @param int[] $signature
+     * @param int[][] $colors
      */
-    public function __construct(array $background, array $foreground, array $signature)
+    public function __construct(array $color)
     {
-        $this->background = $background;
-        $this->foreground = $foreground;
-        $this->signature = $signature;
+        $this->background = $color['background'];
+        $this->foreground = $color['foreground'];
+        $this->signature = $color['signature'];
     }
 
     /**

@@ -18,9 +18,9 @@ class TextFactory
     {
         return new Text(
             $text,
-            $this->imageConfiguration->getSize(),
-            $this->imageConfiguration->getAngle(),
-            $this->imageConfiguration->getFont()
+            $this->imageConfiguration->size,
+            $this->imageConfiguration->angle,
+            $this->imageConfiguration->font
         );
     }
 }
