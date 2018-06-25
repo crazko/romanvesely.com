@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+use Symplify\PackageBuilder\Console\ThrowableRenderer;
+use Symplify\Statie\DependencyInjection\ContainerFactory;
+use Crazko\Site\SocialImages\ImageCreator;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+try {
+	$containerFactory = new ContainerFactory;
+    $container = $containerFactory->createWithConfig(getcwd() . '/statie.yml');
+
+	$imageCreator = $container->get(ImageCreator::class);
+    $imageCreator->create();
+} catch (Throwable $throwable) {
+    (new ThrowableRenderer())->render($throwable);
+    exit(1);
+}

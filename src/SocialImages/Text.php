@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Crazko\Site\TextToImage;
+namespace Crazko\Site\SocialImages;
 
 /**
  * @property-read int $width
@@ -18,7 +18,7 @@ class Text
      */
     private $dimensions;
 
-    public function __construct(int $size, int $angle, string $font, string $text)
+    public function __construct(string $text, int $size, int $angle, string $font)
     {
         $this->text = wordwrap($text, 30);
 
