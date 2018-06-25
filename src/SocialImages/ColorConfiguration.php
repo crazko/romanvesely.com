@@ -20,7 +20,7 @@ final class ColorConfiguration
     private $signature;
 
     /**
-     * @param int[][] $colors
+     * @param int[][] $color
      */
     public function __construct(array $color)
     {

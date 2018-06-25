@@ -35,8 +35,7 @@ class ImageFactory
             $width,
             $height,
             Image::rgb(...$this->colorConfiguration->getBackground())
-        )
-        ;
+        );
         $image->ttfText(
             $this->imageConfiguration->size,
             $this->imageConfiguration->angle,

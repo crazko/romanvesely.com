@@ -14,15 +14,21 @@ namespace Crazko\Site\SocialImages;
 final class ImageConfiguration
 {
     /**
-     * @var array
+     * @var mixed[]
      */
     private $image;
 
+    /**
+     * @param mixed[] $image
+     */
     public function __construct(array $image)
     {
         $this->image = $image;
     }
 
+    /**
+     * @return mixed
+     */
     public function __get(string $param)
     {
         if ($param === 'font') {
