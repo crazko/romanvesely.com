@@ -8,10 +8,9 @@
 	}
 
 	a {
-		// border-bottom: 2px solid @font-color--link-content-line;
 		text-decoration: underline;
 		text-decoration-color: @font-color--link-content-line;
-		text-decoration-skip: ink;
+		text-decoration-skip-ink: auto; // It is a default value, but why not - https://www.chromestatus.com/feature/5631679087509504
 	}
 
 	& p:last-of-type {
