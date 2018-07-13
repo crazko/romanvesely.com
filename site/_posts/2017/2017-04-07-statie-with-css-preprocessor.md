@@ -1,6 +1,5 @@
 ---
 id: 4
-layout: post
 title: 'Implement a CSS preprocessor into Statie project'
 description: "The most important part of a web page is its content. And I think that every web page content deserves to have some look. Take a look at how to implement <a href=\"http://lesscss.org/\">Less</a> preprocessor into Statie project built with gulp-based workflow."
 sources:

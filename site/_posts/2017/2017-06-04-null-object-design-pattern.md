@@ -1,6 +1,5 @@
 ---
 id: 5
-layout: post
 title: 'Null Object design pattern'
 description: "An object with no value or defined behavior can be helpful when no other \"real\" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable."
 sources:

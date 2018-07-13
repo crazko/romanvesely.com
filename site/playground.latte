@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: "_layouts/default.latte"
 title: Playground
 ---
 
 {block content}
 {foreach $projects['trivial'] as $project}
 	{ifset $project['image']}
-		{include "image", src => $project['image'], url => $project['url'], alt => $project['name']}
+		{include "_snippets/layout/image.latte", src => $project['image'], url => $project['url'], alt => $project['name']}
 	{/ifset}
 
 	<h2><a href="{$project['url']}">{$project['name']}</a></h2>

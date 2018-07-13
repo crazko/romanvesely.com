@@ -1,6 +1,5 @@
 ---
 id: 7
-layout: post
 title: "Strange codes, multiple identities and team habits"
 description: "Just what I had in my mind or have tackled with in the recent past underlayed with the knowledge of the others."
 ---

@@ -43,7 +43,7 @@ class ImageFactory
             $y,
             Image::rgb(...$this->colorConfiguration->getForeground()),
             $this->imageConfiguration->font,
-            $text
+            (string) $text
         );
 
         $image->resize($this->imageConfiguration->width, null);

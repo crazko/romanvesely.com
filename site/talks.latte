@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: "_layouts/default.latte"
 title: Talks
 ---
 
 {block content}
 {foreach $talks as $talk}
 	{ifset $talk['image']}
-		{include "image", src => $talk['image'], url => $talk['url'], alt => $talk['name']}
+		{include "_snippets/layout/image.latte", src => $talk['image'], url => $talk['url'], alt => $talk['name']}
 	{/ifset}
 
 	<h2><a href="{$talk['url']}">{$talk['name']}</a></h2>
