@@ -8,9 +8,9 @@
         }
     ],
     "autoload": {
-      "psr-4": {
-        "Crazko\\Site\\": "src"
-      }
+        "psr-4": {
+            "Crazko\\Site\\": "src"
+        }
     },
     "require": {
         "nette/utils": "^2.5",
@@ -22,12 +22,12 @@
         "symplify/easy-coding-standard": "^4.5"
     },
     "scripts": {
-      "check": [
-        "@ecs",
-        "@phpstan"
-      ],
-      "ecs": "vendor/bin/ecs check src",
-      "fix": "vendor/bin/ecs check --fix src",
-      "phpstan": "vendor/bin/phpstan analyse -l 7 src --ansi"
+        "check": [
+            "@ecs",
+            "@phpstan"
+        ],
+        "ecs": "vendor/bin/ecs check src",
+        "fix": "vendor/bin/ecs check --fix src",
+        "phpstan": "vendor/bin/phpstan analyse -l 7 src --ansi"
     }
 }
