@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "_layouts/default.latte"
 title: Notes
 ---
 
@@ -16,7 +16,7 @@ title: Notes
 	<article>
 		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url, alt => $post['title']}{/ifset}
 		<h2><a href="{$url}">{$post['title']}</a></h2>
-		{include "postMeta", post => $post}
+		{include "_snippets/post/postMeta.latte", post => $post}
 
 		<p>{$post['description']|noescape}</p>
 		<p><a href="{$url}" class="link--more">Read more</a></p>

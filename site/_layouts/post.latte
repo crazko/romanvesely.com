@@ -1,4 +1,4 @@
-{extends "default"}
+{extends "_layouts/default.latte"}
 
 {block meta}
 	{var $url = sprintf("%s/%s", $site['url'], $post['relativeUrl'])}
@@ -16,10 +16,10 @@
 {/block}
 
 {block content}
-	{include "postMeta", post => $post, showSuggestEdit => true, isDetail => true}
+	{include "_snippets/post/postMeta.latte", post => $post, showSuggestEdit => true, isDetail => true}
 	<p class="post__description">{$post['description']|noescape}</p>
 
-	{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $site['url'], alt => $post['title']}{/ifset}
+	{ifset $post['promoImage']}{include "_snippets/post/image.latte", src => $post['promoImage'], url => $site['url'], alt => $post['title']}{/ifset}
 
 	{$post['content']|noescape}
 

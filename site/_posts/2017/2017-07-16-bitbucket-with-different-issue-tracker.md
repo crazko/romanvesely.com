@@ -1,6 +1,5 @@
 ---
 id: 6
-layout: post
 title: Connect Bitbucket commit messages with different issue tracker
 description: Bitbucket can link issues and commit messages not only in itself alone but also with outside world. Let's have a look how to create connections with a different tool for issue tracking.
 sources:

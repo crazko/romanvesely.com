@@ -26,6 +26,6 @@ parameters:
           variable: 'post'
           variable_global: 'posts'
           path: '_posts'
-          layout: 'post'
+          layout: '_layouts/post.latte'
           route_prefix: ''
           object: Symplify\Statie\Renderable\File\PostFile
