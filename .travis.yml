@@ -18,6 +18,7 @@ before_script:
 
 script:
     - npm run build
+    - vendor/bin/statie generate site
 
 deploy:
     provider: script
