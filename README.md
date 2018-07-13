@@ -1,9 +1,9 @@
-# Roman Vesely - personal site [![Build Status](https://img.shields.io/travis/crazko/romanvesely.com.svg)](https://travis-ci.org/crazko/romanvesely.com)
+# ![Avatar](https://www.gravatar.com/avatar/b292ca2620bc32ea45352de5e266303b?size=50) Roman Vesely - personal site [![Build Status](https://img.shields.io/travis/crazko/romanvesely.com.svg)](https://travis-ci.org/crazko/romanvesely.com)
 
 [![Validate RSS](https://img.shields.io/badge/validate-rss-orange.svg)](https://validator.w3.org/feed/check.cgi?url=http%3A//romanvesely.com/rss.xml)
 [![Validate JSON Feed](https://img.shields.io/badge/validate-json_feed-green.svg)](http://validator.jsonfeed.org/?url=http%3A%2F%2Fromanvesely.com%2Ffeed.json)
 
-My personal web site [https://romanvesely.com](http://romanvesely.com).
+My personal web site [https://romanvesely.com](https://romanvesely.com).
 
 ## What's inside?
 - PHP static site generator [Statie](https://github.com/Symplify/Statie) - see documentation at [www.statie.org](https://www.statie.org)
