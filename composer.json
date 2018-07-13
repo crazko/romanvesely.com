@@ -29,5 +29,7 @@
         "ecs": "vendor/bin/ecs check src",
         "fix": "vendor/bin/ecs check --fix src",
         "phpstan": "vendor/bin/phpstan analyse -l 7 src --ansi"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
