@@ -13,17 +13,18 @@ My personal web site [https://romanvesely.com](https://romanvesely.com).
 
 ## Use it
 
-- `$ composer install && npm install`
+- install dependencies `composer install && npm install`
+- run website locally `npm start`
 
-Commands:
-- `$ npm start` - starts local server and acts upon changes
-- `$ npm run dev` - generates site from source files
-- `$ npm run build` - generates version ready for production
-- `$ npm run clean` - removes output folder
-- `$ composer check` - runs code standard and static analysis
-- `$ composer fix` - fixes code standard errors
+### Available commands:
+- `npm start` - starts local server at http://localhost:3000 and acts upon changes
+- `npm run dev` - generates site from source files
+- `npm run build` - generates version ready for production
+- `npm run clean` - removes output folder
+- `composer check` - runs code standard and static analysis
+- `composer fix` - fixes code standard errors
 
-`./bin/` files:
+### `./bin/` files:
 
 - `social-images` - creates images suitable for social networks in "dev.to" style
 - `deploy` - creates and sends zip with all data to Netlify in the end of Travis build. Now, as the PHP7.2 is available in Netlify, whole build process could be moved there and drop this step.
