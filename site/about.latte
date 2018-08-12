@@ -19,7 +19,7 @@ title: About
 
 <p>Here comes what can be found in my <abbr title="Really Simple Syndication">RSS</abbr> reader. The list lies here in a hope you find some interesting sources or people to follow.</p>
 
-<div class="feeds">
+<div class="feeds" id="what-do-i-read">
 	<div class="feeds__category" n:foreach="$opml->body->outline as $category">
 		<h3 class="feeds__category-title">{$category['title']}</h3>
 		<ul class="feeds__list" n:inner-foreach="$category->outline as $source">
