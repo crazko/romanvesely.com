@@ -48,7 +48,7 @@ The map served me well in forming the slides as well as for a "final notes" for 
 
 ### Training
 
-I bet many of you know TED, either the main conference or many individual derivates called TEDx. Most of the talks there have several things in common with one specialty - which is that no one reads from the slides (and those are also uncommon), but rather has the whole talk memorized. I think this gives more energy and tempo to the presentation. I came around a perfect article on [Doing a TED Talk](https://waitbutwhy.com/2016/03/doing-a-ted-talk-the-full-story.html) written by Tim Urban from my favorite [waitbywhy.com](https://waitbutwhy.com/). I'm going to borrow one of the perfect diagrams he makes to illustrate his posts, the one about public speaking methods:
+I bet many of you know TED, either the main conference or many individual derivates called TEDx. Most of the talks there have several things in common with one specialty - which is that no one reads from the slides (and those are also uncommon), but rather has the whole talk memorized. I think this gives more energy and tempo to the presentation. I came around a perfect article on [Doing a TED Talk](https://waitbutwhy.com/2016/03/doing-a-ted-talk-the-full-story.html) written by Tim Urban from my favorite [waitbutwhy.com](https://waitbutwhy.com/). I'm going to borrow one of the perfect diagrams he makes to illustrate his posts, the one about public speaking methods:
 
 [![Public Speaking Methods](/assets/posts/a-path-to-my-first-speaking-experience/method-graph.jpg)](https://28oa9i1t08037ue3m1l0i861-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Method-graph-2.png)
 
