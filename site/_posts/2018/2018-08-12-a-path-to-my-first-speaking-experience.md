@@ -71,7 +71,11 @@ I was sitting in the back, watching [Tomas Pilar](https://www.tomaspilar.cz/) gi
 ![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live01.jpg)
 </div>
 
-I also really appreciated I was the next speaker following him. "Oh my, many people are here, aren't they?"
+I also really appreciated I was the next speaker following him.
+
+...
+
+"Oh my, many people are here, aren't they?"
 
 <div class="image" markdown="1">
 ![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live02.jpg)
