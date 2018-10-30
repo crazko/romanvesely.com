@@ -1,0 +1,71 @@
+html {
+	overflow-y: scroll;
+}
+
+html,
+body {
+	background-color: @color3-bg;
+	color: @color3-text;
+	font-size: @base-size;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+}
+
+h1,
+h2 {
+	text-transform: lowercase;
+	font-weight: normal;
+}
+
+h1 {
+	font-family: "Droid Serif", Georgia, serif;
+	font-size: @base-size * 2;
+	margin: 0 0 @base-padding / 2 0;
+}
+
+h2 {
+	font-size: @base-size * 1.25;
+	margin: 0;
+
+	@media (min-width: @screen-sm-min) {
+		font-size: @base-size * 2;
+	}
+
+	a {
+		position: relative;
+		left: -1.25rem;
+	}
+
+	a::before,
+	a::after {
+		content: "";
+		padding-right: 1.25rem;
+	}
+}
+
+ul,
+li {
+	list-style: square;
+	padding: 0;
+
+}
+
+p {
+	font-weight: 300;
+	margin-top: 0;
+}
+
+a {
+	color: @color3-alt;
+	text-decoration: none;
+	transition-timing-function: ease-in-out;
+	transition-duration: .125s;
+	transition-property: color, background-color;
+
+	&:hover {
+		color: @color4-text;
+		background-color: shade(@color1-bg, 30%);
+	}
+}

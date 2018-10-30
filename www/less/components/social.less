@@ -1,0 +1,47 @@
+.social {
+	background-color: shade(@color1-bg, 15%);
+	color: @color1-text;
+
+	a {
+		color: @color1-text;
+	}
+
+	.column {
+		padding: 0;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	&__item {
+		display: inline-block;
+
+		a {
+			height: 2rem;
+			padding: .75rem;
+			display: block;
+
+			&:hover {
+				background-color: shade(@color1-bg, 30%);
+				border: none;
+
+				path {
+					fill: @color4-text;
+				}
+			}
+		}
+
+		svg {
+			height: 2rem;
+			width: 2rem;
+		}
+
+		path {
+			fill: @color2-text;
+		}
+	}
+}

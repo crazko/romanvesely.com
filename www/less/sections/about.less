@@ -1,0 +1,48 @@
+&--about {
+	font-size: @base-size * 1.25;
+
+	padding-top: @base-padding;
+
+	p {
+		margin: 0;
+	}
+
+	p:not(:first-child) {
+		overflow: hidden;
+		opacity: 1;
+		margin-top: 1rem;
+		max-height: 1000px;
+
+		transition:
+			opacity .5s ease-in-out,
+			margin .5s ease-in-out,
+			max-height .5s ease-in-out;
+
+		&.hidden {
+		margin-top: 0;
+			opacity: 0;
+			max-height: 0;
+		}
+	}
+
+	.tag {
+		color: inherit;
+		font-weight: normal;
+	}
+
+	.show-hidden {
+		color: @color4-text;
+		font-family: "Droid Serif", Georgia, serif;
+		font-size: @base-size;
+		margin-left: .5em;
+
+		&:before {
+			content: ".";
+		}
+
+		&:after {
+			content: "();";
+		}
+	}
+}
+
