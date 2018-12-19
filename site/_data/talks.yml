@@ -1,15 +1,19 @@
 parameters:
     talks:
-        -
-            name: Ways To Make Work Life Better
-            date: 27. - 28. 02. 2018
-            description: At <a href="http://www.phplive.cz/">PHPlive</a> conference I tried to show how one can make life in an office or outside of it more enjoyable. I shared my own experiences gathered during work in a corporate and within a distributed team.
-            url: https://docs.google.com/presentation/d/1jXR04uWfTf8w5rnPxuFIPGo4QMBzkzpMs2Cbocs_ggs
-            image: /assets/thumbs/phplive-2018-talk.png
+        - name: Ways To Make Work Life Better
+          date: 27. - 28. 02. 2018
+          description: At <a href="http://www.phplive.cz/">PHPlive</a> conference I tried to show how one can make life in an office or outside of it more enjoyable. I shared my own experiences gathered during work in a corporate and within a distributed team.
+          url: https://docs.google.com/presentation/d/1jXR04uWfTf8w5rnPxuFIPGo4QMBzkzpMs2Cbocs_ggs
+          image: /assets/thumbs/phplive-2018-talk.png
 
-        -
-            name: WordPress Modern Development
-            date: 11. 11. 2016
-            description: As a part of <a href="http://geeky-friday.nesskdc.sk">Geeky Friday</a> sessions I showed how to leverage tools like git and composer to develop more maintainable WordPress applications.
-            url: https://docs.google.com/presentation/d/1FRTdJs372HnbWXdjbwXkkfJf0LgMztAo-CJm9KvHqYI
-            image: /assets/thumbs/wp-modern-development.jpg
+        - name: Heslá a ich ochrana v prepojenom svete
+          date: 20. 01. 2018
+          description: What are the current recommendations on how to handle passwords securely from the user perspective? Presentation is in Slovak language.
+          url: https://docs.google.com/presentation/d/1JlYwX6RHpk1TwFXbOqljVp6dYLP1YTD7YzkBfnx0ytU
+          image: /assets/thumbs/nlt2-talk.jpg
+
+        - name: WordPress Modern Development
+          date: 11. 11. 2016
+          description: As a part of <a href="http://geeky-friday.nesskdc.sk">Geeky Friday</a> sessions I showed how to leverage tools like git and composer to develop more maintainable WordPress applications.
+          url: https://docs.google.com/presentation/d/1FRTdJs372HnbWXdjbwXkkfJf0LgMztAo-CJm9KvHqYI
+          image: /assets/thumbs/wp-modern-development.jpg
