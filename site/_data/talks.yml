@@ -1,5 +1,11 @@
 parameters:
     talks:
+        - name: Heslá a ich ochrana
+          date: 19. 12. 2018
+          description: What are the current recommendations on how to handle passwords securely from the user perspective? Presentation is in Slovak language.
+          url: https://docs.google.com/presentation/d/18a_c3XuInO9LK6_IGx1Vnst8qu5KF6pw2S3oPNKryZ4
+          image: /assets/thumbs/ppke-talk.jpg
+
         - name: Ways To Make Work Life Better
           date: 27. - 28. 02. 2018
           description: At <a href="http://www.phplive.cz/">PHPlive</a> conference I tried to show how one can make life in an office or outside of it more enjoyable. I shared my own experiences gathered during work in a corporate and within a distributed team.
