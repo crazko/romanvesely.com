@@ -14,7 +14,7 @@ Now, when I was done I had to share my work, let it be checked if everything's O
 
 With free hostings available, in the FTP era, it was a bit easier, but with continual changes in design still very error-prone and laborious.
 
-## What I was looking/look for now?
+## What I was looking for/look for now?
 
 Not that much:
 
