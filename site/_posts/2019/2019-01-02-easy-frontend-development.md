@@ -27,7 +27,7 @@ Not that much:
 
 ## Today's possibilities
 
-Like I described at the beginning of the article, everything's always changing, but after several tries and failures my current tech-stack look like this:
+Like I described at the beginning of the article, everything's always changing, but after several tries and failures my current tech-stack consists of:
 
 -   [Nunjucks](https://mozilla.github.io/nunjucks/) - JavaScript templating language
 -   [Gulp](https://gulpjs.com/) - handles repetitive tasks
@@ -37,7 +37,7 @@ Like I described at the beginning of the article, everything's always changing, 
 
 ### Nunjucks
 
-Nunjucks provides everything I was looking, it comes with support for variables, template inheritance, which is great for defining global layouts, macros, which means custom functions, filters, that modify output and much more. It allows you to split parts of the templates to multiple files to preserve DRY principle.
+Nunjucks as a templating language provides everything I was looking for, it comes with support for variables, template inheritance, which is great for defining global layouts, macros, which means custom functions, filters, that modify output and much more. It allows you to split parts of the templates to multiple files to preserve DRY principle.
 
 ```js
 {% extends "base.html" %}
@@ -55,13 +55,13 @@ Nunjucks provides everything I was looking, it comes with support for variables,
 {% endblock %}
 ```
 
-Here comes the question - why not just use any of these [static site generators](https://www.staticgen.com/)? Or maybe React, which is component based by default? I think it would be unnecessary overkill to create dummy templates with those. I have to keep in mind I don't know who is going to use my work, either its output or the source code, so I try to make things as simple as possible for the end user, let it be anyone. Recently I also came upon the [Embedded JavaScript templating](https://ejs.co/) that seems like an alternative for Nunjucks.
+Here comes the question - why not just use any of these [static site generators](https://www.staticgen.com/)? Or maybe React, which is component based by default? I think it would be unnecessary overkill to create dummy templates with those. I have to keep in mind I don't know who is going to use my work, either its output or the source code, so I try to make things as simple as possible for the end user, let it be anyone. Recently I also came upon the [Embedded JavaScript templating](https://ejs.co/) that seems like a good alternative.
 
 ### Gulp & Browsersync
 
 Widely known task automation manager gulp still has its place in today's web development even though we have powerful Webpack now. Tasks configured via plain JavaScript functions are understandable for a broad audience. Browsersync speeds up your development process with automatic synchronizing of your changes that are reflected in the browser, or multiple browsers, or even mobile devices, at the same moment. It saves a lot of time.
 
-Here is how an [example `gulpfile.js`](https://gist.github.com/crazko/d59053a5f3c236a20d27eacbb8a5e920) could look like. It's a bit simplified because no project has the same settings.
+Here is an [example](https://gist.github.com/crazko/d59053a5f3c236a20d27eacbb8a5e920) how a `gulpfile.js` could look like. It's a bit simplified because no project has the same settings.
 
 ### Bitbucket
 
