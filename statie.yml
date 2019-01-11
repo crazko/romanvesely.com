@@ -23,9 +23,4 @@ parameters:
 
     generators:
         posts:
-          variable: 'post'
-          variable_global: 'posts'
-          path: '_posts'
-          layout: '_layouts/post.latte'
           route_prefix: ''
-          object: Symplify\Statie\Renderable\File\PostFile
