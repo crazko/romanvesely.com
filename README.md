@@ -27,4 +27,3 @@ My personal web site [https://romanvesely.com](https://romanvesely.com).
 ### `./bin/` files:
 
 - `social-images` - creates images suitable for social networks in "dev.to" style
-- `deploy` - creates and sends zip with all data to Netlify in the end of Travis build. Now, as the PHP7.2 is available in Netlify, whole build process could be moved there and drop this step.
