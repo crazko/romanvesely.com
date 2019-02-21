@@ -5,9 +5,14 @@
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://romanvesely.netlify.com/*"
-  to = "https://romanvesely.com/:splat"
+  to = "https://romanvesely.sk/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/cv"
+  to = "https://drive.google.com/file/d/1tnNRSruXTkcBr42tRiXbyM71Ab5MBCzq/view"
+  status = 200
 
 # Check results https://securityheaders.com
 [[headers]]
