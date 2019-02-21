@@ -12,7 +12,7 @@
 [[redirects]]
   from = "/cv"
   to = "https://drive.google.com/file/d/1tnNRSruXTkcBr42tRiXbyM71Ab5MBCzq/view"
-  status = 200
+  status = 302
 
 # Check results https://securityheaders.com
 [[headers]]
