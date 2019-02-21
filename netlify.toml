@@ -1,0 +1,21 @@
+[build]
+  publish = "dist/"
+  command = "composer check && npm run build"
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://romanvesely.netlify.com/*"
+  to = "https://romanvesely.sk/:splat"
+  status = 301
+  force = true
+
+# Check results https://securityheaders.com
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self'"
+    Feature-Policy = "camera 'none'; microphone 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
