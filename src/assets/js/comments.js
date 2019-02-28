@@ -63,7 +63,7 @@
   try {
     const social = document.getElementById('social');
     createButtons();
-    createShare();
+    // createShare();
 
     const discussionButton = createDiscussionButton();
 
