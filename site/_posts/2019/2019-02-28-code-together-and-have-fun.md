@@ -14,7 +14,7 @@ A competitor is also restricted only to use the [web-based editor](http://codein
 
 So, the idea was to hold an event locally in our office after the working hours. I wanted it to be not so restrictive about the used editor - all of us like to work with something else - and let everyone leverage the strengths of their choice. Yes, I'm talking about [Emmet](https://emmet.io/) and snippets support. I knew that PhpStorm, Sublime Text, and vscode are used among us, but in the end, all of us decided for vscode.
 
-Another change compared to the original idea was that the audience (everybody not coding at that moment) could have see the preview of those currently competing. This was very important for me. I'd say it was the main purpose of the event: grab some beer, watch and have fun while others are dying trying and not knowing what they are doing. And here and there it was really a comedy.
+Another difference, in comparison with the original idea, was that the audience (everybody not coding at that moment) could have see the preview of those currently competing. This was very important for me. I'd say it was the main purpose of the event: grab some beer, watch and have fun while others are dying trying and not knowing what they are doing. And here and there it was really a comedy.
 
 <div class="image" markdown="1">
 ![BlindNess coding #0](/assets/posts/code-together-and-have-fun/blindness-coding.jpg)
