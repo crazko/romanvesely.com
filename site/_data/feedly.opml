@@ -89,6 +89,7 @@
             <outline type="rss" text="Matthew Turland" title="Matthew Turland" xmlUrl="https://matthewturland.com/feed.xml"/>
             <outline type="rss" text="devBlog of Michal Zalecki" title="devBlog of Michal Zalecki" xmlUrl="http://michalzalecki.com/feed.xml" htmlUrl="https://michalzalecki.com/"/>
             <outline type="rss" text="Souki.cz" title="Souki.cz" xmlUrl="http://www.souki.cz/feed" htmlUrl="https://www.souki.cz"/>
+            <outline type="rss" text="Felix DevBlog" title="Felix DevBlog" xmlUrl="https://f3l1x.io/blog/feed.xml" htmlUrl="https://f3l1x.io"/>
         </outline>
     </body>
 </opml>
