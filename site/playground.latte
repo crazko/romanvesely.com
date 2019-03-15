@@ -3,7 +3,7 @@ layout: "_layouts/default.latte"
 title: Playground
 ---
 
-{block content}
+{block maincontent}
 {foreach $projects['trivial'] as $project}
 	{ifset $project['image']}
 		{include "_snippets/layout/image.latte", src => $project['image'], url => $project['url'], alt => $project['name']}

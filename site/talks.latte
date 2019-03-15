@@ -3,7 +3,7 @@ layout: "_layouts/default.latte"
 title: Talks
 ---
 
-{block content}
+{block maincontent}
 {foreach $talks as $talk}
 	{ifset $talk['image']}
 		{include "_snippets/layout/image.latte", src => $talk['image'], url => $talk['url'], alt => $talk['name']}

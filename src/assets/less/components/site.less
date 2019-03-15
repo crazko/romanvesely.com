@@ -36,11 +36,32 @@ h1 {
 
 	@media @screen--wide {
 		padding: 2rem;
-	}
+    }
+
+    a {
+        color: inherit;
+        cursor: text;
+    }
 }
 
 h2 {
-	margin-top: @padding--wide;
+    margin-top: @padding--wide;
+
+}
+
+.article h2 a,
+.article h3 a,
+.article h4 a {
+    color: inherit;
+    text-decoration: none !important;
+
+    &:hover::before {
+        display: inline-block;
+        content: "#";
+        padding-right: 0.5ch;
+        margin-left: -1.5ch;
+        border: 0 !important;
+    }
 }
 
 pre,
