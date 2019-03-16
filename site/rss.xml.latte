@@ -14,16 +14,11 @@
 		{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
 
 		{first}<lastBuildDate>{$post->getDateInFormat('r')}</lastBuildDate>{/first}
-		{var $url = $site['url'] . '/' . $post->getRelativeUrl() . '/'}
-
-		{ifset $post['external']}
-			{var $url = $post['external']}
-		{/ifset}
 
 		<item>
 			<title>{$post['title']}</title>
-			<link>{$url}</link>
-			<guid isPermaLink="false">{$url}</guid>
+			<link>{$site['url']}/{$post|link}</link>
+			<guid isPermaLink="false">{$site['url']}/{$post|link}</guid>
 			<pubDate>{$post->getDateInFormat('r')}</pubDate>
 			<description>{$post['description']|striptags}</description>
 			<dc:creator>{$author}</dc:creator>

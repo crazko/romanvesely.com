@@ -7,19 +7,13 @@ title: Notes
 
 {foreach $posts as $post}
 	{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
-
-	{var $url = '/' . $post['relativeUrl'] . '/'}
-	{ifset $post['external']}
-		{var $url = $post['external']}
-	{/ifset}
-
 	<article>
 		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url, alt => $post['title']}{/ifset}
-		<h2><a href="{$url}">{$post['title']}</a></h2>
+		<h2><a href="/{$post|link}">{$post['title']}</a></h2>
 		{include "_snippets/post/postMeta.latte", post => $post}
 
 		<p>{$post['description']|noescape}</p>
-		<p><a href="{$url}" class="link--more">Read more</a></p>
+		<p><a href="/{$post|link}" class="link--more">Read more</a></p>
 	</article>
 {/foreach}
 {/block}
