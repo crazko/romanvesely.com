@@ -2,11 +2,9 @@ imports:
     - { resource: 'manifest.yml', ignore_errors: true }
     - { resource: 'site/_data/projects.yml' }
     - { resource: 'site/_data/talks.yml' }
-    - { resource: 'src/SocialImages/config/config.yml' }
 
 parameters:
     github_repository_source_directory: https://github.com/crazko/romanvesely.com/tree/master/site
-    markdown_headline_anchors: true
 
     # other constants
     author: Roman Veselý
@@ -23,9 +21,4 @@ parameters:
 
     generators:
         posts:
-          variable: 'post'
-          variable_global: 'posts'
-          path: '_posts'
-          layout: '_layouts/post.latte'
           route_prefix: ''
-          object: Symplify\Statie\Renderable\File\PostFile

@@ -12,13 +12,9 @@
   "items": [
   {foreach $posts as $post}
     {continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
-    {var $url = $site['url'] . '/' . $post->getRelativeUrl() . '/'}
-    {ifset $post['external']}
-      {var $url = $post['external']}
-    {/ifset}
     {
-      "id": "{$url}",
-      "url": "{$url}",
+      "id": "{$site['url']}/{$post|link}",
+      "url": "{$site['url']}/{$post|link}",
       "title": "{$post['title']}",
       "content_text": "{$post['description']|striptags|replace:'"','\"'}",
       {ifset $post['promoImage']}"image": "{$site['url']}{$post['promoImage']}",{/ifset}

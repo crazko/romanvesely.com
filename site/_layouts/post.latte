@@ -15,13 +15,15 @@
 	<meta property="og:image" content="{$image}" />
 {/block}
 
-{block content}
+{block maincontent}
 	{include "_snippets/post/postMeta.latte", post => $post, showSuggestEdit => true, isDetail => true}
 	<p class="post__description">{$post['description']|noescape}</p>
 
 	{ifset $post['promoImage']}{include "_snippets/post/image.latte", src => $post['promoImage'], url => $site['url'], alt => $post['title']}{/ifset}
 
-	{$post['content']|noescape}
+    <div class="article">
+	    {$post['content']|noescape}
+    </div>
 
 	<div class="post__signature">Roman</div>
 

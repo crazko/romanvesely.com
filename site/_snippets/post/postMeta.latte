@@ -3,13 +3,27 @@
 {default $showSuggestEdit = false}
 {default $isDetail = false}
 
-{var $readingTime = $post['readingTime'] ?? $post->getReadingTimeInMinutes()}
-{var $url = sprintf("%s/%s", $site['url'], $post['relativeUrl'])}
-{var $classes = $isDetail ? "post__meta post__meta--detail" : "post__meta"}
+<ul class="{$isDetail ? "post__meta post__meta--detail" : "post__meta"}">
+	<li class="post__meta-item">
+        <time datetime="{$post->getDateInFormat('Y-m-d')}">
+            {$post->getDateInFormat('d. F Y')}
+        </time>
+    </li>
 
-<ul class="{$classes}">
-	<li class="post__meta-item">{$post->getDateInFormat('d. F Y')}</li>
-	{if $showCommentsCount}<li class="post__meta-item"><span class="disqus-comment-count" data-disqus-url="{$url}"></span></li>{/if}
-	{if $showReadingTime}<li class="post__meta-item">{$readingTime}min to read</li>{/if}
-	{if $showSuggestEdit}<li class="post__meta-item"><a href="{$post|githubEditPostUrl}">suggest an edit</a></li>{/if}
+	{if $showReadingTime}
+    <li class="post__meta-item">
+        {$post->getReadingTimeInMinutes()} min</li>
+    {/if}
+
+	{if $showCommentsCount}
+    <li class="post__meta-item">
+        <span class="disqus-comment-count" data-disqus-url="{$site['url']}/{$post|link}"></span>
+    </li>
+    {/if}
+
+	{if $showSuggestEdit}
+    <li class="post__meta-item">
+        <a href="{$post|githubEditPostUrl}">suggest an edit</a>
+    </li>
+    {/if}
 </ul>
