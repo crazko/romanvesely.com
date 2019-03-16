@@ -5,7 +5,6 @@ imports:
 
 parameters:
     github_repository_source_directory: https://github.com/crazko/romanvesely.com/tree/master/site
-    post_template_path: '_layouts/post.latte'
 
     # other constants
     author: Roman Veselý
@@ -19,3 +18,7 @@ parameters:
     gravatar:
         email: crazko@gmail.com
         url: https://www.gravatar.com/avatar/
+
+    generators:
+        posts:
+          route_prefix: ''
