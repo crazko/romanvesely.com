@@ -4,8 +4,26 @@
 {default $isDetail = false}
 
 <ul class="{$isDetail ? "post__meta post__meta--detail" : "post__meta"}">
-	<li class="post__meta-item"><time datetime="{$post->getDateInFormat('Y-m-d')}">{$post->getDateInFormat('d. F Y')}</time></li>
-	{if $showCommentsCount}<li class="post__meta-item"><span class="disqus-comment-count" data-disqus-url="{$site['url']}/{$post|link}"></span></li>{/if}
-	{if $showReadingTime}<li class="post__meta-item">{$post->getReadingTimeInMinutes()}min to read</li>{/if}
-	{if $showSuggestEdit}<li class="post__meta-item"><a href="{$post|githubEditPostUrl}">suggest an edit</a></li>{/if}
+	<li class="post__meta-item">
+        <time datetime="{$post->getDateInFormat('Y-m-d')}">
+            {$post->getDateInFormat('d. F Y')}
+        </time>
+    </li>
+
+	{if $showReadingTime}
+    <li class="post__meta-item">
+        {$post->getReadingTimeInMinutes()} min</li>
+    {/if}
+
+	{if $showCommentsCount}
+    <li class="post__meta-item">
+        <span class="disqus-comment-count" data-disqus-url="{$site['url']}/{$post|link}"></span>
+    </li>
+    {/if}
+
+	{if $showSuggestEdit}
+    <li class="post__meta-item">
+        <a href="{$post|githubEditPostUrl}">suggest an edit</a>
+    </li>
+    {/if}
 </ul>
