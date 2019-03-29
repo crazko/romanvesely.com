@@ -4,16 +4,21 @@ title: Notes
 ---
 
 {block maincontent}
-
+{var year = null}
 {foreach $posts as $post}
-	{continueIf $post->getDateInFormat('Y-m-d') > date('Y-m-d')}
-	<article>
-		{ifset $post['promoImage']}{include "image", src => $post['promoImage'], url => $url, alt => $post['title']}{/ifset}
-		<h2><a href="/{$post|link}">{$post['title']}</a></h2>
-		{include "_snippets/post/postMeta.latte", post => $post}
+    {var $postDate = $post->getDateInFormat('Y-m-d')}
+    {var $postYear = $post->getDateInFormat('Y')}
 
-		<p>{$post['description']|noescape}</p>
-		<p><a href="/{$post|link}" class="link--more">Read more</a></p>
+    {continueIf $postDate > date('Y-m-d')}
+
+    {if $year !== $postYear}
+        {var year = $postYear}
+        <h2>{$year}</h2>
+    {/if}
+
+	<article class="note">
+		<h3 class="note__header"><a href="/{$post|link}">{$post['title']}</a></h3>
+        <time datetime="{$postDate}" class="post__meta">{$post->getDateInFormat('d. F Y')}</time>
 	</article>
 {/foreach}
 {/block}
