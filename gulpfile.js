@@ -97,7 +97,8 @@ function manifest(callback) {
 
 function watch() {
   browserSync.init({
-    server: paths.dist
+    server: paths.dist,
+    open: false
   });
 
   gulp.watch(paths.styles.src + '/**/*.less', styles);
