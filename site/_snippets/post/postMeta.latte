@@ -5,7 +5,7 @@
 
 <ul class="{$isDetail ? "post__meta post__meta--detail" : "post__meta"}">
 	<li class="post__meta-item">
-        <time datetime="{$post->getDateInFormat('Y-m-d')}">
+        <time datetime="{$post->getDateInFormat('Y-m-d')}" title="{$post->getDateInFormat('Y-m-d')}">
             {$post->getDateInFormat('d. F Y')}
         </time>
     </li>
