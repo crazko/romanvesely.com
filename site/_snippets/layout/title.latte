@@ -3,7 +3,7 @@
 {if isset($dontIncludeTitle)}
 	{$appendix}
 {elseif isset($title)}
-	{$title} | {$appendix}
+	{$title|firstUpper} | {$appendix}
 {else}
 	{$appendix}
 {/if}
