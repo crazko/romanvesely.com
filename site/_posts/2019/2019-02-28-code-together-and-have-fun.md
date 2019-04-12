@@ -24,7 +24,7 @@ Another difference, in comparison with the original idea, was that the audience 
 
 We had two people coding in one round. The rest were watching the preview at projector screen in a real-time. I as a moderator was choosing a design to code, taking care of time and smooth course.
 
-In front of every competitor was a screen with a current task, that was not connected to their computer and could be changed on demand be me/moderator. That way they could care only about the code. The projector screen was split into halves to show the results of both contestants side-by-side.
+In front of every competitor was a screen with a current task, that was not connected to their computer and could be changed on demand by me/moderator. That way they could care only about the code. The projector screen was split into halves to show the results of both contestants side-by-side.
 
 All of this was easily possible thanks to the Browsersync's feature called [tunneling](https://www.browsersync.io/docs/options#option-tunnel), provided by [localtunnel.me](localtunnel.me). Every coder created a tunnel and shared a URL with me, so I could put it on the screen for the audience. I created a tunnel to show the design for the competitors.
 
