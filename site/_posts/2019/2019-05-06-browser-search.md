@@ -26,8 +26,9 @@ You have to add engine name, keyword or nickname which is the shortcut you use i
 
 It's a bit different in Firefox where you add custom engines as add-ons, so you have to search them up in their [add-ons portal](https://addons.mozilla.org/en-US/firefox/search/?sort=rating&type=search). You can set a custom keyword afterward.
 
-## My current settings:
+## My current settings
 
+<div style="overflow-x:auto;" markdown="1">
 | name           | keyword            | url                                                      |
 | -------------- | ------------------ | -------------------------------------------------------- |
 | DuckDuckGo     | `d`                | `https://duckduckgo.com/?q=%s`                           |
@@ -40,6 +41,7 @@ It's a bit different in Firefox where you add custom engines as add-ons, so you 
 | YouTube        | `yt`               | `https://www.youtube.com/results?search_query=%s`        |
 | MDN            | `mdn`              | `https://developer.mozilla.org/en-US/search?q=%s`        |
 | PHP            | `php`              | `https://www.php.net/manual-lookup.php?pattern=%s`       |
+</div>
 
 You can [edit this page](https://github.com/crazko/romanvesely.com/blob/master/site/_posts/2019/2019-05-06-browser-search.md) and add more useful search engines!
 
