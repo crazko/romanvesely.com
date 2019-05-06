@@ -14,7 +14,7 @@ This is how the usage of a custom search engine looks like in the wild:
 
 Where to look for? Use the following addresses:
 
-- [vivaldi://settings/search/](vivaldi://settings/search/) in Vivaldi, under Seach Engines
+- [vivaldi://settings/search/](vivaldi://settings/search/) in Vivaldi, under Search Engines
 - [about:preferences#search](about:preferences#search) in Firefox, under One-Click Search Engines
 - [chrome://settings/searchEngines](chrome://settings/searchEngines) in Chrome, Opera and Brave, as all of them will redirect you to correct address
 
@@ -51,11 +51,11 @@ You can [edit this page](https://github.com/crazko/romanvesely.com/blob/master/s
 
 ## Pitfall
 
-Let's say I want to find out something regarding npm cli options.
+Let's say I want to know more about npm console options.
 
 In a hurry, I type `npm cli options` in the address bar and get ["0 packages found"](https://www.npmjs.com/search?q=cli%20options) as a result. Huh? That's because I set `npm` keyword to search in the npm package database. To overcome this behavior I need to use `g npm cli options` to tell the browser to use Google as a search engine.
 
-That's definitely not the end of the world, but it can be confusing sometimes. It may be solved with choosing different keywords, it's up to your preferences!
+That's definitely not the end of the world, but it can be confusing sometimes. It may be solved by choosing different keywords, it's up to your preferences!
 
 <div class="tip" markdown="1">
 Do you have any other interesting use cases?
