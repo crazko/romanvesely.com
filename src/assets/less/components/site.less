@@ -96,7 +96,7 @@ pre[class*='language-'] {
 }
 
 code {
-	font-size: 0.8rem;
+	font-size: 0.8em;
 	padding: 3px 5px;
 
 	pre & {
@@ -134,4 +134,26 @@ blockquote {
 	p {
 		display: inline;
 	}
+}
+
+table {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+tr + tr {
+    border-top: 2px solid @font-color--link-content-line;
+}
+
+td {
+   padding: 0.25em 0;
+}
+
+th + th,
+td + td {
+    padding-left: 1em;
 }
