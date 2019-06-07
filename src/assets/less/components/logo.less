@@ -1,3 +1,11 @@
+.logo-radius {
+	width: @logo-width;
+	height: @logo-width;
+	border-radius: 50%;
+}
+
+// ----
+
 .logo {
 	display: flex;
 	flex: 1;
@@ -7,38 +15,27 @@
 	font-size: 1.2rem;
 	font-weight: 200;
 	color: shade(@bg-color--side, 65%);
-	display: none;
-
-	@media @screen--wide {
-		display: block;
-	}
-
-	&:hover img {
-		opacity: 1;
-	}
-}
-
-.logo-radius {
-	width: @logo-width;
-	height: @logo-width;
-	border-radius: 50%;
-}
-
-.logo__image {
-	.logo-radius();
-	.transition();
-}
-
-.logo__background {
+    display: none;
 	.logo-radius();
 
 	background: url('../img/doomface.gif') center center no-repeat,
 		linear-gradient(135deg, @bg-color--side, shade(@bg-color--side));
-	background-size: 80%, 100%;
+    background-size: 80%, 100%;
 
-	&:hover img {
-		opacity: 1;
-		box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.2);
-		transform: translateX(@logo-push) rotate(@logo-rotate);
+	@media @screen--wide {
+		display: block;
 	}
 }
+
+.logo__link:hover .logo__image {
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.2);
+    transform: translateX(@logo-push) rotate(@logo-rotate);
+}
+
+.logo__image {
+    .logo-radius();
+    .transition();
+    transition-property: transform, box-shadow;
+    opacity: 1 !important;
+}
+
