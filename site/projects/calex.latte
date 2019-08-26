@@ -1,0 +1,24 @@
+---
+layout: "_layouts/default.latte"
+title: Calex - Chrome Extension
+---
+
+{block maincontent}
+<p class="post__description">Shows event descriptions in Google Calendar. Descriptions of the events are displayed in the agenda and search view.</p>
+
+<p class="tip">
+    <a href="https://chrome.google.com/webstore/detail/calex-for-google-calendar/ccoehijdbponhcemihobmdpaeenmgchg">Download</a> &middot; <a href="#privacy-policy">Privacy Policy</a> &middot; <a href="https://github.com/crazko/calex">GitHub</a>
+</p>
+
+{include "_snippets/layout/image.latte", src => "/assets/thumbs/calex.png", url => "https://chrome.google.com/webstore/detail/calex-for-google-calendar/ccoehijdbponhcemihobmdpaeenmgchg", alt => "Calex Chrome Extension"}
+
+<h2 id="privacy-policy">Privacy Policy</h2>
+<h3>What Information Do We Collect?</h3>
+<p>We do not collect, log and store any personal data nor use any tracking software. The only stored are access tokens to your calendar data in the local storage of your browser. You can revoke access for calex extension to your calendar data at any time in the <a href="https://myaccount.google.com/permissions" rel="nofollow">Google account security settings</a> for third-party apps.</p>
+
+<h3>How Do We Use the Information?</h3>
+<p>The extension needs to access your Google Calendar data in order to display event descriptions in the Calendar. Event data is sent straight to your browser and is removed when you close the tab with Calendar.</p>
+
+<h3>What Information Do We Share?</h3>
+<p>We do not share any data with third-parties.</p>
+{/block}
