@@ -17,6 +17,7 @@ var paths = {
     src: [
       'node_modules/prismjs/prism.js',
       'node_modules/prismjs/components/prism-php.js',
+      'node_modules/prismjs/components/prism-bash.js',
       'src/assets/js/**/*.js',
     ],
     dist: 'dist/assets/js',
