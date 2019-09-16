@@ -1,39 +1,34 @@
 parameters:
     projects:
         serious:
-            -
-                name: Post social image
-                title: Creates images suitable for social sharing
-                description: PHP library and a simple command line tool to generate images suitable for sharing on social media sites.
-                url: https://packagist.org/packages/crazko/post-social-image
-                repository: https://github.com/crazko/post-social-image
-                image: /assets/thumbs/post-social-image.png
-            -
-                name: Calex
-                title: "Browser extension that shows events' descriptions in Google Calendar"
-                description: "I like to take notes and keep a daily journal so I have tried many apps for that purpose, but none of them fulfilled my expectations. Since I use Google Calendar quite a lot and in many different aspects of my life, I decided to keep notes inside, in the descriptions of the events. This browser extension makes it easier to read them. Give it a try."
-                url: /projects/calex
-                repository: https://github.com/crazko/calex
-                image: /assets/thumbs/calex.png
+            - name: Post social image
+              title: Creates images suitable for social sharing
+              description: PHP library and a simple command line tool to generate images suitable for sharing on social media sites.
+              url: https://packagist.org/packages/crazko/post-social-image
+              repository: https://github.com/crazko/post-social-image
+              image: /assets/thumbs/post-social-image.png
+            - name: Kalendario
+              title: "Browser extension that shows event descriptions in Google Calendar"
+              description: "I like to take notes and keep a daily journal so I have tried many apps for that purpose, but none of them fulfilled my expectations. Since I use Google Calendar quite a lot and in many different aspects of my life, I decided to keep notes inside, in the descriptions of the events. This browser extension makes it easier to read them. Give it a try."
+              url: https://kalendario.org
+              repository: https://github.com/crazko/kalendario
+              image: /assets/thumbs/kalendario.png
         trivial:
-            -
-                name: Blindness coding
-                title: Simple yet fully-working solution for your own contest
-                description: Inspired by Code in the Dark, this repository provides a simple yet fully-working solution for your own contest in HTML+CSS blind coding. You can use your favorite editor and share your progress live in index.html thanks to tunneling so the audience can watch multiple contestants on the projector.
-                url: /code-together-and-have-fun/
-                repository: https://github.com/crazko/blindness-coding
-                image: /assets/thumbs/blindness-coding.png
-            -
-                name: Simple Timer
-                title: Yet another timer written in React
-                description: "I was desperately looking for some timer that'd be working from a computer as well as from a cell phone. My hunt for the one meeting my requirements wasn't successful, so I had to create something myself."
-                url: https://crazko.github.io/timer/
-                repository: https://github.com/crazko/timer
-                image: /assets/thumbs/timer.png
-            -
-                name: Fomin
-                title: Powerlifting routine weight calculator
-                description: "Whether you are interested in a strength or in a muscle gaining, powerlifting may be a good bet for you. Fomin is one of the prescribed programs out there. This small app helps you to calculate your weights needed to complete this routine."
-                url: https://crazko.github.io/fomin/
-                repository: https://github.com/crazko/fomin
-                image: /assets/thumbs/fomin.png
+            - name: Blindness coding
+              title: Simple yet fully-working solution for your own contest
+              description: Inspired by Code in the Dark, this repository provides a simple yet fully-working solution for your own contest in HTML+CSS blind coding. You can use your favorite editor and share your progress live in index.html thanks to tunneling so the audience can watch multiple contestants on the projector.
+              url: /code-together-and-have-fun/
+              repository: https://github.com/crazko/blindness-coding
+              image: /assets/thumbs/blindness-coding.png
+            - name: Simple Timer
+              title: Yet another timer written in React
+              description: "I was desperately looking for some timer that'd be working from a computer as well as from a cell phone. My hunt for the one meeting my requirements wasn't successful, so I had to create something myself."
+              url: https://crazko.github.io/timer/
+              repository: https://github.com/crazko/timer
+              image: /assets/thumbs/timer.png
+            - name: Fomin
+              title: Powerlifting routine weight calculator
+              description: "Whether you are interested in a strength or in a muscle gaining, powerlifting may be a good bet for you. Fomin is one of the prescribed programs out there. This small app helps you to calculate your weights needed to complete this routine."
+              url: https://crazko.github.io/fomin/
+              repository: https://github.com/crazko/fomin
+              image: /assets/thumbs/fomin.png
