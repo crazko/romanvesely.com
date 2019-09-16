@@ -14,6 +14,12 @@ parameters:
               repository: https://github.com/crazko/kalendario
               image: /assets/thumbs/kalendario.png
         trivial:
+            - name: Statie  Site
+              title: Documentation site for Statie, simple PHP static site generator
+              description: "In late 2017 I found an Adam Wathan's article on <a href=\"https://adamwathan.me/css-utility-classes-and-separation-of-concerns/\">CSS utility classes</a>. I had only heard about tachyons until that time and didn't like the concept very much. But I dived in and changed my mind. I wanted to use his Tailwind CSS framework, but I was not working on anything suitable for it to try. Shortly I came with an idea for a new site for Statie, simple PHP static site generator, which I had been already using for my own site. It lacked its home, so I acquainted with the new CSS methodology while making one for it!"
+              url: https://www.statie.org
+              repository: https://github.com/crazko/statie-web
+              image: /assets/thumbs/statie.png
             - name: Blindness coding
               title: Simple yet fully-working solution for your own contest
               description: Inspired by Code in the Dark, this repository provides a simple yet fully-working solution for your own contest in HTML+CSS blind coding. You can use your favorite editor and share your progress live in index.html thanks to tunneling so the audience can watch multiple contestants on the projector.
