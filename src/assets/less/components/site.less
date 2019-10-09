@@ -1,16 +1,16 @@
 html {
-	background: @bg-color--main;
-	color: @font-color--main;
-	font-family: @font-families;
-	font-size: @font-size--small;
-	font-weight: 300;
-	line-height: 1.75em;
-	overflow-y: scroll;
-	overflow-x: hidden; // logo hover fix
+    background: @bg-color--main;
+    color: @font-color--main;
+    font-family: @font-families;
+    font-size: @font-size--small;
+    font-weight: 300;
+    line-height: 1.75em;
+    overflow-y: scroll;
+    overflow-x: hidden; // logo hover fix on small screen
 
-	@media @screen--wide {
-		font-size: @font-size--wide;
-	}
+    @media @screen--wide {
+        font-size: @font-size--wide;
+    }
 }
 
 body {
@@ -21,29 +21,29 @@ body {
 }
 
 a {
-	color: @font-color--link;
-	text-decoration: none;
-	.transition(~'color');
+    color: @font-color--link;
+    text-decoration: none;
+    .transition(~'color');
 
-	&:hover {
-		color: @font-color--link-content;
+    &:hover {
+        color: @font-color--link-content;
 
-		img {
-			opacity: 0.8;
-		}
-	}
+        img {
+            opacity: 0.8;
+        }
+    }
 }
 
 h1 {
     background-image: linear-gradient(to bottom, shade(@bg-color--side, 3%), @bg-color--side 0.75em);
-	border-top: 1px solid @color-base2;
-	line-height: 1.25em;
-	margin: 0;
-	padding: 1rem;
-	text-align: center;
+    border-top: 1px solid @color-base2;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
 
-	@media @screen--wide {
-		padding: 2rem;
+    @media @screen--wide {
+        padding: 2rem;
     }
 
     a {
@@ -54,7 +54,6 @@ h1 {
 
 h2 {
     margin-top: @padding--wide;
-
 }
 
 .article h2 a,
@@ -65,7 +64,7 @@ h2 {
 
     &:hover::before {
         display: inline-block;
-        content: "#";
+        content: '#';
         padding-right: 0.5ch;
         margin-left: -1.5ch;
         border: 0 !important;
@@ -74,39 +73,38 @@ h2 {
 
 pre,
 code {
-	color: @font-color--code;
-	font-family: monospace !important;
-	font-size: 0.9rem;
-	line-height: 1.35 !important;
+    color: @font-color--code;
+    font-family: monospace !important; // Overwrite prismjs theme styles
+    line-height: 1.35 !important; // Overwrite prismjs theme styles
 }
 
 code:not([class]) {
-	background: @bg-color--code;
+    background: @bg-color--code;
 }
 
 pre[class*='language-'] {
-	border-radius: 0;
-	margin-left: -@padding--basic;
-	margin-right: -@padding--basic;
-	padding-left: @padding--basic;
-	padding-right: @padding--basic;
+    border-radius: 0; // Overwrite prismjs theme styles
+    margin-left: -@padding--basic;
+    margin-right: -@padding--basic;
+    padding-left: @padding--basic;
+    padding-right: @padding--basic;
 
-	@media @screen--wide {
-		margin-left: -@padding--wide;
-		margin-right: -@padding--wide;
-		padding-left: @padding--wide;
-		padding-right: @padding--wide;
-	}
+    @media @screen--wide {
+        margin-left: -@padding--wide;
+        margin-right: -@padding--wide;
+        padding-left: @padding--wide;
+        padding-right: @padding--wide;
+    }
 }
 
 code {
-	font-size: 0.8em;
-	padding: 3px 5px;
+    font-size: 0.75rem;
+    padding: 3px 5px;
 
-	pre & {
-		padding: 0;
-		border: none;
-	}
+    pre & {
+        padding: 0;
+        border: none;
+    }
 }
 
 abbr {
@@ -114,30 +112,30 @@ abbr {
 }
 
 img {
-	display: block;
-	height: auto;
-	margin: 0 auto;
-	max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 blockquote {
-	font-family: serif;
-	font-style: italic;
-	quotes: '\201C' '\201D' '\2018' '\2019';
-	margin: @padding--wide @padding--basic;
+    font-family: serif;
+    font-style: italic;
+    quotes: '\201C''\201D''\2018''\2019';
+    margin: @padding--wide @padding--basic;
 
-	&:before {
-		color: @color-supplementary;
-		content: open-quote;
-		font-size: 4em;
-		margin-right: 0.25em;
-		vertical-align: -0.4em;
-		line-height: 0;
-	}
+    &:before {
+        color: @color-supplementary;
+        content: open-quote;
+        font-size: 4em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+        line-height: 0;
+    }
 
-	p {
-		display: inline;
-	}
+    p {
+        display: inline;
+    }
 }
 
 table {
@@ -154,7 +152,7 @@ tr + tr {
 }
 
 td {
-   padding: 0.25em 0;
+    padding: 0.25em 0;
 }
 
 th + th,
