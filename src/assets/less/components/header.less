@@ -1,128 +1,128 @@
 .header {
-	background: @bg-color--side;
-	border-top: @content-line-width solid @content-line-color;
+    background: @bg-color--side;
+    border-top: @content-line-width solid @content-line-color;
 
-	&__container {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		max-width: @content-width;
-		padding: @padding--basic;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: calc(@content-width - 2 * 3rem);
+        padding: @padding--basic;
 
-		@media @screen--wide {
-			flex-direction: row;
-		}
-	}
+        @media @screen--wide {
+            flex-direction: row;
+        }
+    }
 }
 
 .about {
-	display: flex;
-	flex: 1;
+    display: flex;
+    flex: 1;
 
-	@media @screen--wide {
-		flex-direction: column;
-		margin-left: 1em;
-	}
+    @media @screen--wide {
+        flex-direction: column;
+        margin-left: 1em;
+    }
 
-	&__name {
-		flex: 1;
-	}
+    &__name {
+        flex: 1;
+    }
 
-	&__title {
-		color: lighten(@font-color--main, 50);
-		display: none;
-		font-size: 0.6em;
-		font-weight: normal;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
+    &__title {
+        color: lighten(@font-color--main, 50);
+        display: none;
+        font-size: 0.6em;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
 
-		@media @screen--wide {
-			display: inherit;
-		}
-	}
+        @media @screen--wide {
+            display: inherit;
+        }
+    }
 }
 
 .navigation {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
-	margin-bottom: 0;
-	padding: 0;
+    margin-bottom: 0;
+    padding: 0;
 
-	@media @screen--wide {
-		margin-bottom: inherit;
-	}
+    @media @screen--wide {
+        margin-bottom: inherit;
+    }
 
-	&__item {
-		display: inline-block;
-		list-style: none;
-		position: relative;
+    &__item {
+        display: inline-block;
+        list-style: none;
+        position: relative;
 
-		&:not(:last-child) {
-			margin-right: @padding--basic / 2;
-		}
+        &:not(:last-child) {
+            margin-right: @padding--basic / 2;
+        }
 
-		&--active:after {
-			background: @font-color--link-content-line;
-			content: '';
-			display: block;
-			height: 2px;
-			left: 50%;
-			position: absolute;
-			transform: translateX(-50%);
-			width: 1em;
-		}
+        &--active:after {
+            background: @font-color--link-content-line;
+            content: '';
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 1em;
+        }
 
-		&--funky {
-			a:hover {
-				color: @color-supplementary;
-			}
+        &--funky {
+            a:hover {
+                color: @color-supplementary;
+            }
 
-			a:hover span {
-				animation-name: funky;
-				// animation-play-state: running;
-			}
+            a:hover span {
+                animation-name: funky;
+                // animation-play-state: running;
+            }
 
-			span {
-				animation-duration: 2s;
-				animation-iteration-count: infinite;
-				// animation-name: funky;
-				// animation-play-state: paused;
-			}
+            span {
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                // animation-name: funky;
+                // animation-play-state: paused;
+            }
 
-			// playground letters count
-			.funky-letters-delay(10);
-		}
-	}
+            // playground letters count
+            .funky-letters-delay(10);
+        }
+    }
 }
 
 .funky-letters-delay(@n, @i: 0) when (@i =< @n) {
-	span:nth-child(@{i}) {
-		animation-delay: ~'calc(@{i}s * 0.1)';
-	}
+    span:nth-child(@{i}) {
+        animation-delay: ~'calc(@{i}s * 0.1)';
+    }
 
-	.funky-letters-delay(@n, (@i + 1));
+    .funky-letters-delay(@n, (@i + 1));
 }
 
 @keyframes funky {
-	0% {
-		color: @color-supplementary;
-	}
-	20% {
-		color: #ef5350;
-	}
-	40% {
-		color: #29b6f6;
-	}
-	60% {
-		color: #ffee58;
-	}
-	80% {
-		color: #9ccc65;
-	}
-	100% {
-		color: @color-supplementary;
-	}
+    0% {
+        color: @color-supplementary;
+    }
+    20% {
+        color: #ef5350;
+    }
+    40% {
+        color: #29b6f6;
+    }
+    60% {
+        color: #ffee58;
+    }
+    80% {
+        color: #9ccc65;
+    }
+    100% {
+        color: @color-supplementary;
+    }
 }
