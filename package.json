@@ -1,29 +1,43 @@
 {
-  "private": true,
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^2.2.2",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^2.3.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-group-css-media-queries": "^1.2.0",
-    "gulp-less": "^4.0.1",
-    "gulp-load-plugins": "^1.6.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-run": "^1.7.1",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglifyes": "^0.1.2",
-    "gulp-util": "^3.0.5"
-  },
-  "dependencies": {
-    "normalize.css": "^3.0.3",
-    "prismjs": "^1.6.0"
-  },
-  "scripts": {
-    "start": "gulp watch",
-    "dev": "gulp",
-    "build": "gulp build",
-    "clean": "gulp clean"
-  }
+	"private": true,
+	"devDependencies": {
+		"browser-sync": "^2.26.7",
+		"del": "^2.2.2",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^2.3.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.0",
+		"gulp-group-css-media-queries": "^1.2.0",
+		"gulp-less": "^4.0.1",
+		"gulp-load-plugins": "^1.6.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-run": "^1.7.1",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglifyes": "^0.1.2",
+		"gulp-util": "^3.0.5",
+		"prettier": "^1.18.2"
+	},
+	"dependencies": {
+		"normalize.css": "^3.0.3",
+		"prismjs": "^1.6.0"
+	},
+	"scripts": {
+		"start": "gulp watch",
+		"dev": "gulp",
+		"build": "gulp build",
+		"clean": "gulp clean"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"printWidth": 120,
+		"trailingComma": "all",
+		"overrides": [
+			{
+				"files": "*.md",
+				"options": {
+					"tabWidth": 1
+				}
+			}
+		]
+	}
 }
