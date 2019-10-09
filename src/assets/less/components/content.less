@@ -150,7 +150,12 @@
     &__header {
         flex: 1;
         margin: 0;
-        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+
+        @media @screen--small {
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
     }
 }
 
