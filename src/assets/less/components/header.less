@@ -60,10 +60,11 @@
     &__item {
         display: inline-block;
         list-style: none;
+        margin-bottom: 0;
         position: relative;
 
-        &:not(:last-child) {
-            margin-right: @padding--basic / 2;
+        & + & {
+            margin-left: @padding--basic / 2;
         }
 
         &--active:after {
