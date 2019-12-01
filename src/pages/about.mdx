@@ -1,0 +1,36 @@
+---
+title: about
+slug: about
+---
+
+import { Tip } from '../components/Tip';
+
+I created my first websites in the age of floppy disks. [Flash](http://joecartoon.com/) and [ActionScript](http://ps2.praystation.com/pound/v3/) proved me that web may be really fun. I have been devoted to the frontend development for many years and currently being working mainly with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/). I also use tools like [Laravel](https://laravel.com/), [Nette](https://nette.org/) or [WordPress](https://wordpress.org/) to solve things on the backend side. Furthermore, I'm experienced in [ABAP](https://en.wikipedia.org/wiki/ABAP) development in [SAP](http://go.sap.com/) systems.
+
+My interest is in the open source, static sites, continuous integration, security and decentralized applications.
+
+I love science fiction, either as a film or a book. My body is tormented during run or in a gym regularly. Walks in the nature, more-day hiking as well as camping are something I cannot live without. I like to learn new things and often deal with the smallest details to make something great. I come from the beautiful city of Kosice, Slovakia.
+
+From time-to-time I express my thoughts in non-technical way and [write in my native language](https://dennikn.sk/autor/iafke/).
+
+<Tip>
+
+You can check [what I'm doing now](/now), or see my [CV](/cv)
+
+</Tip>
+
+> Tell me what you read and I will tell you who you are.
+
+Here are the books I have read in the [recent](https://www.goodreads.com/review/list/53605807-roman-vesel?read_at=2017&view=covers) [years](https://www.goodreads.com/review/list/53605807-roman-vesel?read_at=2018&view=covers), while below comes what can be found in my <abbr title="Really Simple Syndication">RSS</abbr> reader.
+
+<!-- {php $opml = file_get_contents(getcwd() . '/site/_data/feedly.opml');}
+{php $opml = new SimpleXMLElement($opml);}
+
+<div class="feeds" id="what-do-i-read">
+	<div class="feeds__category" n:foreach="$opml->body->outline as $category">
+		<h3 class="feeds__category-title">{$category['title']}</h3>
+		<ul class="feeds__list" n:inner-foreach="$category->outline as $source">
+			<li><small><a href="{$source['xmlUrl']}" class="feeds__rss">rss</a></small> <a href="{$source['htmlUrl']}">{$source['title']}</a></li>
+		</ul>
+	</div>
+</div> -->

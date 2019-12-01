@@ -5,7 +5,7 @@
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://romanvesely.netlify.com/*"
-  to = "https://romanvesely.sk/:splat"
+  to = "https://romanvesely.com/:splat"
   status = 301
   force = true
 

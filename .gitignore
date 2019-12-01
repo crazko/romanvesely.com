@@ -1,8 +1,5 @@
-/dist
+/public
 /node_modules
-/vendor
 
 *.cache
 *.log
-manifest.yml
-site.zip

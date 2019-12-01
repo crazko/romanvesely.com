@@ -1,0 +1,74 @@
+---
+title: notes
+---
+
+import { graphql, Link } from 'gatsby';
+import { Meta } from '../layout/Meta';
+import { Content } from '../components/Content';
+
+export default ({
+  data: {
+    allMdx: { edges },
+  },
+  pageContext: {
+    frontmatter: { title },
+  },
+}) => {
+  console.log(edges);
+  let year = null;
+  return (
+    <>
+      <Meta title={title} />
+      <h1>{title}</h1>
+      <Content>
+        {edges.map(
+          ({
+            node: {
+              fields: { date, dateLocal, slug },
+              frontmatter: { title },
+            },
+          }) => {
+            let showYear = false;
+            const postYear = new Date(date).getFullYear();
+            if (year !== postYear) {
+              year = postYear;
+              showYear = true;
+            }
+            return (
+              <>
+                {showYear && <h2 key={year}>{year}</h2>}
+                <article className="note" key={title}>
+                  <h3 className="note__header">
+                    <Link to={`/${slug}`}>{title}</Link>
+                  </h3>
+                  <time dateTime={date} title={date} className="post__meta">
+                    {dateLocal}
+                  </time>
+                </article>
+              </>
+            );
+          }
+        )}
+      </Content>
+    </>
+  );
+};
+
+export const pageQuery = graphql`
+  query {
+    allMdx(filter: { fileAbsolutePath: { regex: "/posts/" } }, sort: { fields: fields___date, order: DESC }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          fields {
+            date
+            dateLocal: date(formatString: "DD. MMMM", locale: "en")
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
