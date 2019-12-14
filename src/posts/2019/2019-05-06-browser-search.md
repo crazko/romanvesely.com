@@ -4,8 +4,6 @@ title: Useful search engine shortcuts for browsers
 description: "Most of the modern web browsers today contain functionality to set multiple search engines that can reduce your day-to-day time spent on finding the best results. Some time ago I <a href='https://twitter.com/rmnvsl/status/1027533760387002368'>tweeted</a> about adding GitHub to the browser's search engines list. My list has grown in size since then and I think you may find it useful."
 ---
 
-import { Tip } from '../../components/Tip';
-
 My default browser is [Vivaldi](https://vivaldi.com/), but you can find the same setting in all of the following: Firefox, Chrome, Opera or Brave. I currently don't have access to IE/Edge and haven't found it in Safari; sometimes it's really old-fashioned in comparison with others...
 
 This is how the usage of a custom search engine looks like in the wild:
@@ -30,18 +28,18 @@ It's a bit different in Firefox where you add custom engines as add-ons, so you 
 
 <div style="overflow-x:auto;" markdown="1">
 
-| name           | keyword            | url                                                      |
-| -------------- | ------------------ | -------------------------------------------------------- |
-| DuckDuckGo     | `d`                | `https://duckduckgo.com/?q=%s`                           |
-| Wikipedia      | `w`                | `https://en.wikipedia.org/wiki/Special:Search?search=%s` |
-| Google         | `g`                | `https://www.google.com/search?q=%s`                     |
-| GitHub         | `gh`               | `https://github.com/search?q=%s`                         |
-| Can I use...   | `c`                | `https://caniuse.com/#search=%s`                         |
-| npm            | `npm`              | `https://www.npmjs.com/search?q=%s`                      |
-| Stack Overflow  | `so`               | `https://stackoverflow.com/search?q=%s`                   |
-| YouTube        | `yt`               | `https://www.youtube.com/results?search_query=%s`        |
-| MDN            | `mdn`              | `https://developer.mozilla.org/en-US/search?q=%s`        |
-| PHP            | `php`              | `https://www.php.net/manual-lookup.php?pattern=%s`       |
+| name           | keyword | url                                                      |
+| -------------- | ------- | -------------------------------------------------------- |
+| DuckDuckGo     | `d`     | `https://duckduckgo.com/?q=%s`                           |
+| Wikipedia      | `w`     | `https://en.wikipedia.org/wiki/Special:Search?search=%s` |
+| Google         | `g`     | `https://www.google.com/search?q=%s`                     |
+| GitHub         | `gh`    | `https://github.com/search?q=%s`                         |
+| Can I use...   | `c`     | `https://caniuse.com/#search=%s`                         |
+| npm            | `npm`   | `https://www.npmjs.com/search?q=%s`                      |
+| Stack Overflow | `so`    | `https://stackoverflow.com/search?q=%s`                  |
+| YouTube        | `yt`    | `https://www.youtube.com/results?search_query=%s`        |
+| MDN            | `mdn`   | `https://developer.mozilla.org/en-US/search?q=%s`        |
+| PHP            | `php`   | `https://www.php.net/manual-lookup.php?pattern=%s`       |
 
 </div>
 
@@ -58,5 +56,7 @@ In a hurry, I type `npm cli options` in the address bar and get ["0 packages fou
 That's definitely not the end of the world, but it can be confusing sometimes. It may be solved by choosing different keywords, it's up to your preferences!
 
 <Tip>
+
 Do you have any other interesting use cases?
+
 </Tip>

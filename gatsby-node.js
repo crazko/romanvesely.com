@@ -5,13 +5,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'Mdx') {
-    const slugish = createFilePath({ node, getNode, basePath: 'src/posts' });
+    const file = createFilePath({ node, getNode, basePath: 'src/posts' });
     const re = /(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
-    const matches = re.exec(slugish);
+    const matches = re.exec(file);
 
     if (matches) {
       const date = matches[1];
       const slug = matches[2];
+
+      createNodeField({
+        node,
+        name: 'githubEdit',
+        value: `https://github.com/crazko/romanvesely.com/tree/master${node.fileAbsolutePath.replace(__dirname, '')}`,
+      });
 
       createNodeField({
         node,

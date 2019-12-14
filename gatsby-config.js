@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     url: 'https://romanvesely.com',
-    title: 'Roman Veselý',
-    subtitle: 'Interested in web and stuff',
-    author: 'Roman Veselý',
+    name: 'Roman Veselý',
+    description: 'Personal blog',
     email: 'info@romanvesely.com',
     image: 'favicon.ico',
     codes: {
@@ -13,7 +12,6 @@ module.exports = {
       email: 'crazko@gmail.com',
       url: 'https://www.gravatar.com/avatar/',
     },
-    github: 'https://github.com/crazko/romanvesely.com/tree/master/src',
   },
   plugins: [
     {
@@ -44,12 +42,22 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve(`${__dirname}/src/templates/Page.jsx`),
         },
-        gatsbyRemarkPlugins: ['gatsby-remark-embedder', 'gatsby-remark-images'],
+        // gatsbyRemarkPlugins: ['gatsby-remark-embedder', 'gatsby-remark-images'],
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-embedder',
+          { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
+        ],
       },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
     'gatsby-plugin-twitter',
-    'gatsby-plugin-sharp',
+    // 'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-4520387-26',
+      },
+    },
   ],
 };

@@ -1,14 +1,5 @@
 .content {
   flex: 1;
-  margin: 0 auto;
-  max-width: @content-width;
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-
-  @media @screen--wide {
-    padding: 1rem 3rem;
-  }
 
   a {
     text-decoration: underline;
@@ -16,8 +7,26 @@
     text-decoration-skip-ink: auto; // It is a default value, but why not - https://www.chromestatus.com/feature/5631679087509504
   }
 
-  & > p:last-of-type {
+  p:last-of-type {
     margin-bottom: 0;
+  }
+
+  img {
+    .transition(~'filter');
+    margin: @padding--basic -@padding--basic;
+    display: block;
+    background-color: @color-supplementary;
+    max-width: unset;
+    width: calc(100% + (@padding--basic * 2) + 0.49px);
+
+    // Remove glitch
+    // @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+    -webkit-transform: translateZ(0);
+
+    @media @screen--wide {
+      margin: @padding--basic -@padding--wide;
+      width: calc(100% + (@padding--wide * 2) + 0.49px);
+    }
   }
 }
 

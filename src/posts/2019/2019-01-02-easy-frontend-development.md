@@ -18,22 +18,22 @@ With free hostings available, in the FTP era, it was a bit easier, but with cont
 
 Not that much:
 
--   **share common parts** of the templates - no more copy-pasting same thing to several places
--   have some **updated preview** for a designer or a client - so they can react immediately upon changes (or when they have time for that)
--   a simple **possibility of updates** - to get rid of another copy-pasting over FTP
--   a better way of **distribution of the final solution** - ZIP files, really?
--   faster **feedback handling** - email or chat communication can get messy really fast, and one can overlook important things easily
--   have some **space for documentation** - not only for final backend implementer but also for my future self
+- **share common parts** of the templates - no more copy-pasting same thing to several places
+- have some **updated preview** for a designer or a client - so they can react immediately upon changes (or when they have time for that)
+- a simple **possibility of updates** - to get rid of another copy-pasting over FTP
+- a better way of **distribution of the final solution** - ZIP files, really?
+- faster **feedback handling** - email or chat communication can get messy really fast, and one can overlook important things easily
+- have some **space for documentation** - not only for final backend implementer but also for my future self
 
 ## Today's possibilities
 
 Like I described at the beginning of the article, everything's always changing, but after several tries and failures my current tech-stack consists of:
 
--   [Nunjucks](https://mozilla.github.io/nunjucks/) - JavaScript templating language
--   [Gulp](https://gulpjs.com/) - handles repetitive tasks
--   [Browsersync](https://www.browsersync.io/) - offers live reloading, really beneficial through the development phase
--   [Bitbucket](https://bitbucket.org/) - provides (private) storage for your files
--   [Netlify](https://www.netlify.com/) - hosts your preview
+- [Nunjucks](https://mozilla.github.io/nunjucks/) - JavaScript templating language
+- [Gulp](https://gulpjs.com/) - handles repetitive tasks
+- [Browsersync](https://www.browsersync.io/) - offers live reloading, really beneficial through the development phase
+- [Bitbucket](https://bitbucket.org/) - provides (private) storage for your files
+- [Netlify](https://www.netlify.com/) - hosts your preview
 
 ### Nunjucks
 
@@ -85,8 +85,8 @@ Every project is different, so I didn't specify any CSS preprocessors or JavaScr
 
 Just keep in mind, not everyone is used to work with things like issue tracker or gulp tasks/npm scripts. But it really pays off to teach your clients or coworkers to use them properly. For both sides.
 
-<div class="tip" markdown="1">
-Find it useful? Great! But I can imagine you have a different approach. What does it look like?
-</div>
+<Tip>
 
-*[DRY]: Don't Repeat Yourself
+Find it useful? Great! But I can imagine you have a different approach. What does it look like?
+
+</Tip>

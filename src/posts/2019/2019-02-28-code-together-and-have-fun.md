@@ -16,9 +16,7 @@ So, the idea was to hold an event locally in our office after the working hours.
 
 Another difference, in comparison with the original idea, was that the audience (everybody not coding at that moment) could have see the preview of those currently competing. This was very important for me. I'd say it was the main purpose of the event: grab some beer, watch and have fun while others are dying trying and not knowing what they are doing. And here and there it was really a comedy.
 
-<div class="image" markdown="1">
 ![BlindNess coding #0](/assets/posts/code-together-and-have-fun/blindness-coding.jpg)
-</div>
 
 ## Setup and technical aspects
 
@@ -30,9 +28,11 @@ All of this was easily possible thanks to the Browsersync's feature called [tunn
 
 Browsersync watch for changes and refresh the tunneled URL, **real-time updates for all**! Note that changes have to be saved for Browsersync to catch them so enabling auto-saving option is recommended.
 
-<div class="tip" markdown="1">
+<Tip>
+
 I put together a [simple repository with all the settings](https://github.com/crazko/blindness-coding). Feel free to use it (and let me know, what do you think).
-</div>
+
+</Tip>
 
 ## Conclusion
 
@@ -43,4 +43,3 @@ No one would say 15 minutes can pass so quickly. You _shouldn't_ expect any fund
 Here are [some designs I chose for us](https://drive.google.com/open?id=1bt872tB7ICe_4dz9oZ2omP0_gfAw0C7g), but for the next round, I'm thinking about less sophisticated ones. To design only a logo, or only some part of the site, like navigation, let's say.
 
 Let me know if you have had a similar experience!
-

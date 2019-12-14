@@ -1,8 +1,9 @@
 import React from 'react';
+import { Container } from '../components/Container';
 
 export const Sources = ({ sources }) => (
   <section className="post__sources">
-    <div className="content">
+    <Container>
       <h3>Sources</h3>
       <ul className="post__sources-list">
         {sources.map(([link, title]) => (
@@ -11,6 +12,6 @@ export const Sources = ({ sources }) => (
           </li>
         ))}
       </ul>
-    </div>
+    </Container>
   </section>
 );

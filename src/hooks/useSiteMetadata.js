@@ -7,9 +7,8 @@ export const useSiteMetadata = () => {
         site {
           siteMetadata {
             url
-            title
-            subtitle
-            author
+            name
+            description
             email
             image
             codes {
@@ -19,7 +18,6 @@ export const useSiteMetadata = () => {
               email
               url
             }
-            github
           }
         }
       }

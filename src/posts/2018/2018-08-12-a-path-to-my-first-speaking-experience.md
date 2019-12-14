@@ -12,9 +12,11 @@ After some hesitation, I made the first step, step outside of the well-known com
 
 Phew, that was easy! Yeah, but the harder part to come. I had just around three weeks to prepare myself for my first performance in front of hundreds of people.
 
-<div class="tip" markdown="1">
+<Tip>
+
 Side note: PHPLive is specific in a way that it is held in two cities for two days. In Ostrava, Czech Republic, first day and in Zilina, Slovak Republic, the day after.
-</div>
+
+</Tip>
 
 ## Preparation
 
@@ -40,9 +42,7 @@ At the school, we were learned how to create a presentation. Anyone who had slid
 
 I had done one more thing before I opened Google Slides. I needed to give those notes correct structure so I created a mind map:
 
-<div class="image" markdown="1">
 [![Mind Map](/assets/posts/a-path-to-my-first-speaking-experience/mind-map.png)](https://coggle.it/diagram/WoHihAWJuAABqwgD/t/ako-si-sprijemnit-pracovny-zivot/978659faac09ba4d56e5a919b6a0c1df106830ce1b7f12d3ba7c9b34e7259450)
-</div>
 
 The map served me well in forming the slides as well as for a "final notes" for what I was actually going to say on d-day. Each slide couldn't be simpler with either a short title, a photo or a graph.
 
@@ -54,8 +54,8 @@ I bet many of you know TED, either the main conference or many individual deriva
 
 Funny thing is that all three items in the key are bad. They can just be bad or very bad. It seems like public speaking is a very stressful thing to do. I decided to go with the second method (talk through the set of structure), inclining more to the right side, which means I prepared some key sentences and, let's say, jokes, sort of... I had also read a book called [Talk like TED](https://www.goodreads.com/book/show/33804062-hovor-ako-ted) and had watched several TED talks and commencement speeches. Not all of them were strictly connected with how to give a talk but really were inspirational in one way or another. Here are some I really enjoyed:
 
--   [commencement speech by perfect fiction author Neil Gaiman](https://www.youtube.com/watch?v=plWexCID-kA)
--   [TED talk on body language by Amy Cuddy](https://www.youtube.com/watch?v=RWZluriQUzE)
+- [commencement speech by perfect fiction author Neil Gaiman](https://www.youtube.com/watch?v=plWexCID-kA)
+- [TED talk on body language by Amy Cuddy](https://www.youtube.com/watch?v=RWZluriQUzE)
 
 I made several training rounds of my talk home alone. After every round, I did some changed in the slides, rearranged them, edited wording, removed one thing just to add another while tried to fit into aforementioned 25 minutes block for one talk. That prepared me to the next big step - first test in front of the people - my colleagues. They were so kind and agreed they would serve me as guinea pigs, what I'm very thankful for. I prepared a [place](http://dobra-cajovna.sk/), chairs, projector and when everyone was ready to listen, started my talk. And **it was horrible**. Literally.
 
@@ -67,9 +67,7 @@ Nevertheless, I persisted and processed all the comments my calm friendly collea
 
 I was sitting in the back, watching [Tomas Pilar](https://www.tomaspilar.cz/) giving his talk on Doctrine and thinking about how different our talks are. His strongly technical one with lots of code examples will nicely contradict with mine, without any mention of the code itself.
 
-<div class="image" markdown="1">
 ![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live01.jpg)
-</div>
 
 I also really appreciated I was the next speaker following him.
 
@@ -77,9 +75,7 @@ I also really appreciated I was the next speaker following him.
 
 "Oh my, many people are here, aren't they?"
 
-<div class="image" markdown="1">
 ![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live02.jpg)
-</div>
 
 "Don't they have better things to do on today's Tuesday?"
 
@@ -87,9 +83,7 @@ I also really appreciated I was the next speaker following him.
 
 "What the hell is going on with my vision?"
 
-<div class="image" markdown="1">
 ![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live03.jpg)
-</div>
 
 "OK enough, I need some water. Where is the ..."
 
@@ -111,10 +105,10 @@ First of all - find an audience open to listening to your talk and train beforeh
 
 There is a lot I had to remove. I wanted to add more or less from the following sources (the whole list is a bit longer, though):
 
--   [The Most Free Company](http://slides.com/nethemba/the-most-free-company) - on team working habits
--   [Horizontal History](https://waitbutwhy.com/2016/01/horizontal-history.html) - regarding knowledge sharing
--   [Important Life Questions](https://produkty.vladozlatos.com/zivotne-dolezite-otazky.html) (in Slovak) - when work is not everything
--   I wanted to talk more on [puzzle solving](https://hugelolcdn.com/i/454636.jpg) at work
+- [The Most Free Company](http://slides.com/nethemba/the-most-free-company) - on team working habits
+- [Horizontal History](https://waitbutwhy.com/2016/01/horizontal-history.html) - regarding knowledge sharing
+- [Important Life Questions](https://produkty.vladozlatos.com/zivotne-dolezite-otazky.html) (in Slovak) - when work is not everything
+- I wanted to talk more on [puzzle solving](https://hugelolcdn.com/i/454636.jpg) at work
 
 ### Do you have [nostalgic feelings](https://www.facebook.com/pehapelive/photos/a.180752525465917.1073741830.168767076664462/745649208976243/) for Flash?
 

@@ -6,15 +6,17 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
   const siteMetadata = useSiteMetadata();
 
   const meta = {
-    title: title || siteMetadata.title,
-    description: description || siteMetadata.subtitle,
+    title: title || siteMetadata.name,
+    description: description || siteMetadata.description,
     image: `${siteMetadata.url}/${image || siteMetadata.image}`,
     type: isArticle ? 'article' : 'website',
     url: pathname ? `${siteMetadata.url}/${pathname}` : siteMetadata.url,
   };
 
+  const disqusCodeScript = `const disqusCode = "${siteMetadata.codes.disqus}";`;
+
   return (
-    <Helmet title={title} defaultTitle={siteMetadata.title} titleTemplate={`%s | ${siteMetadata.title}`}>
+    <Helmet title={title} defaultTitle={siteMetadata.name} titleTemplate={`%s | ${siteMetadata.name}`}>
       <html lang="en" />
 
       {/* Primary Meta Tags */}
@@ -43,8 +45,10 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
       <link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes" href="/rss.xml" />
       <link rel="alternate" type="application/json" title="Roman Veselý Notes" href="/feed.json" />
 
-      {/* {isArticle && <script>const disqusCode = {siteMetadata.codes.disqus};</script>} */}
-      {/* <script id="dsq-count-scr" src="//{$codes['disqus']}.disqus.com/count.js" async></script> */}
+      {isArticle && <script>{disqusCodeScript}</script>}
+      {isArticle && (
+        <script id="dsq-count-scr" src={`//${siteMetadata.codes.disqus}.disqus.com/count.js`} async></script>
+      )}
     </Helmet>
   );
 };

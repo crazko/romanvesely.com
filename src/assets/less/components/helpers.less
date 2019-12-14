@@ -1,22 +1,3 @@
-.image {
-  display: block;
-  margin: @padding--basic -@padding--basic;
-  background-color: @color-supplementary;
-
-  @media @screen--wide {
-    margin: @padding--basic -@padding--wide;
-  }
-
-  img {
-    .transition(~'opacity');
-
-    // Remove glitch
-    // @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
-    -webkit-transform: translateZ(0);
-    width: calc(100% + 0.49px);
-  }
-}
-
 .clearfix {
   &::after {
     display: block;

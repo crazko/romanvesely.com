@@ -1,6 +1,6 @@
 ---
 id: 19
-title: 'Knowledge Sharing'
+title: Knowledge Sharing
 description: Do you have something you want to share? Meetups and conferences are great places where anyone can learn new things. They are also a great opportunity for anybody to teach something they think may be valuable for others. But public speaking is not for everybody. Well, at least not for their first time to stand in front of the audience as a speaker. What <em>else</em> can we do? Are there any other options? What about to be in an environment you are already familiar with?
 ---
 

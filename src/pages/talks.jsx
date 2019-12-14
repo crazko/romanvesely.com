@@ -1,23 +1,38 @@
 import React from 'react';
 import talks from '../data/talks.yaml';
 
-export default () =>
-  talks.parameters.talks.map(talk => (
-    <>
-      {talk.image && <img src={talk.image} alt={talk.name} />}
+import { Meta } from '../layout/Meta';
+import { Container } from '../components/Container';
+import { Content } from '../components/Content';
+import { Time } from '../components/Time';
 
-      <h2>
-        <a href={talk.url}>{talk.name}</a>
-      </h2>
-      <ul className="post__meta">
-        <li className="post__meta-item">{talk.date}</li>
-      </ul>
+export default () => (
+  <Content>
+    <Meta title="Talks" />
+    <h1>Talks</h1>
+    <Container>
+      {talks.parameters.talks.map(({ image, name, date, url, description }) => (
+        <>
+          {image && (
+            <a href={url}>
+              <img src={image} alt={name} />
+            </a>
+          )}
 
-      <p>{talk.description}</p>
-      <p>
-        <a href={talk.url} className="link--more">
-          Take a look
-        </a>
-      </p>
-    </>
-  ));
+          <h2>
+            <a href={url}>{name}</a>
+          </h2>
+
+          <Time date={date}>{date}</Time>
+
+          <p dangerouslySetInnerHTML={{ __html: description }} />
+          <p>
+            <a href={url} className="link--more">
+              Take a look
+            </a>
+          </p>
+        </>
+      ))}
+    </Container>
+  </Content>
+);

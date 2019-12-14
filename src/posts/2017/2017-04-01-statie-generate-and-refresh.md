@@ -3,16 +3,16 @@ id: 3
 title: 'How to re-generate and refresh static website in Statie?'
 description: 'Make development with <a href="https://github.com/Symplify/Statie">Statie</a> a bit more convenient with a little use of <a href="http://gulpjs.com/">gulp</a> and <a href="https://browsersync.io/">Browsersync</a>.'
 sources:
- - - 'http://www.staticgen.com/'
-   - StaticGen - Top Open-Source Static Site Generators
- - - 'https://github.com/Symplify/Statie'
-   - Statie - PHP Static Site Generator
- - - 'https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/'
-   - 'Statie: How to run it Locally'
- - - 'https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/'
-   - The Complete-Ish Guide to Upgrading to Gulp 4
- - - 'https://www.browsersync.io/docs/gulp#gulp-reload'
-   - Browsersync - Browser Reloading
+  - - 'http://www.staticgen.com/'
+    - StaticGen - Top Open-Source Static Site Generators
+  - - 'https://github.com/Symplify/Statie'
+    - Statie - PHP Static Site Generator
+  - - 'https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/'
+    - 'Statie: How to run it Locally'
+  - - 'https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/'
+    - The Complete-Ish Guide to Upgrading to Gulp 4
+  - - 'https://www.browsersync.io/docs/gulp#gulp-reload'
+    - Browsersync - Browser Reloading
 ---
 
 With a rising popularity of static site generators, we can find that there are [many of them](http://www.staticgen.com/) already in use. This blog runs on [Statie](https://github.com/Symplify/Statie), another such a tool written by [Tomas Votruba](https://www.tomasvotruba.cz/), which differs from the others with [Nette](https://nette.org/) and its templating engine [Latte](https://latte.nette.org/) used in the background.
@@ -30,7 +30,7 @@ var gulp = require('gulp');
 var exec = require('child_process').exec;
 
 gulp.task('default', function() {
- exec('vendor/bin/statie generate');
+  exec('vendor/bin/statie generate');
 });
 ```
 
@@ -38,9 +38,11 @@ The problem is **it doesn't give you a message when the job is done**, so you ca
 
 Also, I recently found there is a new version of gulp coming with some handy features, namely: **gulp.series** and **gulp.parallel** which combine multiple functions together so tasks don't have to have dependencies anymore. And we can use those features now!
 
-<div class="tip" markdown="1">
+<Tip>
+
 Please, read a [guide how to set up gulp 4](https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/) before you proceed.
-</div>
+
+</Tip>
 
 ## Watching over changes
 
@@ -58,12 +60,12 @@ var run = require('gulp-run');
 var browserSync = require('browser-sync').create();
 
 function generate() {
- return run('vendor/bin/statie generate').exec();
+  return run('vendor/bin/statie generate').exec();
 }
 
 function reload(done) {
- browserSync.reload();
- done();
+  browserSync.reload();
+  done();
 }
 ```
 
@@ -76,11 +78,11 @@ Here comes the watcher function:
 
 ```javascript
 function watch() {
- browserSync.init({
-  server: 'output',
- });
+  browserSync.init({
+    server: 'output',
+  });
 
- gulp.watch('source/**/*', gulp.series(generate, reload));
+  gulp.watch('source/**/*', gulp.series(generate, reload));
 }
 ```
 
@@ -104,26 +106,28 @@ var browserSync = require('browser-sync').create();
 gulp.task('default', gulp.parallel(generate, watch));
 
 function generate() {
- return run('vendor/bin/statie generate').exec();
+  return run('vendor/bin/statie generate').exec();
 }
 
 function reload(done) {
- browserSync.reload();
- done();
+  browserSync.reload();
+  done();
 }
 
 function watch() {
- browserSync.init({
-  server: 'output',
- });
+  browserSync.init({
+    server: 'output',
+  });
 
- gulp.watch('source/**/*', gulp.series(generate, reload));
+  gulp.watch('source/**/*', gulp.series(generate, reload));
 }
 ```
 
-<div class="tip" markdown="1">
+<Tip>
+
 If you are interested also in the frontend development, take a look at [how to implement a CSS preprocessor](/statie-with-css-preprocessor) into this workflow.
-</div>
+
+</Tip>
 
 ## Conclusion
 

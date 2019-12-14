@@ -1,20 +1,16 @@
 ---
 id: 5
 title: 'Null Object design pattern'
-description: "An object with no value or defined behavior can be helpful when no other \"real\" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable."
+description: 'An object with no value or defined behavior can be helpful when no other "real" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable.'
 sources:
-    -
-        - "https://www.youtube.com/watch?v=5DVDewOReoY"
-        - Chasing "Perfect" presentation
-    -
-        - "https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/"
-        - Pushing Polymorphism to the Database screencast
-    -
-        - "https://sourcemaking.com/design_patterns/null_object"
-        - Null Object Design Pattern on sourcemaking.com
-    -
-        - "https://en.wikipedia.org/wiki/Null_Object_pattern"
-        - Null Object Design Pattern on wikipedia.com
+  - - 'https://www.youtube.com/watch?v=5DVDewOReoY'
+    - Chasing "Perfect" presentation
+  - - 'https://adamwathan.me/2015/09/03/pushing-polymorphism-to-the-database/'
+    - Pushing Polymorphism to the Database screencast
+  - - 'https://sourcemaking.com/design_patterns/null_object'
+    - Null Object Design Pattern on sourcemaking.com
+  - - 'https://en.wikipedia.org/wiki/Null_Object_pattern'
+    - Null Object Design Pattern on wikipedia.com
 ---
 
 Recently I saw a presentation called [Chasing "Perfect"]({$sources[0][0]}) given by [Adam Wathan](https://twitter.com/adamwathan) at Laracon EU in 2015. In case you don't know him I strongly recommend you to follow him on Twitter, at least. I definitely did so.
@@ -134,15 +130,17 @@ So, what has changed exactly?
 - added `Order::grossTotal()` to get value of the books
 - almost all methods in `Order::class` are really simple, except `Order::discount()`
 
-<div class="tip" markdown="1">
+<Tip>
+
 Maybe it would be better to implement also an interface `ICoupon`, but this is another story.
-</div>
+
+</Tip>
 
 ## The solution
 
 I would be personally quite happy with this code and leave it as it is. But here comes the whole point - we can get rid of that one additional condition with the usage of the Null Object pattern.
 
-``` php
+```php
 class NullCoupon
 {
     public function discount($order)

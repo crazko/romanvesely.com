@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export const Footer = () => {
-  const { author, email } = useSiteMetadata();
+  const { name, email } = useSiteMetadata();
 
   return (
     <footer role="contentinfo" className="footer">
-      &copy; {new Date().getUTCFullYear()} <a href={`mailto:${email}`}>{author}</a> &middot; <Link to="/now">now</Link>
+      &copy; {new Date().getUTCFullYear()} <a href={`mailto:${email}`}>{name}</a> &middot; <Link to="/now">now</Link>
       <span className="footer__extended">
         &middot; follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a>
       </span>

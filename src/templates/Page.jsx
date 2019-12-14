@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta } from '../layout/Meta';
+import { Container } from '../components/Container';
 import { Content } from '../components/Content';
 
 export default ({
@@ -11,8 +12,10 @@ export default ({
   return (
     <>
       <Meta title={title} pathname={slug} />
-      <h1>{title}</h1>
-      <Content>{children}</Content>
+      <Content>
+        <h1>{title}</h1>
+        <Container>{children}</Container>
+      </Content>
     </>
   );
 };
