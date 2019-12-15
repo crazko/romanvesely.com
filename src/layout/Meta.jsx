@@ -35,13 +35,10 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
       <meta property="twitter:description" content={meta.description} />
       <meta property="twitter:image" content={meta.image} />
 
-      {/* PWA */}
       <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
       <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
-      {/* TODO: */}
-      {/* <link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes" href="/rss.xml" /> */}
-      {/* <link rel="alternate" type="application/json" title="Roman Veselý Notes" href="/feed.json" /> */}
+      <link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes" href="/rss.xml" />
     </Helmet>
   );
 };

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     url: 'https://romanvesely.com',
     name: 'Roman Veselý',
-    description: 'Personal blog',
+    description: 'Personal blog. Notes not only about web development.',
     email: 'info@romanvesely.com',
     image: 'favicon.ico',
     gravatar: {
@@ -51,6 +51,67 @@ module.exports = {
     'gatsby-plugin-less',
     'gatsby-plugin-twitter',
     // 'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                url
+                name
+                description
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(post => {
+                return Object.assign({}, post.frontmatter, {
+                  title: post.frontmatter.title,
+                  description: post.frontmatter.description,
+                  date: post.fields.date,
+                  url: `${site.siteMetadata.url}/${post.fields.slug}`,
+                  guid: `${site.siteMetadata.url}/${post.fields.slug}`,
+                  custom_elements: [{ 'dc:creator': site.siteMetadata.name }],
+                });
+              });
+            },
+            setup: ({
+              query: {
+                site: {
+                  siteMetadata: { url, name, description },
+                },
+              },
+            }) => ({
+              title: name,
+              description: description,
+              feed_url: `${url}/rss.xml`,
+              site_url: url,
+            }),
+            query: `
+              {
+                allMdx(filter: {fileAbsolutePath: {regex: "/posts/"}}, sort: {fields: fields___date, order: DESC}) {
+                  nodes {
+                    frontmatter {
+                      description
+                      title
+                    }
+                    fields {
+                      date
+                      slug
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-disqus',
       options: {
