@@ -49,6 +49,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-transformer-xml',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
     'gatsby-plugin-twitter',

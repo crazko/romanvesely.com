@@ -8,7 +8,7 @@ import { PostMeta } from '../components/PostMeta';
 import { Perex } from '../components/Perex';
 import { Sources } from '../components/Sources';
 
-import comments from '../assets/js/comments';
+// import comments from '../assets/js/comments';
 
 export default ({ data }) => {
   const { body, frontmatter, fields, timeToRead } = data.mdx;
@@ -35,7 +35,7 @@ export default ({ data }) => {
       </Content>
 
       {sources && <Sources sources={sources} />}
-      <script dangerouslySetInnerHTML={{ __html: comments }} />
+      {/* <script dangerouslySetInnerHTML={{ __html: comments }} /> */}
     </>
   );
 };
