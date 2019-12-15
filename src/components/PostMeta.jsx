@@ -1,10 +1,8 @@
 import React from 'react';
 import { Time } from '../components/Time';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { CommentCount } from 'gatsby-plugin-disqus';
 
-export const PostMeta = ({ date, dateLocal, readingTime, slug, githubEdit }) => {
-  const { url } = useSiteMetadata();
-
+export const PostMeta = ({ date, dateLocal, readingTime, githubEdit, disqusConfig }) => {
   return (
     <ul className="post__meta">
       <li className="post__meta-item">
@@ -14,7 +12,7 @@ export const PostMeta = ({ date, dateLocal, readingTime, slug, githubEdit }) => 
       {readingTime && <li className="post__meta-item">{readingTime} min</li>}
 
       <li className="post__meta-item">
-        <span className="disqus-comment-count" data-disqus-url={`${url}/${slug}`}></span>
+        <CommentCount config={disqusConfig} />
       </li>
 
       <li className="post__meta-item">

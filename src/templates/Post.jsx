@@ -7,13 +7,18 @@ import { Content } from '../components/Content';
 import { PostMeta } from '../components/PostMeta';
 import { Perex } from '../components/Perex';
 import { Sources } from '../components/Sources';
-
-// import comments from '../assets/js/comments';
+import { Discussion } from '../components/Discussion';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export default ({ data }) => {
+  const { url } = useSiteMetadata();
   const { body, frontmatter, fields, timeToRead } = data.mdx;
   const { title, description, sources } = frontmatter;
   const { githubEdit, slug, date, dateLocal } = fields;
+
+  const disqusConfig = {
+    url: `${url}/${slug}`,
+  };
 
   return (
     <>
@@ -21,7 +26,13 @@ export default ({ data }) => {
       <Content>
         <h1>{title}</h1>
         <Container>
-          <PostMeta date={date} dateLocal={dateLocal} readingTime={timeToRead} slug={slug} githubEdit={githubEdit} />
+          <PostMeta
+            date={date}
+            dateLocal={dateLocal}
+            readingTime={timeToRead}
+            disqusConfig={disqusConfig}
+            githubEdit={githubEdit}
+          />
           <Perex>{description}</Perex>
 
           <div className="article">
@@ -30,12 +41,11 @@ export default ({ data }) => {
 
           <div className="post__signature">Roman</div>
 
-          <div id="social" className="post__social"></div>
+          <Discussion disqusConfig={disqusConfig} />
         </Container>
       </Content>
 
       {sources && <Sources sources={sources} />}
-      {/* <script dangerouslySetInnerHTML={{ __html: comments }} /> */}
     </>
   );
 };

@@ -5,9 +5,6 @@ module.exports = {
     description: 'Personal blog',
     email: 'info@romanvesely.com',
     image: 'favicon.ico',
-    codes: {
-      disqus: 'roman-vesely-notes',
-    },
     gravatar: {
       email: 'crazko@gmail.com',
       url: 'https://www.gravatar.com/avatar/',
@@ -54,6 +51,12 @@ module.exports = {
     'gatsby-plugin-less',
     'gatsby-plugin-twitter',
     // 'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'roman-vesely-notes',
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {

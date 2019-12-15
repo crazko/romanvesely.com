@@ -11,9 +11,6 @@ export const useSiteMetadata = () => {
             description
             email
             image
-            codes {
-              disqus
-            }
             gravatar {
               email
               url

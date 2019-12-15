@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { Navigation } from './Navigation';
 import { Gravatar } from '../components/Gravatar';
 
-export const Header = props => (
+export const Header = () => (
   <header className="header">
     <div className="header__container">
       <div className="logo">

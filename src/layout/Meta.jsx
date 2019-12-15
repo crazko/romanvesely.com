@@ -13,8 +13,6 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
     url: pathname ? `${siteMetadata.url}/${pathname}` : siteMetadata.url,
   };
 
-  const disqusCodeScript = `const disqusCode = "${siteMetadata.codes.disqus}";`;
-
   return (
     <Helmet title={title} defaultTitle={siteMetadata.name} titleTemplate={`%s | ${siteMetadata.name}`}>
       <html lang="en" />
@@ -42,13 +40,8 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
       <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
       {/* TODO: */}
-      <link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes" href="/rss.xml" />
-      <link rel="alternate" type="application/json" title="Roman Veselý Notes" href="/feed.json" />
-
-      {isArticle && <script>{disqusCodeScript}</script>}
-      {isArticle && (
-        <script id="dsq-count-scr" src={`//${siteMetadata.codes.disqus}.disqus.com/count.js`} async></script>
-      )}
+      {/* <link rel="alternate" type="application/rss+xml" title="Roman Veselý Notes" href="/rss.xml" /> */}
+      {/* <link rel="alternate" type="application/json" title="Roman Veselý Notes" href="/feed.json" /> */}
     </Helmet>
   );
 };
