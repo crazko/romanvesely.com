@@ -1,64 +1,45 @@
-.image {
-	display: block;
-	margin: @padding--basic -@padding--basic;
-	background-color: @color-supplementary;
-
-	@media @screen--wide {
-		margin: @padding--basic -@padding--wide;
-	}
-
-	img {
-		.transition(~'opacity');
-
-		// Remove glitch
-		// @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
-		-webkit-transform: translateZ(0);
-		width: calc(100% + 0.49px);
-	}
-}
-
 .clearfix {
-	&::after {
-		display: block;
-		content: '';
-		clear: both;
-	}
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
 }
 
 .tip {
-	border: @content-line-width solid @content-line-color;
-	border-left: none;
-	border-right: none;
-	margin: @padding--basic -@padding--basic;
-	padding: @padding--basic;
+  border: @content-line-width solid @content-line-color;
+  border-left: none;
+  border-right: none;
+  margin: @padding--basic -@padding--basic;
+  padding: @padding--basic;
 
-	@media @screen--wide {
-		border: @content-line-width solid @content-line-color;
-		margin: @padding--basic -@padding--wide;
-		padding: @padding--basic calc(@padding--wide ~'-' @content-line-width);
-	}
+  @media @screen--wide {
+    border: @content-line-width solid @content-line-color;
+    margin: @padding--basic -@padding--wide;
+    padding: @padding--basic calc(@padding--wide ~'-' @content-line-width);
+  }
 
-	p:first-child {
-		margin-top: 0;
-	}
+  p:first-child {
+    margin-top: 0;
+  }
 }
 
 .transition(@property: all) {
-	transition: @property ease 0.25s;
+  transition: @property ease 0.25s;
 }
 
 .link--more {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	clip-path: inset(50%);
-	border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 }
