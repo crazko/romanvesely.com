@@ -4,7 +4,7 @@ module.exports = {
     name: 'Roman Veselý',
     description: 'Personal blog. Notes not only about web development.',
     email: 'info@romanvesely.com',
-    image: 'favicon.ico',
+    image: 'meta.png',
     gravatar: {
       email: 'crazko@gmail.com',
       url: 'https://www.gravatar.com/avatar/',
