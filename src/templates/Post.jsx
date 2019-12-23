@@ -22,7 +22,7 @@ export default ({ data }) => {
 
   return (
     <>
-      <Meta title={title} description={description} pathname={slug} isArticle />
+      <Meta title={title} description={description} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
       <Content>
         <h1>{title}</h1>
         <Container>
