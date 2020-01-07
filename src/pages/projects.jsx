@@ -8,8 +8,8 @@ import { Content } from '../components/Content';
 export default () => (
   <Content>
     <Meta title="Projects" />
-    <h1>Projects</h1>
     <Container>
+      <h1>Projects</h1>
       {projects.parameters.projects.serious.map(({ title, image, url, name, description, repository }) => (
         <>
           {image && (
@@ -25,9 +25,7 @@ export default () => (
           <p dangerouslySetInnerHTML={{ __html: description }} />
           {repository && (
             <p>
-              <a href={repository} className="link--more">
-                Look inside
-              </a>
+              <a href={repository}>Look inside</a>
             </p>
           )}
         </>

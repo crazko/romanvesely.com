@@ -1,45 +1,32 @@
-// media queries
+// Colors
+@base03: #002b36;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+
+@base0: #839496;
+@base1: #93a1a1;
+@base2: #eee8d5;
+@base3: #fdf6e3;
+
+@yellow: #b58900;
+@orange: #cb4b16;
+@red: #dc322f;
+@magenta: #d33682;
+@violet: #6c71c4;
+@blue: #268bd2;
+@cyan: #2aa198;
+@green: #859900;
+
+// Media Queries
 @bp--small: 600px;
 @bp--wide: 800px;
 
 @screen--small: ~'screen and (min-width: @{bp--small})';
 @screen--wide: ~'screen and (min-width: @{bp--wide})';
 
-// colors
-@color-supplementary: #268bd2;
-@color-base2: #eee8d5;
-
-@bg-color--main: @color-supplementary;
-@bg-color--alt: #fff;
-@bg-color--side: #fdf6e3;
-
-@font-color--main: #0c0c0c;
-@font-color--link: @color-supplementary;
-
-@font-color--link-content: #000;
-@font-color--link-content-line: lighten(@color-supplementary, 30%);
-
-@font-color--code: #d33682;
-@bg-color--code: @bg-color--side;
-
-@font-color--light: #4b4b4b;
-
-@content-line-color: @color-supplementary;
-
-// fonts
-@font-families: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+// Fonts
+@fonts: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
   'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
-@font-size--small: 16px;
-@font-size--wide: 20px;
-
-// vars
-@content-width: 920px;
-@content-line-width: 10px;
-
-@padding--basic: 1rem;
-@padding--wide: 3rem;
-
-@logo-width: 100px;
-@logo-rotate: 55deg;
-@logo-push: (pi() * (@logo-width / 2)) / 180 * @logo-rotate;
+@fonts-alternative: 'Merriweather', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times',
+  'Source Serif Pro', serif;

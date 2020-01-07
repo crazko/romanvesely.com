@@ -14,25 +14,25 @@ export default ({
   return (
     <Content>
       <Meta title="Notes" />
-      <h1>Notes</h1>
       <Container>
+        <h1>Notes</h1>
         {Object.keys(posts)
           .sort()
           .reverse()
           .map(year => (
-            <div key={year}>
+            <section key={year}>
               <h2>{year}</h2>
               {posts[year].map(({ fields: { date, dateLocal, slug }, frontmatter: { title } }) => (
                 <article className="note" key={title}>
-                  <h3 className="note__header">
+                  <div className="note__header">
                     <Link to={`/${slug}`}>{title}</Link>
-                  </h3>
-                  <time dateTime={date} title={date} className="post__meta">
+                  </div>
+                  <time dateTime={date} title={date} className="meta">
                     {dateLocal}
                   </time>
                 </article>
               ))}
-            </div>
+            </section>
           ))}
       </Container>
     </Content>

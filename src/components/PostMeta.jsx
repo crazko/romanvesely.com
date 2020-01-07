@@ -1,23 +1,38 @@
 import React from 'react';
 import { Time } from '../components/Time';
 import { CommentCount } from 'gatsby-plugin-disqus';
+import { MetaList } from '../components/MetaList';
 
-export const PostMeta = ({ date, dateLocal, readingTime, githubEdit, disqusConfig }) => {
-  return (
-    <ul className="post__meta">
-      <li className="post__meta-item">
-        <Time date={date}>{dateLocal}</Time>
-      </li>
+export const PostMeta = ({ date, dateLocal, readingTime, githubEdit, disqusConfig }) => (
+  <MetaList>
+    <>
+      <Time date={date}>
+        <span role="img" aria-label="publish date">
+          📅
+        </span>{' '}
+        {dateLocal}
+      </Time>
+    </>
 
-      {readingTime && <li className="post__meta-item">{readingTime} min</li>}
+    <>
+      <span role="img" aria-label="reading time">
+        ⏳
+      </span>{' '}
+      {readingTime} min
+    </>
 
-      <li className="post__meta-item">
-        <CommentCount config={disqusConfig} />
-      </li>
+    <>
+      <span role="img" aria-label="comments count">
+        💬
+      </span>{' '}
+      <CommentCount config={disqusConfig} />
+    </>
 
-      <li className="post__meta-item">
-        <a href={githubEdit}>suggest an edit</a>
-      </li>
-    </ul>
-  );
-};
+    <>
+      <span role="img" aria-label="modify">
+        ✏
+      </span>{' '}
+      <a href={githubEdit}>suggest an edit</a>
+    </>
+  </MetaList>
+);

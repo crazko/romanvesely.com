@@ -5,12 +5,13 @@ import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
 import { Content } from '../components/Content';
 import { Time } from '../components/Time';
+import { MetaList } from '../components/MetaList';
 
 export default () => (
   <Content>
     <Meta title="Talks" />
-    <h1>Talks</h1>
     <Container>
+      <h1>Talks</h1>
       {talks.parameters.talks.map(({ image, name, date, url, description }) => (
         <>
           {image && (
@@ -23,13 +24,13 @@ export default () => (
             <a href={url}>{name}</a>
           </h2>
 
-          <Time date={date}>{date}</Time>
+          <MetaList>
+            <Time date={date}>{date}</Time>
+          </MetaList>
 
           <p dangerouslySetInnerHTML={{ __html: description }} />
           <p>
-            <a href={url} className="link--more">
-              Take a look
-            </a>
+            <a href={url}>Take a look</a>
           </p>
         </>
       ))}

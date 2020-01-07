@@ -7,8 +7,8 @@ import { Content } from '../components/Content';
 export default () => (
   <Content>
     <Meta title="Playground" />
-    <h1>Playground</h1>
     <Container>
+      <h1>Playground</h1>
       {projects.parameters.projects.trivial.map(({ image, name, url, title, description, repository }) => (
         <>
           {image && (
@@ -24,9 +24,7 @@ export default () => (
           <p dangerouslySetInnerHTML={{ __html: description }} />
           {repository && (
             <p>
-              <a href={repository} className="link--more">
-                Look inside
-              </a>
+              <a href={repository}>Look inside</a>
             </p>
           )}
         </>

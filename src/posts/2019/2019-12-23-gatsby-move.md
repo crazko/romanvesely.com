@@ -12,7 +12,7 @@ It's not my first Gatsby project, though. I used it for [Paralelná Polis Košic
 
 I've identified three main things that slowed me down during the refactoring more than I expected:
 
-- Statie aimed for simple sites and blogs - global `$posts` variable was available throughout the files
+- Statie aimed for simple sites and blogs - global `$posts` array was available throughout the files
 - Gatsby and its ecosystem have a very vital development - there are numerous ways of how to do things, so you have to constantly think about how to approach even the basic stuff
 - I needed to switch from template-based system to React components
 
@@ -25,6 +25,6 @@ List of missing features and things to fix:
 - HTML in the lead paragraph - could use [markdown](https://github.com/kentcdodds/kentcdodds.com/blob/master/gatsby-node.js#L356-L360)
 - images for social sites - I used [my PHP package](https://packagist.org/packages/crazko/post-social-image), and still can, but not as a part of the project
 - `<abbr>` element in pages/posts
-- JSON feed - it doesn't matter as it was probably not used by anyone
+- ~~JSON feed~~ - it doesn't matter as it was probably not used by anyone
 
 I will come back and update the list accordingly.
