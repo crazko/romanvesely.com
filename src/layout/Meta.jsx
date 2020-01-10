@@ -15,6 +15,8 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
 
   return (
     <Helmet title={title} defaultTitle={siteMetadata.name} titleTemplate={`%s | ${siteMetadata.name}`}>
+      <html lang="en" />
+
       {/* Primary Meta Tags */}
       <meta name="google-site-verification" content="_L_KtvxI0HssJtpNjtz1o85SACSUiFOYn-rZXKZWSV4" />
       <meta name="description" content={meta.description} />
