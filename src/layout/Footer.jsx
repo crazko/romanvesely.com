@@ -24,6 +24,9 @@ export const Footer = () => {
             <a href="https://www.gatsbyjs.org/">Gatsby</a>
           </li>
           <li className="meta__item">
+            <a href="https://github.com/crazko/romanvesely.com/issues">Found a bug?</a>
+          </li>
+          <li className="meta__item">
             <a href="/rss.xml">RSS</a>
           </li>
         </ul>
