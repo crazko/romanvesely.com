@@ -33,15 +33,30 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Lato',
+            variants: ['400', '700'],
+          },
+          {
+            family: 'Merriweather',
+            variants: ['400'],
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
           default: require.resolve(`${__dirname}/src/templates/Page.jsx`),
         },
-        // gatsbyRemarkPlugins: ['gatsby-remark-embedder', 'gatsby-remark-images'],
         gatsbyRemarkPlugins: [
           'gatsby-remark-embedder',
+          // 'gatsby-remark-images',
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
         ],
       },
@@ -122,6 +137,13 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-4520387-26',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-use-dark-mode',
+      options: {
+        classNameDark: 'theme--dark',
+        classNameLight: 'theme--light',
       },
     },
   ],

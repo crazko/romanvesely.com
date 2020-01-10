@@ -1,0 +1,40 @@
+.transition(@args...) {
+  .loop-args(@argCount) when (@argCount > 0) {
+    .loop-args(@argCount - 1);
+
+    @arg: extract(@args, @argCount);
+    @property: extract(@arg, 1);
+
+    transition+: @property ease 0.375s;
+  }
+
+  .loop-args(length(@args));
+}
+
+.tip {
+  font-family: @fonts-alternative;
+  font-size: 1.3rem;
+  color: var(--accent);
+
+  border: 1px solid var(--accent);
+  border-left: none;
+  border-right: none;
+  margin: var(--gap) calc(var(--gap) * -1);
+  padding: var(--gap);
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}

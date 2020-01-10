@@ -1,0 +1,47 @@
+.header {
+  border-top: 10px solid var(--accent);
+  padding: var(--gap) 0;
+
+  .transition(border-color);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media @screen--wide {
+      flex-direction: row;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  flex: 1;
+  margin-left: 0.5em;
+
+  @media @screen--wide {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+  }
+
+  &__name {
+    font-family: @fonts-alternative;
+    color: var(--text-emphasized);
+    .transition(color);
+  }
+
+  &__title {
+    color: var(--text-secondary);
+    display: none;
+    font-size: 0.6em;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    .transition(color);
+
+    @media @screen--wide {
+      display: inherit;
+    }
+  }
+}

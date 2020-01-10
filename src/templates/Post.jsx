@@ -21,32 +21,33 @@ export default ({ data }) => {
   };
 
   return (
-    <>
+    <Content>
       <Meta title={title} description={description} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
-      <Content>
-        <h1>{title}</h1>
-        <Container>
-          <PostMeta
-            date={date}
-            dateLocal={dateLocal}
-            readingTime={timeToRead}
-            disqusConfig={disqusConfig}
-            githubEdit={githubEdit}
-          />
+
+      <Container>
+        <article className="article">
+          <header>
+            <h1>{title}</h1>
+            <PostMeta
+              date={date}
+              dateLocal={dateLocal}
+              readingTime={timeToRead}
+              disqusConfig={disqusConfig}
+              githubEdit={githubEdit}
+            />
+          </header>
           <Perex>{description}</Perex>
+          <MDXRenderer>{body}</MDXRenderer>
+          <footer>
+            <div className="post__signature">Roman</div>
+          </footer>
+        </article>
 
-          <div className="article">
-            <MDXRenderer>{body}</MDXRenderer>
-          </div>
-
-          <div className="post__signature">Roman</div>
-
-          <Discussion disqusConfig={disqusConfig} />
-        </Container>
-      </Content>
+        <Discussion disqusConfig={disqusConfig} />
+      </Container>
 
       {sources && <Sources sources={sources} />}
-    </>
+    </Content>
   );
 };
 

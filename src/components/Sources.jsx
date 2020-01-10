@@ -4,7 +4,7 @@ import { Container } from '../components/Container';
 export const Sources = ({ sources }) => (
   <section className="post__sources">
     <Container>
-      <h3>Sources</h3>
+      <h2>Sources</h2>
       <ul className="post__sources-list">
         {sources.map(([link, title]) => (
           <li key={link}>

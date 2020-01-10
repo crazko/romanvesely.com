@@ -13,8 +13,10 @@ export default ({
     <>
       <Meta title={title} pathname={slug} />
       <Content>
-        <h1>{title}</h1>
-        <Container>{children}</Container>
+        <Container>
+          <h1>{title}</h1>
+          {children}
+        </Container>
       </Content>
     </>
   );

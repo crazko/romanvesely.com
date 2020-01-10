@@ -2,9 +2,7 @@
   flex: 1;
 
   a {
-    text-decoration: underline;
-    text-decoration-color: @font-color--link-content-line;
-    text-decoration-skip-ink: auto; // It is a default value, but why not - https://www.chromestatus.com/feature/5631679087509504
+    border-bottom: 2px solid;
   }
 
   p:last-of-type {
@@ -12,53 +10,47 @@
   }
 
   img {
-    .transition(~'filter');
-    margin: @padding--basic -@padding--basic;
+    margin: var(--gap) calc(var(--gap) * -1);
     display: block;
-    background-color: @color-supplementary;
     max-width: unset;
-    width: calc(100% + (@padding--basic * 2) + 0.49px);
+    width: calc(100% + var(--gap) * 2 + 0.49px);
 
     // Remove glitch
     // @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
     -webkit-transform: translateZ(0);
+  }
+}
 
-    @media @screen--wide {
-      margin: @padding--basic -@padding--wide;
-      width: calc(100% + (@padding--wide * 2) + 0.49px);
+.article > p:first-of-type {
+  color: var(--accent);
+  font-family: @fonts-alternative;
+  font-size: 1.3rem;
+  .transition(color);
+}
+
+.meta {
+  font-size: 0.75em;
+  color: var(--text-secondary);
+  padding: 0;
+  list-style: none;
+  .transition(color);
+
+  &__item {
+    display: inline-block;
+
+    & + &:before {
+      color: var(--accent);
+      content: '•'; // &#149; bullet
+      margin: 0.5ch;
     }
   }
 }
 
 .post {
-  &__description {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    color: @color-supplementary;
-  }
-
-  &__meta {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: @font-color--light;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-
-    &-item {
-      display: inline-block;
-
-      & + &:before {
-        color: @color-supplementary;
-        content: '•'; // &#149; bullet
-        margin: 0.5ch;
-      }
-    }
-  }
-
   &__signature {
-    margin: 1rem 0 2em;
-    font-size: 1.1rem;
+    color: var(--text-emphasized);
+    margin: 1em 0 2em;
+    font-size: 1.25em;
     text-align: right;
 
     &::before {
@@ -67,28 +59,26 @@
   }
 
   &__sources {
-    background-color: @bg-color--side;
-    border-bottom: 1px solid @color-base2;
+    background-color: var(--background-secondary);
+    padding: 2em 0;
 
     &-list {
       padding: 0;
-      list-style: none;
     }
   }
 
   &__social {
     #buttons {
       align-items: center;
-      background-color: @bg-color--side;
       display: flex;
-      font-size: 0.7em;
+      font-size: 0.75em;
       justify-content: center;
     }
 
     &-button {
-      background: none;
-      border: 1px solid @font-color--link-content-line;
-      color: @color-supplementary;
+      background: var(--background-secondary);
+      border: none;
+      color: var(--text-emphasized);
       text-transform: uppercase;
       font-weight: bold;
       flex: 1 0 0;
@@ -98,7 +88,7 @@
       }
 
       &:hover {
-        color: inherit;
+        color: var(--accent-secondary);
       }
     }
 
@@ -115,7 +105,7 @@
 }
 
 .feeds {
-  margin-top: @padding--basic;
+  margin-top: var(--gap);
 
   @media @screen--small {
     column-count: 2;
@@ -127,21 +117,18 @@
     }
   }
 
-  &__category-title {
-    margin-top: 0;
-  }
-
   &__list {
     list-style: none;
     padding: 0;
   }
 
   &__rss {
-    background-color: @bg-color--side;
+    color: var(--accent-emphasized);
+    border-bottom: none !important;
+    background-color: var(--background-secondary);
     display: inline-block;
     margin-right: 0.5em;
     padding: 0 5px;
-    text-decoration: none !important;
   }
 }
 
@@ -152,6 +139,7 @@
 .note {
   @media @screen--small {
     display: flex;
+    align-items: center;
   }
 
   &__header {

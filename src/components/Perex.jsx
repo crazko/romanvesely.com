@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const Perex = ({ children }) => (
-  <div className="post__description" dangerouslySetInnerHTML={{ __html: children }} />
-);
+export const Perex = ({ children }) => <p dangerouslySetInnerHTML={{ __html: children }} />;
