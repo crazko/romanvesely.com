@@ -21,6 +21,12 @@ sources:
     - A browser extension enhancing GitHub's search bar with autocomplete
 ---
 
+<Tip>
+
+**Notice:** [Statie was deprecated](https://www.tomasvotruba.com/blog/2020/03/16/statie-is-dead-long-live-symfony-static-dumper/). This blog is now built with [Gatsby](https://www.gatsbyjs.org/).
+
+</Tip>
+
 My own blog is being built with [Statie](https://github.com/Symplify/Statie). But why did I choose something with almost no history and with just a few users, when plenty of other possibilities are out there?
 
 ## A bit of story

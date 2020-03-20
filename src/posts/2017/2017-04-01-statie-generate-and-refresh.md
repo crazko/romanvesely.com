@@ -15,6 +15,12 @@ sources:
     - Browsersync - Browser Reloading
 ---
 
+<Tip>
+
+**Notice:** [Statie was deprecated](https://www.tomasvotruba.com/blog/2020/03/16/statie-is-dead-long-live-symfony-static-dumper/).
+
+</Tip>
+
 With a rising popularity of static site generators, we can find that there are [many of them](http://www.staticgen.com/) already in use. This blog runs on [Statie](https://github.com/Symplify/Statie), another such a tool written by [Tomas Votruba](https://www.tomasvotruba.cz/), which differs from the others with [Nette](https://nette.org/) and its templating engine [Latte](https://latte.nette.org/) used in the background.
 
 If you are not aware what is this tool all about let's take a look at a post series about it on [Tomas' blog](https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/) firstly. It will lead you from the very beginning on how to run your own site upon Statie, so I won't deal with this here.

@@ -11,6 +11,12 @@ sources:
     - 'Browsersync - SASS + CSS Injecting'
 ---
 
+<Tip>
+
+**Notice:** [Statie was deprecated](https://www.tomasvotruba.com/blog/2020/03/16/statie-is-dead-long-live-symfony-static-dumper/).
+
+</Tip>
+
 In the [previous post](/statie-generate-and-refresh) I showed a convenient way of browser live reloading at every change made in source files of Statie project. To make it even better we can add a gulp task for processing the CSS, so every change made in the styles will be immediately presented in the browser.
 
 I often use a preprocessor to not get a headache with working with CSS. There are several popular tools ready for use: [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) and [Stylus](http://stylus-lang.com/).
