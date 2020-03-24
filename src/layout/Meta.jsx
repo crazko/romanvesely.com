@@ -30,7 +30,7 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@rmnvsl" />
+      <meta property="twitter:creator" content="@rmnvsl" />
       <meta property="twitter:title" content={meta.title} />
       <meta property="twitter:description" content={meta.description} />
       <meta property="twitter:image" content={meta.image} />
