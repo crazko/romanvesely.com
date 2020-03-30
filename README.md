@@ -6,7 +6,7 @@ My personal web site [https://romanvesely.com](https://romanvesely.com).
 
 ## What's inside?
 
-- Static site generator [Gatsby]https://www.gatsbyjs.org/)
+- Static site generator [Gatsby](https://www.gatsbyjs.org/)
 - CSS comes from [Less](http://lesscss.org/) pre-processor.
 - Hosted on [Netlify](https://www.netlify.com).
 - ... probably some 🐞🐞🐞
