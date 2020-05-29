@@ -1,29 +1,29 @@
 @font-face {
   font-family: 'social';
-  src: url('../font/social.eot?59324301');
-  src: url('../font/social.eot?59324301#iefix') format('embedded-opentype'),
-    url('../font/social.woff2?59324301') format('woff2'), url('../font/social.woff?59324301') format('woff'),
-    url('../font/social.ttf?59324301') format('truetype'), url('../font/social.svg?59324301#social') format('svg');
+  src: url('../font/social.eot?50178938');
+  src: url('../font/social.eot?50178938#iefix') format('embedded-opentype'),
+    url('../font/social.woff2?50178938') format('woff2'), url('../font/social.woff?50178938') format('woff'),
+    url('../font/social.ttf?50178938') format('truetype'), url('../font/social.svg?50178938#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'social';
-    src: url('../font/social.svg?59324301#social') format('svg');
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'social';
+      src: url('../font/social.svg?50178938#social') format('svg');
+    }
   }
-}
-*/
+  */
 
 [class^='icon-']:before,
 [class*=' icon-']:before {
   font-family: 'social';
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak: never;
 
   display: inline-block;
   text-decoration: inherit;
@@ -54,6 +54,9 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-mastodon:before {
+  content: '\e800';
+} /* '' */
 .icon-twitter:before {
   content: '\f099';
 } /* '' */
