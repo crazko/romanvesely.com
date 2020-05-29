@@ -33,6 +33,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'log',
+        path: `${__dirname}/src/log/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
         fonts: [
@@ -58,6 +65,12 @@ module.exports = {
           'gatsby-remark-embedder',
           // 'gatsby-remark-images',
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
+          {
+            resolve: 'gatsby-remark-embed-markdown',
+            options: {
+              directory: `${__dirname}/src/`,
+            },
+          },
         ],
       },
     },
