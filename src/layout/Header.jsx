@@ -30,6 +30,10 @@ export const Header = () => (
                 <i className="icon-linkedin"></i>
                 <span className="sr-only">linkedin</span>
               </a>
+              <a href="https://mastodon.social/@romanvesely" title="mastodon">
+                <i className="icon-mastodon"></i>
+                <span className="sr-only">mastodon</span>
+              </a>
               <a href="https://romanvesely.com/rss.xml" title="RSS feed">
                 <i className="icon-rss"></i>
                 <span className="sr-only">RSS feed</span>
