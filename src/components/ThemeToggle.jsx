@@ -9,7 +9,7 @@ export const ThemeToggle = () => {
 
   return (
     <div className="theme-toggle">
-      <label className="theme-toggle__switch" for="switcher">
+      <label className="theme-toggle__switch" htmlFor="switcher">
         <input type="checkbox" id="switcher" className="theme-toggle__switcher" checked={value} onChange={toggle} />
         <div className="theme-toggle__slider"></div>
       </label>
