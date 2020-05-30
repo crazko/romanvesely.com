@@ -65,12 +65,6 @@ module.exports = {
           'gatsby-remark-embedder',
           // 'gatsby-remark-images',
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
-          {
-            resolve: 'gatsby-remark-embed-markdown',
-            options: {
-              directory: `${__dirname}/src/`,
-            },
-          },
         ],
       },
     },
