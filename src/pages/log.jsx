@@ -25,7 +25,7 @@ export default ({
           Collection of interesting news, resources, tips or&nbsp;issues and their solutions that caught my attention.
         </Perex>
       </Container>
-      <div className="logs">
+      <div className="logs" style={{ counterReset: `log ${logs.length + 1}` }}>
         {logs.map((log, i) => (
           <Log key={i}>{log}</Log>
         ))}
