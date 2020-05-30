@@ -29,6 +29,27 @@
   .transition(color);
 }
 
+.log {
+  background: var(--background-secondary);
+  margin: 1em 0;
+  padding: 1rem;
+  .transition(background-color);
+
+  p:first-of-type {
+    margin: 0;
+  }
+
+  pre {
+    margin: 0;
+    padding: 1em;
+  }
+
+  pre,
+  code {
+    background: var(--background) !important;
+  }
+}
+
 .meta {
   font-size: 0.75em;
   color: var(--text-secondary);
