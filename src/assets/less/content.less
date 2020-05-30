@@ -29,10 +29,22 @@
   .transition(color);
 }
 
+.logs {
+  columns: 325px;
+  padding: var(--gap);
+
+  .log {
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 .log {
   background: var(--background-secondary);
   margin: 1em 0;
   padding: 1rem;
+  box-sizing: border-box;
   .transition(background-color);
 
   p:first-of-type {
@@ -131,8 +143,6 @@
 }
 
 .feeds {
-  margin-top: var(--gap);
-
   @media @screen--small {
     column-count: 2;
   }

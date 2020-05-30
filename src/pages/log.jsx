@@ -24,10 +24,12 @@ export default ({
         <Perex>
           Collection of interesting news, resources, tips or&nbsp;issues and their solutions that caught my attention.
         </Perex>
+      </Container>
+      <div className="logs">
         {logs.map((log, i) => (
           <Log key={i}>{log}</Log>
         ))}
-      </Container>
+      </div>
     </Content>
   );
 };
