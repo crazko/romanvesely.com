@@ -9,7 +9,7 @@
     flex-direction: column;
 
     @media @screen--wide {
-      flex-direction: row;
+      align-items: center;
     }
   }
 }
@@ -29,19 +29,5 @@
     font-family: @fonts-alternative;
     color: var(--text-emphasized);
     .transition(color);
-  }
-
-  &__title {
-    color: var(--text-secondary);
-    display: none;
-    font-size: 0.6em;
-    font-weight: normal;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    .transition(color);
-
-    @media @screen--wide {
-      display: inherit;
-    }
   }
 }
