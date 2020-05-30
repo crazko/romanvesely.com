@@ -25,6 +25,10 @@ export const Header = () => (
                 <i className="icon-github-circled"></i>
                 <span className="sr-only">github</span>
               </a>
+              <a href="https://stackoverflow.com/users/5549874/crazko" title="stack overflow">
+                <i className="icon-stackoverflow"></i>
+                <span className="sr-only">stack overflow</span>
+              </a>
               <a href="https://www.linkedin.com/in/veselyroman" title="linkedin">
                 <i className="icon-linkedin"></i>
                 <span className="sr-only">linkedin</span>
@@ -32,6 +36,10 @@ export const Header = () => (
               <a href="https://mastodon.social/@romanvesely" title="mastodon">
                 <i className="icon-mastodon"></i>
                 <span className="sr-only">mastodon</span>
+              </a>
+              <a href="https://www.goodreads.com/user/show/53605807" title="goodreads">
+                <i className="icon-goodreads"></i>
+                <span className="sr-only">goodreads</span>
               </a>
               <a href="https://romanvesely.com/rss.xml" title="RSS feed">
                 <i className="icon-rss"></i>
