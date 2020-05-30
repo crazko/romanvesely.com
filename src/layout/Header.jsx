@@ -16,7 +16,6 @@ export const Header = () => (
 
           <div className="about">
             <span className="about__name">Roman Veselý</span>
-            <strong className="about__title">software developer</strong>
             <div className="about__social">
               <a href="https://twitter.com/rmnvsl" title="twitter">
                 <i className="icon-twitter"></i>

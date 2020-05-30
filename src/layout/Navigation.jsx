@@ -14,6 +14,11 @@ export const Navigation = () => (
           notes
         </Link>
       </li>
+      <li className="nav__item">
+        <Link to="/log" activeClassName="nav__link--active">
+          log
+        </Link>
+      </li>
       <li className="nav__item nav__item--funky">
         <Link to="/playground" className="nav__link--funky" activeClassName="nav__link--active">
           {[...'playground'].map((l, i) => (
