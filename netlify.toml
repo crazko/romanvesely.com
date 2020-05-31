@@ -2,6 +2,9 @@
   publish = "public/"
   command = "npm run build"
 
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://romanvesely.netlify.com/*"
