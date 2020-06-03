@@ -24,7 +24,7 @@ document.addEventListener("selectionchange", handleSelection);
 return () =>
 document.removeEventListener("selectionchange", handleSelection);
 }, []);
-const handleClick = () => {window.location.href = `${window.location.href}${hash}`};
+const handleClick = () => {window.location.href = `${window.location.href}${hash}`; window.location.reload(true)};
 return (
 <button onClick={handleClick} disabled={!hash}>
 open this window and Highlight selected text
