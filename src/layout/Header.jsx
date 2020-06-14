@@ -9,13 +9,13 @@ export const Header = () => (
   <header className="header">
     <Container>
       <div className="header__container">
-        <div className="logo">
-          <Link to="/" className="logo__link">
+        <div className="logo h-card">
+          <Link to="/" className="logo__link u-url">
             <Gravatar size={200} />
           </Link>
 
           <div className="about">
-            <span className="about__name">Roman Veselý</span>
+            <span className="about__name p-name">Roman Veselý</span>
             <div className="about__social">
               <a href="https://twitter.com/rmnvsl" title="twitter" rel="me">
                 <i className="icon-twitter"></i>
