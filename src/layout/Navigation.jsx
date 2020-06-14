@@ -5,7 +5,7 @@ export const Navigation = () => (
   <nav role="navigation" className="navigation">
     <ul className="nav">
       <li className="nav__item">
-        <Link to="/about" activeClassName="nav__link--active">
+        <Link to="/about/" activeClassName="nav__link--active">
           about
         </Link>
       </li>

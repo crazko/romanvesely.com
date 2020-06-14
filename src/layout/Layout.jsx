@@ -5,10 +5,12 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Tip } from '../components/Tip';
 import { Log } from '../components/Log';
+import { CanIUse } from '../components/CanIUse';
 
 const components = {
   Tip,
   Log,
+  CanIUse,
 };
 
 export const Layout = ({ children }) => (

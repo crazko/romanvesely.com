@@ -1,0 +1,138 @@
+---
+title: Highlight Text With Text Fragments
+description: New API for navigating to the specific part of the webpage is slowly starting to being part of the browsers. In many cases it may replace anchor linking, that has been part of the web development for decades.
+---
+
+Lately I noticed some new behaviour of [StackOverflow](https://stackoverflow.com/) in my browser. The answer I was looking for was highlighted as if I have used [browser's search functionality](/browser-search/). However, this highlighted text was produced by Google Search, ...or not?
+
+https://twitter.com/rmnvsl/status/1268259255418839042
+
+This functionality is called [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/) and it's specification was published by [WICG](https://www.w3.org/community/wicg/) (W3C Incubator Community Group, I was not aware of this group before), which means it is _de facto_ only a proposal, not a standard. Regardless of that it seams it's not a problem to [implement](https://blog.chromium.org/2019/12/chrome-80-content-indexing-es-modules.html#:~:text=Text%20URL%20Fragments) such feature into a browser now.
+
+I will explain this new functionality, check the browser support and also provide an example further in this article.
+
+## Text Fragments
+
+Text Fragments adds support for navigating and highlighting specified text snippet in a page and so immediately brings user's attention to it.
+
+<Tip>
+
+Up to this time, we had to use anchors, links pointing to elements with `id` attributes defined. You can try [jump to the comments section](#social) to see it in action.
+
+</Tip>
+
+The main uses cases are:
+
+- **search engines** - they serve links to the pages your are looking for. With text fragments they can lead you to the exact searched content rather than linking to the top of the page.
+- **sharing from the browser** - let's say you want to share some text from the web page with a friend. You select that part of the text and from browser's context menu you choose "Share this text" - and browser puts the URL with correct text fragment to you clipboard. Now you friend is navigated to the same part of the page. (e.g. Wikipedia article).
+
+**How a browser should respond** to the text fragment is purposely not defined. While my browser highlights the text and scroll to that part of the page, it may also active search functionality on that text or show a notification with some "click to scroll to the text" message.
+
+### So, what does a text fragment look like?
+
+It's defined with `:~:text=` after the `#` (hash) in the URL, e.g.:
+
+```
+https://romanvesely.com/text-fragments/#:~:text=How a browser should respond,with some "click to scroll to the text" message.
+```
+
+Specifically, it consists of four parts:
+
+```
+#:~:text=[prefix-,]textStart[,textEnd][,-suffix]
+```
+
+Text to highlight is defined by `textStart`, which is also the only required parameter of fragment directive. If it's too long, it can be splitted into two shorter parts, the second one define the end of the snippet (`textEnd`). Browser will highlight everything in between those parts.
+
+`prefix` and `suffix` define a context, so the browser knows which text to select if there is more than one occurence of it. They represent the text immediately precedening (`prefix`) and following (`suffix`) the text that should be highlighted. It means, context _is not_ part of the text snippet.
+
+### Some Notable Characteristics
+
+Whole words have to be specified, just a portion of a word will not work.
+
+Some characters have to be percent-decoded, namely dash `-`, comma `,` and ampersand `&`, to avoid being interpreted as part of the text directive syntax
+
+Fragment (anchor) can be used together with text fragments. It may happen that text on the page has changed since fragment was created, so browser can still point at least to the appropriate section of the page.
+
+To highlight more text snippets more text fragments can be used in the URL. Just join them with ampersand(s).
+
+## Is Your Browser Ready?
+
+Let's look at what browsers currently support this new feature:
+
+<CanIUse feature="url-scroll-to-text-fragment" />
+
+Not that much. But, if you have one of the supporting browser, you can...
+
+## See It in Action
+
+export const Highlight = () => {
+  const [selection, setSelection] = React.useState(null);
+  React.useEffect(() => {
+    if (typeof document === 'undefined') {
+      return;
+    }
+    document.addEventListener('selectionchange', handleSelection);
+    return () => document.removeEventListener('selectionchange', handleSelection);
+  }, []);
+  const handleSelection = () => {
+    const selection = document.getSelection();
+    if (selection.isCollapsed) {
+      setSelection(null);
+    } else {
+      const { anchorNode: start, focusNode: end } = selection;
+      const range = document.createRange();
+      range.setStart(start, selection.anchorOffset);
+      range.setEnd(end, selection.focusOffset);
+      const backwards = range.collapsed;
+      const isOneNode = start === end;
+      const textStart = format(start.nodeValue);
+      const textEnd = format(end.nodeValue);
+      let fragments;
+      if (isOneNode) {
+        fragments = textStart;
+      } else {
+        if (backwards) {
+          fragments = `${textEnd},${textStart}`;
+        } else {
+          fragments = `${textStart},${textEnd}`;
+        }
+      }
+      setSelection(`${window.location.href}#:~:text=${fragments}`);
+    }
+  };
+  const format = s => (s ? encodeURIComponent(s.trim()) : '');
+  return selection ? (
+    <a
+      href={selection}
+      target="_blank"
+      style={{
+        padding: '0.5em',
+        border: '1px solid var(--accent)',
+      }}
+    >
+      open a new window
+    </a>
+  ) : (
+    <span
+      style={{
+        backgroundColor: 'var(--background-secondary)',
+        border: '1px solid var(--background-secondary)',
+        padding: '0.5em',
+        cursor: 'not-allowed',
+      }}
+    >
+      open a new window
+    </span>
+  );
+};
+
+**Select any text** in this page and <Highlight /> to see highlighted text snippet.
+
+For the simplicity and purpose of this example, selection range is expanded across whole selected elements.
+
+You can use such a functionality in any page with this new [Link to Text Fragment](https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg) Chrome extension.
+
+## Privacy Concerns
+
+Lorem ipsum.
