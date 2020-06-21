@@ -102,29 +102,7 @@ export const Highlight = () => {
     }
   };
   const format = s => (s ? encodeURIComponent(s.trim()) : '');
-  return selection ? (
-    <a
-      href={selection}
-      target="_blank"
-      style={{
-        padding: '0.5em',
-        border: '1px solid var(--accent)',
-      }}
-    >
-      open a new window
-    </a>
-  ) : (
-    <span
-      style={{
-        backgroundColor: 'var(--background-secondary)',
-        border: '1px solid var(--background-secondary)',
-        padding: '0.5em',
-        cursor: 'not-allowed',
-      }}
-    >
-      open a new window
-    </span>
-  );
+  return <button disabled={!selection} onClick={() => window.location.replace(selection)}>open</button>;
 };
 
 **Select any text** in this page and <Highlight /> to see highlighted text snippet.
