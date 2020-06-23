@@ -9,7 +9,7 @@ https://twitter.com/rmnvsl/status/1268259255418839042
 
 This functionality is called [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/) and it's specification was published by [WICG](https://www.w3.org/community/wicg/) (W3C Incubator Community Group, I was not aware of this group before), which means it is _de facto_ only a proposal, not a standard. Regardless of that it seams it's not a problem to [implement](https://blog.chromium.org/2019/12/chrome-80-content-indexing-es-modules.html#:~:text=Text%20URL%20Fragments) such feature into a browser now.
 
-I will explain this new functionality, check the browser support and also provide an example further in this article.
+I will explain this new functionality, check the browser support and also provide a functional example further in this article.
 
 ## Text Fragments
 
@@ -50,11 +50,13 @@ Text to highlight is defined by `textStart`, which is also the only required par
 
 Whole words have to be specified, just a portion of a word will not work.
 
-Some characters have to be percent-decoded, namely dash `-`, comma `,` and ampersand `&`, to avoid being interpreted as part of the text directive syntax
+Some characters have to be percent-decoded, namely dash `-`, comma `,` and ampersand `&`, to avoid being interpreted as part of the text directive syntax.
 
-Fragment (anchor) can be used together with text fragments. It may happen that text on the page has changed since fragment was created, so browser can still point at least to the appropriate section of the page.
+Fragment (anchor) can be used together with text fragments. It may happen that text on the page has changed since text fragment was created, so browser can still point at least to the appropriate section of the page.
 
 To highlight more text snippets more text fragments can be used in the URL. Just join them with ampersand(s).
+
+Unfortunately, as of the time of writing this article there is no way to customize the style of highlighted text snippets.
 
 ## Is Your Browser Ready?
 
@@ -67,7 +69,7 @@ Not that much. But, if you have one of the supporting browser, you can...
 ## See It in Action
 
 export const Highlight = () => {
-  const [selection, setSelection] = React.useState(null);
+  const [fragment, setFragment] = React.useState(null);
   React.useEffect(() => {
     if (typeof document === 'undefined') {
       return;
@@ -78,33 +80,39 @@ export const Highlight = () => {
   const handleSelection = () => {
     const selection = document.getSelection();
     if (selection.isCollapsed) {
-      setSelection(null);
-    } else {
-      const { anchorNode: start, focusNode: end } = selection;
-      const range = document.createRange();
-      range.setStart(start, selection.anchorOffset);
-      range.setEnd(end, selection.focusOffset);
-      const backwards = range.collapsed;
-      const isOneNode = start === end;
-      const textStart = format(start.nodeValue);
-      const textEnd = format(end.nodeValue);
-      let fragments;
-      if (isOneNode) {
-        fragments = textStart;
-      } else {
-        if (backwards) {
-          fragments = `${textEnd},${textStart}`;
-        } else {
-          fragments = `${textStart},${textEnd}`;
-        }
-      }
-      setSelection(`${window.location.href}#:~:text=${fragments}`);
+      setFragment(null);
+      return;
     }
+    const { anchorNode: start, focusNode: end } = selection;
+    const range = document.createRange();
+    range.setStart(start, selection.anchorOffset);
+    range.setEnd(end, selection.focusOffset);
+    const backwards = range.collapsed;
+    const isOneNode = start === end;
+    const textStart = format(start.nodeValue);
+    const textEnd = format(end.nodeValue);
+    let fragments;
+    if (isOneNode) {
+        fragments = textStart;
+    } else {
+        if (backwards) {
+            fragments = `${textEnd},${textStart}`;
+        } else {
+            fragments = `${textStart},${textEnd}`;
+        }
+    }
+    setFragment(`#:~:text=${fragments}`);
   };
   const format = s => (s ? encodeURIComponent(s.trim()) : '');
-  return selection ? (
+  const open = e => {
+      e.preventDefault();
+      window.location.href += fragment;
+      location.reload();
+  }
+  return fragment ? (
     <a
-      href={selection}
+      href={fragment}
+      onClick={open}
       style={{
         padding: '0.5em',
         border: '1px solid var(--accent)',
@@ -130,7 +138,7 @@ export const Highlight = () => {
 
 For the simplicity and purpose of this example, selection range is expanded across whole selected elements.
 
-You can use such a functionality in any page with this new [Link to Text Fragment](https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg) Chrome extension.
+You can use the same functionality in any page with this new [Link to Text Fragment](https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg) Chrome extension.
 
 ## Privacy Concerns
 

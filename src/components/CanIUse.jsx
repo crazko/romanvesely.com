@@ -12,7 +12,6 @@ export const CanIUse = ({ feature, periods = 'future_1,current,past_1,past_2', a
     const script = document.createElement('script');
     const inline = document.createTextNode(`
         for (var e = document.getElementsByClassName("ciu_embed"), t = 0; t < e.length; t++) {
-            console.log(e);
             var a = e[t]
                 , i = a.getAttribute("data-feature")
                 , n = a.getAttribute("data-periods")

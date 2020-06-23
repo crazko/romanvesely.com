@@ -25,7 +25,7 @@ export default ({
               {posts[year].map(({ fields: { date, dateLocal, slug }, frontmatter: { title } }) => (
                 <article className="note" key={title}>
                   <div className="note__header">
-                    <Link to={`/${slug}/`}>{title}</Link>
+                    <Link to={`/${slug}`}>{title}</Link>
                   </div>
                   <time dateTime={date} title={date} className="meta">
                     {dateLocal}
