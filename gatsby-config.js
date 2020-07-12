@@ -149,11 +149,11 @@ module.exports = {
             setup: ({
               query: {
                 site: {
-                  siteMetadata: { url },
+                  siteMetadata: { name, url },
                 },
               },
             }) => ({
-              title: 'Learning Log',
+              title: `${name}: Learning Log`,
               description: 'Collection of interesting news, resources, tips or issues and their solutions.',
               feed_url: `${url}/log.xml`,
               site_url: `${url}/log`,
