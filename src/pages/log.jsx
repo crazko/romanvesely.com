@@ -24,6 +24,9 @@ export default ({
         <Perex>
           Collection of interesting news, resources, tips or&nbsp;issues and their solutions that caught my attention.
         </Perex>
+        <p>
+          Also available as <a href="/log.xml">RSS</a>.
+        </p>
       </Container>
       <div className="logs" style={{ counterReset: `log ${logs.length + 1}` }}>
         {logs.map((log, i) => (
