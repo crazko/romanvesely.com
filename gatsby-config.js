@@ -130,6 +130,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
+            title: 'Roman Veselý: Notes',
           },
           {
             serialize: ({ query: { site, allMdx } }) => {
@@ -169,6 +170,7 @@ module.exports = {
               }
             `,
             output: '/log.xml',
+            title: `Roman Veselý: Learning Log`,
           },
         ],
       },
