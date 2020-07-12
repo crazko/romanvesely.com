@@ -131,6 +131,45 @@ module.exports = {
             `,
             output: '/rss.xml',
           },
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(log => {
+                var id = log.fileAbsolutePath
+                  .split('/')
+                  .pop()
+                  .split('.')[0];
+                return {
+                  title: id,
+                  description: log.html,
+                  guid: id,
+                  url: `${site.siteMetadata.url}/log#log${id}`,
+                };
+              });
+            },
+            setup: ({
+              query: {
+                site: {
+                  siteMetadata: { name, url },
+                },
+              },
+            }) => ({
+              title: `${name}: Learning Log`,
+              description: 'Collection of interesting news, resources, tips or issues and their solutions.',
+              feed_url: `${url}/log.xml`,
+              site_url: `${url}/log`,
+            }),
+            query: `
+              {
+                allMdx(filter: {fileAbsolutePath: {regex: "/src/log/"}}, sort: {fields: fileAbsolutePath, order: DESC}) {
+                  nodes {
+                    html
+                    fileAbsolutePath
+                  }
+                }
+              }
+            `,
+            output: '/log.xml',
+          },
         ],
       },
     },
