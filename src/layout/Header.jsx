@@ -29,6 +29,10 @@ export const Header = () => (
                 <i className="icon-stackoverflow"></i>
                 <span className="sr-only">stack overflow</span>
               </a>
+              <a href="https://dev.to/rmnvsl" title="dev.to" rel="me">
+                <i className="icon-devto"></i>
+                <span className="sr-only">dev.to</span>
+              </a>
               <a href="https://www.linkedin.com/in/veselyroman" title="linkedin" rel="me">
                 <i className="icon-linkedin"></i>
                 <span className="sr-only">linkedin</span>
