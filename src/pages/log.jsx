@@ -25,7 +25,7 @@ export default ({
           Collection of interesting news, resources, tips or&nbsp;issues and their solutions that caught my attention.
         </Perex>
         <p>
-          Also available as <a href="/log.xml">RSS</a>.
+          <a href="/log.xml">RSS</a> also available.
         </p>
       </Container>
       <div className="logs" style={{ counterReset: `log ${logs.length + 1}` }}>
