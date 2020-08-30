@@ -17,6 +17,21 @@
   to = "https://docs.google.com/document/d/1bxwmJoQa8dN3uq5V2uEE2--hkWxFDdGy208EEMa5SYA"
   status = 302
 
+[[redirects]]
+  from = "/talks"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/projects"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/playground"
+  to = "/"
+  status = 302
+
 # Check results https://securityheaders.com
 [[headers]]
   for = "/*"
