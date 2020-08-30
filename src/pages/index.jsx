@@ -13,19 +13,20 @@ export default ({
 
   return (
     <Content>
-      <Meta title="Notes" />
+      <Meta />
       <Container>
-        <h1>Notes</h1>
+        <h1>Archive</h1>
         {Object.keys(posts)
           .sort()
           .reverse()
           .map(year => (
             <section key={year}>
               <h2>{year}</h2>
-              {posts[year].map(({ fields: { date, dateLocal, slug }, frontmatter: { title } }) => (
+              {posts[year].map(({ fields: { date, dateLocal, slug }, frontmatter: { title, label } }) => (
                 <article className="note" key={title}>
                   <div className="note__header">
                     <Link to={`/${slug}`}>{title}</Link>
+                    {label && <span className="note__label">{label}</span>}
                   </div>
                   <time dateTime={date} title={date} className="meta">
                     {dateLocal}
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            label
           }
           fields {
             date
