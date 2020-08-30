@@ -26,7 +26,7 @@ export default ({
                 <article className="note" key={title}>
                   <div className="note__header">
                     <Link to={`/${slug}`}>{title}</Link>
-                    {label && <span className="note__label">{label}</span>}
+                    {label && <span className="pill ml-4">{label}</span>}
                   </div>
                   <time dateTime={date} title={date} className="meta">
                     {dateLocal}

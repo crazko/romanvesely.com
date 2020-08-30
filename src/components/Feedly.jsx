@@ -29,11 +29,9 @@ export const Feedly = () => {
           <ul className="feeds__list">
             {children.map(({ attributes: { title, htmlUrl, xmlUrl } }) => (
               <li key={xmlUrl}>
-                <small>
-                  <a href={xmlUrl} className="feeds__rss">
-                    rss
-                  </a>
-                </small>{' '}
+                <a href={xmlUrl} className="pill mr-4">
+                  rss
+                </a>
                 {htmlUrl ? <a href={htmlUrl}>{title}</a> : title}
               </li>
             ))}
