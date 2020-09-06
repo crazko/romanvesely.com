@@ -50,6 +50,7 @@ module.exports = {
           {
             family: 'Merriweather',
             variants: ['400'],
+            subsets: ['latin-ext'],
           },
         ],
       },
