@@ -110,7 +110,7 @@ export const Highlight = () => {
             fragments = `${textStart},${textEnd}`;
         }
     }
-    setFragment(`#:~:text=${fragments}`);
+    setFragment(`/#:~:text=${fragments}`);
   };
   const format = s => (s ? encodeURIComponent(s.trim()) : '');
   const open = e => {
