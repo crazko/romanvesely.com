@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby';
 import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
 import { Content } from '../components/Content';
-import { Perex } from '../components/Perex';
 
 export default ({
   data: {
@@ -21,7 +20,7 @@ export default ({
           things, and an active lifestyle. I work for <a href="https://www.eleveo.com/">Elevēo</a>.
         </p>
         <p className="text-right">
-          Read more <Link to="/about">about me</Link>.
+          Read more <Link to="/about">about me</Link> or check <Link to="/now">what I'm doing now</Link>.
         </p>
         <h1>Content</h1>
         {Object.keys(posts)
