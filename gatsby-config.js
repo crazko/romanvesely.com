@@ -197,5 +197,6 @@ module.exports = {
         classNameLight: 'theme--light',
       },
     },
+    'gatsby-plugin-remove-trailing-slashes',
   ],
 };
