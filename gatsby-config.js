@@ -40,19 +40,21 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: 'gatsby-plugin-webfonts',
       options: {
-        fonts: [
-          {
-            family: 'Lato',
-            variants: ['400', '700'],
-          },
-          {
-            family: 'Merriweather',
-            variants: ['400'],
-            subsets: ['latin-ext'],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: 'Lato',
+              variants: ['400', '700'],
+            },
+            {
+              family: 'Merriweather',
+              variants: ['400'],
+              subsets: ['latin-ext'],
+            },
+          ],
+        },
       },
     },
     {
