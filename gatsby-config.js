@@ -98,7 +98,13 @@ module.exports = {
                 return {
                   custom_elements: [
                     { author: `${site.siteMetadata.email} (${site.siteMetadata.name})` },
-                    { 'content:encoded': post.html },
+                    {
+                      'content:encoded': `${post.html} <p><a href="${site.siteMetadata.url}/${
+                        post.fields.slug
+                      }#social">Add a comment</a> to the post, or <a href="mailto:${
+                        site.siteMetadata.email
+                      }?subject=In%20reply%20to%20%27${escape(post.frontmatter.title)}%27">email a reply</a>.</p>`,
+                    },
                   ],
                   date: post.fields.date,
                   description: post.excerpt,
