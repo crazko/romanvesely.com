@@ -1,7 +1,5 @@
 ---
-id: 6
 title: Connect Bitbucket Cloud commit messages with different issue tracker
-description: Bitbucket Cloud can link issues and commit messages not only in itself alone but also with outside world. Let's have a look how to create connections with a different tool for issue tracking.
 sources:
   - - 'https://confluence.atlassian.com/bitbucket/link-to-a-web-service-283641959.html'
     - 'Bitbucket: link to a web service'
@@ -14,6 +12,8 @@ sources:
   - - 'https://blog.trello.com/trello-power-ups-for-jira-bitbucket-confluence-hipchat'
     - New Trello Power Ups blog
 ---
+
+Bitbucket Cloud can link issues and commit messages not only in itself alone but also with outside world. Let's have a look how to create connections with a different tool for issue tracking.
 
 Oftentimes I like to wander around a program's or an app's settings and try every possible feature to see what can be adjusted. In the [company](http://www.nesskdc.sk/) I work for, we use Bitbucket intensively for projects developed for [non-profit organizations in our region](http://www.nesskdc.sk/en/community-support/ness-kdc-to-kosice/) as well as a place we store our own company-life-supporting applications.
 

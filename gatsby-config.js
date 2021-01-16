@@ -86,6 +86,7 @@ module.exports = {
                 url
                 name
                 description
+                email
               }
             }
           }
@@ -94,14 +95,17 @@ module.exports = {
           {
             serialize: ({ query: { site, allMdx } }) => {
               return allMdx.nodes.map(post => {
-                return Object.assign({}, post.frontmatter, {
-                  title: post.frontmatter.title,
-                  description: post.frontmatter.description,
+                return {
+                  custom_elements: [
+                    { author: `${site.siteMetadata.email} (${site.siteMetadata.name})` },
+                    { 'content:encoded': post.html },
+                  ],
                   date: post.fields.date,
-                  url: `${site.siteMetadata.url}/${post.fields.slug}`,
+                  description: post.excerpt,
                   guid: `${site.siteMetadata.url}/${post.fields.slug}`,
-                  custom_elements: [{ 'dc:creator': site.siteMetadata.name }],
-                });
+                  title: post.frontmatter.title,
+                  url: `${site.siteMetadata.url}/${post.fields.slug}`,
+                };
               });
             },
             setup: ({
@@ -121,13 +125,14 @@ module.exports = {
                 allMdx(filter: {fileAbsolutePath: {regex: "/posts/"}}, sort: {fields: fields___date, order: DESC}) {
                   nodes {
                     frontmatter {
-                      description
                       title
                     }
                     fields {
                       date
                       slug
                     }
+                    excerpt
+                    html
                   }
                 }
               }

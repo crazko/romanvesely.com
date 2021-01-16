@@ -1,10 +1,11 @@
 ---
 title: Moved to Gatsby
-description: Up until now, this site ran on PHP, but as time passed I felt like it needed a change. I've been interested in the JAMstack since I've heard about the term some two years ago. I also work with React in my job so it was obvious I would reach for <a href="https://www.gatsbyjs.org">Gatsby</a>.
 tags:
   - tools
   - webdev
 ---
+
+Up until now, this site ran on PHP, but as time passed I felt like it needed a change. I've been interested in the JAMstack since I've heard about the term some two years ago. I also work with React in my job so it was obvious I would reach for [Gatsby](https://www.gatsbyjs.org).
 
 Previously I used [Statie](https://www.statie.org), PHP static site generator, and was pretty much satisfied with it as it met my needs. I've written my very first [blog](/statie-generate-and-refresh) [posts](/statie-with-css-preprocessor) about it, and also made it's own [homepage](/a-place-to-meet-statie) to help [Tomas](https://www.tomasvotruba.com), author of the tool, to spread the word. But over the time my toolset has changed, and one of my dearest features, [Latte templating system](https://latte.nette.org/), [has been removed](https://github.com/Symplify/Symplify/pull/1641) from the tool - which made me a bit sad. Although I truly understand this move and appreciate Tomas' effort in creating and maintaining the project, it was time to move on.
 

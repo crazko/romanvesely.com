@@ -1,8 +1,8 @@
 ---
-id: 12
 title: Code together and have fun
-description: Some time ago I came upon the term Code in the Dark, an event for true frontend lovers. Probably it was a part of some conference, where visitors became participants and competed together in creating HTML and CSS completely without seeing the results. I thought it could be fun to be part of such a competition. Not very recently this idea popped up into my mind again and I decided to organize a similar event with my colleagues.
 ---
+
+Some time ago I came upon the term Code in the Dark, an event for true frontend lovers. Probably it was a part of some conference, where visitors became participants and competed together in creating HTML and CSS completely without seeing the results. I thought it could be fun to be part of such a competition. Not very recently this idea popped up into my mind again and I decided to organize a similar event with my colleagues.
 
 Here is the [original concept](http://codeinthedark.com/) of the contest:
 

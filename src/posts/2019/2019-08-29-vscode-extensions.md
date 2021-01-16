@@ -1,8 +1,8 @@
 ---
-id: 16
 title: Batch install extensions for Visual Studio Code
-description: So, you move to another machine (permanently or temporarily) and need your favorite <a href="https://code.visualstudio.com/">editor</a> to behave the same. How to easily take the installed extensions with you?
 ---
+
+So, you move to another machine (permanently or temporarily) and need your favorite [editor](https://code.visualstudio.com/) to behave the same. How to easily take the installed extensions with you?
 
 When you try to google **vscode synchronization** you are presented with an extension called [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) that can pretty much cover this problem and do even more. In my laziness, I found the set up a bit complex as I only wanted to get all extensions from my old device and install them to the new one. Once and for all. Preferably without any GitHub token fiddling around.
 

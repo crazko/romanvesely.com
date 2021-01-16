@@ -1,7 +1,5 @@
 ---
-id: 5
-title: 'Null Object design pattern'
-description: 'An object with no value or defined behavior can be helpful when no other "real" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable.'
+title: Null Object design pattern
 sources:
   - - 'https://www.youtube.com/watch?v=5DVDewOReoY'
     - Chasing "Perfect" presentation
@@ -12,6 +10,8 @@ sources:
   - - 'https://en.wikipedia.org/wiki/Null_Object_pattern'
     - Null Object Design Pattern on wikipedia.com
 ---
+
+An object with no value or defined behavior can be helpful when no other "real" object is present so it can mimic its usage. It may help you to avoid unnecessary conditionals and make your code more readable.
 
 Recently I saw a presentation called [Chasing "Perfect"]({$sources[0][0]}) given by [Adam Wathan](https://twitter.com/adamwathan) at Laracon EU in 2015. In case you don't know him I strongly recommend you to follow him on Twitter, at least. I definitely did so.
 

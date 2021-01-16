@@ -1,8 +1,8 @@
 ---
-id: 9
 title: A path to my first speaking experience
-description: 'In 2016 I attended <a href="http://www.phplive.cz/">PHPLive conference</a>, first bigger tech conference in my field at that time (as far as I know). A couple of months ago I got an opportunity to flip the sides to stand on the stage as a speaker. This is my little confession of what did it look like.'
 ---
+
+In 2016 I attended <a href="http://www.phplive.cz/">PHPLive conference</a>, first bigger tech conference in my field at that time (as far as I know). A couple of months ago I got an opportunity to flip the sides to stand on the stage as a speaker. This is my little confession of what did it look like.
 
 At the end of January, I was contacted by Janka from [Shopsys](https://www.shopsys.com/) company, the conference organizer, that they are looking for new faces. My email was shared by [Tomas](https://www.tomasvotruba.cz/) who is a known speaker not only at this event and who I was in a touch for quite a time.
 

@@ -1,8 +1,8 @@
 ---
-id: 13
 title: Useful search engine shortcuts for browsers
-description: "Most of the modern web browsers today contain functionality to set multiple search engines that can reduce your day-to-day time spent on finding the best results. Some time ago I <a href='https://twitter.com/rmnvsl/status/1027533760387002368'>tweeted</a> about adding GitHub to the browser's search engines list. My list has grown in size since then and I think you may find it useful."
 ---
+
+Most of the modern web browsers today contain functionality to set multiple search engines that can reduce your day-to-day time spent on finding the best results. Some time ago I [tweeted](https://twitter.com/rmnvsl/status/1027533760387002368) about adding GitHub to the browser's search engines list. My list has grown in size since then and I think you may find it useful.
 
 My default browser is [Vivaldi](https://vivaldi.com/), but you can find the same setting in all of the following: Firefox, Chrome, Opera or Brave. I currently don't have access to IE/Edge and haven't found it in Safari; sometimes it's really old-fashioned in comparison with others...
 

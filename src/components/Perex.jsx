@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const Perex = ({ children }) => <p dangerouslySetInnerHTML={{ __html: children }} className="perex" />;
+export const Perex = ({ children, className, as: Component = 'p' }) => (
+  <Component className={`perex ${className ? className : ''}`.trim()}>{children}</Component>
+);

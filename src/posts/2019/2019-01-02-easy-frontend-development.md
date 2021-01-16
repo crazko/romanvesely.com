@@ -1,8 +1,8 @@
 ---
-id: 11
 title: Easy frontend development
-description: Create, store, present and distribute HTML templates painlessly with the current offer of the tools that are ready to help you. And completely for free!
 ---
+
+Create, store, present and distribute HTML templates painlessly with the current offer of the tools that are ready to help you. And completely for free!
 
 ## Background
 

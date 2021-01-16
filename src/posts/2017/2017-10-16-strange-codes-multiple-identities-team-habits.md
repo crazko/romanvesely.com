@@ -1,8 +1,8 @@
 ---
-id: 7
-title: 'Strange codes, multiple identities and team habits'
-description: 'Just what I had in my mind or have tackled with in the recent past underlayed with the knowledge of the others.'
+title: Strange codes, multiple identities and team habits
 ---
+
+Just what I had in my mind or have tackled with in the recent past underlayed with the knowledge of the others.
 
 ## `T_PAAMAYIM_NEKUDOTAYIM`
 

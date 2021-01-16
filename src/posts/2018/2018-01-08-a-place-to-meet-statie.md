@@ -1,7 +1,5 @@
 ---
-id: 8
 title: A place to meet Statie
-description: 'I''m happy to announce that Statie, a newcomer to the field of static site generators written in PHP, received a place where it could promote itself better. <a href="https://www.statie.org/">It''s own website</a>. Though a really simple one; but it''s healthy to start with small things, they say.'
 sources:
   - - 'https://www.statie.org/'
     - Statie documentation
@@ -20,6 +18,8 @@ sources:
   - - 'https://github.algolia.com/'
     - A browser extension enhancing GitHub's search bar with autocomplete
 ---
+
+I'm happy to announce that Statie, a newcomer to the field of static site generators written in PHP, received a place where it could promote itself better. [It's own website](https://www.statie.org/). Though a really simple one; but it's healthy to start with small things, they say.
 
 <Tip>
 

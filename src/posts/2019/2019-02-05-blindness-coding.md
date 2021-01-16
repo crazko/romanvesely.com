@@ -1,8 +1,9 @@
 ---
 title: Blindness coding
-description: Simple yet fully-working solution for your own contest.
 label: hacking
 ---
+
+Simple yet fully-working solution for your own contest.
 
 Whether you are interested in a strength or in a muscle gaining, powerlifting may be a good bet for you. Fomin is one of the prescribed programs out there. This small app helps you to calculate your weights needed to complete this routine.
 

@@ -5,15 +5,14 @@ import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
 import { Content } from '../components/Content';
 import { PostMeta } from '../components/PostMeta';
-import { Perex } from '../components/Perex';
 import { Sources } from '../components/Sources';
 import { Discussion } from '../components/Discussion';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export default ({ data }) => {
   const { url } = useSiteMetadata();
-  const { body, frontmatter, fields, timeToRead } = data.mdx;
-  const { title, description, sources } = frontmatter;
+  const { body, excerpt, frontmatter, fields, timeToRead } = data.mdx;
+  const { title, sources } = frontmatter;
   const { githubEdit, slug, date, dateLocal } = fields;
 
   const disqusConfig = {
@@ -22,7 +21,7 @@ export default ({ data }) => {
 
   return (
     <Content>
-      <Meta title={title} description={description} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
+      <Meta title={title} description={excerpt} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
 
       <Container>
         <article className="article">
@@ -36,7 +35,6 @@ export default ({ data }) => {
               githubEdit={githubEdit}
             />
           </header>
-          <Perex>{description}</Perex>
           <MDXRenderer>{body}</MDXRenderer>
           <footer>
             <div className="post__signature">Roman</div>
@@ -55,9 +53,9 @@ export const query = graphql`
   query($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
+      excerpt
       frontmatter {
         title
-        description
         tags
         sources
       }

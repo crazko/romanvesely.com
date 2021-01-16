@@ -1,10 +1,11 @@
 ---
 title: Where do you journal?
-description: Have you ever tried to keep your own daily journal? Maybe you had been journaling at a very young age.  Maybe you keep your journal even today. Maybe you think you should give it a try, at least. In any case, there are dozens of options to use for thought preservation. Which one to choose?
 tags:
   - projects
   - tools
 ---
+
+Have you ever tried to keep your own daily journal? Maybe you had been journaling at a very young age. Maybe you keep your journal even today. Maybe you think you should give it a try, at least. In any case, there are dozens of options to use for thought preservation. Which one to choose?
 
 One can use a physical notebook, but in the computers and mobile phones era, some journaling app is as much at our fingerprints. Even though many people prefer handwriting over typing on the keyboard, for a big portion of the population computers are equally natural - we work with them every day. So maybe it makes sense to use them also for journaling.
 

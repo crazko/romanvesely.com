@@ -1,7 +1,5 @@
 ---
-id: 3
-title: 'How to re-generate and refresh static website in Statie?'
-description: 'Make development with <a href="https://github.com/Symplify/Statie">Statie</a> a bit more convenient with a little use of <a href="http://gulpjs.com/">gulp</a> and <a href="https://browsersync.io/">Browsersync</a>.'
+title: How to re-generate and refresh static website in Statie?
 sources:
   - - 'http://www.staticgen.com/'
     - StaticGen - Top Open-Source Static Site Generators
@@ -14,6 +12,8 @@ sources:
   - - 'https://www.browsersync.io/docs/gulp#gulp-reload'
     - Browsersync - Browser Reloading
 ---
+
+Make development with [Statie](https://github.com/Symplify/Statie) a bit more convenient with a little use of [gulp](http://gulpjs.com/) and [Browsersync](https://browsersync.io/).
 
 <Tip>
 

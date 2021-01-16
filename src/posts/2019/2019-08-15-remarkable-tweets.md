@@ -1,8 +1,8 @@
 ---
-id: 15
 title: Collection of remarkable tweets
-description: For the past month I've published several articles on <a href="https://dev.to">dev.to</a> containing some of my favorite tweets I've collected (liked) so far. I think you would like them too!
 ---
+
+For the past month I've published several articles on [dev.to](https://dev.to) containing some of my favorite tweets I've collected (liked) so far. I think you would like them too!
 
 I tend to use Twitter likes to bookmark interesting content, just not for everything I consider likable. From time-to-time, I also go through the list and un-like what I don't find interesting anymore. This approach keeps my list of liked tweets short, consisting only from the content I'd enjoy in the future.
 
