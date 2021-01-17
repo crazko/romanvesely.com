@@ -8,7 +8,7 @@ My default browser is [Vivaldi](https://vivaldi.com/), but you can find the same
 
 This is how the usage of a custom search engine looks like in the wild:
 
-![Search with custom search engine](/assets/posts/browser-search/search-engine-browser.gif)
+![Search with custom search engine](../../../images/browser-search/search-engine-browser.gif)
 
 Where to look for? Use the following addresses:
 
@@ -45,7 +45,7 @@ It's a bit different in Firefox where you add custom engines as add-ons, so you 
 
 You can [edit this page](https://github.com/crazko/romanvesely.com/blob/master/site/_posts/2019/2019-05-06-browser-search.md) and add more useful search engines!
 
-![List of search engines](/assets/posts/browser-search/vivaldi-search-engine-settings.png)
+![List of search engines](../../../images/browser-search/vivaldi-search-engine-settings.png)
 
 ## Pitfall
 

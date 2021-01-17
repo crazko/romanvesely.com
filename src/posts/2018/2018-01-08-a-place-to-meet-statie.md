@@ -37,7 +37,7 @@ To continue, I consider Latte the most elegant among others and that's the reaso
 
 I wanted to spread the word and add a mention to [the catalog of static generators](https://www.staticgen.com/) when I realized there is no homepage. By the way, it just blew my mind to see how many of the generators are in there only waiting to be used. Maybe another day...
 
-[![Statie website](/assets/posts/a-place-to-meet-statie/statie-web.png)](https://www.statie.org/)
+[![Statie website](../../../images/a-place-to-meet-statie/statie-web.png)](https://www.statie.org/)
 
 ## A bit of stack
 

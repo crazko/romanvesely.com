@@ -16,7 +16,7 @@ So, the idea was to hold an event locally in our office after the working hours.
 
 Another difference, in comparison with the original idea, was that the audience (everybody not coding at that moment) could have see the preview of those currently competing. This was very important for me. I'd say it was the main purpose of the event: grab some beer, watch and have fun while others are dying trying and not knowing what they are doing. And here and there it was really a comedy.
 
-![BlindNess coding #0](/assets/posts/code-together-and-have-fun/blindness-coding.jpg)
+![BlindNess coding #0](../../../images/code-together-and-have-fun/blindness-coding.jpg)
 
 ## Setup and technical aspects
 

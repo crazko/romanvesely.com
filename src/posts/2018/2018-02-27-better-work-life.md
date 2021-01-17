@@ -7,4 +7,4 @@ At [PHPlive](http://www.phplive.cz/) conference I tried to show how one can make
 
 [Presentation slides](https://docs.google.com/presentation/d/1jXR04uWfTf8w5rnPxuFIPGo4QMBzkzpMs2Cbocs_ggs). Read also about [a path to my first speaking experience](/a-path-to-my-first-speaking-experience).
 
-![](./assets/thumbs/phplive-2018-talk.png)
+![](../../../images/phplive-2018-talk.png)

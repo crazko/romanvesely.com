@@ -29,13 +29,13 @@ Because of that, we settled with Trello, which is more user-friendly to keep the
 
 Bitbucket Cloud can link a commit message with an issue in the way a Github can do:
 
-![Bitbucket issues](/assets/posts/bitbucket-with-different-issue-tracker/bitbucket-issues.png 'Bitbucket issue tracker')
+![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues.png 'Bitbucket issue tracker')
 
 That's great, however not usable in our workflow with Trello. Though, we can use [Link to a web service]({$sources[0][0]}) setting, probably not so widely known feature of Bitbucket Cloud, and get following results that point directly to Trello's card:
 
-![Bitbucket issues](/assets/posts/bitbucket-with-different-issue-tracker/bitbucket-issues-custom-01.png 'link is at the beginning of the message')
+![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues-custom-01.png 'link is at the beginning of the message')
 
-![Bitbucket issues](/assets/posts/bitbucket-with-different-issue-tracker/bitbucket-issues-custom-02.png 'link can be also somewhere in the middle')
+![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues-custom-02.png 'link can be also somewhere in the middle')
 
 Nice, how to achieve it?
 
@@ -49,7 +49,7 @@ To add a new one just click on the **Add new link** in the upper right corner an
 
 The link key is a regex rule which selects the first word of a message and makes a group of it. Then it is exchanged with the `\1` placeholder in the link url which will make a correct link in a message.
 
-![Bitbucket issues](/assets/posts/bitbucket-with-different-issue-tracker/bitbucket-issues-dialog.png)
+![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues-dialog.png)
 
 <Tip>
 

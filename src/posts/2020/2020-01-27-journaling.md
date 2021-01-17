@@ -34,7 +34,7 @@ And that's all! You can search easily, by date (range), name, or by any content 
 
 After some tinkering, I've also started to add notes from my training sessions - weightlifting, running, etc. Actually, now I have my whole workout plan from the past years in a separate calendar with all the exercises, weights, and notes on how I felt during a session. It's very easy to find some CrossFit routine I liked, but can't remember anymore - search for thrusters & box jumps suffice my need in a fraction of seconds. (a tough combination of exercises, by the way).
 
-![Training calendar in Google Calendar](/assets/posts/journaling/trainings.png)
+![Training calendar in Google Calendar](../../../images/journaling/trainings.png)
 
 One feature I still miss in Google Calendar (and others as well), though. It is not possible to display descriptions of more the one event at a time...
 

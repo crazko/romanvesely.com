@@ -10,4 +10,4 @@ PHP library and a simple command line tool to generate images suitable for shari
 - url: https://packagist.org/packages/crazko/post-social-image
 - repository: https://github.com/crazko/post-social-image
 
-![](./assets/thumbs/post-social-image.png)
+![](../../../images/post-social-image.png)

@@ -12,4 +12,4 @@ Read more about [journaling](/journaling).
 - url: https://kalendario.org
 - repository: https://github.com/crazko/kalendario
 
-![](./assets/thumbs/kalendario.png)
+![](../../../images/kalendario.png)

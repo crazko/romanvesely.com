@@ -42,7 +42,7 @@ At the school, we were learned how to create a presentation. Anyone who had slid
 
 I had done one more thing before I opened Google Slides. I needed to give those notes correct structure so I created a mind map:
 
-[![Mind Map](/assets/posts/a-path-to-my-first-speaking-experience/mind-map.png)](https://coggle.it/diagram/WoHihAWJuAABqwgD/t/ako-si-sprijemnit-pracovny-zivot/978659faac09ba4d56e5a919b6a0c1df106830ce1b7f12d3ba7c9b34e7259450)
+[![Mind Map](../../../images/a-path-to-my-first-speaking-experience/mind-map.png)](https://coggle.it/diagram/WoHihAWJuAABqwgD/t/ako-si-sprijemnit-pracovny-zivot/978659faac09ba4d56e5a919b6a0c1df106830ce1b7f12d3ba7c9b34e7259450)
 
 The map served me well in forming the slides as well as for a "final notes" for what I was actually going to say on d-day. Each slide couldn't be simpler with either a short title, a photo or a graph.
 
@@ -50,7 +50,7 @@ The map served me well in forming the slides as well as for a "final notes" for 
 
 I bet many of you know TED, either the main conference or many individual derivates called TEDx. Most of the talks there have several things in common with one specialty - which is that no one reads from the slides (and those are also uncommon), but rather has the whole talk memorized. I think this gives more energy and tempo to the presentation. I came around a perfect article on [Doing a TED Talk](https://waitbutwhy.com/2016/03/doing-a-ted-talk-the-full-story.html) written by Tim Urban from my favorite [waitbutwhy.com](https://waitbutwhy.com/). I'm going to borrow one of the perfect diagrams he makes to illustrate his posts, the one about public speaking methods:
 
-[![Public Speaking Methods](/assets/posts/a-path-to-my-first-speaking-experience/method-graph.jpg)](https://28oa9i1t08037ue3m1l0i861-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Method-graph-2.png)
+[![Public Speaking Methods](../../../images/a-path-to-my-first-speaking-experience/method-graph.jpg)](https://28oa9i1t08037ue3m1l0i861-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Method-graph-2.png)
 
 Funny thing is that all three items in the key are bad. They can just be bad or very bad. It seems like public speaking is a very stressful thing to do. I decided to go with the second method (talk through the set of structure), inclining more to the right side, which means I prepared some key sentences and, let's say, jokes, sort of... I had also read a book called [Talk like TED](https://www.goodreads.com/book/show/33804062-hovor-ako-ted) and had watched several TED talks and commencement speeches. Not all of them were strictly connected with how to give a talk but really were inspirational in one way or another. Here are some I really enjoyed:
 
@@ -67,7 +67,7 @@ Nevertheless, I persisted and processed all the comments my calm friendly collea
 
 I was sitting in the back, watching [Tomas Pilar](https://www.tomaspilar.cz/) giving his talk on Doctrine and thinking about how different our talks are. His strongly technical one with lots of code examples will nicely contradict with mine, without any mention of the code itself.
 
-![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live01.jpg)
+![PHP Live](../../../images/a-path-to-my-first-speaking-experience/phplive-live01.jpg)
 
 I also really appreciated I was the next speaker following him.
 
@@ -75,7 +75,7 @@ I also really appreciated I was the next speaker following him.
 
 "Oh my, many people are here, aren't they?"
 
-![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live02.jpg)
+![PHP Live](../../../images/a-path-to-my-first-speaking-experience/phplive-live02.jpg)
 
 "Don't they have better things to do on today's Tuesday?"
 
@@ -83,7 +83,7 @@ I also really appreciated I was the next speaker following him.
 
 "What the hell is going on with my vision?"
 
-![PHP Live](/assets/posts/a-path-to-my-first-speaking-experience/phplive-live03.jpg)
+![PHP Live](../../../images/a-path-to-my-first-speaking-experience/phplive-live03.jpg)
 
 "OK enough, I need some water. Where is the ..."
 

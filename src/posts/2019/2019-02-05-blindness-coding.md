@@ -11,4 +11,4 @@ Read about [how we did our contest](/code-together-and-have-fun).
 
 - repository: https://github.com/crazko/blindness-coding
 
-![](./assets/thumbs/blindness-coding.png)
+![](../../../images/blindness-coding.png)

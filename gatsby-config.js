@@ -40,6 +40,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/images/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-webfonts',
       options: {
         fonts: {
@@ -66,7 +73,22 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           'gatsby-remark-embedder',
-          // 'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              backgroundColor: 'transparent',
+              maxWidth: 820,
+              showCaptions: true,
+              wrapperStyle: fluidResult => {
+                const style = 'margin-top: var(--gap); margin-bottom: var(--gap);';
+
+                if (fluidResult.presentationWidth >= 820) {
+                  return `${style} margin-left: calc(var(--gap) * -1); margin-right: calc(var(--gap) * -1);`;
+                }
+                return `${style} text-align: center;`;
+              },
+            },
+          },
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
         ],
       },
@@ -75,7 +97,8 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
     'gatsby-plugin-twitter',
-    // 'gatsby-plugin-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-remark-images',
     {
       resolve: 'gatsby-plugin-feed',
       options: {

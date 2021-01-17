@@ -7,4 +7,4 @@ As a part of <a href="http://geeky-friday.nesskdc.sk">Geeky Friday</a> sessions 
 
 [Presentation slides](https://docs.google.com/presentation/d/1FRTdJs372HnbWXdjbwXkkfJf0LgMztAo-CJm9KvHqYI).
 
-![](./assets/thumbs/wp-modern-development.jpg)
+![](../../../images/wp-modern-development.jpg)
