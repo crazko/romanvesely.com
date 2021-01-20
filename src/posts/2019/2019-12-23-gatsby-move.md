@@ -25,7 +25,7 @@ List of missing features and things to fix:
 - image max-width and usage of Gatsby advanced image - done in [`08c736d`](https://github.com/crazko/romanvesely.com/commit/08c736d53eab8b9f3f2bb9412db758b6a238254d)
 - ~~HTML in the lead paragraph~~ - style removed in [`36c0748`](https://github.com/crazko/romanvesely.com/commit/36c0748972b10adef1fdefbd5c859aff20d4ba38)
 - images for social sites - I used [my PHP package](https://packagist.org/packages/crazko/post-social-image), and still can, but not as a part of the project
-- `<abbr>` element in pages/posts
+- `<abbr>` element in pages/posts - done in [`757b5b0`](https://github.com/crazko/romanvesely.com/commit/757b5b0e6b2fc69249dc30f0ef5378871fd3f88e)
 - ~~JSON feed~~ - it doesn't matter as it was probably not used by anyone
 
 I will come back and update the list accordingly.
