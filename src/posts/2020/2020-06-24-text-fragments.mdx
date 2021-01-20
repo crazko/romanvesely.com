@@ -1,14 +1,5 @@
 ---
 title: Highlight Text With Text Fragments
-sources:
-    - - https://twitter.com/mathias/status/1182041529168388097
-      - The tweet that introduced me to this new feature
-    - - https://wicg.github.io/scroll-to-text-fragment/
-      - Text Fragments Draft
-    - - https://www.forbes.com/sites/gordonkelly/2020/02/23/google-chrome-80-upgrade-deep-linking-update-chrome-browser/
-      - Google Chrome 80 Released With Controversial Deep Linking Upgrade
-    - - https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg
-      - Link to Text Fragment Chrome Extension
 ---
 
 New API for navigating to the specific part of the webpage is slowly starting to be part of the browsers. In many cases, it may replace anchor linking, which has been part of the web development for decades.
@@ -17,7 +8,7 @@ Lately, I noticed some new behavior of [StackOverflow](https://stackoverflow.com
 
 https://twitter.com/rmnvsl/status/1268259255418839042
 
-This functionality is called [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/) and its specification was published by [WICG](https://www.w3.org/community/wicg/) (W3C Incubator Community Group, I was not aware of this group before), which means it is _de facto_ only a proposal, not a standard. Regardless of that, it seems it's not a problem to [implement](https://blog.chromium.org/2019/12/chrome-80-content-indexing-es-modules.html#:~:text=Text%20URL%20Fragments) such a feature into a browser now.
+This functionality is called [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/) and its specification was published by [WICG](https://www.w3.org/community/wicg/)[^wicg], which means it is _de facto_ only a proposal, not a standard. Regardless of that, it seems it's not a problem to [implement](https://blog.chromium.org/2019/12/chrome-80-content-indexing-es-modules.html#:~:text=Text%20URL%20Fragments) such a feature into a browser now.
 
 I will explain this new functionality, check the browser support, and also provide a **working example** further in this article.
 
@@ -157,3 +148,7 @@ As we all do know, not everything is bright and shiny. This new feature, which h
 [I was pointed](https://twitter.com/nileshtrivedi/status/1268390936913952768) to the [article elaborating](https://www.forbes.com/sites/gordonkelly/2020/02/23/google-chrome-80-upgrade-deep-linking-update-chrome-browser/) further on this matter. I would also recommend you to check [this tweet thread](https://twitter.com/pes10k/status/1230958596780785664) by [Pete Snyder](https://twitter.com/pes10k), which should give you a better picture. I couldn't explain it better.
 
 I would like to learn more about this security topic, so if you know about any related resource, please, ping me.
+
+*[WICG]: W3C Incubator Community Group
+
+[^wicg]: I was not aware of this group before.

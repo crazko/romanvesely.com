@@ -1,16 +1,5 @@
 ---
 title: How to re-generate and refresh static website in Statie?
-sources:
-  - - 'http://www.staticgen.com/'
-    - StaticGen - Top Open-Source Static Site Generators
-  - - 'https://github.com/Symplify/Statie'
-    - Statie - PHP Static Site Generator
-  - - 'https://www.tomasvotruba.cz/blog/2017/02/20/statie-how-to-run-it-locally/'
-    - 'Statie: How to run it Locally'
-  - - 'https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/'
-    - The Complete-Ish Guide to Upgrading to Gulp 4
-  - - 'https://www.browsersync.io/docs/gulp#gulp-reload'
-    - Browsersync - Browser Reloading
 ---
 
 Make development with [Statie](https://github.com/Symplify/Statie) a bit more convenient with a little use of [gulp](http://gulpjs.com/) and [Browsersync](https://browsersync.io/).
@@ -78,7 +67,7 @@ function reload(done) {
 Such simple functions, aren't they? Simple, yet they do everything we need to have to set up a watcher function. Short notes on above code:
 
 - in `generate()` function `return` has to be used in order to use it in a `gulp.series()` properly
-- same applies for `done()` function used in `reload()` - repeated reloading would be not possible without it
+- same applies for `done()` function used in [`reload()`](https://www.browsersync.io/docs/gulp#gulp-reload) - repeated reloading would be not possible without it
 
 Here comes the watcher function:
 

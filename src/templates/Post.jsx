@@ -5,14 +5,13 @@ import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
 import { Content } from '../components/Content';
 import { PostMeta } from '../components/PostMeta';
-import { Sources } from '../components/Sources';
 import { Discussion } from '../components/Discussion';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export default ({ data }) => {
   const { url } = useSiteMetadata();
   const { body, excerpt, frontmatter, fields, timeToRead } = data.mdx;
-  const { title, sources } = frontmatter;
+  const { title } = frontmatter;
   const { githubEdit, slug, date, dateLocal } = fields;
 
   const disqusConfig = {
@@ -43,8 +42,6 @@ export default ({ data }) => {
 
         <Discussion disqusConfig={disqusConfig} />
       </Container>
-
-      {sources && <Sources sources={sources} />}
     </Content>
   );
 };
@@ -57,7 +54,6 @@ export const query = graphql`
       frontmatter {
         title
         tags
-        sources
       }
       fields {
         slug

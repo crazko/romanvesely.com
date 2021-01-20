@@ -73,6 +73,7 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           'gatsby-remark-embedder',
+          'gatsby-remark-numbered-footnotes',
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -91,6 +92,7 @@ module.exports = {
           },
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
         ],
+        remarkPlugins: [require('remark-abbr')],
       },
     },
     'gatsby-transformer-xml',

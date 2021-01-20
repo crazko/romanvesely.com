@@ -1,22 +1,5 @@
 ---
 title: A place to meet Statie
-sources:
-  - - 'https://www.statie.org/'
-    - Statie documentation
-  - - 'https://nette.org/'
-    - Nette Framework
-  - - 'https://latte.nette.org/'
-    - Latte - amazing template engine for PHP
-  - - 'https://www.staticgen.com/'
-    - Top Open-Source Static Site Generators
-  - - 'https://adamwathan.me/css-utility-classes-and-separation-of-concerns/'
-    - CSS Utility Classes and "Separation of Concerns"
-  - - 'https://tailwindcss.com/'
-    - Tailwind CSS - A Utility-First CSS Framework
-  - - 'https://community.algolia.com/docsearch/'
-    - The easiest way to add search to your documentation
-  - - 'https://github.algolia.com/'
-    - A browser extension enhancing GitHub's search bar with autocomplete
 ---
 
 I'm happy to announce that Statie, a newcomer to the field of static site generators written in PHP, received a place where it could promote itself better. [It's own website](https://www.statie.org/). Though a really simple one; but it's healthy to start with small things, they say.

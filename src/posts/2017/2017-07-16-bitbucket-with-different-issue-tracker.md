@@ -1,19 +1,8 @@
 ---
 title: Connect Bitbucket Cloud commit messages with different issue tracker
-sources:
-  - - 'https://confluence.atlassian.com/bitbucket/link-to-a-web-service-283641959.html'
-    - 'Bitbucket: link to a web service'
-  - - 'https://blog.bitbucket.org/2012/06/18/use-custom-regex-to-link-anywhere-on-bitbucket/ '
-    - Use Custom Regex to Link Anywhere On Bitbucket
-  - - 'http://www.regular-expressions.info/brackets.html'
-    - Use Parentheses for Grouping and Capturing
-  - - 'https://regex101.com/'
-    - Online regex tester
-  - - 'https://blog.trello.com/trello-power-ups-for-jira-bitbucket-confluence-hipchat'
-    - New Trello Power Ups blog
 ---
 
-Bitbucket Cloud can link issues and commit messages not only in itself alone but also with outside world. Let's have a look how to create connections with a different tool for issue tracking.
+Bitbucket Cloud [can link](https://blog.bitbucket.org/2012/06/18/use-custom-regex-to-link-anywhere-on-bitbucket/) issues and commit messages not only in itself alone but also with outside world. Let's have a look how to create connections with a different tool for issue tracking.
 
 Oftentimes I like to wander around a program's or an app's settings and try every possible feature to see what can be adjusted. In the [company](http://www.nesskdc.sk/) I work for, we use Bitbucket intensively for projects developed for [non-profit organizations in our region](http://www.nesskdc.sk/en/community-support/ness-kdc-to-kosice/) as well as a place we store our own company-life-supporting applications.
 
@@ -31,7 +20,7 @@ Bitbucket Cloud can link a commit message with an issue in the way a Github can 
 
 ![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues.png 'Bitbucket issue tracker')
 
-That's great, however not usable in our workflow with Trello. Though, we can use [Link to a web service]({$sources[0][0]}) setting, probably not so widely known feature of Bitbucket Cloud, and get following results that point directly to Trello's card:
+That's great, however not usable in our workflow with Trello. Though, we can use [Link to a web service](https://confluence.atlassian.com/bitbucket/link-to-a-web-service-283641959.html) setting, probably not so widely known feature of Bitbucket Cloud, and get following results that point directly to Trello's card:
 
 ![Bitbucket issues](../../../images/bitbucket-with-different-issue-tracker/bitbucket-issues-custom-01.png 'link is at the beginning of the message')
 

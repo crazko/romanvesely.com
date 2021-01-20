@@ -109,15 +109,6 @@
     }
   }
 
-  &__sources {
-    background-color: var(--background-secondary);
-    padding: 2em 0;
-
-    &-list {
-      padding: 0;
-    }
-  }
-
   &__social {
     #buttons {
       align-items: center;
@@ -152,6 +143,25 @@
         display: inherit;
       }
     }
+  }
+}
+
+.footnotes {
+  background-color: var(--background-secondary);
+  padding: 1em;
+  margin-top: var(--gap);
+  margin-left: calc(var(--gap) * -1);
+  margin-right: calc(var(--gap) * -1);
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+
+  hr {
+    display: none;
+  }
+
+  ol {
+    list-style-position: inside;
+    margin: 0;
   }
 }
 
