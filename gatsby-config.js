@@ -3,7 +3,7 @@ module.exports = {
     url: 'https://romanvesely.com',
     name: 'Roman Veselý',
     description: 'Personal blog. Notes not only about web development.',
-    email: 'info@romanvesely.com',
+    email: 'roman@romanvesely.com',
     image: 'meta.png',
     gravatar: {
       email: 'crazko@gmail.com',
