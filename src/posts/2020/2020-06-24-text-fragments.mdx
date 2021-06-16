@@ -105,11 +105,6 @@ export const Highlight = () => {
     setFragment(`#:~:text=${fragments}`);
   };
   const format = s => (s ? encodeURIComponent(s.trim()) : '');
-  const open = e => {
-      e.preventDefault();
-      window.location.href += fragment;
-      location.reload();
-  }
   return fragment ? (
     <a
       href={fragment}
@@ -119,7 +114,7 @@ export const Highlight = () => {
       }}
       target="_blank"
     >
-      reopen it
+      open it
     </a>
   ) : (
     <span
@@ -130,12 +125,12 @@ export const Highlight = () => {
         cursor: 'not-allowed',
       }}
     >
-      reopen it
+      open it
     </span>
   );
 };
 
-**Select any text** on this page and <Highlight /> to see the highlighted text snippet.
+**Select any text** on this page and <Highlight /> again to see the highlighted text snippet.
 
 For the simplicity and purpose of this example, the selection range expands across the whole selected elements.
 
