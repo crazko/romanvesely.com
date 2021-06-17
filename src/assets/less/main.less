@@ -100,6 +100,7 @@ h2 {
 
 /**
  * 1. Overwrite prismjs theme styles
+ * 2. Bring back default styling because of light/dark theme of prismjs
  */
 pre,
 code {
@@ -130,6 +131,11 @@ code {
     padding: 0;
     border: none;
   }
+}
+
+::selection {
+  background: highlight !important; /* 2 */
+  color: hightlighttext !important; /* 2 */
 }
 
 abbr[title] {
