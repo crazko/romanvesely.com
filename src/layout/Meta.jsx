@@ -41,6 +41,8 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
       {/* IndieWeb */}
       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+      <link rel="webmention" href="https://webmention.io/romanvesely.com/webmention" />
+      <link rel="pingback" href="https://webmention.io/romanvesely.com/xmlrpc" />
     </Helmet>
   );
 };
