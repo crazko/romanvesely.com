@@ -69,7 +69,7 @@ export const pageQuery = graphql`
             label
           }
           fields {
-            date
+            date: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
             dateLocal: date(formatString: "DD. MMMM", locale: "en")
             slug
           }

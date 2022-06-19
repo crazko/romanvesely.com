@@ -23,10 +23,11 @@ export default ({ data }) => {
       <Meta title={title} description={excerpt} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
 
       <Container>
-        <article className="article">
+        <article className="article h-entry">
           <header>
-            <h1>{title}</h1>
+            <h1 className="p-name">{title}</h1>
             <PostMeta
+              canonicalURL={`${url}/${slug}`}
               date={date}
               dateLocal={dateLocal}
               readingTime={timeToRead}
@@ -34,7 +35,9 @@ export default ({ data }) => {
               githubEdit={githubEdit}
             />
           </header>
-          <MDXRenderer>{body}</MDXRenderer>
+          <div className="e-content">
+            <MDXRenderer>{body}</MDXRenderer>
+          </div>
           <footer>
             <div className="post__signature">Roman</div>
           </footer>
@@ -57,7 +60,7 @@ export const query = graphql`
       }
       fields {
         slug
-        date
+        date: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
         dateLocal: date(formatString: "DD. MMMM YYYY", locale: "en")
         githubEdit
       }
