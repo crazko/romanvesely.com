@@ -2,6 +2,12 @@
   publish = "public/"
   command = "npm run build"
 
+# Use my domain to point to Mastodon instance; @roman@romanvesely.com (or others) should be discoverable
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://mastodon.social/.well-known/webfinger?resource=acct:romanvesely@mastodon.social"
+  status = 200
+
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://romanvesely.netlify.com/*"
@@ -27,6 +33,12 @@
 [[redirects]]
   from = "/playground"
   to = "/"
+  status = 302
+
+# Use my domain to point to (temporary) Mastodon account
+[[redirects]]
+  from = "/@roman"
+  to = "https://mastodon.social/@romanvesely"
   status = 302
 
 # Check results https://securityheaders.com
