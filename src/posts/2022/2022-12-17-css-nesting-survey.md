@@ -104,5 +104,5 @@ Even though I currently do not consider myself to be a user of the CSS Nesting f
 
 If you want to shape the future of CSS, [participate in the survey](https://webkit.org/blog/13607/help-choose-from-options-for-css-nesting-syntax/)! The survey is accompanied by lots of examples and comprehensive explanations, so it is beneficial to check it out even when you do not want to vote. If you are interested in more in-depth discussions, take a look at the [Github](https://github.com/w3c/csswg-drafts/issues/7834) [issues](https://github.com/w3c/csswg-drafts/issues/7970) of the CSS working group.
 
-[^is]: It's not about the [`:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) pseudo-class having some special meaning in this particular case, it just starts with a double colon, therefore it does not break the rule of "cannot start with a letter".
+[^is]: It's not about the [`:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) pseudo-class having some special meaning in this particular case, it just starts with a colon, therefore it does not break the rule of "cannot start with a letter".
 [^why]: I think that my need (or desire?) to use CSS Nesting in my day-to-day projects has been declining for a couple of years and it is currently almost zero. This blog is probably the last project written with CSS Nesting from scratch so far.
