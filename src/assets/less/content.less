@@ -166,6 +166,17 @@
   }
 }
 
+.footnotes li:target {
+  border: 1px solid var(--accent);
+  background-color: var(--background);
+  padding: 0.5em 1em;
+  margin: 0 -1em;
+
+  &::marker {
+    color: var(--accent);
+  }
+}
+
 .footnote-ref {
   border-bottom: none !important;
   margin-left: 0.25em;
