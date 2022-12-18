@@ -219,12 +219,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-disqus',
-      options: {
-        shortname: 'roman-vesely-notes',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-4520387-26',

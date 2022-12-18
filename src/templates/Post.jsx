@@ -5,7 +5,6 @@ import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
 import { Content } from '../components/Content';
 import { PostMeta } from '../components/PostMeta';
-import { Discussion } from '../components/Discussion';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export default ({ data }) => {
@@ -13,10 +12,6 @@ export default ({ data }) => {
   const { body, excerpt, frontmatter, fields, timeToRead } = data.mdx;
   const { title } = frontmatter;
   const { githubEdit, slug, date, dateLocal } = fields;
-
-  const disqusConfig = {
-    url: `${url}/${slug}`,
-  };
 
   return (
     <Content>
@@ -31,7 +26,6 @@ export default ({ data }) => {
               date={date}
               dateLocal={dateLocal}
               readingTime={timeToRead}
-              disqusConfig={disqusConfig}
               githubEdit={githubEdit}
             />
           </header>
@@ -42,8 +36,6 @@ export default ({ data }) => {
             <div className="post__signature">Roman</div>
           </footer>
         </article>
-
-        <Discussion disqusConfig={disqusConfig} />
       </Container>
     </Content>
   );

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Time } from '../components/Time';
-import { CommentCount } from 'gatsby-plugin-disqus';
 import { MetaList } from '../components/MetaList';
 
-export const PostMeta = ({ canonicalURL, date, dateLocal, readingTime, githubEdit, disqusConfig }) => (
+export const PostMeta = ({ canonicalURL, date, dateLocal, readingTime, githubEdit }) => (
   <MetaList>
     <a href={canonicalURL} className="text-secondary text-border-none u-url">
       <Time date={date}>
@@ -19,13 +18,6 @@ export const PostMeta = ({ canonicalURL, date, dateLocal, readingTime, githubEdi
         ⏳
       </span>{' '}
       {readingTime} min
-    </>
-
-    <>
-      <span role="img" aria-label="comments count">
-        💬
-      </span>{' '}
-      <CommentCount config={disqusConfig} />
     </>
 
     <>
