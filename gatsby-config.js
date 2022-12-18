@@ -92,7 +92,6 @@ module.exports = {
           },
           { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
         ],
-        remarkPlugins: [require('remark-abbr')],
       },
     },
     'gatsby-transformer-xml',
