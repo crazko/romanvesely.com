@@ -43,6 +43,9 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
       <link rel="webmention" href="https://webmention.io/romanvesely.com/webmention" />
       <link rel="pingback" href="https://webmention.io/romanvesely.com/xmlrpc" />
+
+      {/* Analytics */}
+      <script data-goatcounter="https://rmnvsl.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     </Helmet>
   );
 };
