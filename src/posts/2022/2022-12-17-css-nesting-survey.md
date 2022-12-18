@@ -46,7 +46,7 @@ header {
 }
 ```
 
-I think this exception may cause a lot of errors during development when this option is implemented. The question that arises is why can't the syntax [be exactly like in Sass](https://pinafore.social/statuses/109524822429071401)?
+I think this exception may cause a lot of errors during development when this option is implemented. The question that arises is why can't the syntax [be exactly like in Sass](https://front-end.social/@mia/109524801869852158)?
 
 ### Option 4
 
