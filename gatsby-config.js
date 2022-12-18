@@ -219,12 +219,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-4520387-26',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-use-dark-mode',
       options: {
         classNameDark: 'theme--dark',
