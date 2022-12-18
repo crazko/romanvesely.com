@@ -9,7 +9,7 @@ export const Header = () => (
   <header className="header">
     <Container>
       <div className="header__container">
-        <div className="logo h-card">
+        <div className="logo h-card p-author">
           <Link to="/" className="logo__link u-url u-uid">
             <Gravatar size={200} />
           </Link>

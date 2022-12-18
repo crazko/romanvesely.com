@@ -18,7 +18,7 @@ export default ({ data }) => {
       <Meta title={title} description={excerpt} pathname={slug} image={`assets/posts/${slug}.png`} isArticle />
 
       <Container>
-        <article className="article h-entry">
+        <article className="article">
           <header>
             <h1 className="p-name">{title}</h1>
             <PostMeta

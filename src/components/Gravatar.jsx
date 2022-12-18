@@ -9,5 +9,7 @@ export const Gravatar = ({ size }) => {
     .update(gravatar.email)
     .digest('hex');
 
-  return <img src={`${gravatar.url}${image}?size=${size}`} alt="logo" className="logo__image u-photo" />;
+  return (
+    <img src={`${gravatar.url}${image}?size=${size}`} alt="Roman's profile photo" className="logo__image u-photo" />
+  );
 };

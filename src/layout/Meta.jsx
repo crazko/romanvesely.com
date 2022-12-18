@@ -14,7 +14,12 @@ export const Meta = ({ title, description, image, pathname, isArticle = false })
   };
 
   return (
-    <Helmet title={title} defaultTitle={siteMetadata.name} titleTemplate={`%s | ${siteMetadata.name}`}>
+    <Helmet
+      title={title}
+      defaultTitle={siteMetadata.name}
+      titleTemplate={`%s | ${siteMetadata.name}`}
+      bodyAttributes={{ className: isArticle ? 'h-entry' : undefined }}
+    >
       <html lang="en" />
 
       {/* Primary Meta Tags */}
