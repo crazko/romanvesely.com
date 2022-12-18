@@ -16,6 +16,10 @@ export const Header = () => (
 
           <div className="about">
             <span className="about__name p-name">Roman Veselý</span>
+            <span className="sr-only p-note">
+              <span className="p-job-title">Software Engineer</span> from{' '}
+              <span className="p-country-name">Slovakia</span>. Somewhere between trees and bytes of code.
+            </span>
             <div className="about__social">
               <a href="https://twitter.com/rmnvsl" class="u-url" title="twitter" rel="me">
                 <i className="icon-twitter"></i>
