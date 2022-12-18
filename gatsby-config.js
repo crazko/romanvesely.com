@@ -225,5 +225,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-remove-trailing-slashes',
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: 'rmnvsl',
+      },
+    },
   ],
 };
