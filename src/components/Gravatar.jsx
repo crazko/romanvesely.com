@@ -10,6 +10,6 @@ export const Gravatar = ({ size }) => {
     .digest('hex');
 
   return (
-    <img src={`${gravatar.url}${image}?size=${size}`} alt="Roman's profile photo" className="logo__image u-photo" />
+    <img src={`${gravatar.url}${image}?size=${size}`} alt="Roman's face in grayscale" className="logo__image u-photo" />
   );
 };

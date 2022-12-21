@@ -12,7 +12,7 @@ export const Navigation = () => (
   <nav role="navigation" className="navigation">
     <ul className="nav">
       {Object.entries(links).map(([title, to]) => (
-        <li className="nav__item">
+        <li key={title} className="nav__item">
           <Link to={to} activeClassName="nav__link--active">
             {title}
           </Link>

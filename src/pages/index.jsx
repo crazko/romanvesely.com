@@ -18,7 +18,7 @@ export default ({
       <Container>
         <Perex className="text-emphasized text-center">
           Hi there! I'm Roman, a software engineer from Slovakia. I enjoy tinkering with the web, discovering new
-          things, and an active lifestyle. I work for <a href="https://www.eleveo.com/">Elevēo</a>.
+          things, and an active lifestyle. I work for <a href="https://www.eleveo.com/">Eleveo</a>.
         </Perex>
         <p className="text-center">
           Read more <Link to="/about">about me</Link> or check <Link to="/now">what I'm doing now</Link>.
