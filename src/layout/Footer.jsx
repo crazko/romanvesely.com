@@ -17,11 +17,15 @@ export const Footer = () => {
             <Link to="/now">now</Link>
           </li>
           <li className="meta__item footer__extended">
-            follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a>
+            follow me <a href="twitter://user?screen_name=rmnvsl">@rmnvsl</a> /{' '}
+            <a href="https://mastodon.social/@romanvesely">@roman@romanvesely.com</a>
           </li>
           <li className="meta__item">
             <a href="https://github.com/crazko/romanvesely.com">&lt;/&gt;</a> with{' '}
             <a href="https://www.gatsbyjs.org/">Gatsby</a>
+          </li>
+          <li className="meta__item">
+            Stats by <a href="https://www.goatcounter.com/">GoatCounter</a>
           </li>
           <li className="meta__item">
             <a href="https://github.com/crazko/romanvesely.com/issues">Found a bug?</a>
