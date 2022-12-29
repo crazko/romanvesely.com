@@ -163,19 +163,27 @@
 }
 
 .feeds {
-  @media @screen--small {
-    column-count: 2;
-  }
-
-  &__category {
-    @media @screen--small {
-      display: inline-block;
-    }
-  }
-
   &__list {
     list-style: none;
     padding: 0;
+
+    @media @screen--small {
+      column-count: 2;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-rss {
+    align-self: center;
+  }
+
+  &__item-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 
