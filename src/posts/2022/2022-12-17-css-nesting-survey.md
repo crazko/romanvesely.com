@@ -46,7 +46,7 @@ header {
 }
 ```
 
-I think this exception may cause a lot of errors during development when this option is implemented. The question that arises is why can't the syntax [be exactly like in Sass](https://front-end.social/@mia/109524801869852158)?
+I think this exception may cause a lot of errors during development when this option is implemented. The question that arises is why can't the syntax [be exactly like in Sass](https://www.bram.us/2022/12/16/help-choose-the-syntax-for-css-nesting/#faq)?
 
 ### Option 4
 
