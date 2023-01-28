@@ -6,7 +6,7 @@ const Item = ({ title, url }) => {
   const { hostname } = source;
 
   return (
-    <a href={url} className="bookmark__link u-bookmark-of h-cite" target="_blank" rel="noopener noreferrer">
+    <a href={url} className="bookmark__link u-bookmark-of h-cite" target="_blank" rel="noopener">
       <span className="bookmark__title p-name">{title}</span>
       <span className="bookmark__url">
         <span className="bookmark__by">by</span>
