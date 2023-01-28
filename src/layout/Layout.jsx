@@ -6,11 +6,13 @@ import { Footer } from './Footer';
 import { Tip } from '../components/Tip';
 import { Log } from '../components/Log';
 import { CanIUse } from '../components/CanIUse';
+import { Perex } from '../components/Perex';
 
 const components = {
   Tip,
   Log,
   CanIUse,
+  Perex,
 };
 
 export const Layout = ({ children }) => (
