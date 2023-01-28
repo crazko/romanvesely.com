@@ -55,7 +55,7 @@ const postFile = async params => {
   const payload = {
     message: 'Add bookmark',
     content: Buffer.from(fileContent).toString('base64'),
-    branch: 'bookmarks',
+    branch: 'master',
     committer: {
       name: 'Roman Vesely',
       email: 'crazko@gmail.com',
