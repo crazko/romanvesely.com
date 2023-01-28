@@ -6,6 +6,7 @@ const links = {
   about: '/about',
   log: '/log',
   blogroll: '/blogroll',
+  bookmarks: '/bookmarks',
 };
 
 export const Navigation = () => (

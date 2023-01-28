@@ -3,3 +3,6 @@
 
 *.cache
 *.log
+
+# Local Netlify folder
+.netlify

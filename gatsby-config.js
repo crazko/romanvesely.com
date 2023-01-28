@@ -42,6 +42,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'bookmarks',
+        path: `${__dirname}/src/bookmarks/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'images',
         path: `${__dirname}/images/`,
       },
