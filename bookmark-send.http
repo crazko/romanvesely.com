@@ -1,0 +1,8 @@
+POST http://localhost:8888/.netlify/functions/bookmark
+Content-Type: application/json
+
+{
+	"title": "regex101: build, test, and debug regex",
+	"url": "https://regex101.com/r/1nAXlv/1",
+	"token": "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"
+}

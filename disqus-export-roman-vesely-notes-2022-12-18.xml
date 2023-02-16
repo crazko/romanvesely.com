@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<disqus xmlns="http://disqus.com" xmlns:dsq="http://disqus.com/disqus-internals" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://disqus.com/api/schemas/1.0/disqus.xsd http://disqus.com/api/schemas/1.0/disqus-internals.xsd">
+<category dsq:id="6678929">
+<forum>roman-vesely-notes</forum>
+<title>General</title>
+<isDefault>true</isDefault>
+</category>
+<thread dsq:id="5712450724">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/statie-generate-and-refresh/</link>
+<title>How to re-generate and refresh static website in Statie? | Roman Vesely | Interested in web and stuff</title>
+<message />
+<createdAt>2017-04-10T09:21:43Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5712452641">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/statie-with-css-preprocessor/</link>
+<title>Implement a CSS preprocessor into Statie project | Roman Vesely | Interested in web and stuff</title>
+<message />
+<createdAt>2017-04-10T09:22:39Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>true</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5712724374">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/statie-with-css-preprocessor/</link>
+<title>Implement a CSS preprocessor into Statie project | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-04-10T11:33:04Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5718330220">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/statie-generate-and-refresh/</link>
+<title>How to re-generate and refresh static website in Statie? | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-04-12T06:43:07Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5879910156">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/null-object-design-pattern/</link>
+<title>Null Object design pattern | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-06-04T18:40:10Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5879987233">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/null-object-design-pattern/</link>
+<title>Null Object design pattern | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-06-04T19:17:25Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5992525197">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/bitbucket-with-different-issue-tracker/</link>
+<title>Connect Bitbucket commit messages with different issue tracker | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-07-16T11:29:27Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="5992676018">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/bitbucket-with-different-issue-tracker/</link>
+<title>Connect Bitbucket commit messages with different issue tracker | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-07-16T13:15:07Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6089918001">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/previnilost/</link>
+<title>Previnilosť | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-08-23T18:09:01Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6090023063">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/previnilost/</link>
+<title>Previnilosť | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-08-23T18:52:54Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6219780314">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-10-16T20:10:59Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6219824081">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://romanvesely.com/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-10-16T20:32:19Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6300508270">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-11-21T19:13:46Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6310966234">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://5a0216fd0b79b779ae34958b--romanvesely.netlify.com/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-11-26T11:06:25Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6316466906">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/rapid-html-templates-development/</link>
+<title>Rapid HTML templates development | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-11-28T19:24:48Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6339734244">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3001/statie-generate-and-refresh/</link>
+<title>How to re-generate and refresh static website in Statie? | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-12-09T19:59:19Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6377029161">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/blog/2017/10/16/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2017-12-28T10:05:31Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400678317">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/a-place-to-meet-statie/</link>
+<title>A place to meet Statie | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:17:31Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400725880">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/statie-generate-and-refresh/</link>
+<title>How to re-generate and refresh static website in Statie? | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:45:33Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400726010">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/statie-with-css-preprocessor/</link>
+<title>Implement a CSS preprocessor into Statie project | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:45:38Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400726152">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/null-object-design-pattern/</link>
+<title>Null Object design pattern | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:45:44Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400726374">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/bitbucket-with-different-issue-tracker/</link>
+<title>Connect Bitbucket commit messages with different issue tracker | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:45:51Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400726542">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3002/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:45:58Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6400736912">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/a-place-to-meet-statie/</link>
+<title>A place to meet Statie | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-01-08T22:52:13Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6529676932">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/a-place-to-meet-statie/</link>
+<title>A place to meet Statie | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-07T20:27:36Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6542197784">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/a-place-to-meet-statie/</link>
+<title>A place to meet Statie | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-12T18:41:15Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6542220696">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/null-object-design-pattern/</link>
+<title>Null Object design pattern | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-12T18:53:35Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6542247178">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/statie-generate-and-refresh/</link>
+<title>How to re-generate and refresh static website in Statie? | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-12T19:08:04Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6542247738">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/bitbucket-with-different-issue-tracker/</link>
+<title>Connect Bitbucket commit messages with different issue tracker | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-12T19:08:22Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6542261026">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.103:3000/statie-with-css-preprocessor/</link>
+<title>Implement a CSS preprocessor into Statie project | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-03-12T19:15:03Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6590942245">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.102:3000/a-place-to-meet-statie/</link>
+<title>A place to meet Statie | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-04-02T14:08:45Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6590947381">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.102:3000/bitbucket-with-different-issue-tracker/</link>
+<title>Connect Bitbucket commit messages with different issue tracker | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-04-02T14:11:55Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6590957872">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.102:3000/statie-with-css-preprocessor/</link>
+<title>Implement a CSS preprocessor into Statie project | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-04-02T14:17:40Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6590994651">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.102:3000/strange-codes-multiple-identities-team-habits/</link>
+<title>Strange codes, multiple identities and team habits | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-04-02T14:38:33Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6849260291">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/a-path-to-my-first-speaking-experience</link>
+<title>A path to my first speaking experience | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-08-12T10:08:40Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6849546688">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/a-path-to-my-first-speaking-experience/</link>
+<title>A path to my first speaking experience | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-08-12T14:19:28Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6931451417">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/webepo-2018/</link>
+<title>WebExpo 2018 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-09-25T12:39:05Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="6931510190">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/webexpo-2018/</link>
+<title>WebExpo 2018 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-09-25T13:16:14Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7031967209">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/webexpo-2018/?fbclid=IwAR3nU8EfpHu8R2Z4pot0khNbgMqBUxE2v-ADxUNuVOpuvDlGN5njTxV33gQ</link>
+<title>WebExpo 2018 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-11-09T17:18:14Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7056662364">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/webexpo-2018/?fbclid=IwAR2c6aPJS7uwZFSzMbgOj_QLzRsxNkHbGPVFHQuVPPD9maySv57HauP5aOQ</link>
+<title>WebExpo 2018 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2018-11-19T11:05:10Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7120510414">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://translate.googleusercontent.com/translate_c?depth=1&amp;sl=en&amp;sp=nmt4&amp;tl=ja&amp;u=https://romanvesely.com/bitbucket-with-different-issue-tracker/&amp;xid=17259,15700002,15700021,15700124,15700186,15700190,15700201,15700237,15700242,15700248</link>
+<title>Bitbucketコミットメッセージを別の問題トラッカーと接続する|ローマン・ヴェゼリー|ウェブやものに興味がある</title>
+<message />
+<createdAt>2018-12-21T08:26:51Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7141393060">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/easy-frontend-development/</link>
+<title>Easy frontend development | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-01-02T11:18:30Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7141464350">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/easy-frontend-development/</link>
+<title>Easy frontend development | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-01-02T11:58:46Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7166931161">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://5c3cd800c3674dade614ad84--angry-haibt-2012d1.netlify.com/easy-frontend-development/</link>
+<title>Easy frontend development | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-01-14T18:45:47Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7261580452">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/code-together-and-have-fun/</link>
+<title>Code together and have fun | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-02-28T04:36:55Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7261803578">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/code-together-and-have-fun/</link>
+<title>Code together and have fun | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-02-28T08:07:02Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7297291988">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/blog/2019/02/28/code-together-and-have-fun/</link>
+<title>Code together and have fun | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-03-15T21:11:40Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7297353437">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://5c8c1e6324ffbb000801abc8--romanvesely.netlify.com/blog/2019/02/28/code-together-and-have-fun/</link>
+<title>Code together and have fun | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-03-15T21:55:34Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7297886179">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-58--romanvesely.netlify.com/code-together-and-have-fun/</link>
+<title>Code together and have fun | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-03-16T06:51:46Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7325026010">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.123:3000/easy-frontend-development/</link>
+<title>Easy frontend development | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-03-29T12:34:04Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7399851604">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/browser-search/</link>
+<title>Useful dev search engines shortcuts for browsers | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-05-05T10:16:33Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7399900377">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.123:3000/browser-search/</link>
+<title>Useful search engine shortcuts for browsers | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-05-05T10:50:42Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7399906162">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-60--romanvesely.netlify.com/browser-search/</link>
+<title>Useful search engine shortcuts for browsers | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-05-05T10:54:38Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7401714808">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/browser-search/</link>
+<title>Useful search engine shortcuts for browsers | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-05-06T05:25:10Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7502822865">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/facebook/</link>
+<title>Do not waste your time on Facebook | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-06-28T07:19:01Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7502831045">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-61--romanvesely.netlify.com/facebook/</link>
+<title>Do not waste your time on Facebook | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-06-28T07:26:14Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7502834469">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/facebook/</link>
+<title>Do not waste your time on Facebook | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-06-28T07:29:16Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7588338994">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/remarkable-tweets/</link>
+<title>Collection of remakable tweets | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-08-15T10:04:52Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7588355048">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/remarkable-tweets/</link>
+<title>Collection of remarkable tweets | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-08-15T10:18:22Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7610875119">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/vscode-extensions/</link>
+<title>Batch install extensions for Visual Studio Code | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-08-29T18:27:59Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7610893858">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/vscode-extensions/</link>
+<title>Batch install extensions for Visual Studio Code | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-08-29T18:42:36Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7663721680">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/log1/</link>
+<title>Learnig Log \#1 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-05T12:31:56Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7663743946">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:3000/log2/</link>
+<title>Learnig Log #2 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-05T12:56:05Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7663760228">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-64--romanvesely.netlify.com/log2/</link>
+<title>Learnig Log #2 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-05T13:12:50Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7663761114">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-65--romanvesely.netlify.com/log1/</link>
+<title>Learnig Log #1 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-05T13:13:43Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7666077720">
+<id>log1</id>
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/log1/</link>
+<title>Learnig Log #1 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-07T10:08:36Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7669913226">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.198:3000/log1/</link>
+<title>Learning Log #1 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-10-09T20:44:45Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7710557711">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:53068/knowledge/</link>
+<title>Knowledge Sharing | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-08T18:29:35Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7712801354">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-67--romanvesely.netlify.com/knowledge/</link>
+<title>Knowledge Sharing | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-10T16:53:04Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7712864973">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://deploy-preview-67--romanvesely.netlify.com/null-object-design-pattern/</link>
+<title>Null Object design pattern | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-10T18:00:14Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7713039058">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://192.168.0.198:3000/facebook/</link>
+<title>Do not waste your time on Facebook | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-10T21:14:44Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7713039076">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:59833/facebook/</link>
+<title>Do not waste your time on Facebook | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-10T21:14:45Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7713495156">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/knowledge/</link>
+<title>Knowledge Sharing | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-11T07:38:54Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7716251478">
+<id>log2</id>
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/log2/</link>
+<title>Learnig Log #2 | Roman Veselý | Interested in web and stuff</title>
+<message />
+<createdAt>2019-11-13T08:29:41Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7764068946">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://localhost:8000/log2</link>
+<title>Learning Log #2 | Roman Veselý</title>
+<message />
+<createdAt>2019-12-14T16:21:30Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7765259295">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:54622/log2</link>
+<title>Learning Log #2 | Roman Veselý</title>
+<message />
+<createdAt>2019-12-15T12:20:53Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7765271405">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:54622/vscode-extensions</link>
+<title>Batch install extensions for Visual Studio Code</title>
+<message />
+<createdAt>2019-12-15T12:32:45Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7765272024">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:54622/easy-frontend-development</link>
+<title>Easy frontend development</title>
+<message />
+<createdAt>2019-12-15T12:33:19Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7765288961">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>http://127.0.0.1:54622/log1</link>
+<title>Learning Log #1 | Roman Veselý</title>
+<message />
+<createdAt>2019-12-15T12:49:53Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7771425484">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/gatsby-move</link>
+<title>Moved to Gatsby | Roman Veselý</title>
+<message />
+<createdAt>2019-12-19T08:02:44Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7837860092">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/journaling</link>
+<title>Where do you journal? | Roman Veselý</title>
+<message />
+<createdAt>2020-01-26T20:51:38Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="7855167238">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/log3</link>
+<title>Learning Log #3 | Roman Veselý</title>
+<message />
+<createdAt>2020-02-05T19:51:42Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8049197800">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/log4</link>
+<title>Learning Log #4 | Roman Veselý</title>
+<message />
+<createdAt>2020-05-29T14:45:12Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8057766999">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/hash-highlight</link>
+<title>Highlight | Roman Veselý</title>
+<message />
+<createdAt>2020-06-03T19:43:41Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8087856634">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/text-fragments</link>
+<title>Highlight Text With URL Text Fragments</title>
+<message />
+<createdAt>2020-06-21T11:29:46Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183921836">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/wordpress-development</link>
+<title>WordPress Modern Development</title>
+<message />
+<createdAt>2020-08-30T14:41:07Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183928827">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/hesla-ochrana</link>
+<title>Heslá a ich ochrana v prepojenom svete</title>
+<message />
+<createdAt>2020-08-30T14:48:11Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183930236">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/better-work-life</link>
+<title>Ways To Make Work Life Better</title>
+<message />
+<createdAt>2020-08-30T14:49:41Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183934046">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/hesla2</link>
+<title>Heslá a ich ochrana | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T14:53:35Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183937377">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/dencrypt</link>
+<title>React hook generating crypting text effect</title>
+<message />
+<createdAt>2020-08-30T14:57:10Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183952472">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/blindness-coding</link>
+<title>Blindness coding | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T15:12:57Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183959582">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/statie</link>
+<title>Statie Site | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T15:20:11Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183961098">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/fomin</link>
+<title>Fomin | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T15:21:47Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183961332">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/kalendario</link>
+<title>Kalendario | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T15:22:00Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183961670">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/hesla1</link>
+<title>Heslá a ich ochrana v prepojenom svete</title>
+<message />
+<createdAt>2020-08-30T15:22:24Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8183963869">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/post-social-images</link>
+<title>Post social image | Roman Veselý</title>
+<message />
+<createdAt>2020-08-30T15:24:44Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8309898735">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/timer</link>
+<title>Simple Timer | Roman Veselý</title>
+<message />
+<createdAt>2020-12-10T21:02:42Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="8358722962">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/blue-life</link>
+<title>Blue Life Experiment | Roman Veselý</title>
+<message />
+<createdAt>2021-01-17T10:30:59Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<thread dsq:id="9494836393">
+<id />
+<forum>roman-vesely-notes</forum>
+<category dsq:id="6678929" />
+<link>https://romanvesely.com/css-nesting-survey</link>
+<title>CSS Nesting Survey | Roman Veselý</title>
+<message />
+<createdAt>2022-12-17T15:35:02Z</createdAt>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<isClosed>false</isClosed>
+<isDeleted>false</isDeleted>
+</thread>
+<post dsq:id="3654020755">
+<id />
+<message><![CDATA[<p>Hi Roman, I really like this post. Narrow and simple 3 points with nice images :) I just had to read it.</p><p>I think this content would deserve more attention.<br>Would you be interested in respoting on <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/source/_posts/2017" rel="nofollow noopener" title="https://github.com/pehapkari/pehapkari.cz/tree/master/source/_posts/2017">Pehapkari blog</a>? <br>It runs on Statie as well, so it could not be simpler :)</p><p>If so, just send PR and I'll get to it right away.</p><p>---</p><p>Btw, what is your motivation to hide comments under the post? I always have to click to see or write one and it takes a while :/</p>]]></message>
+<createdAt>2017-12-09T11:39:55Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="6219824081" />
+</post>
+<post dsq:id="3654336356">
+<id />
+<message><![CDATA[<p>Hey Roman, thanks for this post. I like every little improvement forward.</p><p>I've added the post to official docs, so people can find right away: <a href="https://github.com/Symplify/Symplify/tree/master/packages/Statie#community-docs" rel="nofollow noopener" title="https://github.com/Symplify/Symplify/tree/master/packages/Statie#community-docs">https://github.com/Symplify...</a></p><p>If you got any similar posts in the future about, just send PR.</p>]]></message>
+<createdAt>2017-12-09T16:58:47Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="5718330220" />
+</post>
+<post dsq:id="3654606314">
+<id />
+<message><![CDATA[<p>Thanks for sharing, Tomas, hopefully it'd be helpful for someone. And sure, will definitely do!</p>]]></message>
+<createdAt>2017-12-09T19:20:58Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="5718330220" />
+<parent dsq:id="3654336356" />
+</post>
+<post dsq:id="3654625432">
+<id />
+<message><![CDATA[<p>I'm happy you like it :) and yes, I'll provide you PR soon, looking forward what others will say.</p><p>---</p><p>I don't like to load unnecessary stuff until it's really needed. Or I at least try to do so. Now I need to think about displaying a comments count :) but probably also rethink the solution in the future.</p>]]></message>
+<createdAt>2017-12-09T19:29:13Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3654020755" />
+</post>
+<post dsq:id="3656835588">
+<id />
+<message><![CDATA[<blockquote>I don't like to load unnecessary stuff until it's really needed.</blockquote><p></p><p>I think that's not the case. At least I do need comments to my posts as form of feedback and interest and great ideas how to do it event better.</p><p>I wanted to reply last time, but could not find these comment at all :D probably due to migration to Statie 3, if I saw that corretly.</p><p>I'm glad it work now .)</p>]]></message>
+<createdAt>2017-12-11T12:14:03Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3654625432" />
+</post>
+<post dsq:id="3656847493">
+<id />
+<message><![CDATA[<p>They had some kind of error in Netlify (where I host my site) - several files weren't accessible, *.js among them.</p><p>If it will be the case in the future that many people start to add comments under articles somehow I'll probably rethink this solution :)</p>]]></message>
+<createdAt>2017-12-11T12:27:03Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3656835588" />
+</post>
+<post dsq:id="3656861117">
+<id />
+<message><![CDATA[<p>I see. Only A/B testing can help there.</p><p>Btw, how would you compare Netlify to Github pages? What are the differences? I see it for Netlify thanks to you for the first time, so I'd like to know more.</p>]]></message>
+<createdAt>2017-12-11T12:40:31Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3656847493" />
+</post>
+<post dsq:id="3657072592">
+<id />
+<message><![CDATA[<p>Well, among other things, you can set custom domain with ssl certificate effortlessly, which was a big deal for me.<br>Concurrent builds for all branches is also a nice feature.<br>Recently I also used an option to set custom redirects on another project.<br>You said A/B testing? Also possible!<br>And there are tons of other features <a href="https://www.netlify.com/features/" rel="nofollow noopener" title="https://www.netlify.com/features/">https://www.netlify.com/fea...</a> and what's the best? Everything is for free :)</p><p>(one con is that you cannot run Statie there, because of PHP version which is available in the image. So I build this web in Travis and then send it as a zip file to Netlify)</p>]]></message>
+<createdAt>2017-12-11T15:18:05Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3656861117" />
+</post>
+<post dsq:id="3657533091">
+<id />
+<message><![CDATA[<p>Sounds like advanced hosting services :) cool, thanks for summing up.</p><p>I hope the PHP get resolved soon, so you don't need Travis for that.</p>]]></message>
+<createdAt>2017-12-11T19:45:31Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="6219824081" />
+<parent dsq:id="3657072592" />
+</post>
+<post dsq:id="4036049057">
+<id />
+<message><![CDATA[<p>ftw</p>]]></message>
+<createdAt>2018-08-12T14:32:22Z</createdAt>
+<isDeleted>true</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="6849546688" />
+</post>
+<post dsq:id="4704477911">
+<id />
+<message><![CDATA[<p>Great stuff, thanks. Keep doing this :)</p>]]></message>
+<createdAt>2019-11-27T16:35:37Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Vojtěch Růžička</name>
+<isAnonymous>false</isAnonymous>
+<username>disqus_iGQsQ6dJK8</username>
+</author>
+<thread dsq:id="7716251478" />
+</post>
+<post dsq:id="4704597312">
+<id />
+<message><![CDATA[<p>Thanks, I really appreciate that :)</p>]]></message>
+<createdAt>2019-11-27T18:16:37Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="7716251478" />
+<parent dsq:id="4704477911" />
+</post>
+<post dsq:id="4811126864">
+<id />
+<message><![CDATA[<p>Protip: you can use it also for shortcuts (not search, just direct link):<br> <a href="https://uploads.disquscdn.com/images/ebcab4c1e7aec730c8218c0d3b03581adc208041588ff55d840416223181f34d.png" rel="nofollow noopener" title="https://uploads.disquscdn.com/images/ebcab4c1e7aec730c8218c0d3b03581adc208041588ff55d840416223181f34d.png">https://uploads.disquscdn.c...</a></p>]]></message>
+<createdAt>2020-02-26T18:08:20Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Tomáš Votruba</name>
+<isAnonymous>false</isAnonymous>
+<username>Votruba_Tomas</username>
+</author>
+<thread dsq:id="7401714808" />
+</post>
+<post dsq:id="4812151554">
+<id />
+<message><![CDATA[<p>Thanks for the tip!</p>]]></message>
+<createdAt>2020-02-27T08:31:22Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="7401714808" />
+<parent dsq:id="4811126864" />
+</post>
+<post dsq:id="4968198620">
+<id />
+<message><![CDATA[<p>I like this functionality. Thanks for writing about it.<br>I wish they had decided to use the <a href="https://www.w3.org/TR/annotation-model/#text-quote-selector" rel="nofollow noopener" title="https://www.w3.org/TR/annotation-model/#text-quote-selector">text quote selector</a> instead, as defined in the web annotation data model, which is a W3C recommendation since 2017. What do you think?</p>]]></message>
+<createdAt>2020-06-25T19:11:17Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>diegodlh</name>
+<isAnonymous>false</isAnonymous>
+<username>diegodlh</username>
+</author>
+<thread dsq:id="8087856634" />
+</post>
+<post dsq:id="4968291580">
+<id />
+<message><![CDATA[<p>Thanks for your comment! To be honest, I haven't came across that specification before. From the glance, it seems much more powerful in comparison to the text fragments.<br>I can imagine that in the future they may work on the top of the annotation model you referenced...<br>Recently, I started tinkering in the waters of indieweb which has its own model for such kind of "mentions" - <a href="https://indieweb.org/fragmention" rel="nofollow noopener" title="https://indieweb.org/fragmention">fragmentions</a>. We have much to choose from.</p>]]></message>
+<createdAt>2020-06-25T20:23:09Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>Roman Veselý</name>
+<isAnonymous>false</isAnonymous>
+<username>crazko</username>
+</author>
+<thread dsq:id="8087856634" />
+<parent dsq:id="4968198620" />
+</post>
+<post dsq:id="4971007317">
+<id />
+<message><![CDATA[<p>I didn't know about Indieweb's fragmentions either.<br>I think the discussion here about Scroll to Text and W3C Web Annotation is worth reading: <a href="https://github.com/WICG/scroll-to-text-fragment/issues/4" rel="nofollow noopener" title="https://github.com/WICG/scroll-to-text-fragment/issues/4">https://github.com/WICG/scr...</a></p>]]></message>
+<createdAt>2020-06-27T22:38:25Z</createdAt>
+<isDeleted>false</isDeleted>
+<isSpam>false</isSpam>
+<author>
+<name>diegodlh</name>
+<isAnonymous>false</isAnonymous>
+<username>diegodlh</username>
+</author>
+<thread dsq:id="8087856634" />
+<parent dsq:id="4968291580" />
+</post>
+</disqus>

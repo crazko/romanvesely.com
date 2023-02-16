@@ -1,0 +1,29 @@
+{
+  "short_namne": "Bookmarks",
+  "name": "Roman Vesely: Bookmarks",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#002b36",
+  "theme_color": "#002b36",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "share_target": {
+    "action": "/save",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "url": "url"
+    }
+  }
+}
