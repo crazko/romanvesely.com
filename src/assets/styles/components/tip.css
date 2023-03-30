@@ -1,0 +1,14 @@
+.tip {
+  font-family: var(--font-alternative);
+  font-size: 1.25rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-left: none;
+  border-right: none;
+  margin: var(--gap) calc(var(--gap) * -1);
+  padding: var(--gap);
+}
+
+.tip p:first-child {
+  margin-top: 0;
+}

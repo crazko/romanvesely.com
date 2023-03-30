@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@media (--bp-wide) {
+  .nav {
+    margin: initial;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 0.75em;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid;
+}

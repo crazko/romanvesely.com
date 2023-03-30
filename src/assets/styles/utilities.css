@@ -1,0 +1,86 @@
+/* .transition(@args...) {
+  .loop-args(@argCount) when (@argCount > 0) {
+    .loop-args(@argCount - 1);
+
+    @arg: extract(@args, @argCount);
+    @property: extract(@arg, 1);
+
+    transition+: @property ease 0.375s;
+  }
+
+  .loop-args(length(@args));
+}
+
+.pill {
+  font-size: 0.6rem;
+  color: var(--accent-emphasized);
+  border-bottom: none !important;
+  background-color: var(--background-secondary);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 5px;
+
+  .transition(color, background-color);
+} */
+
+.mr-4 {
+  margin-right: 15px;
+}
+
+.ml-4 {
+  margin-left: 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.text-background {
+  color: var(--background);
+}
+.text-background-secondary {
+  color: var(--background-secondary);
+}
+.text-default {
+  color: var(--text);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-emphasized {
+  color: var(--text-emphasized);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+.text-accent-secondary {
+  color: var(--accent-secondary);
+}
+.text-accent-emphasized {
+  color: var(--accent-emphasized);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-border-none {
+  border: none !important;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}

@@ -1,10 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'gatsby';
-
-import { Meta } from '../layout/Meta';
 import { Container } from '../components/Container';
-import { Content } from '../components/Content';
+import { Layout } from '../layout/Layout';
 
 const title = 'Save to bookmarks';
 const host = process.env.NODE_ENV === 'development' ? 'http://localhost:8888' : '';
@@ -18,18 +14,16 @@ export default () => {
   React.useEffect(() => {
     const queryParams = new URLSearchParams(window.location.search);
 
-    setInitialValues(v => ({
+    setInitialValues((v) => ({
       title: queryParams.get('title') ?? v.title,
       url: queryParams.get('url') ?? v.url,
     }));
   }, []);
 
   return (
-    <Content>
-      <Meta title={title} />
-      <Helmet>
-        <meta name="robots" content="noindex" />
-      </Helmet>
+    <Layout>
+      <meta name="robots" content="noindex" slot="meta" />
+
       <Container>
         <h1>{title}</h1>
         <p>
@@ -56,6 +50,6 @@ export default () => {
           all credits goes to <a href="https://mxb.dev/blog/indieweb-link-sharing/">Max Böck</a>
         </p>
       </Container>
-    </Content>
+    </Layout>
   );
 };

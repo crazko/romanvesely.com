@@ -1,0 +1,11 @@
+.footer {
+  border-bottom: 10px solid var(--accent);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (--bp-wide) {
+  .footer__extended {
+    display: none;
+  }
+}

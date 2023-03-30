@@ -1,0 +1,23 @@
+---
+import Layout from '../layout/Layout.astro';
+import Container from '../components/Container.astro';
+import Perex from '../components/Perex.astro';
+import Logs from './_components/Logs.astro';
+
+const title = 'Learning Log';
+---
+
+<Layout title={title}>
+  <Container>
+    <h1>{title}</h1>
+    <Perex>
+      Collection of interesting news, resources, tips or&nbsp;issues and their solutions that caught my attention.
+    </Perex>
+
+    <p>
+      <a href="/log.xml">RSS</a> also available.
+    </p>
+  </Container>
+
+  <Logs />
+</Layout>

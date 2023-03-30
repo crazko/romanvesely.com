@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+
+import type { CollectionEntry } from 'astro:content';
+
+import Layout from '../layout/Layout.astro';
+import Container from '../components/Container.astro';
+import Time from '../components/Time.astro';
+import Perex from '../components/Perex.astro';
+
+const data = await getCollection('posts');
+const posts: Record<string, CollectionEntry<'posts'>[]> = data.reverse().reduce((all, post) => {
+  const re = /(\d{4})\/(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
+  const matches = re.exec(post.slug);
+
+  const year = matches[1];
+  const date = matches[2];
+  const slug = matches[3];
+
+  return {
+    ...all,
+    [year]: [
+      ...(all[year] ?? []),
+      {
+        ...post,
+        slug,
+        data: {
+          ...post.data,
+          date,
+        },
+      },
+    ],
+  };
+}, {});
+---
+
+<Layout>
+  <Container>
+    <Perex className="text-emphasized text-center">
+      Hi there! I'm Roman, a software engineer from Slovakia. I enjoy tinkering with the web, discovering new things,
+      and an active lifestyle. I work for <a href="https://www.eleveo.com/">Eleveo</a>.
+    </Perex>
+
+    <p class="text-center">
+      Read more <a href="/about">about me</a> or check <a href="/now">what I'm doing now</a>.
+    </p>
+
+    <h1>Content</h1>
+    {
+      Object.keys(posts)
+        .reverse()
+        .map((year) => (
+          <section>
+            <h2>{year}</h2>
+
+            {posts[year].map(({ slug, data: { title, label, date } }) => (
+              <article class="note">
+                <div class="note__header">
+                  <a href={`/${slug}`}>{title}</a>
+                  {label && <span class="pill ml-4">{label}</span>}
+                </div>
+
+                <Time date={date} class="meta">
+                  {new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long' }).format(new Date(date))}
+                </Time>
+              </article>
+            ))}
+          </section>
+        ))
+    }
+  </Container>
+</Layout>

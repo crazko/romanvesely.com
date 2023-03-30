@@ -1,0 +1,25 @@
+---
+const links = {
+  home: '/',
+  about: '/about',
+  log: '/log',
+  blogroll: '/blogroll',
+  bookmarks: '/bookmarks',
+};
+
+const { pathname } = Astro.url;
+---
+
+<nav class="navigation">
+  <ul class="nav">
+    {
+      Object.entries(links).map(([title, to]) => (
+        <li class="nav__item">
+          <a href={to} class:list={{ 'nav__link--active': to === pathname }}>
+            {title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

@@ -1,0 +1,32 @@
+---
+import { Sprite } from 'astro-icon';
+import Layout from './Layout.astro';
+import Container from '../components/Container.astro';
+import Time from '../components/Time.astro';
+
+const { frontmatter } = Astro.props;
+const { title, githubEdit } = frontmatter;
+---
+
+<!-- TODO: -->
+<Layout description={'' /* excerpt */} image={`` /* `assets/posts/${slug}.png` */} isPost title={title}>
+  <Container>
+    <article class="article">
+      <header>
+        <h1 class="p-name">{title}</h1>
+
+        <ul class="meta">
+          <li class="meta__item">
+            <a href={githubEdit} class="text-secondary">
+              <Sprite name="mdi:file-document-edit-outline" aria-hidden="true" class="text-default" />
+              suggest an edit</a
+            >
+          </li>
+        </ul>
+      </header>
+      <div class="e-content">
+        <slot />
+      </div>
+    </article>
+  </Container>
+</Layout>

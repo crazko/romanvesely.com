@@ -1,0 +1,31 @@
+---
+import { XMLParser } from 'fast-xml-parser';
+import feedly from '../../data/feedly.xml?raw';
+
+const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '' });
+const {
+  opml: {
+    body: { outline: data },
+  },
+} = parser.parse(feedly);
+---
+
+<div class="feeds" id="what-do-i-read">
+  {
+    data.map(({ title, outline }) => (
+      <div class="feeds__category">
+        <h2 class="feeds__category-title">{title}</h2>
+        <ul class="feeds__list">
+          {outline.map(({ title, htmlUrl, xmlUrl }) => (
+            <li class="feeds__item">
+              <a href={xmlUrl} class="feeds__item-rss pill mr-4">
+                rss
+              </a>
+              <span class="feeds__item-title">{htmlUrl ? <a href={htmlUrl}>{title}</a> : title}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>

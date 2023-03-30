@@ -1,0 +1,24 @@
+.feeds__list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (--bp-small) {
+  .feeds__list {
+    column-count: 2;
+  }
+}
+
+.feeds__item {
+  display: flex;
+}
+
+.feeds__item-rss {
+  align-self: center;
+}
+
+.feeds__item-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

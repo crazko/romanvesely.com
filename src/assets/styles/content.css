@@ -1,0 +1,112 @@
+.content {
+  flex: 1;
+}
+
+.content a {
+  border-bottom: 2px solid;
+}
+
+.content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.content p > img {
+  margin: var(--gap) calc(var(--gap) * -1) !important;
+  display: block;
+  max-width: unset !important;
+  width: calc(100% + var(--gap) * 2 + 0.49px);
+
+  /* // Remove glitch
+    // @see https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+    -webkit-transform: translateZ(0); */
+}
+
+.meta {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+
+  border-bottom: 1px solid var(--magenta);
+  padding-bottom: 1em;
+}
+
+@media (--bp-wide) {
+  .meta {
+    text-align: center;
+  }
+}
+
+.meta__item {
+  display: inline-block;
+}
+
+.meta__item + .meta__item::before {
+  color: var(--accent);
+  /* &#149; bullet */
+  content: '•';
+  margin: 0.5ch;
+}
+
+.perex {
+  color: var(--accent);
+  font-family: var(--fonts-alternative);
+  font-size: 1.3rem;
+}
+
+.footnotes {
+  background-color: var(--background-secondary);
+  padding: 1em;
+  margin-top: var(--gap);
+  margin-left: calc(var(--gap) * -1);
+  margin-right: calc(var(--gap) * -1);
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
+.footnotes ol {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.footnotes li:target {
+  border: 1px solid var(--accent);
+  background-color: var(--background);
+  padding: 0.5em 1em;
+  margin: 0 -1em;
+}
+
+.footnotes li:target::marker {
+  color: var(--accent);
+}
+
+.footnote-ref {
+  border-bottom: none !important;
+  font-weight: bold;
+  margin-left: 0.25em;
+}
+
+.footnote-backref {
+  border-bottom: none !important;
+  font-family: initial;
+  margin-left: 0.25em;
+}
+
+@media (--bp-small) {
+  .note {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.note__header {
+  flex: 1;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+@media (--bp-small) {
+  .note__header {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+}

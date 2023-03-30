@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+
+import LayoutPost from '../layout/LayoutPost.astro';
+
+// import CanIUse from '../components/CanIUse.astro';
+import Log from '../components/Log.astro';
+import Tip from '../components/Tip.astro';
+
+export async function getStaticPaths() {
+  const data = await getCollection('posts');
+
+  return data.map((post) => {
+    const re = /(\d{4})\/(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
+    const matches = re.exec(post.slug);
+    const slug = matches[3];
+
+    return {
+      params: { slug },
+      props: { post },
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await post.render();
+---
+
+<LayoutPost frontmatter={{ ...post.data, ...remarkPluginFrontmatter }}>
+  <Content components={{ ...Content.components, Log, Tip }} />
+</LayoutPost>

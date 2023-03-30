@@ -1,0 +1,13 @@
+---
+const { date } = Astro.props;
+
+const formatted = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric' }).format(
+  new Date(date)
+);
+---
+
+<time datetime={date} title={date} class:list={['dt-published', Astro.props.class]}>
+  <slot>
+    {formatted}
+  </slot>
+</time>

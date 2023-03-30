@@ -1,43 +1,37 @@
 {
   "private": true,
+  "type": "module",
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
-    "gatsby": "^2.30.3",
-    "gatsby-plugin-feed": "^2.3.25",
-    "gatsby-plugin-goatcounter": "^0.4.0",
-    "gatsby-plugin-less": "^3.2.4",
-    "gatsby-plugin-mdx": "^1.0.58",
-    "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-remove-trailing-slashes": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.12.2",
-    "gatsby-plugin-twitter": "^2.3.4",
-    "gatsby-plugin-use-dark-mode": "^1.1.2",
-    "gatsby-plugin-webfonts": "^1.1.4",
-    "gatsby-remark-embedder": "^2.1.1",
-    "gatsby-remark-images": "^3.1.34",
-    "gatsby-remark-numbered-footnotes": "^1.0.1",
-    "gatsby-remark-prismjs": "^3.3.27",
-    "gatsby-source-filesystem": "^2.1.39",
-    "gatsby-transformer-xml": "^2.1.22",
-    "less": "^3.10.3",
+    "@astrojs/mdx": "^0.17.0",
+    "@astrojs/react": "^2.0.2",
+    "@fontsource/lato": "^4.5.10",
+    "@fontsource/merriweather": "^4.5.14",
+    "@remark-embedder/core": "^3.0.1",
+    "@remark-embedder/transformer-oembed": "^3.0.0",
+    "astro": "^2.0.12",
+    "astro-icon": "^0.8.0",
+    "fast-xml-parser": "^4.1.3",
+    "mdast-util-to-string": "^3.1.1",
     "node-fetch": "^2.6.7",
     "normalize.css": "^3.0.3",
+    "postcss-custom-media": "^9.1.2",
+    "postcss-media-minmax": "^5.0.0",
     "prismjs": "^1.21.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "slugify": "^1.6.5",
-    "use-dark-mode": "^2.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reading-time": "^1.5.0",
+    "remark-oembed": "^1.2.2",
+    "slugify": "^1.6.5"
   },
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
+    "start": "astro dev",
+    "build": "astro build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "preview": "astro preview",
+    "astro": "astro"
   }
 }

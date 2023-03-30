@@ -1,0 +1,88 @@
+---
+import { Sprite } from 'astro-icon';
+
+import '@fontsource/lato';
+import '@fontsource/lato/700.css';
+import '@fontsource/merriweather';
+import '@fontsource/merriweather/latin-ext-400.css';
+import '../assets/styles/styles.css';
+
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import { data } from '../data';
+
+export interface Props {
+  isPost?: boolean;
+  description?: string;
+  frontmatter?: any;
+  title?: string;
+  image?: string;
+}
+
+const { description, frontmatter, image = data.image, isPost, title } = Astro.props;
+
+const formatTitle = (name) => {
+  if (name) {
+    return `${name} | ${data.name}`;
+  }
+
+  return data.name;
+};
+
+const meta = {
+  title: frontmatter?.title ?? title,
+  description: description ?? data.description,
+  image: new URL(image, Astro.url),
+  type: isPost ? 'article' : 'website',
+  url: Astro.url,
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{formatTitle(meta.title)}</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <slot name="meta" />
+
+    {/* Primary Meta Tags */}
+    <meta name="google-site-verification" content="_L_KtvxI0HssJtpNjtz1o85SACSUiFOYn-rZXKZWSV4" />
+    <meta name="description" content={meta.description} />
+
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content={meta.type} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:url" content={meta.url} />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@rmnvsl" />
+    <meta property="twitter:title" content={meta.title} />
+    <meta property="twitter:description" content={meta.description} />
+    <meta property="twitter:image" content={meta.image} />
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+    {/* IndieWeb */}
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="webmention" href="https://webmention.io/romanvesely.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/romanvesely.com/xmlrpc" />
+  </head>
+  <body class:list={{ 'h-entry': isPost }}>
+    <Sprite.Provider>
+      <Header />
+      <main role="main" class="content">
+        <slot />
+      </main>
+      <Footer />
+    </Sprite.Provider>
+  </body>
+</html>

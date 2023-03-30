@@ -11,66 +11,66 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'data',
-        path: `${__dirname}/src/data/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'log',
-        path: `${__dirname}/src/log/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'bookmarks',
-        path: `${__dirname}/src/bookmarks/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/images/`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-webfonts',
-      options: {
-        fonts: {
-          google: [
-            {
-              family: 'Lato',
-              variants: ['400', '700'],
-            },
-            {
-              family: 'Merriweather',
-              variants: ['400'],
-              subsets: ['latin-ext'],
-            },
-          ],
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'data',
+    //     path: `${__dirname}/src/data/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'pages',
+    //     path: `${__dirname}/src/pages/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'posts',
+    //     path: `${__dirname}/src/posts/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'log',
+    //     path: `${__dirname}/src/log/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'bookmarks',
+    //     path: `${__dirname}/src/bookmarks/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/images/`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-webfonts',
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: 'Lato',
+    //           variants: ['400', '700'],
+    //         },
+    //         {
+    //           family: 'Merriweather',
+    //           variants: ['400'],
+    //           subsets: ['latin-ext'],
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
@@ -87,7 +87,7 @@ module.exports = {
               backgroundColor: 'transparent',
               maxWidth: 820,
               showCaptions: true,
-              wrapperStyle: fluidResult => {
+              wrapperStyle: (fluidResult) => {
                 const style = 'margin-top: var(--gap); margin-bottom: var(--gap);';
 
                 if (fluidResult.presentationWidth >= 820) {
@@ -101,12 +101,12 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-xml',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-less',
+    // 'gatsby-transformer-xml',
+    // 'gatsby-plugin-react-helmet',
+    // 'gatsby-plugin-less',
     'gatsby-plugin-twitter',
-    'gatsby-plugin-sharp',
-    'gatsby-remark-images',
+    // 'gatsby-plugin-sharp',
+    // 'gatsby-remark-images',
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -125,7 +125,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.nodes.map(post => {
+              return allMdx.nodes.map((post) => {
                 return {
                   custom_elements: [
                     { author: `${site.siteMetadata.email} (${site.siteMetadata.name})` },
@@ -183,11 +183,8 @@ module.exports = {
           },
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.nodes.map(log => {
-                var id = log.fileAbsolutePath
-                  .split('/')
-                  .pop()
-                  .split('.')[0];
+              return allMdx.nodes.map((log) => {
+                var id = log.fileAbsolutePath.split('/').pop().split('.')[0];
                 return {
                   title: id,
                   description: log.html,
@@ -231,7 +228,7 @@ module.exports = {
         classNameLight: 'theme--light',
       },
     },
-    'gatsby-plugin-remove-trailing-slashes',
+    // 'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: `gatsby-plugin-goatcounter`,
       options: {

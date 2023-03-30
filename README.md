@@ -6,10 +6,17 @@ My personal web site [https://romanvesely.com](https://romanvesely.com).
 
 ## What's inside?
 
-- Static site generator [Gatsby](https://www.gatsbyjs.org/)
-- CSS comes from [Less](http://lesscss.org/) pre-processor.
+- ~~Static site generator [Gatsby](https://www.gatsbyjs.org/)~~
+- ~~CSS comes from [Less](http://lesscss.org/) pre-processor.~~
 - Hosted on [Netlify](https://www.netlify.com).
 - ... probably some 🐞🐞🐞
+
+### CSS
+
+- Vanilla CSS
+- Custom Properties for light & dark themes
+- [Custom Media Queries](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
+- [Media Query Range Syntax](https://developer.chrome.com/blog/media-query-range-syntax/)
 
 ## Use it
 
