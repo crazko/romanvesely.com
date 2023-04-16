@@ -11,27 +11,23 @@ const { title, readingTime, githubEdit, date } = frontmatter;
 <!-- TODO: -->
 <Layout description={'' /* excerpt */} image={`` /* `assets/posts/${slug}.png` */} isPost title={title}>
   <Container>
-    <article class="article">
+    <article>
       <header>
         <h1 class="p-name">{title}</h1>
 
         <ul class="meta">
-          {
-            date ? (
-              <li class="meta__item">
-                <a href={Astro.url} class="text-secondary text-border-none u-url">
-                  <Sprite name="mdi:calendar-month" aria-label="reading time" class="text-default" />
-                  <Time date={date} />
-                </a>
-              </li>
-            ) : null
-          }
           <li class="meta__item">
-            <Sprite name="mdi:clock-outline" aria-label="reading time" class="text-default" />
+            <a href={Astro.url} class="text-secondary u-url">
+              <Sprite name="mdi:calendar-month" aria-label="Published" class="text-default" />
+              <Time date={date} />
+            </a>
+          </li>
+          <li class="meta__item">
+            <Sprite name="mdi:clock-outline" aria-label="Reading time" class="text-default" />
             {readingTime}
           </li>
           <li class="meta__item">
-            <a href={githubEdit} class="text-secondary text-border-none">
+            <a href={githubEdit} class="text-secondary">
               <Sprite name="mdi:file-document-edit-outline" aria-hidden="true" class="text-default" />
               suggest an edit</a
             >
@@ -42,7 +38,7 @@ const { title, readingTime, githubEdit, date } = frontmatter;
         <slot />
       </div>
       <footer>
-        <div class="post__signature">Roman</div>
+        <p class="signature">Roman</p>
       </footer>
     </article>
   </Container>

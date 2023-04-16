@@ -1,0 +1,28 @@
+:root {
+  --background: var(--base3);
+  --background-secondary: var(--base2);
+  --background-code: var(--background-secondary);
+  --text: var(--base00);
+  --text-secondary: var(--base1);
+  --text-emphasized: var(--base01);
+
+  --accent: var(--blue);
+  --accent-secondary: var(--red);
+  --accent-emphasized: var(--magenta);
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--base03);
+    --background-secondary: var(--base02);
+    --text: var(--base0);
+    --text-secondary: var(--base01);
+    --text-emphasized: var(--base1);
+
+    --accent: var(--yellow);
+    --accent-secondary: var(--red);
+    --accent-emphasized: var(--magenta);
+  }
+}

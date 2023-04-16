@@ -8,15 +8,15 @@ const bookmarks = data.reverse().map((bookmark) => ({
 }));
 ---
 
-<ul class="bookmarks h-feed">
+<ul class="cards bookmarks h-feed">
   {
     bookmarks.map(({ hostname, title, url }) => (
-      <li class="bookmark h-entry">
+      <li class="card bookmark h-entry">
         <a href={url} class="bookmark__link u-bookmark-of h-cite" target="_blank" rel="noopener">
-          <span class="bookmark__title p-name">{title}</span>
-          <span class="bookmark__url">
-            <span class="bookmark__by">by</span> {hostname}
-          </span>
+          <p class="p-name">{title}</p>
+          <div class="text-end">
+            <span class="pill">{hostname}</span>
+          </div>
         </a>
       </li>
     ))

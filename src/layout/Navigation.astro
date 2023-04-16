@@ -10,12 +10,12 @@ const links = {
 const { pathname } = Astro.url;
 ---
 
-<nav class="navigation">
-  <ul class="nav">
+<nav>
+  <ul class="navigation">
     {
       Object.entries(links).map(([title, to]) => (
-        <li class="nav__item">
-          <a href={to} class:list={{ 'nav__link--active': to === pathname }}>
+        <li>
+          <a href={to} aria-current={to === pathname ? 'page' : undefined}>
             {title}
           </a>
         </li>

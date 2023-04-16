@@ -1,0 +1,18 @@
+.meta {
+  color: var(--text-secondary);
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.meta__item {
+  display: inline-block;
+}
+
+/**
+ * 1. &#149; bullet.
+ */
+.meta__item + .meta__item::before {
+  color: var(--accent);
+  content: '•'; /* 1 */
+  margin: 0.375em;
+}

@@ -1,0 +1,13 @@
+.skip-link {
+  background: var(--accent-emphasized);
+  color: var(--background) !important;
+  padding: 0.25em 0.5em;
+  color: var(--text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}

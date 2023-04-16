@@ -23,7 +23,7 @@
   --fonts-alternative: 'Merriweather', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times',
     'Source Serif Pro', serif;
 
-  --gap: 1rem;
+  --gap: clamp(1rem, 4vw, 3rem);
   --t-duration: 0.375s;
 }
 
@@ -32,6 +32,6 @@
 
 @media (--bp-wide) {
   :root {
-    --gap: 3rem;
+    /* --gap: 3rem; */
   }
 }

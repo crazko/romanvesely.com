@@ -1,15 +1,13 @@
-:root:has(body.theme--dark) {
-  color-scheme: dark;
-}
-
+/**
+ * 1. Prevent horizontal scroll on small screen
+ */
 html {
   font-family: var(--fonts);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
   overflow-y: scroll;
-  /* // logo hover fix on small screen */
-  overflow-x: hidden;
+  overflow-x: hidden; /* 1 */
 }
 
 @media (--bp-wide) {
@@ -21,23 +19,27 @@ html {
 body {
   background: var(--background);
   color: var(--text);
-}
-
-body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  border-block: 10px solid var(--accent);
+  box-sizing: border-box;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
-
   transition: color ease var(--t-duration);
 }
 
 a:hover {
   color: var(--accent-secondary);
+}
+
+sup a {
+  border-bottom: none;
+  font-weight: bold;
+  margin-left: 0.25em;
 }
 
 b,
@@ -50,24 +52,22 @@ strong {
   list-style-type: square;
 }
 
+:where(:is(ul, ol):not([class]) li + li) {
+  margin-top: 0.25em;
+}
+
 :where(ul[class]) {
   list-style: none;
   padding: 0;
-}
-
-:where(li:not([class])) {
-  /* margin-bottom: 0.25em; */
+  margin: 0;
 }
 
 h1,
 h2,
-h3,
 h3 {
   color: var(--text-emphasized);
   font-family: var(--fonts-alternative);
   font-weight: 400;
-
-  /* .transition(color); */
 }
 
 h1 {
@@ -88,29 +88,31 @@ h2 {
   margin: var(--gap) 0 calc(var(--gap) / 3);
 }
 
-/**
-   * 1. Overwrite prismjs theme styles
-   * 2. Bring back default styling because of light/dark theme of prismjs
-   */
+/* Start of PrismJS */
+
 pre,
 code {
   color: var(--accent-emphasized);
-  font-family: monospace !important; /* 1 */
-  line-height: 1.35 !important; /* 1 */
+  /* font-family: monospace !important; */
+  line-height: 1.35 !important;
 }
 
 pre,
 code:not([class]) {
-  background: var(--background-secondary) !important;
-  /* .transition(background); */
+  background: var(--background-code) !important;
+}
+
+@container style(--background: var(--base3)) {
+  pre,
+  code:not([class]) {
+    background: orange !important;
+  }
 }
 
 pre[class*='language-'] {
-  border-radius: 0; /* 1 */
-  margin-left: calc(var(--gap) * -1);
-  margin-right: calc(var(--gap) * -1);
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  border-radius: 0;
+  margin-inline: calc(var(--gap) * -1);
+  padding-inline: var(--gap);
 }
 
 code {
@@ -122,10 +124,15 @@ pre code {
   border: none;
 }
 
+/**
+ * 1. Bring back default styling because of light/dark theme of prismjs
+ */
 ::selection {
-  background: highlight !important; /* 2 */
-  color: highlighttext !important; /* 2 */
+  background: highlight !important; /* 1 */
+  color: highlighttext !important; /* 1 */
 }
+
+/* End of PrismJS */
 
 abbr[title] {
   text-decoration: none;
@@ -145,13 +152,13 @@ figcaption {
 blockquote {
   color: var(--accent-emphasized);
   font-family: var(--fonts-alternative);
-  font-size: 0.85em;
+  font-size: 0.875em;
   font-style: italic;
   quotes: '\201C''\201D''\2018''\2019';
   margin: var(--gap);
 }
 
-blockquote:before {
+blockquote::before {
   content: open-quote;
   font-size: 4em;
   margin-right: 0.25em;
@@ -164,12 +171,12 @@ blockquote p {
 }
 
 table {
-  font-size: 0.85em;
+  font-size: 0.875em;
   width: 100%;
 }
 
 th {
-  text-align: left;
+  text-align: start;
 }
 
 tr + tr {
@@ -189,16 +196,4 @@ td + td {
   width: 1.25em;
   height: 1.25em;
   vertical-align: sub;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 820px;
-  padding: 0 var(--gap);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.container--wide {
-  max-width: 1220px;
 }

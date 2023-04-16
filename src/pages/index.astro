@@ -9,7 +9,7 @@ import Time from '../components/Time.astro';
 import Perex from '../components/Perex.astro';
 
 const data = await getCollection('posts');
-const posts: Record<string, CollectionEntry<'posts'>[]> = data.reverse().reduce((all, post) => {
+const posts: Record<string, CollectionEntry<'posts' & { date: string }>[]> = data.reverse().reduce((all, post) => {
   const re = /(\d{4})\/(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
   const matches = re.exec(post.slug);
 
@@ -45,7 +45,7 @@ const posts: Record<string, CollectionEntry<'posts'>[]> = data.reverse().reduce(
       Read more <a href="/about">about me</a> or check <a href="/now">what I'm doing now</a>.
     </p>
 
-    <h1>Content</h1>
+    <h1>Articles</h1>
     {
       Object.keys(posts)
         .reverse()
@@ -54,15 +54,21 @@ const posts: Record<string, CollectionEntry<'posts'>[]> = data.reverse().reduce(
             <h2>{year}</h2>
 
             {posts[year].map(({ slug, data: { title, label, date } }) => (
-              <article class="note">
-                <div class="note__header">
+              <article class="article">
+                <div>
                   <a href={`/${slug}`}>{title}</a>
-                  {label && <span class="pill ml-4">{label}</span>}
                 </div>
+                {label && (
+                  <div>
+                    <span class="pill">{label}</span>
+                  </div>
+                )}
 
-                <Time date={date} class="meta">
-                  {new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long' }).format(new Date(date))}
-                </Time>
+                <div class="article__date">
+                  <Time date={date} class="meta">
+                    {new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long' }).format(new Date(date))}
+                  </Time>
+                </div>
               </article>
             ))}
           </section>

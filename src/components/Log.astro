@@ -12,7 +12,15 @@ const log = await getEntryBySlug('log', id);
 const { Content } = await log.render();
 ---
 
-<div class="log">
-  {isWithLink && <a href={`/log/${log.slug}`}>{log.slug}</a>}
+<div class="card log">
   <Content />
+  {
+    isWithLink && (
+      <div class="text-end">
+        <a href={`/log/${log.slug}`} class="pill">
+          #{log.slug}
+        </a>
+      </div>
+    )
+  }
 </div>

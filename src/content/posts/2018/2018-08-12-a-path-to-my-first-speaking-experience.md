@@ -34,7 +34,7 @@ Though, I didn't jump to the next stage when I'd thought I'm done with the previ
 
 I started to collect material from books I had read to that time and was so glad I had not been afraid to use the marker and to bend page corners to label interesting ideas for later use. Books are precious to me but they are still just a source of knowledge, just a tool, like a saw for a carpenter. One shouldn't hesitate to work with them that way like they were some historical relics (only if they really aren't, of course).
 
-I also picked and reread several tweets and blog posts from [others in the field](/blogroll/#what-do-i-read). Added my own thoughts (not even mentioning photos) and in the end, my notes bloated up to nearly 10 pages.
+I also picked and reread several tweets and blog posts from [others in the field](/blogroll). Added my own thoughts (not even mentioning photos) and in the end, my notes bloated up to nearly 10 pages.
 
 ### Creating prestentation
 

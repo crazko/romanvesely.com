@@ -46,7 +46,7 @@ export default () => {
             Save
           </button>
         </form>
-        <p className="text-sm text-right">
+        <p className="text-sm text-end">
           all credits goes to <a href="https://mxb.dev/blog/indieweb-link-sharing/">Max Böck</a>
         </p>
       </Container>

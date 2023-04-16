@@ -17,6 +17,7 @@ My personal web site [https://romanvesely.com](https://romanvesely.com).
 - Custom Properties for light & dark themes
 - [Custom Media Queries](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
 - [Media Query Range Syntax](https://developer.chrome.com/blog/media-query-range-syntax/)
+- Progressively use [Grid Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout) instead of [Lultiple-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/columns)
 
 ## Use it
 

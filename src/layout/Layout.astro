@@ -78,8 +78,9 @@ const meta = {
   </head>
   <body class:list={{ 'h-entry': isPost }}>
     <Sprite.Provider>
+      <a href="#main" class="skip-link">Skip to main content</a>
       <Header />
-      <main role="main" class="content">
+      <main id="main" class="content">
         <slot />
       </main>
       <Footer />

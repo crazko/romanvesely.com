@@ -1,0 +1,58 @@
+.cards {
+  --card-width: 325px;
+
+  columns: var(--card-width);
+  column-gap: 1em;
+}
+
+/**
+ * 1. Prevents the card from being cut off at the bottom of the column.
+ */
+.card {
+  --background-code: var(--background);
+  background-color: var(--background-secondary);
+  position: relative;
+  margin-bottom: 1em;
+  position: relative;
+  break-inside: avoid; /* 1 */
+  padding: 1rem;
+}
+
+@supports (grid-template-rows: masonry) {
+  .cards {
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: masonry;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  @media (--bp-small) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
+    }
+  }
+}
+
+.logs {
+  padding: var(--gap);
+}
+
+.log pre {
+  margin: 0;
+  padding: 1em;
+}
+
+.bookmarks {
+  padding-block: var(--gap);
+}
+
+.bookmark__link {
+  color: var(--text);
+  padding: 1rem;
+  display: block;
+  margin: -1rem;
+}

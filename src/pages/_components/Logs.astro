@@ -6,6 +6,6 @@ const data = await getCollection('log');
 const logs = data.reverse();
 ---
 
-<div class="logs" style={{ counterReset: `log ${logs.length + 1}` }}>
+<div class="cards logs">
   {logs.map(async (log) => <Log id={log.slug} isWithLink />)}
 </div>

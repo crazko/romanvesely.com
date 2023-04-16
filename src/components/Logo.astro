@@ -1,0 +1,18 @@
+---
+import crypto from 'node:crypto';
+import { data } from '../data';
+
+const { size } = Astro.props;
+
+const { gravatar } = data;
+const image = crypto.createHash('md5').update(gravatar.email).digest('hex');
+---
+
+<a href="/" class="logo u-url u-uid" aria-label="Roman Veselý">
+  <img
+    src={`${gravatar.url}${image}?size=${size}`}
+    alt="Roman's face in grayscale"
+    class="logo__image u-photo"
+    aria-hidden="true"
+  />
+</a>
