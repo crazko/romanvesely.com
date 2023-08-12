@@ -7,9 +7,9 @@ slug: now
 import { Sprite } from 'astro-icon';
 import Time from '../components/Time.astro';
 
-<span class="meta">
-  <Sprite name="mdi:calendar-month" aria-hidden="true" class="text-default" /> <Time date="2022-01-16" />
-</span>
+<div class="meta text-center">
+  <Sprite name="mdi:calendar-month" aria-hidden="true" /> <Time date={new Date('2022-01-16')} />
+</div>
 
 > From a higher perspective. Short info that lasts a bit longer than a status on a social media site. Read [more about this page](https://nownownow.com/about).
 
