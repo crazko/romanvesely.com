@@ -1,10 +1,10 @@
 const fetch = require('node-fetch');
 const slugify = require('slugify');
 
-const API_FILE_TARGET = 'https://api.github.com/repos/crazko/romanvesely.com/contents/src/bookmarks/';
+const API_FILE_TARGET = 'https://api.github.com/repos/crazko/romanvesely.com/contents/src/content/bookmarks/';
 
 // Helper function to clean strings for frontmatter
-const sanitize = str => {
+const sanitize = (str) => {
   // replace endash and emdash with hyphens
   str = str.replace(/–/g, '-');
   str = str.replace(/—/g, '-');
@@ -20,7 +20,7 @@ const sanitize = str => {
   return str.trim();
 };
 
-const getFileContent = data => {
+const getFileContent = (data) => {
   const { title, url } = data;
 
   return `---
@@ -30,7 +30,7 @@ url: ${url}
 `;
 };
 
-const getFileName = title => {
+const getFileName = (title) => {
   // Gives YYYY-MM-DD format
   const date = Intl.DateTimeFormat('fr-CA').format(new Date());
 
@@ -48,7 +48,7 @@ const getFileName = title => {
 };
 
 // create the new file via the github API
-const postFile = async params => {
+const postFile = async (params) => {
   const { title, token } = params;
   const fileName = getFileName(title);
   const fileContent = getFileContent(params);
@@ -77,7 +77,7 @@ const postFile = async params => {
 };
 
 // helper function to handle API responses
-const handleResponse = response => {
+const handleResponse = (response) => {
   console.log(response);
   if (response.ok) {
     return {
@@ -92,7 +92,7 @@ const handleResponse = response => {
   };
 };
 
-exports.handler = async event => {
+exports.handler = async (event) => {
   try {
     // const params = JSON.parse(event.body);
     const params = Object.fromEntries(new URLSearchParams(event.body).entries());
