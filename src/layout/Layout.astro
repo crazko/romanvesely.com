@@ -19,9 +19,9 @@ export interface Props {
   image?: string;
 }
 
-const { description, frontmatter, image = data.image, isPost, title } = Astro.props;
+const { description, image = data.image, isPost, title } = Astro.props;
 
-const formatTitle = (name) => {
+const formatTitle = (name?: string) => {
   if (name) {
     return `${name} | ${data.name}`;
   }
@@ -30,8 +30,8 @@ const formatTitle = (name) => {
 };
 
 const meta = {
-  title: frontmatter?.title ?? title,
-  description: description ?? data.description,
+  title: title || data.name,
+  description: description || data.description,
   image: new URL(image, Astro.url),
   type: isPost ? 'article' : 'website',
   url: Astro.url,
@@ -42,7 +42,7 @@ const meta = {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{formatTitle(meta.title)}</title>
+    <title>{formatTitle(title)}</title>
 
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
@@ -66,6 +66,9 @@ const meta = {
     <meta property="twitter:title" content={meta.title} />
     <meta property="twitter:description" content={meta.description} />
     <meta property="twitter:image" content={meta.image} />
+
+    <link rel="alternate" type="application/rss+xml" title="Roman Veselý: Notes" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Roman Veselý: Learning Log" href="/log.xml" />
 
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />

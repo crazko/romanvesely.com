@@ -1,7 +1,6 @@
 .meta {
   color: var(--text-secondary);
   font-size: 0.875em;
-  text-align: center;
 }
 
 .meta__item {

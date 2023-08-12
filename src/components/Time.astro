@@ -1,12 +1,23 @@
 ---
-const { date } = Astro.props;
+interface Props {
+  class?: string;
+  date: Date;
+  options?: Intl.DateTimeFormatOptions;
+}
 
-const formatted = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric' }).format(
-  new Date(date)
-);
+const {
+  date,
+  options = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  },
+} = Astro.props;
+
+const formatted = new Intl.DateTimeFormat('en-US', options).format(date);
 ---
 
-<time datetime={date} title={date} class:list={['dt-published', Astro.props.class]}>
+<time datetime={date.toISOString()} title={date.toISOString()} class:list={['dt-published', Astro.props.class]}>
   <slot>
     {formatted}
   </slot>

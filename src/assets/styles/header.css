@@ -20,7 +20,7 @@
 
 .header__name {
   color: var(--text-emphasized);
-  font-family: var(--fonts-alternative);
+  font-family: var(--font-alternative);
   font-size: 1.25rem;
   line-height: 1;
 }

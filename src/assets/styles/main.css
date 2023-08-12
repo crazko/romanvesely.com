@@ -2,7 +2,7 @@
  * 1. Prevent horizontal scroll on small screen
  */
 html {
-  font-family: var(--fonts);
+  font-family: var(--font);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
@@ -66,7 +66,7 @@ h1,
 h2,
 h3 {
   color: var(--text-emphasized);
-  font-family: var(--fonts-alternative);
+  font-family: var(--font-alternative);
   font-weight: 400;
 }
 
@@ -74,39 +74,22 @@ h1 {
   font-size: calc(1rem + 3vw);
   line-height: 1.25;
   margin: 0.5em 0 1rem;
-}
-
-@media (--bp-wide) {
-  h1 {
-    text-align: center;
-    margin-inline: -2em;
-    text-wrap: balance;
-  }
+  text-wrap: balance;
 }
 
 h2 {
   margin: var(--gap) 0 calc(var(--gap) / 3);
 }
 
-/* Start of PrismJS */
+code {
+  color: var(--accent-emphasized);
+  font-size: 0.85em !important;
+  padding: 3px 5px;
+}
 
 pre,
 code {
-  color: var(--accent-emphasized);
-  /* font-family: monospace !important; */
-  line-height: 1.35 !important;
-}
-
-pre,
-code:not([class]) {
   background: var(--background-code) !important;
-}
-
-@container style(--background: var(--base3)) {
-  pre,
-  code:not([class]) {
-    background: orange !important;
-  }
 }
 
 pre[class*='language-'] {
@@ -115,10 +98,6 @@ pre[class*='language-'] {
   padding-inline: var(--gap);
 }
 
-code {
-  font-size: 0.85em !important;
-  padding: 3px 5px;
-}
 pre code {
   padding: 0;
   border: none;
@@ -151,7 +130,7 @@ figcaption {
 
 blockquote {
   color: var(--accent-emphasized);
-  font-family: var(--fonts-alternative);
+  font-family: var(--font-alternative);
   font-size: 0.875em;
   font-style: italic;
   quotes: '\201C''\201D''\2018''\2019';

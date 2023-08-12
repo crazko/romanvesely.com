@@ -18,9 +18,9 @@
   --cyan: #2aa198;
   --green: #859900;
 
-  --fonts: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+  --font: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --fonts-alternative: 'Merriweather', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times',
+  --font-alternative: 'Merriweather', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times',
     'Source Serif Pro', serif;
 
   --gap: clamp(1rem, 4vw, 3rem);
@@ -29,9 +29,3 @@
 
 @custom-media --bp-small (width >= 600px);
 @custom-media --bp-wide (width >= 800px);
-
-@media (--bp-wide) {
-  :root {
-    /* --gap: 3rem; */
-  }
-}

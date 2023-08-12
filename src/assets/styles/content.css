@@ -20,12 +20,18 @@
   border-bottom: 2px solid;
 }
 
-.content p:last-of-type {
+:where(.content p):last-of-type {
   margin-bottom: 0;
 }
 
-.content p:first-of-type {
+:where(.content p):first-of-type {
   margin-top: 0;
+}
+
+@media (--bp-small) {
+  .content__header {
+    text-align: center;
+  }
 }
 
 .content p > img {
@@ -37,11 +43,12 @@
 
 .perex {
   color: var(--accent);
-  font-family: var(--fonts-alternative);
+  font-family: var(--font-alternative);
   font-size: 1.3rem;
 }
 
 .footnotes {
+  --background-code: var(--background);
   background-color: var(--background-secondary);
   font-size: 0.875em;
   margin-top: var(--gap);
@@ -57,14 +64,11 @@
 }
 
 .footnotes li:target {
-  border: 1px solid var(--accent);
+  --background-code: var(--background-secondary);
+  border: 1px solid var(--accent-emphasized);
   background-color: var(--background);
   padding: 0.5em 1em;
   margin: 0 -1em;
-}
-
-.footnotes li:target::marker {
-  color: var(--accent);
 }
 
 .footnotes p {
@@ -73,12 +77,14 @@
 
 .data-footnote-backref {
   font-family: initial;
-  margin-left: 0.25em;
+  font-weight: bold;
+  margin-inline-start: 0.25em;
 }
 
 .signature {
   color: var(--text-emphasized);
   font-size: 1.25em;
+  margin-top: 1em;
   text-align: end;
 }
 

@@ -13,9 +13,9 @@ const { pathname } = Astro.url;
 <nav>
   <ul class="navigation">
     {
-      Object.entries(links).map(([title, to]) => (
+      Object.entries(links).map(([title, path]) => (
         <li>
-          <a href={to} aria-current={to === pathname ? 'page' : undefined}>
+          <a href={path} aria-current={path === pathname ? 'page' : undefined}>
             {title}
           </a>
         </li>

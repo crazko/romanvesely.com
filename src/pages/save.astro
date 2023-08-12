@@ -1,0 +1,43 @@
+---
+import Container from '../components/Container.astro';
+import Layout from '../layout/Layout.astro';
+
+const title = 'Save to bookmarks';
+const host = process.env.NODE_ENV === 'development' ? 'http://localhost:8888' : '';
+---
+
+<Layout title={title}>
+  <meta name="robots" content="noindex" slot="meta" />
+
+  <Container>
+    <h1>{title}</h1>
+    <p>
+      Check all <a href="/bookmarks">bookmarks</a>.
+    </p>
+    <form action={`${host}/.netlify/functions/bookmark`} method="POST" class="bookmarks-form">
+      <label>
+        Title
+        <input type="text" name="title" required />
+      </label>
+      <label>
+        URL
+        <input type="url" name="url" required />
+      </label>
+      <label>
+        Token
+        <input type="password" name="token" autocomplete="current-password" required />
+      </label>
+      <button type="submit" autofocus>Save</button>
+    </form>
+    <p class="text-sm text-end">
+      all credits goes to <a href="https://mxb.dev/blog/indieweb-link-sharing/">Max Böck</a>
+    </p>
+  </Container>
+</Layout>
+
+<script is:inline>
+  const queryParams = new URLSearchParams(window.location.search);
+
+  document.querySelector('[name="title"]').value = queryParams.get('title') ?? '';
+  document.querySelector('[name="url"]').value = queryParams.get('url') ?? '';
+</script>

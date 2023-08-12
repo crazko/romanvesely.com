@@ -7,27 +7,22 @@ import Layout from '../layout/Layout.astro';
 import Container from '../components/Container.astro';
 import Time from '../components/Time.astro';
 import Perex from '../components/Perex.astro';
+import Tip from '../components/Tip.astro';
+
+import { getSlug } from '../utils/utils';
 
 const data = await getCollection('posts');
-const posts: Record<string, CollectionEntry<'posts' & { date: string }>[]> = data.reverse().reduce((all, post) => {
-  const re = /(\d{4})\/(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
-  const matches = re.exec(post.slug);
-
-  const year = matches[1];
-  const date = matches[2];
-  const slug = matches[3];
+const posts: Record<string, CollectionEntry<'posts'>[]> = data.reverse().reduce((all, post) => {
+  const slug = getSlug(post.slug);
+  const year = post.data.publishedDate.getFullYear();
 
   return {
     ...all,
     [year]: [
-      ...(all[year] ?? []),
+      ...(all[year as keyof typeof all] ?? []),
       {
         ...post,
         slug,
-        data: {
-          ...post.data,
-          date,
-        },
       },
     ],
   };
@@ -36,14 +31,14 @@ const posts: Record<string, CollectionEntry<'posts' & { date: string }>[]> = dat
 
 <Layout>
   <Container>
-    <Perex className="text-emphasized text-center">
+    <Perex className="text-emphasized text-cente">
       Hi there! I'm Roman, a software engineer from Slovakia. I enjoy tinkering with the web, discovering new things,
       and an active lifestyle. I work for <a href="https://www.eleveo.com/">Eleveo</a>.
     </Perex>
 
-    <p class="text-center">
+    <Tip>
       Read more <a href="/about">about me</a> or check <a href="/now">what I'm doing now</a>.
-    </p>
+    </Tip>
 
     <h1>Articles</h1>
     {
@@ -53,7 +48,7 @@ const posts: Record<string, CollectionEntry<'posts' & { date: string }>[]> = dat
           <section>
             <h2>{year}</h2>
 
-            {posts[year].map(({ slug, data: { title, label, date } }) => (
+            {posts[year].map(({ slug, data: { title, label, publishedDate } }) => (
               <article class="article">
                 <div>
                   <a href={`/${slug}`}>{title}</a>
@@ -65,9 +60,7 @@ const posts: Record<string, CollectionEntry<'posts' & { date: string }>[]> = dat
                 )}
 
                 <div class="article__date">
-                  <Time date={date} class="meta">
-                    {new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long' }).format(new Date(date))}
-                  </Time>
+                  <Time date={publishedDate} options={{ day: 'numeric', month: 'long' }} class="meta" />
                 </div>
               </article>
             ))}

@@ -5,21 +5,20 @@ import Container from '../components/Container.astro';
 import Time from '../components/Time.astro';
 
 const { frontmatter } = Astro.props;
-const { title, readingTime, githubEdit, date } = frontmatter;
+const { title, readingTime, githubEdit, publishedDate, slug } = frontmatter;
 ---
 
-<!-- TODO: -->
-<Layout description={'' /* excerpt */} image={`` /* `assets/posts/${slug}.png` */} isPost title={title}>
+<Layout description={'' /* TODO: */} image={`assets/posts/${slug}.png`} isPost title={title}>
   <Container>
     <article>
-      <header>
+      <header class="content__header">
         <h1 class="p-name">{title}</h1>
 
-        <ul class="meta">
+        <ul class="meta plb-g">
           <li class="meta__item">
             <a href={Astro.url} class="text-secondary u-url">
               <Sprite name="mdi:calendar-month" aria-label="Published" class="text-default" />
-              <Time date={date} />
+              <Time date={publishedDate} />
             </a>
           </li>
           <li class="meta__item">

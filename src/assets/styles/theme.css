@@ -22,7 +22,5 @@
     --text-emphasized: var(--base1);
 
     --accent: var(--yellow);
-    --accent-secondary: var(--red);
-    --accent-emphasized: var(--magenta);
   }
 }

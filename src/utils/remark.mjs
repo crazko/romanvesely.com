@@ -14,11 +14,11 @@ export const remarkReadingTime = () => {
 export const remarkDate = () => {
   return (tree, file) => {
     const { history } = file;
-    const re = /(\d{4})\/(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
+    const re = /(\d{4}-\d{2}-\d{2})-([\w|-]*)/g;
 
     const matches = re.exec(history[0]);
     if (matches) {
-      const date = matches[2];
+      const date = matches[1];
 
       file.data.astro.frontmatter.date = date;
     }
