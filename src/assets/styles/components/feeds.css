@@ -1,0 +1,11 @@
+@media (--bp-small) {
+  .feeds__list {
+    column-count: 2;
+  }
+}
+
+.feeds__item {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}

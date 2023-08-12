@@ -1,0 +1,44 @@
+.logo {
+  --logo-width: 75px;
+  --logo-rotate: 55;
+
+  border-radius: 50%;
+  display: block;
+  height: var(--logo-width);
+  width: var(--logo-width);
+  outline: 0;
+}
+
+.logo:focus-visible .logo__image {
+  /* TODO:  */
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+@media (--bp-wide) {
+  .logo {
+    --logo-width: 100px;
+  }
+}
+
+@media (hover: hover) and (--bp-wide) {
+  .logo {
+    background: url('../img/doomface.gif') center center no-repeat,
+      linear-gradient(135deg, var(--background), var(--text-secondary));
+    background-size: 80%, 100%;
+  }
+
+  .logo:is(:hover, :focus) .logo__image {
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.2);
+    transform: translateX(calc((3.14 * (var(--logo-width) / 2)) / 180 * var(--logo-rotate)))
+      rotate(calc(var(--logo-rotate) * 1deg));
+  }
+}
+
+.logo__image {
+  border-radius: 50%;
+  object-fit: contain;
+
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease;
+  transition-duration: var(--t-duration);
+}

@@ -1,0 +1,25 @@
+---
+const links = {
+  home: '/',
+  about: '/about',
+  log: '/log',
+  blogroll: '/blogroll',
+  bookmarks: '/bookmarks',
+};
+
+const { pathname } = Astro.url;
+---
+
+<nav>
+  <ul class="navigation">
+    {
+      Object.entries(links).map(([title, path]) => (
+        <li>
+          <a href={path} aria-current={path === pathname ? 'page' : undefined}>
+            {title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

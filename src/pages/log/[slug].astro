@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import LayoutLog from '../../layout/LayoutLog.astro';
+import Log from '../../components/Log.astro';
+
+export async function getStaticPaths() {
+  const data = await getCollection('log');
+
+  return data.map((log) => ({
+    params: { slug: log.slug },
+    props: { log },
+  }));
+}
+
+const { log } = Astro.props;
+const { remarkPluginFrontmatter } = await log.render();
+---
+
+<LayoutLog frontmatter={{ ...log.data, title: `Log #${log.slug}`, ...remarkPluginFrontmatter }}>
+  <Log id={log.slug} isWithLink={false} />
+</LayoutLog>

@@ -1,0 +1,71 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.plb-g {
+  padding-block: var(--gap);
+}
+
+.mr-4 {
+  margin-right: 15px;
+}
+
+.ml-4 {
+  margin-left: 15px;
+}
+
+.text-background {
+  color: var(--background);
+}
+
+.text-background-secondary {
+  color: var(--background-secondary);
+}
+
+.text-default {
+  color: var(--text);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-emphasized {
+  color: var(--text-emphasized);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+.text-accent-secondary {
+  color: var(--accent-secondary);
+}
+.text-accent-emphasized {
+  color: var(--accent-emphasized);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

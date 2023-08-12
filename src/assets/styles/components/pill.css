@@ -1,0 +1,8 @@
+.pill {
+  font-size: 0.6rem;
+  color: var(--accent-emphasized);
+  background-color: var(--background-code);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 5px;
+}

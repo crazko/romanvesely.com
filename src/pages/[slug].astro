@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+
+import LayoutPost from '../layout/LayoutPost.astro';
+import Log from '../components/Log.astro';
+import Tip from '../components/Tip.astro';
+
+import { getSlug } from '../utils/utils';
+
+export async function getStaticPaths() {
+  const data = await getCollection('posts');
+
+  return data.map((post) => {
+    const slug = getSlug(post.slug);
+
+    return {
+      params: { slug },
+      props: { post, slug },
+    };
+  });
+}
+
+const { post, slug } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await post.render();
+---
+
+<LayoutPost frontmatter={{ ...remarkPluginFrontmatter, ...post.data, slug }}>
+  <Content components={{ ...Content.components, Log, Tip }} />
+</LayoutPost>

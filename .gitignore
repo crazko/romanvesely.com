@@ -1,5 +1,14 @@
-/public
-/node_modules
+# build output
+dist/
+
+# generated types
+.astro/
+
+node_modules/
+
+.env
+.env.production
+
 
 *.cache
 *.log

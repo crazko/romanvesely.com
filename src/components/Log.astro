@@ -1,0 +1,26 @@
+---
+import { CollectionEntry, getEntryBySlug } from 'astro:content';
+
+export interface Props {
+  isWithLink?: boolean;
+  id: CollectionEntry<'log'>['slug'];
+}
+
+const { id, isWithLink = true } = Astro.props;
+
+const log = await getEntryBySlug('log', id);
+const { Content } = await log.render();
+---
+
+<div class="card log">
+  <Content />
+  {
+    isWithLink && (
+      <div class="text-end">
+        <a href={`/log/${log.slug}`} class="pill">
+          #{log.slug}
+        </a>
+      </div>
+    )
+  }
+</div>

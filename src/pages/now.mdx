@@ -1,16 +1,17 @@
 ---
+layout: '../layout/LayoutPage.astro'
 title: What I'm doing now
 slug: now
 ---
 
-> From a higher perspective. Short info that lasts a bit longer than a status on a social media site. Read [more about this page](https://nownownow.com/about).
+import { Sprite } from 'astro-icon';
+import Time from '../components/Time.astro';
 
-<small>
-  Updated the{' '}
-  <time datetime="2022-01-16">
-    16<sup>th</sup> of January, 2022
-  </time>
-</small>
+<div class="meta text-center">
+  <Sprite name="mdi:calendar-month" aria-hidden="true" /> <Time date={new Date('2022-01-16')} />
+</div>
+
+> From a higher perspective. Short info that lasts a bit longer than a status on a social media site. Read [more about this page](https://nownownow.com/about).
 
 My attention has been focused on moving to my new apartment for the past year. Finally, the reconstruction, delayed many times due to the pandemic, is finished and I can now slowly start to focus on the things I have been postponing because of it-mostly my physical training, ... and my writing. I'd like to blog a bit about my experience of working on a new design system. Not having written anything for more than a year makes coming back to a typewriter harder than I'd expect.
 

@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+
+const data = await getCollection('bookmarks');
+const bookmarks = data.reverse().map((bookmark) => ({
+  ...bookmark.data,
+  hostname: new URL(bookmark.data.url).hostname,
+}));
+---
+
+<ul class="cards bookmarks h-feed">
+  {
+    bookmarks.map(({ hostname, title, url }) => (
+      <li class="card bookmark h-entry">
+        <a href={url} class="bookmark__link u-bookmark-of h-cite" target="_blank" rel="noopener">
+          <p class="p-name">{title}</p>
+          <div class="text-end">
+            <span class="pill">{hostname}</span>
+          </div>
+        </a>
+      </li>
+    ))
+  }
+</ul>

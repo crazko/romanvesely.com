@@ -1,0 +1,16 @@
+.bookmarks-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bookmarks-form input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bookmarks-form button {
+  color: var(--accent-emphasized);
+  background-color: var(--background-secondary);
+  border: none;
+}

@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import Log from '../../components/Log.astro';
+
+const data = await getCollection('log');
+const logs = data.reverse();
+---
+
+<div class="cards logs">
+  {logs.map(async (log) => <Log id={log.slug} isWithLink />)}
+</div>

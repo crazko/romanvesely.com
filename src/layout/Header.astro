@@ -1,0 +1,48 @@
+---
+import { Sprite } from 'astro-icon';
+
+import Navigation from './Navigation.astro';
+import Logo from '../components/Logo.astro';
+---
+
+<header class="header container plb-g">
+  <div class="header__content h-card p-author">
+    <Logo size={200} />
+
+    <div class="header__info">
+      <span class="header__name p-name">Roman Veselý</span>
+      <span class="sr-only p-note">
+        <span class="p-job-title">Software Engineer</span> from
+        <span class="p-country-name">Slovakia</span>. Somewhere between trees and bytes of code.
+      </span>
+      <div class="header__social">
+        <a href="https://twitter.com/rmnvsl" class="u-url" title="twitter" rel="me">
+          <Sprite name="mdi:twitter" aria-label="twitter" />
+        </a>
+        <a href="https://github.com/crazko" class="u-url" title="github" rel="me">
+          <Sprite name="mdi:github" aria-label="github" />
+        </a>
+        <a href="https://stackoverflow.com/users/5549874/crazko" class="u-url" title="stack overflow" rel="me">
+          <Sprite name="mdi:stackoverflow" aria-label="stack overflow" />
+        </a>
+        <a href="https://dev.to/rmnvsl" class="u-url" title="dev.to" rel="me">
+          <Sprite name="mdi:dev-to" aria-label="dev.to" />
+        </a>
+        <a href="https://www.linkedin.com/in/veselyroman" class="u-url" title="linkedin" rel="me">
+          <Sprite name="mdi:linkedin" aria-label="linkedin" />
+        </a>
+        <a href="https://mastodon.social/@romanvesely" class="u-url" title="mastodon" rel="me">
+          <Sprite name="mdi:mastodon" aria-label="mastodon" />
+        </a>
+        <a href="https://www.goodreads.com/user/show/53605807" class="u-url" title="goodreads" rel="me">
+          <Sprite name="mdi:goodreads" aria-label="goodreads" />
+        </a>
+        <a href="/rss.xml" class="rss" title="RSS feed">
+          <Sprite name="mdi:rss" aria-label="RSS feed" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <Navigation />
+</header>

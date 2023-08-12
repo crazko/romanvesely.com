@@ -1,0 +1,40 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.header__content {
+  display: flex;
+  flex: 1;
+  gap: 1em;
+}
+
+.header__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header__name {
+  color: var(--text-emphasized);
+  font-family: var(--font-alternative);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.header__social {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.navigation {
+  display: flex;
+  gap: 0.75em;
+}
+
+.navigation a[aria-current='page'] {
+  border-bottom: 2px solid;
+}

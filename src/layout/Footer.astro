@@ -1,0 +1,29 @@
+---
+import { data } from '../data';
+
+const { name, email } = data;
+const year = new Date().getUTCFullYear();
+---
+
+<footer class="container text-center plb-g">
+  <ul class="meta">
+    <li class="meta__item">
+      &copy; {year}
+      <a href={`mailto:${email}`}>{name}</a>
+    </li>
+    <li class="meta__item">
+      <a href="/now">now</a>
+    </li>
+    <li class="meta__item">
+      <a href="https://github.com/crazko/romanvesely.com" aria-label="Created">&lt;/&gt;</a> with <a
+        href="https://astro.build/">Astro</a
+      >
+    </li>
+    <li class="meta__item">
+      Stats by <a href="https://www.goatcounter.com/">GoatCounter</a>
+    </li>
+    <li class="meta__item">
+      <a href="/rss.xml">RSS</a>
+    </li>
+  </ul>
+</footer>

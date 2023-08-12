@@ -1,0 +1,178 @@
+/**
+ * 1. Prevent horizontal scroll on small screen
+ */
+html {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  overflow-y: scroll;
+  overflow-x: hidden; /* 1 */
+}
+
+@media (--bp-wide) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  border-block: 10px solid var(--accent);
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color ease var(--t-duration);
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+sup a {
+  border-bottom: none;
+  font-weight: bold;
+  margin-left: 0.25em;
+}
+
+b,
+strong {
+  color: var(--text-emphasized);
+  font-weight: 600;
+}
+
+:where(ul) {
+  list-style-type: square;
+}
+
+:where(:is(ul, ol):not([class]) li + li) {
+  margin-top: 0.25em;
+}
+
+:where(ul[class]) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-emphasized);
+  font-family: var(--font-alternative);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: calc(1rem + 3vw);
+  line-height: 1.25;
+  margin: 0.5em 0 1rem;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: var(--gap) 0 calc(var(--gap) / 3);
+}
+
+code {
+  color: var(--accent-emphasized);
+  font-size: 0.85em !important;
+  padding: 3px 5px;
+}
+
+pre,
+code {
+  background: var(--background-code) !important;
+}
+
+pre[class*='language-'] {
+  border-radius: 0;
+  margin-inline: calc(var(--gap) * -1);
+  padding-inline: var(--gap);
+}
+
+pre code {
+  padding: 0;
+  border: none;
+}
+
+/**
+ * 1. Bring back default styling because of light/dark theme of prismjs
+ */
+::selection {
+  background: highlight !important; /* 1 */
+  color: highlighttext !important; /* 1 */
+}
+
+/* End of PrismJS */
+
+abbr[title] {
+  text-decoration: none;
+  border-bottom: 2px dotted var(--accent-emphasized);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figcaption {
+  color: var(--accent-secondary);
+  font-size: 0.75rem;
+}
+
+blockquote {
+  color: var(--accent-emphasized);
+  font-family: var(--font-alternative);
+  font-size: 0.875em;
+  font-style: italic;
+  quotes: '\201C''\201D''\2018''\2019';
+  margin: var(--gap);
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 4em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  line-height: 0;
+}
+
+blockquote p {
+  display: inline;
+}
+
+table {
+  font-size: 0.875em;
+  width: 100%;
+}
+
+th {
+  text-align: start;
+}
+
+tr + tr {
+  border-top: 2px solid var(--text-secondary);
+}
+
+td {
+  padding: 0.5em 0;
+}
+
+th + th,
+td + td {
+  padding-left: 1em;
+}
+
+[astro-icon] {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: sub;
+}
