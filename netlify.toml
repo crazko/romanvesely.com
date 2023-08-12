@@ -1,5 +1,5 @@
 [build]
-  publish = "public/"
+  publish = "dist/"
   command = "npm run build"
 
 # Use my domain to point to Mastodon instance; @roman@romanvesely.com (or others) should be discoverable
