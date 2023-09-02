@@ -8,14 +8,15 @@ const links = {
 };
 
 const { pathname } = Astro.url;
+const path = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname;
 ---
 
 <nav>
   <ul class="navigation">
     {
-      Object.entries(links).map(([title, path]) => (
+      Object.entries(links).map(([title, link]) => (
         <li>
-          <a href={path} aria-current={path === pathname.replace(/\/$/, '') ? 'page' : undefined}>
+          <a href={link} aria-current={link === path ? 'page' : undefined}>
             {title}
           </a>
         </li>
