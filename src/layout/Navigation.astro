@@ -15,7 +15,7 @@ const { pathname } = Astro.url;
     {
       Object.entries(links).map(([title, path]) => (
         <li>
-          <a href={path} aria-current={path === pathname ? 'page' : undefined}>
+          <a href={path} aria-current={path === pathname.replace(/\/$/, '') ? 'page' : undefined}>
             {title}
           </a>
         </li>

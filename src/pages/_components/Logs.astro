@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Log from '../../components/Log.astro';
 
 const data = await getCollection('log');
-const logs = data.reverse();
+const logs = data.sort((a, b) => (Number(a.slug) > Number(b.slug) ? -1 : 1));
 ---
 
 <div class="cards logs">
