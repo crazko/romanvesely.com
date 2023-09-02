@@ -13,7 +13,7 @@ const parser = new MarkdownIt({
 
 const descriptionParser = new MarkdownIt();
 
-export async function get(context) {
+export async function GET(context) {
   const logs = await getCollection('log');
 
   return rss({
