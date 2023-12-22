@@ -1,4 +1,6 @@
 ---
+import { Sprite } from 'astro-icon';
+
 import { data } from '../data';
 
 const { name, email } = data;
@@ -8,8 +10,7 @@ const year = new Date().getUTCFullYear();
 <footer class="container text-center plb-g">
   <ul class="meta">
     <li class="meta__item">
-      &copy; {year}
-      <a href={`mailto:${email}`}>{name}</a>
+      &copy; {year}{' '}<a href={`mailto:${email}`}>{name}</a>
     </li>
     <li class="meta__item">
       <a href="/now">now</a>
@@ -20,10 +21,10 @@ const year = new Date().getUTCFullYear();
       >
     </li>
     <li class="meta__item">
-      Stats by <a href="https://www.goatcounter.com/">GoatCounter</a>
+      stats by <a href="https://www.goatcounter.com/">GoatCounter</a>
     </li>
     <li class="meta__item">
-      <a href="/rss.xml">RSS</a>
+      <a href="/rss.xml"><Sprite name="mdi:rss" aria-hidden="true" /> RSS</a>
     </li>
   </ul>
 </footer>
