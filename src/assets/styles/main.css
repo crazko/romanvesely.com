@@ -122,7 +122,8 @@ abbr[title] {
   border-bottom: 2px dotted var(--accent-emphasized);
 }
 
-img {
+img,
+video {
   height: auto;
   max-width: 100%;
 }
