@@ -35,3 +35,14 @@ export const remarkGithubEdit = () => {
     )}`;
   };
 };
+
+export const remarkAddSignature = () => {
+  const signature = {
+    type: 'html',
+    value: `<footer><p class="signature">Roman</p></footer>`,
+  };
+
+  return (tree) => {
+    tree.children = [...tree.children, signature];
+  };
+};

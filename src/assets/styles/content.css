@@ -44,13 +44,10 @@
 }
 
 .footnotes {
-  --background-code: var(--background);
-  background-color: var(--background-secondary);
-  font-size: 0.875em;
+  border-top: 1px solid currentColor;
+  font-size: 0.75rem;
   margin-top: var(--gap);
-  margin-inline: calc(var(--gap) * -1);
   padding-block: 1em;
-  padding-inline: var(--gap);
 }
 
 .footnotes ol {
@@ -60,9 +57,7 @@
 }
 
 .footnotes li:target {
-  --background-code: var(--background-secondary);
   border: 1px solid var(--accent-emphasized);
-  background-color: var(--background);
   padding: 0.5em 1em;
   margin: 0 -1em;
 }
