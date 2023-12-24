@@ -134,24 +134,40 @@ figcaption {
 }
 
 blockquote {
-  color: var(--accent-emphasized);
-  font-family: var(--font-alternative);
-  font-size: 0.875em;
-  font-style: italic;
-  quotes: '\201C''\201D''\2018''\2019';
   margin: var(--gap);
 }
 
-blockquote::before {
+blockquote p {
+  font-size: 0.875em;
+  color: var(--accent-emphasized);
+  font-family: var(--font-alternative);
+  font-style: italic;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+
+blockquote p:first-of-type::before {
   content: open-quote;
-  font-size: 4em;
+  font-size: 2em;
   margin-right: 0.25em;
-  vertical-align: -0.4em;
+  vertical-align: -0.2em;
   line-height: 0;
 }
 
-blockquote p {
-  display: inline;
+blockquote p:last-of-type::after {
+  content: close-quote;
+  font-size: 2em;
+  margin-right: 0.25em;
+  vertical-align: -0.2em;
+  line-height: 0;
+}
+
+blockquote footer {
+  margin-top: 0.5em;
+  font-size: 0.75rem;
+}
+
+blockquote footer a {
+  text-decoration: none;
 }
 
 table {
