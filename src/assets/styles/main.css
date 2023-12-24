@@ -28,8 +28,12 @@ body {
 
 a {
   color: var(--accent);
-  text-decoration: none;
   transition: color ease var(--t-duration);
+}
+
+:not(.content a),
+a[class] {
+  text-decoration: none;
 }
 
 a:hover {
@@ -37,7 +41,7 @@ a:hover {
 }
 
 sup a {
-  border-bottom: none;
+  text-decoration: none;
   font-weight: bold;
   margin-left: 0.25em;
 }

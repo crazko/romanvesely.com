@@ -36,5 +36,5 @@
 }
 
 .navigation a[aria-current='page'] {
-  border-bottom: 2px solid;
+  text-decoration: underline;
 }

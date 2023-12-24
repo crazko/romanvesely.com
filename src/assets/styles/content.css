@@ -16,10 +16,6 @@
   }
 }
 
-:where(.content a:not([class])) {
-  border-bottom: 2px solid;
-}
-
 :where(.content p):last-of-type {
   margin-bottom: 0;
 }
