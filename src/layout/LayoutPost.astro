@@ -5,10 +5,10 @@ import Container from '../components/Container.astro';
 import Time from '../components/Time.astro';
 
 const { frontmatter } = Astro.props;
-const { title, readingTime, githubEdit, publishedDate, slug } = frontmatter;
+const { description, title, readingTime, githubEdit, publishedDate, slug } = frontmatter;
 ---
 
-<Layout description={'' /* TODO: */} image={`assets/posts/${slug}.png`} isPost title={title}>
+<Layout description={description} image={`assets/posts/${slug}.png`} isPost title={title}>
   <Container>
     <article>
       <header class="content__header">

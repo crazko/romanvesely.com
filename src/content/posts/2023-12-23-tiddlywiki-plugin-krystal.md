@@ -1,7 +1,7 @@
 ---
 title: Krystal, a TiddlyWiki plugin
 publishedDate: 2023-12-24
-description: A lightweight plugin for TiddlyWiki that changes its vertical "story river" to a horizontal one.
+description: A lightweight plugin for TiddlyWiki that changes its vertical story river to a horizontal one.
 label: project
 ---
 
