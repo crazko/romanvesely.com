@@ -128,9 +128,16 @@ video {
   max-width: 100%;
 }
 
+figure {
+  display: grid;
+  justify-items: center;
+  margin: var(--gap) calc(var(--gap) * -1);
+}
+
 figcaption {
-  color: var(--accent-secondary);
   font-size: 0.75rem;
+  margin-top: 0.5em;
+  max-width: calc(100% - var(--gap) * 4);
 }
 
 blockquote {
@@ -162,12 +169,8 @@ blockquote p:last-of-type::after {
 }
 
 blockquote footer {
-  margin-top: 0.5em;
   font-size: 0.75rem;
-}
-
-blockquote footer a {
-  text-decoration: none;
+  margin-top: 0.5em;
 }
 
 table {

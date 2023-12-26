@@ -1,5 +1,6 @@
 import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
+import rehypeFigure from 'rehype-figure';
 
 import { defineConfig } from 'astro/config';
 
@@ -12,6 +13,7 @@ export default defineConfig({
 
   markdown: {
     remarkPlugins: [remarkReadingTime, remarkGithubEdit, remarkAddSignature],
+    rehypePlugins: [rehypeFigure],
     syntaxHighlight: 'prism',
   },
 

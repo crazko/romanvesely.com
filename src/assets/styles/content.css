@@ -30,13 +30,6 @@
   }
 }
 
-.content p > img {
-  margin: var(--gap) calc(var(--gap) * -1) !important;
-  display: block;
-  max-width: unset !important;
-  width: calc(100% + var(--gap) * 2 + 0.49px);
-}
-
 .perex {
   color: var(--accent);
   font-family: var(--font-alternative);
@@ -44,7 +37,7 @@
 }
 
 .footnotes {
-  border-top: 1px solid currentColor;
+  border-top: 1px solid var(--text-secondary);
   font-size: 0.75rem;
   margin-top: var(--gap);
   padding-block: 1em;
