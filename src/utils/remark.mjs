@@ -42,7 +42,13 @@ export const remarkAddSignature = () => {
     value: `<footer><p class="signature">Roman</p></footer>`,
   };
 
-  return (tree) => {
-    tree.children = [...tree.children, signature];
+  const postPath = /content\/posts/;
+
+  return (tree, file) => {
+    const isPost = postPath.test(file.path);
+
+    if (isPost) {
+      tree.children = [...tree.children, signature];
+    }
   };
 };
