@@ -156,6 +156,7 @@ blockquote p:first-of-type::before {
   content: open-quote;
   font-size: 2em;
   margin-right: 0.25em;
+  margin-left: -1ch;
   vertical-align: -0.2em;
   line-height: 0;
 }
@@ -163,7 +164,6 @@ blockquote p:first-of-type::before {
 blockquote p:last-of-type::after {
   content: close-quote;
   font-size: 2em;
-  margin-right: 0.25em;
   vertical-align: -0.2em;
   line-height: 0;
 }
