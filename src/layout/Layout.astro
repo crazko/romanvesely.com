@@ -32,7 +32,7 @@ const formatTitle = (name?: string) => {
 const meta = {
   title: title || data.name,
   description: description || data.description,
-  image: new URL(image, Astro.url),
+  image: new URL(image, Astro.site),
   type: isPost ? 'article' : 'website',
   url: Astro.url,
 };
