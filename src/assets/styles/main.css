@@ -46,12 +46,6 @@ sup a {
   margin-left: 0.25em;
 }
 
-b,
-strong {
-  color: var(--text-emphasized);
-  font-weight: 600;
-}
-
 :where(ul) {
   list-style-type: square;
 }
@@ -148,7 +142,7 @@ blockquote p {
   font-size: 0.875em;
   color: var(--accent-emphasized);
   font-family: var(--font-alternative);
-  font-style: italic;
+  /* font-style: italic; */
   quotes: '\201C''\201D''\2018''\2019';
 }
 
@@ -166,6 +160,7 @@ blockquote p:last-of-type::after {
   font-size: 2em;
   vertical-align: -0.2em;
   line-height: 0;
+  margin-left: 0.25em;
 }
 
 blockquote footer {
