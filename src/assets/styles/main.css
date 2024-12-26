@@ -190,7 +190,7 @@ td + td {
   padding-left: 1em;
 }
 
-[astro-icon] {
+[data-icon] {
   width: 1.25em;
   height: 1.25em;
   vertical-align: sub;

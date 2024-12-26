@@ -1,5 +1,5 @@
 ---
-import { Sprite } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 import Layout from './Layout.astro';
 import Container from '../components/Container.astro';
 import Time from '../components/Time.astro';
@@ -17,17 +17,17 @@ const { description, title, readingTime, githubEdit, publishedDate, slug } = fro
         <ul class="meta plb-g">
           <li class="meta__item">
             <a href={Astro.url} class="text-secondary u-url">
-              <Sprite name="mdi:calendar-month" aria-label="Published" class="text-default" />
+              <Icon name="mdi:calendar-month" aria-label="Published" class="text-default" />
               <Time date={publishedDate} />
             </a>
           </li>
           <li class="meta__item">
-            <Sprite name="mdi:clock-outline" aria-label="Reading time" class="text-default" />
+            <Icon name="mdi:clock-outline" aria-label="Reading time" class="text-default" />
             {readingTime}
           </li>
           <li class="meta__item">
             <a href={githubEdit} class="text-secondary">
-              <Sprite name="mdi:file-document-edit-outline" aria-hidden="true" class="text-default" />
+              <Icon name="mdi:file-document-edit-outline" aria-hidden="true" class="text-default" />
               suggest an edit</a
             >
           </li>

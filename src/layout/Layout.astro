@@ -1,5 +1,5 @@
 ---
-import { Sprite } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 import '@fontsource/lato';
 import '@fontsource/lato/700.css';
@@ -86,13 +86,11 @@ const meta = {
     <script data-goatcounter="https://rmnvsl.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
   <body class:list={{ 'h-entry': isPost }}>
-    <Sprite.Provider>
-      <a href="#main" class="skip-link">Skip to main content</a>
-      <Header />
-      <main id="main" class="content">
-        <slot />
-      </main>
-      <Footer />
-    </Sprite.Provider>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <Header />
+    <main id="main" class="content">
+    <slot />
+    </main>
+    <Footer />
   </body>
 </html>
