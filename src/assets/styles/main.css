@@ -16,11 +16,15 @@ html {
   }
 }
 
+/**
+ * 1. Force grid items to be smaller than their content - allow text truncation.
+ */
 body {
   background: var(--background);
   color: var(--text);
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr); /* 1. */
   min-height: 100vh;
   border-block: 10px solid var(--accent);
   box-sizing: border-box;
