@@ -1,5 +1,5 @@
 .cards {
-  --card-width: 325px;
+  --card-width: 300px;
 
   columns: var(--card-width);
   column-gap: 1em;
