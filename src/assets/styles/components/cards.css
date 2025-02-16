@@ -13,7 +13,6 @@
   background-color: var(--background-secondary);
   position: relative;
   margin-bottom: 1em;
-  position: relative;
   break-inside: avoid; /* 1 */
   padding: 1rem;
 }
