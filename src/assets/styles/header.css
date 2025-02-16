@@ -31,8 +31,7 @@
 }
 
 .navigation {
-  display: flex;
-  gap: 0.75em;
+  columns: 3;
 }
 
 .navigation a[aria-current='page'] {

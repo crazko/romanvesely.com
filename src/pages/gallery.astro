@@ -1,0 +1,84 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../layout/Layout.astro';
+import Container from '../components/Container.astro';
+import Perex from '../components/Perex.astro';
+
+const title = 'Gallery';
+
+const data = await fetch('https://pixelfed.social/api/v1/accounts/736093161375856148/statuses?limit=14', {
+    headers: {
+        'Authorization': `Bearer ${import.meta.env.PIXELFED_TOKEN}`,
+    }
+}).then(response => response.json());
+---
+
+<Layout title={title} description="My photos of (mostly) graffiti and street art.">
+  <Container>
+    <h1>{title}</h1>
+    <Perex>
+      My photos of (mostly) graffiti and street art.
+    </Perex>
+  </Container>
+
+    <div class="gallery">
+        {data.map((status) =>
+         <figure>
+            <a href={status.url}>
+                <img src={status.media_attachments[0].preview_url} />
+            </a>
+            <figcaption set:html={status.content}></figcaption>
+        </figure>
+        )}
+
+        <a href="https://pixelfed.social/@crazko">
+            <Icon name="ri:pixelfed-fill" aria-hidden="true" /><br>
+            <span>see more on my</span><br>
+            <b>pixelfed</b> <span>account</span>
+        </a>
+    </div>
+</Layout>
+
+<style type="css">
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1em;
+        padding: var(--gap);
+    }
+
+    .gallery > * {
+        background-color: var(--background-secondary);
+        margin: 0;
+        justify-items: initial;
+    }
+
+    img, .gallery > a {
+        aspect-ratio: 1 /1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery > a {
+        place-content: center;
+        text-decoration: none;
+        text-align: center;
+
+        svg {
+            width: 50%;
+            height: auto;
+        }
+
+        span {
+            color: var(--text);
+        }
+    }
+
+    figcaption {
+        max-width: 100%;
+        padding: 0.5em;
+        margin: 0;
+        text-align: center;
+    }
+</style>
