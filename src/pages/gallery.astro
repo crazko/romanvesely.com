@@ -75,10 +75,17 @@ const data = await fetch('https://pixelfed.social/api/v1/accounts/73609316137585
         }
     }
 
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
     figcaption {
         max-width: 100%;
         padding: 0.5em;
         margin: 0;
         text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 </style>
