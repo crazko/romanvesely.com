@@ -54,4 +54,20 @@
   padding: 1rem;
   display: block;
   margin: -1rem;
+  position: relative;
+}
+
+.bookmark__link--favorite {
+  border-inline-start: 1px solid var(--accent-emphasized);
+  padding-left: calc(1rem - 1px);
+
+  &::after {
+    content: '★' / '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    line-height: 0;
+    color: var(--accent-emphasized);
+    transform: translateX(-55%);
+  }
 }

@@ -26,6 +26,8 @@ const getFileContent = (data) => {
   return `---
 title: ${sanitize(title)}
 url: ${url}
+favorite: false
+read: false
 ---
 `;
 };

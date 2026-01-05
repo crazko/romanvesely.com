@@ -4,6 +4,7 @@ interface Props {
     hostname: string;
     title: string;
     url: string;
+    favorite?: boolean;
   }>;
 }
 
@@ -12,9 +13,9 @@ const { bookmarks } = Astro.props;
 
 <ul class='cards bookmarks h-feed'>
   {
-    bookmarks.map(({ hostname, title, url }) => (
+    bookmarks.map(({ hostname, title, url, favorite }) => (
       <li class='card bookmark h-entry'>
-        <a href={url} class='bookmark__link u-bookmark-of h-cite' target='_blank' rel='noopener'>
+        <a href={url} class:list={['bookmark__link', 'u-bookmark-of', 'h-cite', { 'bookmark__link--favorite': favorite }]} target='_blank' rel='noopener'>
           <p class='p-name'>{title}</p>
           <div class='text-end'>
             <span class='pill'>{hostname}</span>
