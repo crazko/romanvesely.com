@@ -6,6 +6,8 @@ export const collections = {
     schema: z.object({
       title: z.string(),
       url: z.string().url(),
+      favorite: z.boolean().default(false),
+      read: z.boolean().default(false),
     }),
   }),
   log: defineCollection({

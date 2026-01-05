@@ -4,9 +4,23 @@ title: Bookmarks
 slug: Bookmarks
 ---
 
+import { getCollection } from 'astro:content';
 import Perex from '../components/Perex.astro';
 import Bookmarks from './_components/Bookmarks.astro';
 
+export const data = await getCollection('bookmarks');
+export const allBookmarks = data.reverse().map((bookmark) => ({
+  ...bookmark.data,
+  hostname: new URL(bookmark.data.url).hostname,
+}));
+
+export const unreadBookmarks = allBookmarks.filter((bookmark) => !bookmark.read);
+export const readBookmarks = allBookmarks.filter((bookmark) => bookmark.read);
+
 <Perex>Articles, videos and other interesting things from around the internet I would like to get back to.</Perex>
 
-<Bookmarks />
+<Bookmarks bookmarks={unreadBookmarks} />
+
+## Archive
+
+<Bookmarks bookmarks={readBookmarks} />
