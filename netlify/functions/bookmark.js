@@ -1,5 +1,4 @@
-const fetch = require('node-fetch');
-const slugify = require('slugify');
+import slugify from 'slugify';
 
 const API_FILE_TARGET = 'https://api.github.com/repos/crazko/romanvesely.com/contents/src/content/bookmarks/';
 

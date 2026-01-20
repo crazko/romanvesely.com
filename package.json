@@ -20,7 +20,6 @@
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-replace-link": "^1.2.2",
     "mdast-util-to-string": "^4.0.0",
-    "node-fetch": "^3.3.2",
     "normalize.css": "^8.0.1",
     "postcss-custom-media": "^11.0.6",
     "postcss-media-minmax": "^5.0.0",
