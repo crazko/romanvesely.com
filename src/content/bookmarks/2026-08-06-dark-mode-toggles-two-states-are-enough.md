@@ -4,4 +4,5 @@ url: https://lea.verou.me/blog/2026/dark-mode-toggles/
 
 favorite: false
 read: true
+tags: [css, design]
 ---

@@ -20,13 +20,25 @@ const sanitize = (str) => {
 };
 
 const getFileContent = (data) => {
-  const { title, url } = data;
+  const { title, url: urlInput } = data;
+  const [firstLine, ...tagLines] = urlInput.split(/\r\n?|\n/);
+  const url = firstLine.trim();
+
+  const tags = [
+    ...new Set(
+      tagLines
+        .flatMap((value) => value.split(','))
+        .map((tag) => tag.replace(/\s+/g, ''))
+        .filter(Boolean)
+    ),
+  ];
 
   return `---
-title: ${sanitize(title)}
-url: ${url}
+title: ${JSON.stringify(sanitize(title))}
+url: ${JSON.stringify(url)}
 favorite: false
 read: false
+tags: ${JSON.stringify(tags)}
 ---
 `;
 };
@@ -96,7 +108,11 @@ const handleResponse = (response) => {
 exports.handler = async (event) => {
   try {
     // const params = JSON.parse(event.body);
-    const params = Object.fromEntries(new URLSearchParams(event.body).entries());
+    const formData = new URLSearchParams(event.body);
+    const params = {
+      ...Object.fromEntries(formData.entries()),
+      url: [formData.get('url') ?? '', ...formData.getAll('tags'), formData.get('newTags') ?? ''].join('\n'),
+    };
 
     // Only allow POST
     if (event.httpMethod !== 'POST') {

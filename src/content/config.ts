@@ -8,6 +8,7 @@ export const collections = {
       url: z.string().url(),
       favorite: z.boolean().default(false),
       read: z.boolean().default(false),
+      tags: z.array(z.string()).default([]),
     }),
   }),
   log: defineCollection({

@@ -4,4 +4,5 @@ url: https://lovable.dev/blog/how-we-migrated-lovable-dev-away-from-nextjs
 
 favorite: false
 read: true
+tags: [devtools, performance, react]
 ---

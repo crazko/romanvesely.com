@@ -4,4 +4,5 @@ url: https://movq.de/blog/postings/2026-06-16/0/POSTING-en.html
 
 favorite: false
 read: true
+tags: [a11y, design]
 ---

@@ -4,4 +4,5 @@ url: https://samizdat.co/
 
 favorite: false
 read: false
+tags: [art, visualization]
 ---

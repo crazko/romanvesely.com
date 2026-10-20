@@ -3,4 +3,5 @@ title: Money is Status Memory - The Generally Accepted Platform for Interpersona
 url: https://www.jurajkarpis.com/moneyisstatusmemory/
 favorite: false
 read: false
+tags: [economics, finances]
 ---

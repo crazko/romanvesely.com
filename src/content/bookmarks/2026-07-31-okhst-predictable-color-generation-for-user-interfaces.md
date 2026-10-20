@@ -4,4 +4,5 @@ url: https://tenphi.me/blog/okhst-predictable-color-generation/
 
 favorite: false
 read: false
+tags: [css, design]
 ---

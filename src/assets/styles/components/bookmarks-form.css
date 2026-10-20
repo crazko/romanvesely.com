@@ -4,7 +4,8 @@
   gap: 1rem;
 }
 
-.bookmarks-form input {
+.bookmarks-form input,
+.bookmarks-form select {
   box-sizing: border-box;
   width: 100%;
 }

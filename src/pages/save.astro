@@ -1,36 +1,49 @@
 ---
+import { getCollection } from 'astro:content';
 import Container from '../components/Container.astro';
 import Layout from '../layout/Layout.astro';
 
 const title = 'Save to bookmarks';
 const host = process.env.NODE_ENV === 'development' ? 'http://localhost:8888' : '';
+const bookmarks = await getCollection('bookmarks');
+const availableTags = [...new Set(bookmarks.flatMap(({ data }) => data.tags))].sort();
 ---
 
 <Layout title={title}>
-  <meta name="robots" content="noindex" slot="meta" />
+  <meta name='robots' content='noindex' slot='meta' />
 
   <Container>
     <h1>{title}</h1>
     <p>
-      Check all <a href="/bookmarks">bookmarks</a>.
+      Check all <a href='/bookmarks'>bookmarks</a>.
     </p>
-    <form action={`${host}/.netlify/functions/bookmark`} method="POST" class="bookmarks-form">
+    <form action={`${host}/.netlify/functions/bookmark`} method='POST' class='bookmarks-form'>
       <label>
         Title
-        <input type="text" name="title" required />
+        <input type='text' name='title' required />
       </label>
       <label>
         URL
-        <input type="url" name="url" required />
+        <input type='url' name='url' required />
+      </label>
+      <label>
+        Tags
+        <select name='tags' multiple size='6'>
+          {availableTags.map((tag) => <option value={tag}>{tag}</option>)}
+        </select>
+      </label>
+      <label>
+        New tags
+        <input type='text' name='newTags' placeholder='css, designsystem' />
       </label>
       <label>
         Token
-        <input type="password" name="token" autocomplete="current-password" required />
+        <input type='password' name='token' autocomplete='current-password' required />
       </label>
-      <button type="submit" autofocus>Save</button>
+      <button type='submit' autofocus>Save</button>
     </form>
-    <p class="text-sm text-end">
-      all credits goes to <a href="https://mxb.dev/blog/indieweb-link-sharing/">Max Böck</a>
+    <p class='text-sm text-end'>
+      all credits goes to <a href='https://mxb.dev/blog/indieweb-link-sharing/'>Max Böck</a>
     </p>
   </Container>
 </Layout>
