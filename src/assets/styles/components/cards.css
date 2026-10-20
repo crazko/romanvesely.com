@@ -49,6 +49,24 @@
   padding-block: var(--gap);
 }
 
+.bookmark-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0.5rem 0;
+
+  .pill {
+    overflow-wrap: anywhere;
+  }
+
+  [aria-current='page'] {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
 .bookmark__link {
   color: var(--text);
   padding: 1rem;

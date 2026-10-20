@@ -1,10 +1,14 @@
 ---
+import { createHash } from 'node:crypto';
+
 interface Props {
   bookmarks: Array<{
+    id: string;
     hostname: string;
     title: string;
     url: string;
     favorite?: boolean;
+    tags?: string[];
   }>;
 }
 
@@ -13,8 +17,8 @@ const { bookmarks } = Astro.props;
 
 <ul class='cards bookmarks h-feed'>
   {
-    bookmarks.map(({ hostname, title, url, favorite }) => (
-      <li class='card bookmark h-entry'>
+    bookmarks.map(({ id, hostname, title, url, favorite }) => (
+      <li class='card bookmark h-entry' style={`view-transition-name: bookmark-${createHash('sha256').update(id).digest('hex')}`}>
         <a href={url} class:list={['bookmark__link', 'u-bookmark-of', 'h-cite', { 'bookmark__link--favorite': favorite }]} target='_blank' rel='noopener'>
           <p class='p-name'>{title}</p>
           <div class='text-end'>

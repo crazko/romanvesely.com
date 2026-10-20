@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import LayoutPage from '../../../layout/LayoutPage.astro';
+import BookmarkListing from '../../_components/BookmarkListing.astro';
+
+export async function getStaticPaths() {
+  const bookmarks = await getCollection('bookmarks');
+  const tags = new Set(bookmarks.flatMap(({ data }) => data.tags));
+
+  return [...tags].map((tag) => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+---
+
+<LayoutPage frontmatter={{ title: 'Bookmarks' }}>
+  <BookmarkListing tag={tag} />
+</LayoutPage>

@@ -1,9 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
+import latoFont from '@fontsource/lato/files/lato-latin-400-normal.woff2?url';
+import merriweatherFont from '@fontsource/merriweather/files/merriweather-latin-400-normal.woff2?url';
+import merriweatherExtendedFont from '@fontsource/merriweather/files/merriweather-latin-ext-400-normal.woff2?url';
 
-import '@fontsource/lato';
+import '@fontsource/lato/400.css';
 import '@fontsource/lato/700.css';
-import '@fontsource/merriweather';
+import '@fontsource/merriweather/400.css';
 import '@fontsource/merriweather/latin-ext-400.css';
 import '../assets/styles/styles.css';
 
@@ -46,6 +49,10 @@ const meta = {
 
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="preload" href={latoFont} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={merriweatherFont} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={merriweatherExtendedFont} as="font" type="font/woff2" crossorigin />
 
     <slot name="meta" />
 

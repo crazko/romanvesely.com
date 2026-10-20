@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Perex from '../../components/Perex.astro';
+import '../../assets/styles/components/bookmarks.css';
+import Bookmarks from './Bookmarks.astro';
+import BookmarkTags from './BookmarkTags.astro';
+
+interface Props {
+  tag?: string;
+  untagged?: boolean;
+}
+
+const { tag, untagged = false } = Astro.props;
+const entries = await getCollection('bookmarks');
+const allBookmarks = entries.reverse().map((bookmark) => ({
+  ...bookmark.data,
+  id: bookmark.id,
+  hostname: new URL(bookmark.data.url).hostname,
+}));
+const tags = [...new Set(allBookmarks.flatMap((bookmark) => bookmark.tags))].sort();
+const bookmarks = allBookmarks.filter((bookmark) =>
+  untagged ? bookmark.tags.length === 0 : !tag || bookmark.tags.includes(tag)
+);
+const unreadBookmarks = bookmarks.filter((bookmark) => !bookmark.read);
+const readBookmarks = bookmarks.filter((bookmark) => bookmark.read);
+---
+
+<Perex>Articles, videos and other interesting things from around the internet I would like to get back to.</Perex>
+
+<BookmarkTags tags={tags} activeTag={tag} untagged={untagged} />
+
+{unreadBookmarks.length > 0 && <Bookmarks bookmarks={unreadBookmarks} />}
+
+{
+  readBookmarks.length > 0 && (
+    <section aria-labelledby="bookmark-archive">
+      <h2 id="bookmark-archive" class="bookmark-archive">
+        Archive
+      </h2>
+      <Bookmarks bookmarks={readBookmarks} />
+    </section>
+  )
+}
+
+{bookmarks.length === 0 && <p>No bookmarks found.</p>}

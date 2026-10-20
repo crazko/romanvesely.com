@@ -1,0 +1,30 @@
+@view-transition {
+  navigation: auto;
+}
+
+:root {
+  view-transition-name: none;
+}
+
+.bookmark-archive {
+  view-transition-name: bookmark-archive;
+}
+
+::view-transition-group(*) {
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(bookmark-archive) {
+  display: none;
+}
+
+::view-transition-new(bookmark-archive) {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}

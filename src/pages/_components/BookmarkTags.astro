@@ -1,0 +1,29 @@
+---
+interface Props {
+  tags: string[];
+  activeTag?: string;
+  untagged?: boolean;
+}
+
+const { tags, activeTag, untagged = false } = Astro.props;
+---
+
+<nav aria-label="Bookmark tags">
+  <ul class="bookmark-tags">
+    <li><a href="/bookmarks" aria-current={!activeTag && !untagged ? 'page' : undefined}>All</a></li>
+    <li><a href="/bookmarks/untagged" aria-current={untagged ? 'page' : undefined}>Untagged</a></li>
+    {
+      tags.map((tag) => (
+        <li>
+          <a
+            class="pill"
+            href={`/bookmarks/tag/${encodeURIComponent(tag)}`}
+            aria-current={activeTag === tag ? 'page' : undefined}
+          >
+            {tag}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
